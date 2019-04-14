@@ -41,7 +41,7 @@ $request_body = json_decode('{
 	$sg = new \SendGrid(trim($apiKey));
 
 	$response = $sg->client->mail()->send()->post($request_body);
-	mail("paulfarcas13@gmail.com", "subject", "message from test");
+	echo $request_body;
 	echo $response->statusCode();
 	echo $response->body();
 	echo $response->headers();
