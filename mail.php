@@ -1,6 +1,8 @@
 <?php
 require("./sendgrid-php/sendgrid-php.php");
 
+namespace SendGrid;
+
 $nom=addslashes(htmlentities($_POST['nom']));
 $courriel=addslashes(htmlentities($_POST['courriel']));
 $mess=addslashes(htmlentities($_POST['mess']));
