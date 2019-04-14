@@ -55,8 +55,8 @@ if ($nom != "" && $courriel != "" && $mess != "") {
 
 	$headers = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-	$headers .= 'From: "Site internet de Maracana Canada" '."\r\n";
-	$headers .= "\r\n";
+	// $headers .= 'From: "Site internet de Maracana Canada" '."\r\n";
+	// $headers .= "\r\n";
 
 	if (mail($to, $subject, $message, $headers)) // Envoi du message
 	{
@@ -64,7 +64,7 @@ if ($nom != "" && $courriel != "" && $mess != "") {
 	}
 	else // Non envoy�
 	{
-		echo "Votre message est non transmis";
+		echo '<body onLoad="alert(\'Votre message est non transmis\')">';
 	}
 
 
