@@ -57,9 +57,9 @@ $request_body = json_decode('{
 	$sg = new \SendGrid($apiKey);
 
 	$response = $sg->client->mail()->send()->post($request_body);
-	echo $response->statusCode();
-	echo $response->body();
-	echo $response->headers();
+	// echo $response->statusCode();
+	// echo $response->body();
+	// echo $response->headers();
 
 // function sendHelloEmail()
 // {
