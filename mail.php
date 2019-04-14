@@ -50,13 +50,7 @@ $request_body = json_decode('{
 	],
 	"from": {
 	  "email": '.$courriel.'
-	},
-	"content": [
-	  {
-		"type": "application/json",
-		"value": "Hello, Email!"
-	  }
-	]
+	}
   }');
 
   	$apiKey = getenv('SENDGRID_API_KEY');
