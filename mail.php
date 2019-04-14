@@ -32,7 +32,7 @@ function helloEmail()
         //echo json_encode($mail, JSON_PRETTY_PRINT), "\n";
         return $mail;
     } catch (\Exception $e) {
-		print $e->getMessage(), "\n";
+		print $e->getMessage();
         echo $e->getMessage();
     }
     return null;
@@ -80,7 +80,7 @@ function sendHelloEmail()
         print_r($response->headers());
         print $response->body() . "\n";
     } catch (Exception $e) {
-		print $e->getMessage(), "\n";
+		print $e->getMessage();
         echo 'Caught exception: ',  $e->getMessage(), "\n";
     }
 }
