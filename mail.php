@@ -53,7 +53,7 @@ $request_body = json_decode('{
 	},
 	"content": [
 	  {
-		"type": "text/plain",
+		"type": "application/json",
 		"value": "Hello, Email!"
 	  }
 	]
