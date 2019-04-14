@@ -43,7 +43,7 @@ echo $response->body();
 echo $response->headers();
 
 //Je verifie que tous les champs sont renseignés 
-if ($nom != "" && $courriel != "" && $mess != "") {
+// if ($nom != "" && $courriel != "" && $mess != "") {
 // 	$to = 'paulfarcas13@gmail.com';
 // 	$subject = 'Formulaire en provenance du site internet';
 // 	$message = '
@@ -101,9 +101,9 @@ if ($nom != "" && $courriel != "" && $mess != "") {
 
 
   
-} else {  
-  	echo '<body onLoad="alert(\'merci de remplir toutes les cases...\')">';
-	echo '<meta http-equiv="refresh" content="0;URL=contact.html">';
-}
-echo '<meta http-equiv="refresh" content="0;URL=contact.html">';
+// } else {  
+//   	echo '<body onLoad="alert(\'merci de remplir toutes les cases...\')">';
+// 	echo '<meta http-equiv="refresh" content="0;URL=contact.html">';
+// }
+// echo '<meta http-equiv="refresh" content="0;URL=contact.html">';
 ?>
