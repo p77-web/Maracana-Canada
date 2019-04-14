@@ -3,9 +3,9 @@ namespace SendGrid;
 
 require("./sendgrid-php/sendgrid-php.php");
 
-$nom=addslashes(htmlentities($_POST['nom']));
-$courriel=addslashes(htmlentities($_POST['courriel']));
-$mess=addslashes(htmlentities($_POST['mess']));
+// $nom=addslashes(htmlentities($_POST['nom']));
+// $courriel=addslashes(htmlentities($_POST['courriel']));
+// $mess=addslashes(htmlentities($_POST['mess']));
 
 // if (empty($_POST['nom']))
 // echo '<body onLoad="alert(\'Merci de remplir le champ Nom\')">';
@@ -14,28 +14,24 @@ $mess=addslashes(htmlentities($_POST['mess']));
 // if (empty($_POST['mess']))
 // echo '<body onLoad="alert(\'Vous ne pouvez pas envoyer un message vide\')">';
 
-use SendGrid\Mail\To;
-use SendGrid\Mail\From;
-use SendGrid\Mail\Content;
-use SendGrid\Mail\Mail;
-
-function helloEmail()
-{
-    try {
-        $from = new From(null, "test@example.com");
-        $subject = "Hello World from the Twilio SendGrid PHP Library";
-        $to = new To(null, "paulfarcas13@gmail.com");
-        $content = new Content("text/plain", "some text here");
-        $mail = new Mail($from, $to, $subject, $content);
-        $to = new To(null, "test2@example.com");
-        $mail->addPersonalization($to);
-        //echo json_encode($mail, JSON_PRETTY_PRINT), "\n";
-        return $mail;
-    } catch (\Exception $e) {
-		print $e->getMessage();
-        echo $e->getMessage();
-    }
-    return null;
+$email = new \SendGrid\Mail\Mail();
+$email->setFrom("test@example.com", "Example User");
+$email->setSubject("Sending with SendGrid is Fun");
+$email->addTo("paulfarcas13@gmail.com", "Example User");
+$email->addContent(
+    "text/plain", "and easy to do anywhere, even with PHP"
+);
+$email->addContent(
+    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+);
+$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
 }
 
 // $request_body = json_decode('{
@@ -68,24 +64,6 @@ function helloEmail()
 	// echo $response->body();
 	// echo $response->headers();
 
-function sendHelloEmail()
-{
-    $apiKey = getenv('SENDGRID_API_KEY');
-    $sg = new \SendGrid($apiKey);
-    $request_body = helloEmail();
-    
-    try {
-        $response = $sg->client->mail()->send()->post($request_body);    
-        print $response->statusCode() . "\n";
-        print_r($response->headers());
-        print $response->body() . "\n";
-    } catch (Exception $e) {
-		print $e->getMessage();
-        echo 'Caught exception: ',  $e->getMessage(), "\n";
-    }
-}
-
-sendHelloEmail();
 
 //Je verifie que tous les champs sont renseignés 
 // if ($nom != "" && $courriel != "" && $mess != "") {
