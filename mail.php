@@ -12,7 +12,7 @@ echo '<body onLoad="alert(\'Vous ne pouvez pas envoyer un message vide\')">';
 
 //Je verifie que tous les champs sont renseignés 
 if ($nom != "" && $courriel != "" && $mess != "") {
-	$to = 'paulfarcas13@mgmail.com';
+	$to = 'paulfarcas13@gmail.com';
 	$subject = 'Formulaire en provenance du site internet';
 	$message = '
 		 <html>
