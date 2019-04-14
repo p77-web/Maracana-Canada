@@ -14,70 +14,78 @@ $mess=addslashes(htmlentities($_POST['mess']));
 // if (empty($_POST['mess']))
 // echo '<body onLoad="alert(\'Vous ne pouvez pas envoyer un message vide\')">';
 
-// use SendGrid\Mail\To;
-// use SendGrid\Mail\From;
-// use SendGrid\Mail\Content;
-// use SendGrid\Mail\Mail;
+use SendGrid\Mail\To;
+use SendGrid\Mail\From;
+use SendGrid\Mail\Content;
+use SendGrid\Mail\Mail;
 
-// function helloEmail()
-// {
-//     try {
-//         $from = new From(null, "test@example.com");
-//         $subject = "Hello World from the Twilio SendGrid PHP Library";
-//         $to = new To(null, "paulfarcas13@gmail.com");
-//         $content = new Content("text/plain", "some text here");
-//         $mail = new Mail($from, $to, $subject, $content);
-//         $to = new To(null, "test2@example.com");
-//         $mail->addPersonalization($to);
-//         //echo json_encode($mail, JSON_PRETTY_PRINT), "\n";
-//         return $mail;
-//     } catch (\Exception $e) {
-//         echo $e->getMessage();
-//     }
-//     return null;
-// }
+function helloEmail()
+{
+    try {
+        $from = new From(null, "test@example.com");
+        $subject = "Hello World from the Twilio SendGrid PHP Library";
+        $to = new To(null, "paulfarcas13@gmail.com");
+        $content = new Content("text/plain", "some text here");
+        $mail = new Mail($from, $to, $subject, $content);
+        $to = new To(null, "test2@example.com");
+        $mail->addPersonalization($to);
+        //echo json_encode($mail, JSON_PRETTY_PRINT), "\n";
+        return $mail;
+    } catch (\Exception $e) {
+		print $e->getMessage(), "\n";
+        echo $e->getMessage();
+    }
+    return null;
+}
 
-$request_body = json_decode('{
-	"personalizations": [
-	  {
-		"to": [
-		  {
-			"email": "paulfarcas13@gmail.com"
-		  }
-		],
-		"subject": "Hello World from the SendGrid PHP Library!"
-	  }
-	],
-	"from": {
-	  "email": '.$courriel.'
-	}
-  }');
+// $request_body = json_decode('{
+// 	"personalizations": [
+// 	  {
+// 		"to": [
+// 		  {
+// 			"email": "paulfarcas13@gmail.com"
+// 		  }
+// 		],
+// 		"subject": "Hello World from the SendGrid PHP Library!"
+// 	  }
+// 	],
+// 	"from": {
+// 	  "email": '.$courriel.'
+// 	},
+// 	"content": [
+// 	  {
+// 		"type": "text/plain",
+// 		"value": "Hello, Email!"
+// 	  }
+// 	]
+//   }');
 
-  	$apiKey = getenv('SENDGRID_API_KEY');
-	$sg = new \SendGrid($apiKey);
+  	// $apiKey = getenv('SENDGRID_API_KEY');
+	// $sg = new \SendGrid($apiKey);
 
-	$response = $sg->client->mail()->send()->post($request_body);
-	echo $response->statusCode();
+	// $response = $sg->client->mail()->send()->post($request_body);
+	// echo $response->statusCode();
 	// echo $response->body();
 	// echo $response->headers();
 
-// function sendHelloEmail()
-// {
-//     $apiKey = getenv('SENDGRID_API_KEY');
-//     $sg = new \SendGrid($apiKey);
-//     $request_body = helloEmail();
+function sendHelloEmail()
+{
+    $apiKey = getenv('SENDGRID_API_KEY');
+    $sg = new \SendGrid($apiKey);
+    $request_body = helloEmail();
     
-//     try {
-//         $response = $sg->client->mail()->send()->post($request_body);    
-//         print $response->statusCode() . "\n";
-//         print_r($response->headers());
-//         print $response->body() . "\n";
-//     } catch (Exception $e) {
-//         echo 'Caught exception: ',  $e->getMessage(), "\n";
-//     }
-// }
+    try {
+        $response = $sg->client->mail()->send()->post($request_body);    
+        print $response->statusCode() . "\n";
+        print_r($response->headers());
+        print $response->body() . "\n";
+    } catch (Exception $e) {
+		print $e->getMessage(), "\n";
+        echo 'Caught exception: ',  $e->getMessage(), "\n";
+    }
+}
 
-// sendHelloEmail();
+sendHelloEmail();
 
 //Je verifie que tous les champs sont renseignés 
 // if ($nom != "" && $courriel != "" && $mess != "") {
@@ -142,5 +150,5 @@ $request_body = json_decode('{
 //   	echo '<body onLoad="alert(\'merci de remplir toutes les cases...\')">';
 // 	echo '<meta http-equiv="refresh" content="0;URL=contact.html">';
 // }
-echo '<meta http-equiv="refresh" content="0;URL=contact.html">';
+// echo '<meta http-equiv="refresh" content="0;URL=contact.html">';
 ?>
