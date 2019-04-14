@@ -1,7 +1,7 @@
 <?php
 namespace SendGrid;
 
-require("sendgrid-php/sendgrid-php.php");
+require("./sendgrid-php/sendgrid-php.php");
 
 // $nom=addslashes(htmlentities($_POST['nom']));
 // $courriel=addslashes(htmlentities($_POST['courriel']));
@@ -14,55 +14,36 @@ require("sendgrid-php/sendgrid-php.php");
 // if (empty($_POST['mess']))
 // echo '<body onLoad="alert(\'Vous ne pouvez pas envoyer un message vide\')">';
 
-$email = new \SendGrid\Mail\Mail();
-$email->setFrom("test@example.com", "Example User");
-$email->setSubject("Sending with SendGrid is Fun");
-$email->addTo("paulfarcas13@gmail.com", "Example User");
-$email->addContent(
-    "text/plain", "and easy to do anywhere, even with PHP"
-);
-$email->addContent(
-    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
-);
-$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
-try {
-    $response = $sendgrid->send($email);
-    print $response->statusCode() . "\n";
-    print_r($response->headers());
-    print $response->body() . "\n";
-} catch (Exception $e) {
-    echo 'Caught exception: ',  $e->getMessage(), "\n";
-}
 
-// $request_body = json_decode('{
-// 	"personalizations": [
-// 	  {
-// 		"to": [
-// 		  {
-// 			"email": "paulfarcas13@gmail.com"
-// 		  }
-// 		],
-// 		"subject": "Hello World from the SendGrid PHP Library!"
-// 	  }
-// 	],
-// 	"from": {
-// 	  "email": '.$courriel.'
-// 	},
-// 	"content": [
-// 	  {
-// 		"type": "text/plain",
-// 		"value": "Hello, Email!"
-// 	  }
-// 	]
-//   }');
+$request_body = json_decode('{
+	"personalizations": [
+	  {
+		"to": [
+		  {
+			"email": "paulfarcas13@gmail.com"
+		  }
+		],
+		"subject": "Hello World from the SendGrid PHP Library!"
+	  }
+	],
+	"from": {
+	  "email": "email@yahoo.com"
+	},
+	"content": [
+	  {
+		"type": "text/plain",
+		"value": "Hello, Email!"
+	  }
+	]
+  }');
 
-  	// $apiKey = getenv('SENDGRID_API_KEY');
-	// $sg = new \SendGrid($apiKey);
+  	$apiKey = getenv('SENDGRID_API_KEY');
+	$sg = new \SendGrid(trim($apiKey));
 
-	// $response = $sg->client->mail()->send()->post($request_body);
-	// echo $response->statusCode();
-	// echo $response->body();
-	// echo $response->headers();
+	$response = $sg->client->mail()->send()->post($request_body);
+	echo $response->statusCode();
+	echo $response->body();
+	echo $response->headers();
 
 
 //Je verifie que tous les champs sont renseignés 
