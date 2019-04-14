@@ -1,5 +1,5 @@
 <?php
-require("./sendgrid-php/sendgrid-php.php");
+require("sendgrid-php/sendgrid-php.php");
 
 namespace SendGrid;
 
