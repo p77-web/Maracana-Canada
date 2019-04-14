@@ -1,5 +1,9 @@
 /* CSS style for capsules.html page */
 
+.lead {
+	font-size: 1rem;
+}
+
 #capsules,
 #lessons {
 	background-color: #fff;
@@ -10,19 +14,17 @@
 	margin: 0 auto;
 }
 
-/* to justify the text */
 #capsules .col-12 > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
 	padding-bottom: 20px;
 }
 
-/* to justify the text */
 #lessons .col-12 > p {
 	font-size: 0.85rem;
 	margin: 0 auto;
 	max-width: 96%;
-	text-indent: 2em;
+	text-indent: 1em;
 }
 
 .image-center {
@@ -38,12 +40,8 @@
 	display: inline;
 }
 
-#lessons .col-12 .lead {
-	font-size: 1.15rem;
-}
-
-.lesson-title {
-	padding-left: 2rem;
+#lessons .col-12 > p.lead {
+	font-size: 1rem;
 }
 
 .badge-danger {
@@ -74,15 +72,14 @@
 }
 
 @media (min-width: 576px) {
-	#lessons .col-12 .lead {
-		font-size: 1.25rem;
+	#lessons .col-12 p.lead {
+		font-size: 1.15rem;
 	}
 
 	#lois_de_jeu_link {
 		font-size: 1.1rem;
 	}
 
-	/* to justify the text */
 	#capsules .col-12 > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
@@ -90,6 +87,7 @@
 
 	#lessons .col-12 > p {
 		font-size: 0.95rem;
+		text-indent: 2em;
 	}
 
 	.badge {
@@ -103,7 +101,10 @@
 }
 
 @media (min-width: 768px) {
-	/* to justify the text */
+	#lessons .col-12 p.lead {
+		font-size: 1.25rem;
+	}
+
 	#capsules .col-12 > h2 {
 		font-size: 1.5rem;
 	}

@@ -17,20 +17,17 @@
 	height: auto;
 }
 
-/* to make the used space only on 70% */
 #presentation .col {
 	margin: 0 auto;
 	max-width: 100%;
 }
 
-/* to justify the text */
 #presentation .col > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
 	padding-bottom: 20px;
 }
 
-/* to justify the text */
 #presentation .col > p {
 	font-size: 0.85rem;
 	margin: 0 auto;
@@ -62,7 +59,6 @@
 	margin: 0 auto;
 }
 
-/* to justify the text */
 #agenda-header .col > h2,
 #actualites-header .col > h2 {
 	border-bottom: 2px solid #f75056;
@@ -111,7 +107,6 @@
 	margin: 0 auto;
 }
 
-/* to justify the text */
 #galerie-header .col > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
@@ -244,16 +239,14 @@
 
 @media (min-width: 576px) {
 	.lead {
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 	}
 
-	/* to justify the text */
 	#presentation .col > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
 	}
 
-	/* to justify the text */
 	#presentation .col > p {
 		font-size: 0.95rem;
 	}
@@ -262,7 +255,6 @@
 		font-size: 1.1rem;
 	}
 
-	/* to justify the text */
 	#agenda-header .col > h2,
 	#actualites-header .col > h2 {
 		font-size: 1.25rem;
@@ -306,16 +298,18 @@
 }
 
 @media (min-width: 768px) {
+	.lead {
+		font-size: 1.25rem;
+	}
+
 	.countries {
 		font-size: 1rem;
 	}
 
-	/* to justify the text */
 	#presentation .col > h2 {
 		font-size: 1.5rem;
 	}
 
-	/* to justify the text */
 	#presentation .col > p {
 		font-size: 1rem;
 	}

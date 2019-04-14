@@ -156,12 +156,10 @@ body {
 @media (min-width: 768px) {
 	#logo-img {
 		max-height: 150px;
-		/* width: 20%; */
 	}
 
 	#menu-logo-img {
 		max-height: 150px;
-		/* width: 80%; */
 	}
 
 	.navbar-dark .navbar-nav .nav-link {

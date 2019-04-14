@@ -1,5 +1,9 @@
 /* CSS style for conseiladmin.html page */
 
+.lead {
+	font-size: 1rem;
+}
+
 #conseil {
 	background-color: #fff;
 	height: auto;
@@ -9,7 +13,6 @@
 	margin: 0 auto;
 }
 
-/* to justify the text */
 #conseil .col-12 > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
@@ -17,7 +20,6 @@
 	text-align: center;
 }
 
-/* to justify the text */
 #conseil .col-12 > p {
 	font-size: 0.85rem;
 	margin: 0 auto;
@@ -27,7 +29,6 @@
 
 .lead {
 	margin-bottom: 0.2rem;
-	font-size: 1.15rem;
 }
 
 .card {
@@ -39,6 +40,8 @@
 }
 
 .card-body > p {
+	margin: 0 auto;
+	max-width: 80%;
 	text-align: center;
 }
 
@@ -76,18 +79,15 @@
 		font-size: 1.25rem;
 	}
 
-	/* to justify the text */
 	#conseil .col-12 > h2 {
 		font-size: 1.25rem;
 	}
 
-	/* to justify the text */
 	#federation .col-12 > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
 	}
 
-	/* to justify the text */
 	#conseil .col-12 > p {
 		font-size: 0.95rem;
 	}
@@ -112,12 +112,10 @@
 }
 
 @media (min-width: 768px) {
-	/* to justify the text */
 	#conseil .col-12 > h2 {
 		font-size: 1.5rem;
 	}
 
-	/* to justify the text */
 	#conseil .col-12 > p {
 		font-size: 1rem;
 	}

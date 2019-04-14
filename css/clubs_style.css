@@ -77,16 +77,14 @@ caption {
 
 @media (min-width: 576px) {
 	.lead {
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 	}
 
-	/* to justify the text */
 	#competitions .col > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
 	}
 
-	/* to justify the text */
 	#competitions .col > p {
 		font-size: 1rem;
 	}
@@ -95,7 +93,6 @@ caption {
 		font-size: 1.15rem;
 	}
 
-	/* to justify the text */
 	#clubs-header .col > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
@@ -119,7 +116,10 @@ caption {
 }
 
 @media (min-width: 768px) {
-	/* to justify the text */
+	.lead {
+		font-size: 1.25rem;
+	}
+
 	#competitions .col > h2 {
 		font-size: 1.5rem;
 	}

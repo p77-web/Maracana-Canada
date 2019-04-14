@@ -1,5 +1,9 @@
 /* CSS style for apropos.html page */
 
+.lead {
+	font-size: 1rem;
+}
+
 #historique,
 #administration {
 	background-color: #fff;
@@ -17,7 +21,6 @@
 	margin: 0 auto;
 }
 
-/* to justify the text */
 #historique .col-12 > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
@@ -25,7 +28,6 @@
 	text-align: center;
 }
 
-/* to justify the text */
 #federation .col-12 > h2,
 #administration .col-12 > h2 {
 	border-bottom: 2px solid #f75056;
@@ -33,18 +35,18 @@
 	padding-bottom: 20px;
 }
 
-/* to justify the text */
 #historique .col-12 > p,
-#federation .col-12 > p,
-#administration .col-12 > p {
+#federation .col-12 > p {
 	font-size: 0.85rem;
 	margin: 0 auto;
 	max-width: 96%;
 	text-indent: 2em;
 }
 
-.lead {
-	font-size: 1.15rem;
+#administration .col-12 > p {
+	margin: 0 auto;
+	max-width: 96%;
+	text-indent: 2em;
 }
 
 .card-header {
@@ -57,11 +59,12 @@
 
 ul {
 	list-style-type: none;
+	padding-inline-start: 20px;
 }
 
 ul li {
 	font-size: 0.85rem;
-	max-width: 85%;
+	max-width: 95%;
 }
 
 .badge-light {
@@ -80,26 +83,18 @@ ul li {
 }
 
 @media (min-width: 576px) {
-	.lead {
-		font-size: 1.25rem;
-	}
-
-	/* to justify the text */
 	#historique .col-12 > h2 {
 		font-size: 1.25rem;
 	}
 
-	/* to justify the text */
 	#federation .col-12 > h2,
 	#administration .col-12 > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
 	}
 
-	/* to justify the text */
 	#historique .col-12 > p,
-	#federation .col-12 > p,
-	#administration .col-12 > p {
+	#federation .col-12 > p {
 		font-size: 0.95rem;
 	}
 
@@ -109,22 +104,22 @@ ul li {
 
 	ul li {
 		font-size: 0.95rem;
-		max-width: 95%;
+	}
+
+	.lead {
+		font-size: 1.15rem;
 	}
 }
 
 @media (min-width: 768px) {
-	/* to justify the text */
 	#historique .col-12 > h2,
 	#federation .col-12 > h2,
 	#administration .col-12 > h2 {
 		font-size: 1.5rem;
 	}
 
-	/* to justify the text */
 	#historique .col-12 > p,
-	#federation .col-12 > p,
-	#administration .col-12 > p {
+	#federation .col-12 > p {
 		font-size: 1rem;
 	}
 
@@ -134,5 +129,9 @@ ul li {
 
 	ul li {
 		font-size: 1rem;
+	}
+
+	.lead {
+		font-size: 1.25rem;
 	}
 }

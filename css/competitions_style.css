@@ -9,20 +9,17 @@
 	height: auto;
 }
 
-/* to make the used space only on 70% */
 #competitions .col {
 	margin: 0 auto;
 	max-width: 100%;
 }
 
-/* to justify the text */
 #competitions .col > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
 	padding-bottom: 20px;
 }
 
-/* to justify the text */
 #competitions .col > p {
 	font-size: 0.85rem;
 	margin: 0 auto;
@@ -32,45 +29,48 @@
 
 #competitions .col > p.lead {
 	color: #f00;
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
 
-#championat {
+#championnat {
 	background-color: rgb(243, 243, 243);
 	height: auto;
 }
 
-#championat-header {
+#championnat-header {
 	background-color: rgb(243, 243, 243);
 	height: auto;
 }
 
-#championat-header .col {
+#championnat-header .col {
 	margin: 0 auto;
 }
 
-#championat-header .col > h2 {
+#championnat-header .col > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
 	padding-bottom: 1.25rem;
 }
 
-.championat-card-text {
+.championnat-card-text {
 	font-size: 0.9rem;
 	margin: 0 auto;
 	max-width: 100%;
 }
 
-.championat-text {
+.championnat-text {
 	font-size: 0.9rem;
 	margin: 0 auto;
 	max-width: 90%;
 	text-indent: 2em;
 }
 
-.championat-stats {
+.championnat-stats {
 	font-size: 0.9rem;
-	text-indent: 2em;
+}
+
+.championnat-teams {
+	font-size: 0.9rem;
 }
 
 .teams-card {
@@ -84,7 +84,7 @@
 }
 
 .results {
-	margin-left: 1.5rem !important;
+	padding-left: 1.5rem !important;
 }
 
 .table td,
@@ -98,6 +98,10 @@
 
 caption {
 	caption-side: top;
+}
+
+.pl-3 {
+	padding-left: 0 !important;
 }
 
 /* Media */
@@ -115,16 +119,14 @@ caption {
 
 @media (min-width: 576px) {
 	.lead {
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 	}
 
-	/* to justify the text */
 	#competitions .col > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
 	}
 
-	/* to justify the text */
 	#competitions .col > p {
 		font-size: 1rem;
 	}
@@ -133,35 +135,45 @@ caption {
 		font-size: 1.15rem;
 	}
 
-	/* to justify the text */
-	#championat-header .col > h2 {
+	#championnat-header .col > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
 	}
 
-	.championat-card-text {
+	.championnat-card-text {
 		font-size: 0.95rem;
 	}
 
-	.championat-text {
+	.championnat-text {
 		font-size: 0.95rem;
 	}
 
-	.championat-stats {
+	.championnat-stats {
+		font-size: 0.95rem;
+	}
+
+	.championnat-teams {
 		font-size: 0.95rem;
 	}
 
 	.results {
-		margin-left: 2rem !important;
+		padding-left: 2rem !important;
 	}
 
 	.table-text {
 		font-size: 0.95rem;
 	}
+
+	.pl-3 {
+		padding-left: 1rem !important;
+	}
 }
 
 @media (min-width: 768px) {
-	/* to justify the text */
+	.lead {
+		font-size: 1.25rem;
+	}
+
 	#competitions .col > h2 {
 		font-size: 1.5rem;
 	}
@@ -170,24 +182,28 @@ caption {
 		font-size: 1.25rem;
 	}
 
-	#championat-header .col > h2 {
+	#championnat-header .col > h2 {
 		font-size: 1.5rem;
 	}
 
-	.championat-card-text {
+	.championnat-card-text {
 		font-size: 1rem;
 	}
 
-	.championat-text {
+	.championnat-text {
 		font-size: 1rem;
 	}
 
-	.championat-stats {
+	.championnat-stats {
+		font-size: 1rem;
+	}
+
+	.championnat-teams {
 		font-size: 1rem;
 	}
 
 	.results {
-		margin-left: 3rem !important;
+		padding-left: 3rem !important;
 	}
 
 	.table td,
@@ -209,6 +225,6 @@ caption {
 
 @media (min-width: 1200px) {
 	.results {
-		margin-left: 4rem !important;
+		padding-left: 4rem !important;
 	}
 }
