@@ -1,0 +1,214 @@
+/* CSS style for competitions.html page */
+
+.lead {
+	font-size: 1rem;
+}
+
+#competitions {
+	background-color: #fff;
+	height: auto;
+}
+
+/* to make the used space only on 70% */
+#competitions .col {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* to justify the text */
+#competitions .col > h2 {
+	border-bottom: 2px solid #f75056;
+	font-size: 1.15rem;
+	padding-bottom: 20px;
+}
+
+/* to justify the text */
+#competitions .col > p {
+	font-size: 0.85rem;
+	margin: 0 auto;
+	max-width: 96%;
+	text-indent: 2em;
+}
+
+#competitions .col > p.lead {
+	color: #f00;
+	font-size: 1rem;
+}
+
+#championat {
+	background-color: rgb(243, 243, 243);
+	height: auto;
+}
+
+#championat-header {
+	background-color: rgb(243, 243, 243);
+	height: auto;
+}
+
+#championat-header .col {
+	margin: 0 auto;
+}
+
+#championat-header .col > h2 {
+	border-bottom: 2px solid #f75056;
+	font-size: 1.15rem;
+	padding-bottom: 1.25rem;
+}
+
+.championat-card-text {
+	font-size: 0.9rem;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.championat-text {
+	font-size: 0.9rem;
+	margin: 0 auto;
+	max-width: 90%;
+	text-indent: 2em;
+}
+
+.championat-stats {
+	font-size: 0.9rem;
+	text-indent: 2em;
+}
+
+.teams-card {
+	background-color: transparent;
+	border: none;
+}
+
+.teams-card .card-footer {
+	background-color: transparent;
+	border: none;
+}
+
+.results {
+	margin-left: 1.5rem !important;
+}
+
+.table td,
+.table th {
+	padding: 0.25rem;
+}
+
+.table-text {
+	font-size: 0.9rem;
+}
+
+caption {
+	caption-side: top;
+}
+
+/* Media */
+@media (max-width: 575px) {
+	.text-xs-center {
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (min-width: 576px) {
+	.lead {
+		font-size: 1.25rem;
+	}
+
+	/* to justify the text */
+	#competitions .col > h2 {
+		font-size: 1.25rem;
+		padding-left: 2rem;
+	}
+
+	/* to justify the text */
+	#competitions .col > p {
+		font-size: 1rem;
+	}
+
+	#competitions .col > p.lead {
+		font-size: 1.15rem;
+	}
+
+	/* to justify the text */
+	#championat-header .col > h2 {
+		font-size: 1.25rem;
+		padding-left: 2rem;
+	}
+
+	.championat-card-text {
+		font-size: 0.95rem;
+	}
+
+	.championat-text {
+		font-size: 0.95rem;
+	}
+
+	.championat-stats {
+		font-size: 0.95rem;
+	}
+
+	.results {
+		margin-left: 2rem !important;
+	}
+
+	.table-text {
+		font-size: 0.95rem;
+	}
+}
+
+@media (min-width: 768px) {
+	/* to justify the text */
+	#competitions .col > h2 {
+		font-size: 1.5rem;
+	}
+
+	#competitions .col > p.lead {
+		font-size: 1.25rem;
+	}
+
+	#championat-header .col > h2 {
+		font-size: 1.5rem;
+	}
+
+	.championat-card-text {
+		font-size: 1rem;
+	}
+
+	.championat-text {
+		font-size: 1rem;
+	}
+
+	.championat-stats {
+		font-size: 1rem;
+	}
+
+	.results {
+		margin-left: 3rem !important;
+	}
+
+	.table td,
+	.table th {
+		padding: 0.5rem;
+	}
+
+	.table-text {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.table td,
+	.table th {
+		padding: 0.75rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.results {
+		margin-left: 4rem !important;
+	}
+}

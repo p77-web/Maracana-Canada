@@ -1,0 +1,138 @@
+/* CSS style for apropos.html page */
+
+#historique,
+#administration {
+	background-color: #fff;
+	height: auto;
+}
+
+#federation {
+	background-color: rgb(243, 243, 243);
+	height: auto;
+}
+
+#historique .col-12,
+#federation .col-12,
+#administration .col-12 {
+	margin: 0 auto;
+}
+
+/* to justify the text */
+#historique .col-12 > h2 {
+	border-bottom: 2px solid #f75056;
+	font-size: 1.15rem;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+/* to justify the text */
+#federation .col-12 > h2,
+#administration .col-12 > h2 {
+	border-bottom: 2px solid #f75056;
+	font-size: 1.15rem;
+	padding-bottom: 20px;
+}
+
+/* to justify the text */
+#historique .col-12 > p,
+#federation .col-12 > p,
+#administration .col-12 > p {
+	font-size: 0.85rem;
+	margin: 0 auto;
+	max-width: 96%;
+	text-indent: 2em;
+}
+
+.lead {
+	font-size: 1.15rem;
+}
+
+.card-header {
+	text-align: center;
+}
+
+.card-body > p {
+	font-size: 0.85rem;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	font-size: 0.85rem;
+	max-width: 85%;
+}
+
+.badge-light {
+	color: #212529;
+	background-color: #d6d7d8;
+}
+
+.badge {
+	font-size: 85%;
+}
+
+@media (max-width: 575px) {
+	.text-xs-center {
+		text-align: center;
+	}
+}
+
+@media (min-width: 576px) {
+	.lead {
+		font-size: 1.25rem;
+	}
+
+	/* to justify the text */
+	#historique .col-12 > h2 {
+		font-size: 1.25rem;
+	}
+
+	/* to justify the text */
+	#federation .col-12 > h2,
+	#administration .col-12 > h2 {
+		font-size: 1.25rem;
+		padding-left: 2rem;
+	}
+
+	/* to justify the text */
+	#historique .col-12 > p,
+	#federation .col-12 > p,
+	#administration .col-12 > p {
+		font-size: 0.95rem;
+	}
+
+	.card-body > p {
+		font-size: 0.95rem;
+	}
+
+	ul li {
+		font-size: 0.95rem;
+		max-width: 95%;
+	}
+}
+
+@media (min-width: 768px) {
+	/* to justify the text */
+	#historique .col-12 > h2,
+	#federation .col-12 > h2,
+	#administration .col-12 > h2 {
+		font-size: 1.5rem;
+	}
+
+	/* to justify the text */
+	#historique .col-12 > p,
+	#federation .col-12 > p,
+	#administration .col-12 > p {
+		font-size: 1rem;
+	}
+
+	.card-body > p {
+		font-size: 1rem;
+	}
+
+	ul li {
+		font-size: 1rem;
+	}
+}

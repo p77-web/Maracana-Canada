@@ -1,0 +1,384 @@
+/* CSS style for index.html page */
+
+.lead {
+	font-size: 1rem;
+}
+
+.money {
+	margin-top: 10px;
+}
+
+.medias {
+	margin-top: 10px;
+}
+
+#presentation {
+	background-color: #fff;
+	height: auto;
+}
+
+/* to make the used space only on 70% */
+#presentation .col {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* to justify the text */
+#presentation .col > h2 {
+	border-bottom: 2px solid #f75056;
+	font-size: 1.15rem;
+	padding-bottom: 20px;
+}
+
+/* to justify the text */
+#presentation .col > p {
+	font-size: 0.85rem;
+	margin: 0 auto;
+	max-width: 96%;
+	text-indent: 2em;
+}
+
+#presentation .col > p:last-child {
+	font-size: 1rem;
+}
+
+#lois_de_jeu_link {
+	color: #828282;
+}
+
+.fa-file-pdf {
+	color: #f00;
+	display: inline;
+}
+
+#agenda-header,
+#actualites-header {
+	background-color: rgb(243, 243, 243);
+	height: auto;
+}
+
+#agenda-header .col,
+#actualites-header .col {
+	margin: 0 auto;
+}
+
+/* to justify the text */
+#agenda-header .col > h2,
+#actualites-header .col > h2 {
+	border-bottom: 2px solid #f75056;
+	font-size: 1.15rem;
+	padding-bottom: 1.25rem;
+}
+
+#agenda,
+#actualites {
+	background-color: rgb(243, 243, 243);
+	height: auto;
+}
+
+#tournoi-img {
+	height: auto;
+	width: 250px;
+
+	transition: ease 0.5s;
+}
+
+#tournoi-img:hover,
+#tournoi-img:focus {
+	transform: scale(1.05);
+	transition: ease 0.5s;
+}
+
+.cup-card {
+	width: 250px;
+}
+
+.bg-custom {
+	background-color: #f00;
+}
+
+.countries {
+	font-size: 0.9rem;
+	margin-bottom: 0;
+}
+
+#galerie-header {
+	background-color: #fff;
+	height: auto;
+}
+
+#galerie-header .col {
+	margin: 0 auto;
+}
+
+/* to justify the text */
+#galerie-header .col > h2 {
+	border-bottom: 2px solid #f75056;
+	font-size: 1.15rem;
+	padding-bottom: 1.25rem;
+}
+
+.galerie-title {
+	max-width: 96%;
+	text-align: center;
+}
+
+#delegation-img {
+	height: auto;
+	opacity: 0;
+	width: 500px;
+}
+
+.galerie-text {
+	font-size: 0.85rem;
+	margin: 0 auto;
+	max-width: 96%;
+	text-indent: 2em;
+}
+
+#left-card {
+	opacity: 0;
+}
+
+#right-card {
+	opacity: 0;
+}
+
+.galerie-title-carousel {
+	text-align: center;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+	width: 10%;
+	opacity: 1;
+}
+
+.carousel-indicators li {
+	display: inline-block;
+	width: 15px;
+	height: 5px;
+	cursor: pointer;
+	border-radius: 25%;
+	background-color: #fff;
+}
+
+.carousel-indicators .active {
+	width: 15px;
+	height: 5px;
+	margin: 10px;
+	background-color: #f00;
+}
+
+.actualites div .card {
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+}
+
+.actualites div .card p:first-child {
+	text-align: center;
+}
+
+.nominations .card-body > img {
+	margin-top: -50px;
+}
+
+.nominations .img-thumbnail {
+	background-color: rgba(255, 0, 0, 0.7);
+	padding: 0.15rem;
+}
+
+.nominations .card {
+	background-color: #fff;
+	border: 2px solid rgba(255, 0, 0, 0.7);
+	border-radius: 5px;
+}
+
+.nominations-fimaa .card-body > img {
+	margin-top: -60px;
+}
+
+.nominations-fimaa .img-thumbnail {
+	background-color: rgba(0, 0, 255, 0.7);
+	padding: 0.15rem;
+}
+
+.nominations-fimaa .card {
+	background-color: #fff;
+	border: 2px solid rgba(0, 0, 255, 0.7);
+	border-radius: 5px;
+}
+
+.logo_FIMAA {
+	max-width: 10rem;
+	max-height: 10rem;
+	margin: 0 auto;
+}
+
+/* Media */
+@media (max-width: 575px) {
+	.text-xs-center {
+		text-align: center;
+	}
+
+	.nominations {
+		max-width: 375px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.nominations-fimaa {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 991px) {
+	.nominations-fimaa {
+		max-width: 425px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 576px) {
+	.lead {
+		font-size: 1.25rem;
+	}
+
+	/* to justify the text */
+	#presentation .col > h2 {
+		font-size: 1.25rem;
+		padding-left: 2rem;
+	}
+
+	/* to justify the text */
+	#presentation .col > p {
+		font-size: 0.95rem;
+	}
+
+	#presentation .col > p:last-child {
+		font-size: 1.1rem;
+	}
+
+	/* to justify the text */
+	#agenda-header .col > h2,
+	#actualites-header .col > h2 {
+		font-size: 1.25rem;
+		padding-left: 2rem;
+	}
+
+	#tournoi-img:hover {
+		transform: scale(1.05);
+		transition: ease 0.5s;
+	}
+
+	.cup-card {
+		width: 250px;
+	}
+
+	#galerie-header .col > h2 {
+		font-size: 1.25rem;
+		padding-left: 2rem;
+	}
+
+	.galerie-text {
+		font-size: 0.95rem;
+	}
+
+	.carousel-indicators {
+		bottom: 40%;
+	}
+
+	.carousel-indicators li {
+		width: 20px;
+	}
+
+	.carousel-indicators .active {
+		width: 20px;
+	}
+
+	.carousel-control-next,
+	.carousel-control-prev {
+		bottom: 25%;
+	}
+}
+
+@media (min-width: 768px) {
+	.countries {
+		font-size: 1rem;
+	}
+
+	/* to justify the text */
+	#presentation .col > h2 {
+		font-size: 1.5rem;
+	}
+
+	/* to justify the text */
+	#presentation .col > p {
+		font-size: 1rem;
+	}
+
+	#presentation .col > p:last-child {
+		font-size: 1.15rem;
+	}
+
+	#agenda-header .col > h2,
+	#actualites-header .col > h2 {
+		font-size: 1.5rem;
+	}
+
+	.cup-card {
+		width: 300px;
+	}
+
+	#tournoi-img {
+		width: 300px;
+
+		transition: ease 0.5s;
+	}
+
+	#tournoi-img:hover {
+		transform: scale(1.05);
+		transition: ease 0.5s;
+	}
+
+	#galerie-header .col > h2 {
+		font-size: 1.5rem;
+	}
+
+	.galerie-text {
+		font-size: 1rem;
+	}
+
+	.carousel-indicators {
+		bottom: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.cup-card {
+		width: 350px;
+	}
+
+	#tournoi-img {
+		width: 350px;
+		transition: ease 0.5s;
+	}
+
+	#tournoi-img:hover {
+		transform: scale(1.05);
+		transition: ease 0.5s;
+	}
+
+	.carousel-indicators {
+		bottom: 50%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.carousel-indicators {
+		bottom: 40%;
+	}
+}

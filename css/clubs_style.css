@@ -1,0 +1,159 @@
+/* CSS style for clubs.html page */
+
+.lead {
+	font-size: 1rem;
+}
+
+#clubs {
+	background-color: #fff;
+	height: auto;
+}
+
+#clubs-header {
+	background-color: #fff;
+	height: auto;
+}
+
+#clubs-header .col {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#clubs-header .col > h2 {
+	border-bottom: 2px solid #f75056;
+	font-size: 1.15rem;
+	margin: 0 auto;
+	padding-bottom: 1.25rem;
+}
+
+.clubs-card-text {
+	font-size: 0.9rem;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.clubs-text {
+	font-size: 0.9rem;
+	margin: 0 auto;
+	max-width: 90%;
+	text-indent: 2em;
+}
+
+.clubs-stats {
+	font-size: 0.9rem;
+	text-indent: 1em;
+}
+
+.contact {
+	padding-left: 1.5rem !important;
+}
+
+.teams-card {
+	background-color: transparent;
+	border: none;
+}
+
+.teams-card .card-footer {
+	background-color: transparent;
+	border: none;
+}
+
+caption {
+	caption-side: top;
+}
+
+/* Media */
+@media (max-width: 575px) {
+	.text-xs-center {
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (min-width: 576px) {
+	.lead {
+		font-size: 1.25rem;
+	}
+
+	/* to justify the text */
+	#competitions .col > h2 {
+		font-size: 1.25rem;
+		padding-left: 2rem;
+	}
+
+	/* to justify the text */
+	#competitions .col > p {
+		font-size: 1rem;
+	}
+
+	#competitions .col > p.lead {
+		font-size: 1.15rem;
+	}
+
+	/* to justify the text */
+	#clubs-header .col > h2 {
+		font-size: 1.25rem;
+		padding-left: 2rem;
+	}
+
+	.clubs-card-text {
+		font-size: 0.95rem;
+	}
+
+	.clubs-text {
+		font-size: 0.95rem;
+	}
+
+	.clubs-stats {
+		font-size: 0.95rem;
+	}
+
+	.contact {
+		padding-left: 2rem !important;
+	}
+}
+
+@media (min-width: 768px) {
+	/* to justify the text */
+	#competitions .col > h2 {
+		font-size: 1.5rem;
+	}
+
+	#competitions .col > p.lead {
+		font-size: 1.25rem;
+	}
+
+	#clubs-header .col > h2 {
+		font-size: 1.5rem;
+	}
+
+	.clubs-card-text {
+		font-size: 1rem;
+	}
+
+	.clubs-text {
+		font-size: 1rem;
+	}
+
+	.clubs-stats {
+		font-size: 1rem;
+	}
+
+	.contact {
+		padding-left: 2.5rem !important;
+	}
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+	.contact {
+		margin-left: 3rem !important;
+	}
+}
