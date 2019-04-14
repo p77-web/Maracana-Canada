@@ -57,7 +57,7 @@ $request_body = json_decode('{
 	$sg = new \SendGrid($apiKey);
 
 	$response = $sg->client->mail()->send()->post($request_body);
-	// echo $response->statusCode();
+	echo $response->statusCode();
 	// echo $response->body();
 	// echo $response->headers();
 
@@ -142,5 +142,5 @@ $request_body = json_decode('{
 //   	echo '<body onLoad="alert(\'merci de remplir toutes les cases...\')">';
 // 	echo '<meta http-equiv="refresh" content="0;URL=contact.html">';
 // }
-// echo '<meta http-equiv="refresh" content="0;URL=contact.html">';
+echo '<meta http-equiv="refresh" content="0;URL=contact.html">';
 ?>
