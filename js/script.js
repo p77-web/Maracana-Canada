@@ -17,23 +17,7 @@ if (window.innerHeight < 600) {
 }
 
 window.addEventListener('scroll', function() {
-	console.log('fadePoint', fadePoint);
-
-	console.log(
-		'leftCardTitle.scrollTop',
-		leftCardTitle.getBoundingClientRect().top
-	);
-	console.log('leftCardTitle', window.innerHeight);
-	// console.log('header', header.offsetHeight);
-
 	if (galerie.offsetTop <= window.scrollY + fadePoint) {
-		// console.log('Middle');
-
-		// delegationPictures.setAttribute(
-		// 	'style',
-		// 	'display: block; MozTransition: all 0.5s;'
-		// );
-
 		delegationPictures.style.opacity = '1';
 		delegationPictures.style.WebkitTransition = '2s';
 		delegationPictures.style.MozTransition = '2s';
@@ -45,12 +29,6 @@ window.addEventListener('scroll', function() {
 		leftCard.style.MozTransition = '3s';
 	}
 
-	// if (leftCardTitle.getBoundingClientRect().top > window.innerHeight) {
-	// 	leftCard.style.opacity = '0';
-	// 	leftCard.style.WebkitTransition = '3s';
-	// 	leftCard.style.MozTransition = '3s';
-	// }
-
 	if (
 		rightCardTitle.getBoundingClientRect().top <=
 		window.innerHeight - 200
@@ -59,10 +37,4 @@ window.addEventListener('scroll', function() {
 		rightCard.style.WebkitTransition = '3s';
 		rightCard.style.MozTransition = '3s';
 	}
-
-	// if (rightCardTitle.getBoundingClientRect().top > window.innerHeight) {
-	// 	rightCard.style.opacity = '0';
-	// 	rightCard.style.WebkitTransition = '3s';
-	// 	rightCard.style.MozTransition = '3s';
-	// }
 });

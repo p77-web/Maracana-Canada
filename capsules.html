@@ -64,7 +64,7 @@
 						/>
 					</div>
 
-					<div id="message-official-site" class="my-3">
+					<div class="my-3 translateText" id="message-official-site" key="official">
 						Site officiel de la Fédération Canadienne de Maracana
 					</div>
 
@@ -89,53 +89,59 @@
 									<li class="nav-item mr-2 myNavbarLink">
 										<a
 											href="index.html"
-											class="nav-link myNavbarLinkText"
-											>Accueil
+											class="nav-link myNavbarLinkText translateText"
+											key="home"
+											>
 											<span class="sr-only"
 												>(curent)</span
-											></a
+											>Accueil</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="apropos.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="about"
 											>À propos</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="capsules.html"
-											target="_blank"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="rules"
 											>Lois du jeu</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="conseiladmin.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="admistration"
 											>Admistration</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="competitions.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="competitions"
 											>Compétitions</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="clubs.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="clubs"
 											>Clubs</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="contact.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="contact"
 											>Contact</a
 										>
 									</li>
@@ -388,7 +394,7 @@
 							<span class="badge badge-pill badge-danger"
 								>Leçon 8</span
 							>
-							LE DEGAGEMENT
+							LE DÉGAGEMENT
 						</p>
 						<p class="text-justify mb-1">
 							Le dégagement, qui s'apparente au coup de pied de but au soccer, après une sortie de la balle du terrain par la ligne de but à l'extérieur des poteaux, se joue par un seul joueur dans la zone de but et dans les cinq secondes à partir du retour de la balle. Les joueurs de l'équipe adverse doivent se tenir en dehors de la surface des neuf mètres jusqu'à ce que la balle franchisse la ligne des six mètres. La première passe ne doit pas dépasser la ligne médiane. 
@@ -440,7 +446,7 @@
 			<div class="container pt-4">
 				<div class="row">
 					<div class="col text-center">
-						<p class="lead">Fédération Canadienne de Maracana</p>
+						<p class="lead translateText" key="footer">Fédération Canadienne de Maracana</p>
 					</div>
 				</div>
 				<div class="row">
@@ -453,6 +459,16 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Language switcher -->
+		<div class="text-center" id="language">
+			<a
+				class="translate translateText"
+				id="languageSwitcher"
+				key="buttonLanguage"
+				onClick="changeLanguage()"
+			></a>
+		</div>
 
 		<!-- Scroll to top button -->
 		<div id="scroll-football">
@@ -490,6 +506,7 @@
 			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 			crossorigin="anonymous"
 		></script>
+		<script src="js/header_footer_language.js"></script>
 		<script>
 			// Get the current year for the copyright
 			$('#year').text(new Date().getFullYear());

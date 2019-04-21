@@ -64,7 +64,7 @@
 						/>
 					</div>
 
-					<div id="message-official-site" class="my-3">
+					<div class="my-3 translateText" id="message-official-site" key="official">
 						Site officiel de la Fédération Canadienne de Maracana
 					</div>
 
@@ -89,58 +89,65 @@
 									<li class="nav-item mr-2 myNavbarLink">
 										<a
 											href="index.html"
-											class="nav-link myNavbarLinkText"
-											>Accueil
+											class="nav-link myNavbarLinkText translateText"
+											key="home"
+											>
 											<span class="sr-only"
 												>(curent)</span
-											></a
+											>Accueil</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="apropos.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="about"
 											>À propos</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="capsules.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="rules"
 											>Lois du jeu</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="conseiladmin.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="admistration"
 											>Admistration</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="competitions.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="competitions"
 											>Compétitions</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="clubs.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="clubs"
 											>Clubs</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="contact.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="contact"
 											>Contact</a
 										>
 									</li>
 								</ul>
 							</div>
-						</div>
+						</div>									
 					</nav>
 				</div>
 			</div>
@@ -845,7 +852,7 @@
 			<div class="container pt-4">
 				<div class="row">
 					<div class="col text-center">
-						<p class="lead">Fédération Canadienne de Maracana</p>
+						<p class="lead translateText" key="footer">Fédération Canadienne de Maracana</p>
 					</div>
 				</div>
 				<div class="row">
@@ -859,8 +866,18 @@
 			</div>
 		</footer>
 
+		<!-- Language switcher -->
+		<div class="text-center" id="language">
+			<a
+				class="translate translateText"
+				id="languageSwitcher"
+				key="buttonLanguage"
+				onClick="changeLanguage()"
+			></a>
+		</div>
+
 		<!-- Scroll to top button -->
-		<div id="scroll-football">
+		<div id="scroll-arrow">
 			<a href="" class="scroll-top" data-scroll="up">
 				<i class="fas fa-caret-up fa-2x"></i>
 			</a>
@@ -884,23 +901,24 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="js/script.js"></script>
+		<script src="js/header_footer_language.js"></script>
 		<script>
 			// Get the current year for the copyright
 			$('#year').text(new Date().getFullYear());
 
 			$(window).scroll(function() {
 				if ($(this).scrollTop() > 100) {
-					$('#scroll-football').fadeIn();
+					$('#scroll-arrow').fadeIn();
 				} else {
-					$('#scroll-football').fadeOut();
+					$('#scroll-arrow').fadeOut();
 				}
 			});
 
 			// init scrollspy
-			$('body').scrollspy({ target: '#scroll-football' });
+			$('body').scrollspy({ target: '#scroll-arrow' });
 
 			// add smooth scrolling
-			$('#scroll-football').on('click', function(e) {
+			$('#scroll-arrow').on('click', function(e) {
 				// check for a hash value
 				if (this.hash !== '') {
 					// prevent default behavior

@@ -30,7 +30,11 @@
 			rel="stylesheet"
 		/>
 
-		<link rel="shortcut icon" type="image/png" href="images/icon16x16.png"/>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="images/icon16x16.png"
+		/>
 
 		<link rel="stylesheet" href="css/header_footer.css" />
 		<link rel="stylesheet" href="css/apropos_style.css" />
@@ -60,7 +64,11 @@
 						/>
 					</div>
 
-					<div id="message-official-site" class="my-3">
+					<div
+						class="my-3 translateText"
+						id="message-official-site"
+						key="official"
+					>
 						Site officiel de la Fédération Canadienne de Maracana
 					</div>
 
@@ -85,52 +93,58 @@
 									<li class="nav-item mr-2 myNavbarLink">
 										<a
 											href="index.html"
-											class="nav-link myNavbarLinkText"
-											>Accueil
-											<span class="sr-only"
-												>(curent)</span
-											></a
+											class="nav-link myNavbarLinkText translateText"
+											key="home"
+										>
+											<span class="sr-only">(curent)</span
+											>Accueil</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="apropos.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="about"
 											>À propos</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="capsules.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="rules"
 											>Lois du jeu</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="conseiladmin.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="admistration"
 											>Admistration</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="competitions.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="competitions"
 											>Compétitions</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="clubs.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="clubs"
 											>Clubs</a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="contact.html"
-											class="nav-link myNavbarLinkText"
+											class="nav-link myNavbarLinkText translateText"
+											key="contact"
 											>Contact</a
 										>
 									</li>
@@ -196,7 +210,7 @@
 									Cocody à Abidjan
 								</p>
 							</div>
-							<div class="card-body">				
+							<div class="card-body">
 								<p class="card-text text-justify galerie-text">
 									Une fois le cursus universitaire complété,
 									ces désormais fonctionnaires, cadres,
@@ -382,11 +396,13 @@
 						<ul>
 							<li class="text-justify mb-1">
 								<span class="badge badge-light">1</span>
-								Le Conseil d’Administration a un rôle de conseil consultatif pour le Comité Exécutif.
+								Le Conseil d’Administration a un rôle de conseil
+								consultatif pour le Comité Exécutif.
 							</li>
 							<li class="text-justify mb-1">
 								<span class="badge badge-light">2</span>
-								Il élabore les grandes stratégies pour la conduite de Maracana Canada.
+								Il élabore les grandes stratégies pour la
+								conduite de Maracana Canada.
 							</li>
 							<li class="text-justify mb-1">
 								<span class="badge badge-light">3</span>
@@ -394,19 +410,24 @@
 							</li>
 							<li class="text-justify mb-1">
 								<span class="badge badge-light">4</span>
-								Il participe à l’élaboration du programme d’activités du Comité Exécutif.
+								Il participe à l’élaboration du programme
+								d’activités du Comité Exécutif.
 							</li>
 							<li class="text-justify mb-1">
 								<span class="badge badge-light">5</span>
-								Il participe aux réunions du Comité Exécutif élargi.
+								Il participe aux réunions du Comité Exécutif
+								élargi.
 							</li>
 							<li class="text-justify mb-1">
 								<span class="badge badge-light">6</span>
-								Il participe aux réunions d’urgence convoquées par le président sans droit de vote pour les non-membres du Comité Exécutif.
+								Il participe aux réunions d’urgence convoquées
+								par le président sans droit de vote pour les
+								non-membres du Comité Exécutif.
 							</li>
 							<li class="text-justify mb-1">
 								<span class="badge badge-light">7</span>
-								Le Conseil d’Administration décide de la date et du lieu de l’Assemblée Générale.
+								Le Conseil d’Administration décide de la date et
+								du lieu de l’Assemblée Générale.
 							</li>
 						</ul>
 					</div>
@@ -419,7 +440,9 @@
 			<div class="container pt-4">
 				<div class="row">
 					<div class="col text-center">
-						<p class="lead">Fédération Canadienne de Maracana</p>
+						<p class="lead translateText" key="footer">
+							Fédération Canadienne de Maracana
+						</p>
 					</div>
 				</div>
 				<div class="row">
@@ -433,6 +456,16 @@
 			</div>
 		</footer>
 
+		<!-- Language switcher -->
+		<div class="text-center" id="language">
+			<a
+				class="translate translateText"
+				id="languageSwitcher"
+				key="buttonLanguage"
+				onClick="changeLanguage()"
+			></a>
+		</div>
+
 		<!-- Scroll to top button -->
 		<div id="scroll-football">
 			<a href="#" class="scroll-top" data-scroll="up">
@@ -440,14 +473,13 @@
 			</a>
 		</div>
 		<div class="d-none d-sm-flex">
-			<a id="fb-media"
+			<a
+				id="fb-media"
 				href="http://www.facebook.com/maracanacanada"
 				target="_blank"
 			>
 				<span
-					><i
-						class="fab fa-facebook-f fa-2x text-primary"
-					></i
+					><i class="fab fa-facebook-f fa-2x text-primary"></i
 				></span>
 			</a>
 		</div>
@@ -469,6 +501,7 @@
 			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 			crossorigin="anonymous"
 		></script>
+		<script src="js/header_footer_language.js"></script>
 		<script>
 			// Get the current year for the copyright
 			$('#year').text(new Date().getFullYear());
