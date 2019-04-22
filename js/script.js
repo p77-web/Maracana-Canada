@@ -23,18 +23,18 @@ window.addEventListener('scroll', function() {
 		delegationPictures.style.MozTransition = '2s';
 	}
 
-	if (leftCardTitle.getBoundingClientRect().top <= window.innerHeight - 200) {
-		leftCard.style.opacity = '1';
-		leftCard.style.WebkitTransition = '3s';
-		leftCard.style.MozTransition = '3s';
-	}
+	// if (leftCardTitle.getBoundingClientRect().top <= window.innerHeight - 200) {
+	// 	leftCard.style.opacity = '1';
+	// 	leftCard.style.WebkitTransition = '3s';
+	// 	leftCard.style.MozTransition = '3s';
+	// }
 
-	if (
-		rightCardTitle.getBoundingClientRect().top <=
-		window.innerHeight - 200
-	) {
-		rightCard.style.opacity = '1';
-		rightCard.style.WebkitTransition = '3s';
-		rightCard.style.MozTransition = '3s';
-	}
+	// if (
+	// 	rightCardTitle.getBoundingClientRect().top <=
+	// 	window.innerHeight - 200
+	// ) {
+	// 	rightCard.style.opacity = '1';
+	// 	rightCard.style.WebkitTransition = '3s';
+	// 	rightCard.style.MozTransition = '3s';
+	// }
 });
