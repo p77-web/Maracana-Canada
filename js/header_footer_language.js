@@ -53,8 +53,6 @@ window.addEventListener(
 		// get the browser default language
 		let browserLanguage = getBrowserLanguage();
 
-		console.log('refresh');
-
 		textToChange.forEach(text => {
 			// check if the language object has a property like the class' key
 			if (
@@ -73,8 +71,6 @@ window.addEventListener(
 function changeLanguage() {
 	// get the classes that contain the text to change
 	let textToChange = document.querySelectorAll('.translateText');
-
-	console.log('button');
 
 	let buttonLanguage = getButtonLanguage();
 	// console.log(buttonLanguage);
