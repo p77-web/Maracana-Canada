@@ -16,6 +16,8 @@ if (window.innerHeight < 600) {
 	fadePoint = 700;
 }
 
+console.log('testing');
+
 window.addEventListener('scroll', function() {
 	console.log('fadePoint', fadePoint);
 
