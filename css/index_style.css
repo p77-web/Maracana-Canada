@@ -139,6 +139,10 @@
 	opacity: 0;
 }
 
+#bottom-card {
+	opacity: 0;
+}
+
 .galerie-title-carousel {
 	text-align: center;
 }
