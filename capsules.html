@@ -44,7 +44,7 @@
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
 		<!-- Header with carousel -->
-		<header id="home-section">
+		<header id="header-section">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
 					<div class="d-inline">
@@ -65,12 +65,25 @@
 					</div>
 
 					<div class="my-3 translateText" id="message-official-site" key="official">
-						Site officiel de la Fédération Canadienne de Maracana
+						Site officiel
+					</div>
+
+					<div class="col-xs-12 d-flex mb-2">
+						<p class="lead pr-3 align-self-center" id="money">Faites un don</p>
+						<a
+							href="https://www.gofundme.com/support-maracana-canada-to-ci-2018"
+							target="_blank"
+							class="align-self-center"
+						>
+							<i
+								class="fas fa-dollar-sign fa-2x text-success"
+							></i>
+						</a>
 					</div>
 
 					<!-- Navigation -->
 					<nav
-						class="navbar navbar-expand-sm navbar-dark myNavbarStyle"
+						class="navbar navbar-expand-md navbar-dark navigation"
 						id="main-nav"
 					>
 						<div class="container navbar-container">
@@ -86,406 +99,462 @@
 								id="navbarCollapse"
 							>
 								<ul class="navbar-nav mx-auto menu-container">
-									<li class="nav-item mr-2 myNavbarLink">
+									<li class="nav-item mr-2">
 										<a
 											href="index.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="home"
 											>
 											<span class="sr-only"
 												>(curent)</span
-											>Accueil</a
+											></a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="apropos.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="about"
-											>À propos</a
+											></a
 										>
 									</li>
-									<li class="nav-item mr-2">
+									<li class="nav-item mr-2 dropdown">
 										<a
-											href="capsules.html"
-											class="nav-link myNavbarLinkText translateText"
+											href="#"
+											class="nav-link translateText nav-link--active"
+											id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
 											key="rules"
-											>Lois du jeu</a
-										>
+											>
+										</a>
+										<div class="dropdown-content" aria-labelledby="navbarDropdown">
+											<a href="Lois_du_jeu.pdf" class="translateText" target="_blank" key="laws"></a>
+											<a href="capsules.html" class="translateText" key="infosheet"></a>
+										</div>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="conseiladmin.html"
-											class="nav-link myNavbarLinkText translateText"
-											key="admistration"
-											>Admistration</a
+											class="nav-link translateText"
+											key="administration"
+										></a
 										>
 									</li>
-									<li class="nav-item mr-2">
+									<li class="nav-item mr-2 dropdown">
 										<a
-											href="competitions.html"
-											class="nav-link myNavbarLinkText translateText"
+											href="#"
+											class="nav-link translateText nav-link--active"
+											id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
 											key="competitions"
-											>Compétitions</a
-										>
+										></a>	
+										<ul class="navbar-nav mx-auto menu-container">
+											<div class="dropdown-content" aria-labelledby="navbarDropdown">
+												<li class="nav-item">
+													<a href="#" class="translateText" key="national"></a>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="championship"></a>
+													<ul class="navbar-nav mx-auto menu-container">
+														<div class="dropdown-content dropdown-content__submenu-championship--position" aria-labelledby="navbarDropdown">
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship17"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship18"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship19"></a>
+															</li>
+														</div>
+													</ul>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="cup"></a>
+													<ul class="navbar-nav mx-auto menu-container">
+														<div class="dropdown-content dropdown-content__submenu-cup--position" aria-labelledby="navbarDropdown">
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup17"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup18"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup19"></a>
+															</li>
+														</div>
+													</ul>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="competitions.html" class="translateText" id="navbarDropdown" key="tournament"></a>
+												</li>
+												<div class="dropdown-divider"></div>
+												<li class="nav-item">
+													<a href="#" class="translateText" key="international"></a>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="competitions.html" class="translateText" id="navbarDropdown" key="">CAN</a>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="competitions.html" class="translateText" id="navbarDropdown" key="world"></a>
+												</li>
+											</div>	
+										</ul>	
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="clubs.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="clubs"
-											>Clubs</a
+											></a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="contact.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="contact"
-											>Contact</a
+											></a
 										>
+									</li>
+									<li class="nav-item mr-2">
+										<a href="http://www.facebook.com/maracanacanada" target="_blank" class="nav-link translateText"
+										>
+											<span
+												><i
+													class="fab fa-facebook-f"
+												></i
+											></span>
+										</a>
 									</li>
 								</ul>
 							</div>
 						</div>
+						<div class="text-center" id="language">
+							<a
+								class="translate translateText"
+								id="languageSwitcher"
+								key="buttonLanguage"
+								onClick="changeLanguage()"
+							></a>
+						</div>									
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<!-- Infos section -->
-		<section id="capsules">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 py-3">
+		<div class="main">
+			<div class="main__wrapper">		
+
+				<!-- Page navigation section -->
+				<section id="page-nav">
+					<div class="col-12 text-center">
+						<a
+							id="game-rules"
+							href="Lois_du_jeu.pdf"
+							target="_blank"
+							>Lois du jeu<i class="far fa-file-pdf ml-2"></i>
+						</a>
+					</div>
+				</section>
+
+				<!-- Infosheet header section -->
+				<section id="infosheet-header" class="mt-4">
+					<div class="col py-3">
 						<h2 class="mb-3 text-xs-center">
 							Capsules
 						</h2>
 					</div>
-					<div class="col-12 py-3">
-						<p class="text-right mr-5">
-							<a
-								id="lois_de_jeu_link"
-								href="Lois_du_jeu.pdf"
-								target="_blank"
-								>Lois du jeu<i class="far fa-file-pdf ml-2"></i>
-							</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+				</section>
 
-		<!-- Infos section -->
-		<section id="lessons">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 mb-5">
-						<p class="lead mb-3 lesson-title font-weight-bold">
-							<span class="badge badge-pill badge-danger"
-								>Leçon 1</span
-							>
-							LE TERRAIN
-						</p>
-						<div class="col image-center mb-3">
-							<img
-								class="img-fluid"
-								src="images/terrain.png"
-								alt="Field"
-							/>
+				<!-- Lessons section -->
+				<section id="lessons">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 mb-5">
+								<p class="lead mb-3 lesson-title font-weight-bold">
+									<span class="badge badge-pill badge-danger"
+										>Leçon 1</span
+									>
+									LE TERRAIN
+								</p>
+								<div class="col image-center mb-3">
+									<img
+										class="img-fluid"
+										src="images/terrain.png"
+										alt="Field"
+									/>
+								</div>
+								<p class="text-justify mb-1">
+									Le terrain de jeu est un rectangle de trente-huit
+									(38) à quarante-quatre (44) mètres de long sur
+									vingt-un (21) à vingt-deux (22) mètres de large. Sur
+									chaque largeur, il est muni d'un but de 3 mètres sur
+									2 mètres de hauteur qui sont couverts par deux
+									demi-cercles, dont l'un, à trait continu, d'un rayon
+									de 6 mètres (c'est la zone de but) et l'autre, à
+									trait discontinu, d'un rayon de 9 mètres (c'est la
+									zone de 9 mètres).
+								</p>
+							</div>
+							<div class="col-12 mb-5">
+								<p class="lead mb-3 lesson-title font-weight-bold">
+									<span class="badge badge-pill badge-danger"
+										>Leçon 2</span
+									>
+									LE BALLON
+								</p>
+								<div class="col image-center mb-3">
+									<img
+										class="img-fluid"
+										id="ballon"
+										src="images/Ballonssfond.png"
+										alt="Ball"
+									/>
+								</div>
+								<p class="text-justify mb-1">
+									Le ballon homologué pour les compétitions de
+									maracana est un ballon de soccer de taille quatre.
+								</p>
+								<p class="text-justify mb-1">
+									Lorsqu'il éclate ou se dégonfle au cours du jeu, la
+									partie est interrompue. Elle reprend avec un nouveau
+									ballon à l'endroit où l'ancien s'est brisé sauf dans
+									la surface de but. Dans ce cas, le jeu reprendra sur
+									la ligne de 9 mètres.
+								</p>
+							</div>
+							<div class="col-12 mb-5">
+								<p class="lead mb-3 lesson-title font-weight-bold">
+									<span class="badge badge-pill badge-danger"
+										>Leçon 3</span
+									>
+									LE NOMBRE DE JOUEURS
+								</p>
+								<p class="text-justify mb-1">
+									La partie sera disputée entre deux équipes
+									comprenant chacune six joueurs au maximum. Aucun
+									match ne peut avoir lieu si l'une des équipes
+									présente moins de quatre joueurs.
+								</p>
+								<p class="text-justify mb-1">
+									Dans tout match disputé dans le cadre de
+									compétitions officielles, il est possible de
+									recourir à quatre remplacements au maximum.
+								</p>
+								<p class="text-justify mb-1">
+									Une équipe est autorisée à faire jouer tous ses
+									remplaçants autant de fois qu'elle le souhaite et à
+									tout moment de la partie, pourvu que celle-ci
+									n'évolue pas à plus de six joueurs et qu'elle
+									respecte la procédure de remplacement.
+								</p>
+							</div>
+							<div class="col-12 mb-5">
+								<p class="lead mb-3 lesson-title font-weight-bold">
+									<span class="badge badge-pill badge-danger"
+										>Leçon 4</span
+									>
+									LA PROCEDURE DE REMPLACEMENT
+								</p>
+								<p class="text-justify mb-1">
+									Tout remplaçant doit être inscrit préalablement sur
+									la feuille de match.
+								</p>
+								<p class="text-justify mb-1">
+									La partie n'est pas interrompue au moment des
+									remplacements.
+								</p>
+								<p class="text-justify mb-1">
+									Le remplacement s'effectue dans la zone prévue à cet
+									effet dans chaque camp. Le substitut ne peut
+									pénétrer sur le terrain avant que son coéquipier
+									n'en sorte.
+								</p>
+								<p class="text-justify mb-1">
+									Lorsque cette procédure n'est pas respectée, le
+									joueur entrant écope d'un carton jaune. De plus, un
+									coup franc est accordé à l'équipe adverse s'il
+									jouait le ballon.
+								</p>
+							</div>
+							<div class="col-12 mb-5">
+								<p class="lead mb-3 lesson-title font-weight-bold">
+									<span class="badge badge-pill badge-danger"
+										>Leçon 5</span
+									>
+									LES ARBITRES
+								</p>
+								<p class="text-justify mb-1">
+									Deux arbitres titulaires, un arbitre suppléant, un
+									commissaire au match et un superviseur ont la charge
+									d'officier un match.
+								</p>
+								<p class="text-justify mb-1">
+									Les arbitres titulaires qui veillent à l'application
+									des lois du jeu, sont compléementaires et solidaires
+									des décisions prises en cours de partie.
+								</p>
+								<p class="text-justify mb-1">
+									L'arbitre suppléant est chargé de comptabiliser
+									toutes les fautes commises par chacune des équipes.
+								</p>
+								<p class="text-justify mb-1">
+									Le commissaire au match veille au bon déroulement
+									des rencontres, à l'application des lois du jeu par
+									les arbitres et décide de la suspension ou de
+									l'interruption d'une partie. Il donne le signal du
+									coup d'envoi, de la reprise du jeu et de la fin de
+									la partie. Le cas échéant, il peut se substituer à
+									l'arbitre suppléant et même à un titulaire.
+								</p>
+								<p class="text-justify mb-1">
+									Le superviseur est en charge du bon déroulement de
+									la compétition. En accord avec le commissaire au
+									match, il donne son avis sur la suspension ou
+									l'interruption d'une rencontre.
+								</p>
+							</div>
+							<div class="col-12 mb-5">
+								<p class="lead mb-3 lesson-title font-weight-bold">
+									<span class="badge badge-pill badge-danger"
+										>Leçon 6</span
+									>
+									LES CARTONS
+								</p>
+								<div class="col image-center mb-3">
+									<img
+										class="img-fluid game-cards"
+										src="images/arbitre_MK_jaune.png"
+										alt="Yellow card"
+									/>
+								</div>
+								<p class="text-justify mb-3">
+									Jaune : signale l'expulsion d'un joueur pour deux
+									(02) minutes. Il est suivi d'un carton rouge si
+									c'est le deuxième jaune reçu par le joueur au cours
+									du même match, l'excluant ainsi pour ce match ainsi
+									que pour le suivant.
+								</p>
+								<div class="col image-center mb-3">
+									<img
+										class="img-fluid game-cards"
+										src="images/arbitre_MK_rouge.png"
+										alt="Red card"
+									/>
+								</div>
+								<p class="text-justify mb-3">
+									Rouge : Exclusion du joueur pour trois (03) matchs
+									incluant celui en cours, s'il est direct. Sinon ce
+									sera la même suspension que suite à deux cartons
+									jaunes reçus au cours d'un même match.
+								</p>
+								<div class="col image-center mb-3">
+									<img
+										class="img-fluid game-cards"
+										src="images/arbitre_MK_bleu.png"
+										alt="Blue card"
+									/>
+								</div>
+								<p class="text-justify mb-3">
+									Bleu : Indique une faute de catégorie C qui est
+									cumulative. Trois (03) fautes de ce genre conduisent
+									à un tir de penalité, au profit de l'équipe adverse,
+									à partir de sa zonne des 9 mètres.
+								</p>
+							</div>
+							<div class="col-12 mb-5">
+								<p class="lead mb-3 lesson-title font-weight-bold">
+									<span class="badge badge-pill badge-danger"
+										>Leçon 7</span
+									>
+									L'ENGAGEMENT
+								</p>
+								<p class="text-justify mb-1">
+									L'engagement concerne les coups d'envoi et la reprise du jeu après un but accordé. 
+								</p>
+								<p class="text-justify mb-1">
+									Le coup d'envoi, exécuté au centre du terrain, marque le début de chaque période lors d'une partie. Au coup de sifflet de l'arbitre, l'un des joueurs de l'équipe ayant le bénéfice du coup d'envoi, passe la balle à son adversaire le plus proche qui la lui redonne aussitôt sans lui mettre aucune pression (Fair-play). Il en est de même après chaque but marqué.
+								</p>
+								<p class="text-justify mb-1">
+									En cas d'infraction à cette règle, le coup d'envoi est repris et le joueur fautif écopera de sanctions graduelles.
+								</p>
+							</div>
+							<div class="col-12 mb-5">
+								<p class="lead mb-3 lesson-title font-weight-bold">
+									<span class="badge badge-pill badge-danger"
+										>Leçon 8</span
+									>
+									LE DÉGAGEMENT
+								</p>
+								<p class="text-justify mb-1">
+									Le dégagement, qui s'apparente au coup de pied de but au soccer, après une sortie de la balle du terrain par la ligne de but à l'extérieur des poteaux, se joue par un seul joueur dans la zone de but et dans les cinq secondes à partir du retour de la balle. Les joueurs de l'équipe adverse doivent se tenir en dehors de la surface des neuf mètres jusqu'à ce que la balle franchisse la ligne des six mètres. La première passe ne doit pas dépasser la ligne médiane. 
+								</p>
+								<p class="text-justify mb-1">
+									Un coup franc est sifflé sur sa ligne des neuf mètres contre l'équipe qui se dégage si la première passe dépasse la ligne centrale ou si cette équipe a plus d'un joueur dans sa surface de but. Le coup franc sera plutôt sifflé sur la ligne des neuf mètres de l'équipe adverse si ses joueurs ne respectent pas leur limite. 
+								</p>
+							</div>
+							<div class="col-12 mb-5">
+								<p class="lead mb-3 lesson-title font-weight-bold">
+									<span class="badge badge-pill badge-danger"
+										>Leçon 9</span
+									>
+									LE BUT MARQUÉ
+								</p>
+								<p class="text-justify mb-1">
+									Un but est marqué, en cours de jeu, lorsque le ballon a entièrement dépassé la ligne de but entre les montants et sous la barre transversale de but et si et seulement si le joueur qui a touché (en dehors des mains) le ballon en dernier lieu se trouve dans la surface de but. Un but peut être refusé par l’un des arbitres, s’il estime que le joueur qui marque, shoote le ballon avec violence (force), sur ou au dessus de la zone pelvienne, d’un ou plusieurs joueurs du camp adverse, situés sur la trajectoire du ballon. 
+								</p>
+								<p class="text-justify mb-1">
+									Le penalty exécuté n’est considéré comme but marqué que si le ballon franchit entièrement la ligne de but, entre les montants des buts, soit directement sans avoir préalablement touché le sol, soit en rebondissant une seule fois dans la surface de but. Un coup de pied de réparation ou penalty est donné au point de réparation (le centre de la ligne médiane) lorsqu’un joueur de l’équipe défendante manie le ballon dans la surface de but. Avant l’exécution de la sanction, tous les joueurs, devront se tenir sur la ligne médiane (dans la moitié de terrain réservée à l’équipe qui a le bénéfice de la faute) à 3m du ballon. 
+								</p>
+							</div>
+							<div class="col-12 mb-5">
+								<p class="lead mb-3 lesson-title font-weight-bold">
+									<span class="badge badge-pill badge-danger"
+										>Leçon 10</span
+									>
+									LES PROTOCOLES
+								</p>
+								<p class="text-justify mb-1">
+									Le protocole d'entame de match.
+								</p>
+								<p class="text-justify mb-1">
+									Les deux (02) équipes pénètrent sur l’aire de jeu précédées des arbitres titulaires et des capitaines. Tous se disposent au niveau du point d’engagement, parallèlement à la ligne de touche, face à la table du commissaire aux matchs ou à la loge des officiels. Le commissaire au match les rejoint et se tient sur le point d’engagement ; la paire arbitrale puis l’équipe visiteuse se positionnent à sa droite, tandis que celle qui reçoit se range à sa gauche. L’équipe visiteuse serre la main des officiels et des adversaires ; ensuite l’équipe qui reçoit salue les officiels. 
+								</p>
+								<p class="text-justify mb-1">
+									Le protocole d'entame de match.
+								</p>
+								<p class="text-justify mb-1">
+									A la fin d’une rencontre, les joueurs et les officiels de l’équipe victorieuse se disposent sur la ligne médiane, du point d’engagement vers la table du commissaire aux matchs. Tous les joueurs et les officiels de l’équipe adverse doivent leur serrer la main avant de se disperser. Tout joueur ou officiel qui ne respecte pas cette disposition écope d’une sanction disciplinaire : suspension pour le match suivant que son équipe entame en infériorité numérique jusqu’à extinction des deux (02) minutes.
+								</p>
+							</div>
 						</div>
-						<p class="text-justify mb-1">
-							Le terrain de jeu est un rectangle de trente-huit
-							(38) à quarante-quatre (44) mètres de long sur
-							vingt-un (21) à vingt-deux (22) mètres de large. Sur
-							chaque largeur, il est muni d'un but de 3 mètres sur
-							2 mètres de hauteur qui sont couverts par deux
-							demi-cercles, dont l'un, à trait continu, d'un rayon
-							de 6 mètres (c'est la zone de but) et l'autre, à
-							trait discontinu, d'un rayon de 9 mètres (c'est la
-							zone de 9 mètres).
-						</p>
 					</div>
-					<div class="col-12 mb-5">
-						<p class="lead mb-3 lesson-title font-weight-bold">
-							<span class="badge badge-pill badge-danger"
-								>Leçon 2</span
-							>
-							LE BALLON
-						</p>
-						<div class="col image-center mb-3">
-							<img
-								class="img-fluid"
-								id="ballon"
-								src="images/Ballonssfond.png"
-								alt="Ball"
-							/>
-						</div>
-						<p class="text-justify mb-1">
-							Le ballon homologué pour les compétitions de
-							maracana est un ballon de soccer de taille quatre.
-						</p>
-						<p class="text-justify mb-1">
-							Lorsqu'il éclate ou se dégonfle au cours du jeu, la
-							partie est interrompue. Elle reprend avec un nouveau
-							ballon à l'endroit où l'ancien s'est brisé sauf dans
-							la surface de but. Dans ce cas, le jeu reprendra sur
-							la ligne de 9 mètres.
-						</p>
-					</div>
-					<div class="col-12 mb-5">
-						<p class="lead mb-3 lesson-title font-weight-bold">
-							<span class="badge badge-pill badge-danger"
-								>Leçon 3</span
-							>
-							LE NOMBRE DE JOUEURS
-						</p>
-						<p class="text-justify mb-1">
-							La partie sera disputée entre deux équipes
-							comprenant chacune six joueurs au maximum. Aucun
-							match ne peut avoir lieu si l'une des équipes
-							présente moins de quatre joueurs.
-						</p>
-						<p class="text-justify mb-1">
-							Dans tout match disputé dans le cadre de
-							compétitions officielles, il est possible de
-							recourir à quatre remplacements au maximum.
-						</p>
-						<p class="text-justify mb-1">
-							Une équipe est autorisée à faire jouer tous ses
-							remplaçants autant de fois qu'elle le souhaite et à
-							tout moment de la partie, pourvu que celle-ci
-							n'évolue pas à plus de six joueurs et qu'elle
-							respecte la procédure de remplacement.
-						</p>
-					</div>
-					<div class="col-12 mb-5">
-						<p class="lead mb-3 lesson-title font-weight-bold">
-							<span class="badge badge-pill badge-danger"
-								>Leçon 4</span
-							>
-							LA PROCEDURE DE REMPLACEMENT
-						</p>
-						<p class="text-justify mb-1">
-							Tout remplaçant doit être inscrit préalablement sur
-							la feuille de match.
-						</p>
-						<p class="text-justify mb-1">
-							La partie n'est pas interrompue au moment des
-							remplacements.
-						</p>
-						<p class="text-justify mb-1">
-							Le remplacement s'effectue dans la zone prévue à cet
-							effet dans chaque camp. Le substitut ne peut
-							pénétrer sur le terrain avant que son coéquipier
-							n'en sorte.
-						</p>
-						<p class="text-justify mb-1">
-							Lorsque cette procédure n'est pas respectée, le
-							joueur entrant écope d'un carton jaune. De plus, un
-							coup franc est accordé à l'équipe adverse s'il
-							jouait le ballon.
-						</p>
-					</div>
-					<div class="col-12 mb-5">
-						<p class="lead mb-3 lesson-title font-weight-bold">
-							<span class="badge badge-pill badge-danger"
-								>Leçon 5</span
-							>
-							LES ARBITRES
-						</p>
-						<p class="text-justify mb-1">
-							Deux arbitres titulaires, un arbitre suppléant, un
-							commissaire au match et un superviseur ont la charge
-							d'officier un match.
-						</p>
-						<p class="text-justify mb-1">
-							Les arbitres titulaires qui veillent à l'application
-							des lois du jeu, sont compléementaires et solidaires
-							des décisions prises en cours de partie.
-						</p>
-						<p class="text-justify mb-1">
-							L'arbitre suppléant est chargé de comptabiliser
-							toutes les fautes commises par chacune des équipes.
-						</p>
-						<p class="text-justify mb-1">
-							Le commissaire au match veille au bon déroulement
-							des rencontres, à l'application des lois du jeu par
-							les arbitres et décide de la suspension ou de
-							l'interruption d'une partie. Il donne le signal du
-							coup d'envoi, de la reprise du jeu et de la fin de
-							la partie. Le cas échéant, il peut se substituer à
-							l'arbitre suppléant et même à un titulaire.
-						</p>
-						<p class="text-justify mb-1">
-							Le superviseur est en charge du bon déroulement de
-							la compétition. En accord avec le commissaire au
-							match, il donne son avis sur la suspension ou
-							l'interruption d'une rencontre.
-						</p>
-					</div>
-					<div class="col-12 mb-5">
-						<p class="lead mb-3 lesson-title font-weight-bold">
-							<span class="badge badge-pill badge-danger"
-								>Leçon 6</span
-							>
-							LES CARTONS
-						</p>
-						<div class="col image-center mb-3">
-							<img
-								class="img-fluid game-cards"
-								src="images/arbitre_MK_jaune.png"
-								alt="Yellow card"
-							/>
-						</div>
-						<p class="text-justify mb-3">
-							Jaune : signale l'expulsion d'un joueur pour deux
-							(02) minutes. Il est suivi d'un carton rouge si
-							c'est le deuxième jaune reçu par le joueur au cours
-							du même match, l'excluant ainsi pour ce match ainsi
-							que pour le suivant.
-						</p>
-						<div class="col image-center mb-3">
-							<img
-								class="img-fluid game-cards"
-								src="images/arbitre_MK_rouge.png"
-								alt="Red card"
-							/>
-						</div>
-						<p class="text-justify mb-3">
-							Rouge : Exclusion du joueur pour trois (03) matchs
-							incluant celui en cours, s'il est direct. Sinon ce
-							sera la même suspension que suite à deux cartons
-							jaunes reçus au cours d'un même match.
-						</p>
-						<div class="col image-center mb-3">
-							<img
-								class="img-fluid game-cards"
-								src="images/arbitre_MK_bleu.png"
-								alt="Blue card"
-							/>
-						</div>
-						<p class="text-justify mb-3">
-							Bleu : Indique une faute de catégorie C qui est
-							cumulative. Trois (03) fautes de ce genre conduisent
-							à un tir de penalité, au profit de l'équipe adverse,
-							à partir de sa zonne des 9 mètres.
-						</p>
-					</div>
-					<div class="col-12 mb-5">
-						<p class="lead mb-3 lesson-title font-weight-bold">
-							<span class="badge badge-pill badge-danger"
-								>Leçon 7</span
-							>
-							L'ENGAGEMENT
-						</p>
-						<p class="text-justify mb-1">
-							L'engagement concerne les coups d'envoi et la reprise du jeu après un but accordé. 
-						</p>
-						<p class="text-justify mb-1">
-							Le coup d'envoi, exécuté au centre du terrain, marque le début de chaque période lors d'une partie. Au coup de sifflet de l'arbitre, l'un des joueurs de l'équipe ayant le bénéfice du coup d'envoi, passe la balle à son adversaire le plus proche qui la lui redonne aussitôt sans lui mettre aucune pression (Fair-play). Il en est de même après chaque but marqué.
-						</p>
-						<p class="text-justify mb-1">
-							En cas d'infraction à cette règle, le coup d'envoi est repris et le joueur fautif écopera de sanctions graduelles.
-						</p>
-					</div>
-					<div class="col-12 mb-5">
-						<p class="lead mb-3 lesson-title font-weight-bold">
-							<span class="badge badge-pill badge-danger"
-								>Leçon 8</span
-							>
-							LE DÉGAGEMENT
-						</p>
-						<p class="text-justify mb-1">
-							Le dégagement, qui s'apparente au coup de pied de but au soccer, après une sortie de la balle du terrain par la ligne de but à l'extérieur des poteaux, se joue par un seul joueur dans la zone de but et dans les cinq secondes à partir du retour de la balle. Les joueurs de l'équipe adverse doivent se tenir en dehors de la surface des neuf mètres jusqu'à ce que la balle franchisse la ligne des six mètres. La première passe ne doit pas dépasser la ligne médiane. 
-						</p>
-						<p class="text-justify mb-1">
-							Un coup franc est sifflé sur sa ligne des neuf mètres contre l'équipe qui se dégage si la première passe dépasse la ligne centrale ou si cette équipe a plus d'un joueur dans sa surface de but. Le coup franc sera plutôt sifflé sur la ligne des neuf mètres de l'équipe adverse si ses joueurs ne respectent pas leur limite. 
-						</p>
-					</div>
-					<div class="col-12 mb-5">
-						<p class="lead mb-3 lesson-title font-weight-bold">
-							<span class="badge badge-pill badge-danger"
-								>Leçon 9</span
-							>
-							LE BUT MARQUÉ
-						</p>
-						<p class="text-justify mb-1">
-							Un but est marqué, en cours de jeu, lorsque le ballon a entièrement dépassé la ligne de but entre les montants et sous la barre transversale de but et si et seulement si le joueur qui a touché (en dehors des mains) le ballon en dernier lieu se trouve dans la surface de but. Un but peut être refusé par l’un des arbitres, s’il estime que le joueur qui marque, shoote le ballon avec violence (force), sur ou au dessus de la zone pelvienne, d’un ou plusieurs joueurs du camp adverse, situés sur la trajectoire du ballon. 
-						</p>
-						<p class="text-justify mb-1">
-							Le penalty exécuté n’est considéré comme but marqué que si le ballon franchit entièrement la ligne de but, entre les montants des buts, soit directement sans avoir préalablement touché le sol, soit en rebondissant une seule fois dans la surface de but. Un coup de pied de réparation ou penalty est donné au point de réparation (le centre de la ligne médiane) lorsqu’un joueur de l’équipe défendante manie le ballon dans la surface de but. Avant l’exécution de la sanction, tous les joueurs, devront se tenir sur la ligne médiane (dans la moitié de terrain réservée à l’équipe qui a le bénéfice de la faute) à 3m du ballon. 
-						</p>
-					</div>
-					<div class="col-12 mb-5">
-						<p class="lead mb-3 lesson-title font-weight-bold">
-							<span class="badge badge-pill badge-danger"
-								>Leçon 10</span
-							>
-							LES PROTOCOLES
-						</p>
-						<p class="text-justify mb-1">
-							Le protocole d'entame de match.
-						</p>
-						<p class="text-justify mb-1">
-							Les deux (02) équipes pénètrent sur l’aire de jeu précédées des arbitres titulaires et des capitaines. Tous se disposent au niveau du point d’engagement, parallèlement à la ligne de touche, face à la table du commissaire aux matchs ou à la loge des officiels. Le commissaire au match les rejoint et se tient sur le point d’engagement ; la paire arbitrale puis l’équipe visiteuse se positionnent à sa droite, tandis que celle qui reçoit se range à sa gauche. L’équipe visiteuse serre la main des officiels et des adversaires ; ensuite l’équipe qui reçoit salue les officiels. 
-						</p>
-						<p class="text-justify mb-1">
-							Le protocole d'entame de match.
-						</p>
-						<p class="text-justify mb-1">
-							A la fin d’une rencontre, les joueurs et les officiels de l’équipe victorieuse se disposent sur la ligne médiane, du point d’engagement vers la table du commissaire aux matchs. Tous les joueurs et les officiels de l’équipe adverse doivent leur serrer la main avant de se disperser. Tout joueur ou officiel qui ne respecte pas cette disposition écope d’une sanction disciplinaire : suspension pour le match suivant que son équipe entame en infériorité numérique jusqu’à extinction des deux (02) minutes.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+				</section>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="container pt-4">
-				<div class="row">
-					<div class="col text-center">
-						<p class="lead translateText" key="footer">Fédération Canadienne de Maracana</p>
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="container pt-4">
+						<div class="row">
+							<div class="col text-center">
+								<p class="lead translateText" key="footer">Fédération Canadienne de Maracana</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col text-center">
+								<p id="copyright">
+									&copy; Copyright <span id="year"></span>
+									<span id="owner"> | Paul Farcas</span>
+								</p>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col text-center">
-						<p id="copyright">
-							&copy; Copyright <span id="year"></span>
-							<span id="owner"> | Paul Farcas</span>
-						</p>
-					</div>
-				</div>
+				</footer>
 			</div>
-		</footer>
-
-		<!-- Language switcher -->
-		<div class="text-center" id="language">
-			<a
-				class="translate translateText"
-				id="languageSwitcher"
-				key="buttonLanguage"
-				onClick="changeLanguage()"
-			></a>
 		</div>
 
 		<!-- Scroll to top button -->
-		<div id="scroll-football">
+		<div id="scroll-arrow">
 			<a href="#" class="scroll-top" data-scroll="up">
 				<i class="fas fa-caret-up fa-2x"></i>
-			</a>
-		</div>
-		<div class="d-none d-sm-block">
-			<a id="fb-media"
-				href="http://www.facebook.com/maracanacanada"
-				target="_blank"
-			>
-				<span
-					><i
-						class="fab fa-facebook-f fa-2x text-primary"
-					></i
-				></span>
 			</a>
 		</div>
 
@@ -513,17 +582,17 @@
 
 			$(window).scroll(function() {
 				if ($(this).scrollTop() > 100) {
-					$('#scroll-football').fadeIn();
+					$('#scroll-arrow').fadeIn();
 				} else {
-					$('#scroll-football').fadeOut();
+					$('#scroll-arrow').fadeOut();
 				}
 			});
 
 			// init scrollspy
-			$('body').scrollspy({ target: '#scroll-football' });
+			$('body').scrollspy({ target: '#scroll-arrow' });
 
 			// add smooth scrolling
-			$('#scroll-football').on('click', function(e) {
+			$('#scroll-arrow').on('click', function(e) {
 				// check for a hash value
 				if (this.hash !== '') {
 					// prevent default behavior
@@ -544,6 +613,33 @@
 						}
 					);
 				}
+			});
+
+			$(".page-nav__item").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 900, function(){
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+
+			$('.navigation .dropdown').hover(function () {
+				$(this).find('.dropdown-content').first().stop(true, true).slideDown(300);
+			}, function () {
+				$(this).find('.dropdown-content').first().stop(true, true).slideUp(300)
 			});
 		</script>
 	</body>

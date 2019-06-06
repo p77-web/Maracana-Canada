@@ -1,14 +1,20 @@
 /* CSS style for header, navigation and footer */
 
 html {
-	font-size: 16px;
+	box-sizing: border-box;
+	font-size: 100%;
 }
 
 body {
-	background-color: #fff;
+	background-color: white; /* For browsers that do not support gradients */
 	color: #5a5a5a;
 	font-family: 'Kanit', sans-serif;
+	font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1600 - 320)));
 	overflow-x: hidden;
+}
+
+#header-section {
+	background-color: #fff;
 }
 
 #logo-img {
@@ -24,14 +30,14 @@ body {
 }
 
 #message-official-site {
-	font-size: 0.95rem;
 	text-align: center;
 	width: 100%;
 }
 
-.myNavbarStyle {
+.navigation {
 	background-color: #f00;
-	width: 100%;
+	border-bottom: 1px solid white;
+	width: 90%;
 }
 
 .navbar-container {
@@ -48,16 +54,18 @@ body {
 	padding-left: 15px;
 }
 
+.navbar-dark .navbar-nav .show > .nav-link {
+	color: #f00;
+}
+
 .navbar-dark .navbar-nav .nav-link {
 	color: #fff;
 	font-family: 'Marcellus SC', serif;
-	font-size: 1rem;
 	font-weight: 400;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
 	background-color: #fff;
-	box-sizing: border-box;
 	color: #f00;
 	margin-bottom: 0px;
 }
@@ -70,9 +78,76 @@ body {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250,255,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+.dropdown-content {
+	background-color: #fff;
+	display: none;
+}
+
+.dropdown-content__submenu #navbarDropdown {
+	padding: 5px 0 5px 25px;
+}
+
+.dropdown-content__submenu .dropdown-content {
+	display: block;
+	padding: 5px 0 5px 25px;
+}
+
+.dropdown-content a {
+	color: #f00;
+	font-family: 'Marcellus SC', serif;
+	display: block;
+	padding: 5px 0 5px 15px;
+	text-align: left;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover > .nav-link--active {
+	background-color: #fff;
+	color: #f00;
+}
+
+#page-nav {
+	background-color: #f00;
+	border-top: none;
+	height: auto;
+	padding: 0.5rem 0;
+	width: calc(100% + 10px);
+}
+
+.page-nav__list {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	margin-bottom: 0rem;
+	padding-inline-start: 0;
+}
+
+.page-nav__items {
+	padding: 0 20px;
+}
+
+.page-nav__item {
+	color: #fff;
+	font-family: 'Marcellus SC', serif;
+	text-decoration: none;
+}
+
+.page-nav__item:hover {
+	color: #ffe2e2;
+	text-decoration: none;
+}
+
 #footer {
 	background-color: #3b3b3b;
 	color: rgba(255, 255, 255, 0.8);
+	max-width: 960px;
+	width: calc(100% + 10px);
 }
 
 #copyright {
@@ -101,14 +176,15 @@ body {
 	background-color: transparent;
 	height: 1.5rem;
 	line-height: 1.3rem;
-	position: fixed;
+	position: absolute;
 	right: 1rem;
-	top: 5rem;
+	top: 1rem;
 }
 
 #languageSwitcher {
-	color: #f00;
+	color: #fff;
 	cursor: pointer;
+	font-size: 1rem;
 	text-decoration: none;
 	width: 1.6rem;
 }
@@ -118,26 +194,12 @@ body {
 	border: 1px solid #f00;
 }
 
-#fb-media {
-	bottom: 10rem;
-	position: fixed;
-	right: 1.4rem;
-}
-
 /* Media */
 @media (max-width: 575px) {
 	.menu-container {
 		background-color: red;
 		padding-left: 0;
 		padding-right: 0;
-	}
-
-	.navbar-dark ul {
-		margin-top: 0.8rem;
-	}
-
-	.navbar-nav li a {
-		border-radius: 0.5rem;
 	}
 }
 
@@ -156,43 +218,23 @@ body {
 		max-height: 125px;
 	}
 
-	.navbar-dark .navbar-nav .nav-link {
-		color: #fff;
-		font-size: 0.75rem;
-	}
-
-	.myNavbarStyle {
-		max-height: 34px;
-	}
-
-	#message-official-site {
-		font-size: 1.05rem;
-	}
-
-	#fb-media {
-		right: 1rem;
+	#page-nav {
+		width: calc(100% + 20px);
 	}
 
 	#language {
 		background-color: #f00;
 		border-radius: 5px;
 		max-height: 1.4rem;
-		right: 1rem;
-		top: 1rem;
 		width: 1.4rem;
-	}
-
-	#language:hover {
-		background-color: #fff;
-		border: 1px solid #f00;
 	}
 
 	#languageSwitcher {
 		color: #fff;
 	}
 
-	#languageSwitcher:hover {
-		color: #f00;
+	#footer {
+		width: calc(100% + 20px);
 	}
 }
 
@@ -205,29 +247,83 @@ body {
 		max-height: 150px;
 	}
 
-	.navbar-dark .navbar-nav .nav-link {
-		font-size: 0.85rem;
+	.navbar-expand-md .navbar-nav {
+		z-index: 10;
 	}
 
-	#message-official-site {
-		font-size: 1.15rem;
+	.dropdown-content {
+		outline: 1px solid #f00;
 	}
 
-	#copyright {
-		font-size: 0.7rem;
+	.dropdown-content__submenu .dropdown-content a {
+		padding: 5px 0;
 	}
 
-	.scroll-top {
-		right: 1.5625rem;
+	.dropdown-content .navbar-nav {
+		-ms-flex-direction: column;
+		flex-direction: column;
 	}
 
-	#fb-media {
-		right: 1.75rem;
+	.dropdown-content .dropdown-content__submenu-item {
+		position: relative;
+		text-align: center;
 	}
 
-	/* #language {
-		right: 2rem;
-	} */
+	.dropdown-content__submenu .dropdown-content {
+		position: relative;
+		display: none;
+		padding: 5px 0;
+	}
+
+	.dropdown-content__submenu:hover
+		.dropdown-content__submenu-championship--position {
+		position: absolute;
+		display: block;
+		top: 14%;
+		left: 90%;
+	}
+
+	.dropdown-content__submenu:hover .dropdown-content__submenu-cup--position {
+		position: absolute;
+		display: block;
+		top: 27%;
+		left: 90%;
+	}
+
+	.navigation {
+		border-bottom: none;
+		max-height: 37px;
+		width: 100%;
+	}
+
+	#page-nav {
+		width: calc(100% + 30px);
+		border-top: 1px solid white;
+	}
+
+	.dropdown-content {
+		background-color: #fff;
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 35px;
+		right: 0%;
+		width: 300%;
+		max-width: 200px;
+	}
+
+	.dropdown:hover > .dropdown-content {
+		display: block;
+		z-index: 10;
+	}
+
+	#language {
+		top: 0.4rem;
+	}
+
+	#footer {
+		width: calc(100% + 30px);
+	}
 }
 
 @media (min-width: 992px) {
@@ -239,22 +335,29 @@ body {
 		max-height: 200px;
 	}
 
-	.navbar-dark .navbar-nav .nav-link {
-		font-size: 1.2rem;
+	.navigation {
+		max-height: 39px;
 	}
 
-	.myNavbarStyle {
-		max-height: 38px;
+	.dropdown-content {
+		top: 40px;
 	}
 
-	#message-official-site {
-		font-size: 1.25rem;
+	#page-nav {
+		width: calc(100% + 40px);
 	}
 
-	#copyright {
-		font-size: 0.8rem;
+	#language {
+		top: 0.5rem;
+	}
+
+	#footer {
+		width: calc(100% + 40px);
 	}
 }
 
 @media (min-width: 1200px) {
+	.navigation {
+		max-height: 41px;
+	}
 }

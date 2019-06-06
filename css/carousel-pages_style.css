@@ -1,4 +1,4 @@
-/* CSS style for clubs.html page */
+/* CSS style for champions19.html page */
 
 .lead {
 	font-size: 1rem;
@@ -28,72 +28,61 @@
 	width: 90%;
 }
 
-#clubs_link {
-	color: #fff;
+.breadcrumb {
+	background-color: transparent;
+	margin-bottom: 0;
+	padding: 0;
 }
 
-#clubs_link:hover {
+.breadcrumb-item a {
+	color: #fff;
 	text-decoration: none;
 }
 
-#clubs-header {
+.breadcrumb-item.active {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumb-item.active::before {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.card-img-top {
+	width: 100%;
+}
+
+#title-header {
 	background-color: #fff;
 	height: auto;
 	width: 100%;
 }
 
-#clubs-header .col {
+#title-header .col {
 	margin: 0 auto;
 }
 
-#clubs-header .col > h2 {
+#title-header .col > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
 	margin: 0 auto;
 	padding-bottom: 1.25rem;
 }
 
-#clubs {
+#picture {
 	background-color: #fff;
 	height: auto;
 	width: 100%;
 }
 
-.clubs-card-text {
-	font-size: 0.9rem;
-	margin: 0 auto;
-	max-width: 100%;
-}
-
-.clubs-text {
-	font-size: 0.9rem;
-	margin: 0 auto;
-	max-width: 90%;
+.picture-text__subtitle {
 	text-indent: 2em;
 }
 
-.clubs-stats {
+.picture-text {
 	font-size: 0.9rem;
-	text-indent: 1em;
-}
-
-.contact {
-	padding-left: 1.5rem !important;
-	text-align: left;
-}
-
-.teams-card {
-	background-color: transparent;
-	border: none;
-}
-
-.teams-card .card-footer {
-	background-color: transparent;
-	border: none;
-}
-
-caption {
-	caption-side: top;
+	margin: 0 auto;
+	padding: 0 1rem;
+	text-indent: 2em;
 }
 
 /* Media */
@@ -118,29 +107,13 @@ caption {
 		padding: 0 10px;
 	}
 
-	#comissions_link {
-		font-size: 1.1rem;
-	}
-
-	#clubs-header .col > h2 {
+	#title-header .col > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
 	}
 
-	.clubs-card-text {
+	.picture-text {
 		font-size: 0.95rem;
-	}
-
-	.clubs-text {
-		font-size: 0.95rem;
-	}
-
-	.clubs-stats {
-		font-size: 0.95rem;
-	}
-
-	.contact {
-		padding-left: 2rem !important;
 	}
 }
 
@@ -153,28 +126,12 @@ caption {
 		padding: 0 15px;
 	}
 
-	#comissions_link {
-		font-size: 1.15rem;
-	}
-
-	#clubs-header .col > h2 {
+	#title-header .col > h2 {
 		font-size: 1.5rem;
 	}
 
-	.clubs-card-text {
+	.picture-text {
 		font-size: 1rem;
-	}
-
-	.clubs-text {
-		font-size: 1rem;
-	}
-
-	.clubs-stats {
-		font-size: 1rem;
-	}
-
-	.contact {
-		padding-left: 2.5rem !important;
 	}
 }
 
@@ -185,7 +142,4 @@ caption {
 }
 
 @media (min-width: 1200px) {
-	.contact {
-		margin-left: 3rem !important;
-	}
 }

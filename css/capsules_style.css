@@ -4,24 +4,50 @@
 	font-size: 1rem;
 }
 
-#capsules,
+#money {
+	margin: 0;
+}
+
+.main {
+	background-image: url('/images/canada-flag.jpg');
+	/* background-image: radial-gradient(circle, red 0%, white 100%); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main__wrapper {
+	align-items: center;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5px;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 90%;
+}
+
+#infosheet-header,
+#infosheet,
 #lessons {
 	background-color: #fff;
 	height: auto;
+	width: 100%;
 }
 
-#capsules .col-12 {
+#infosheet .col {
 	margin: 0 auto;
 }
 
-#capsules .col-12 > h2 {
+#infosheet-header .col > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
 	padding-bottom: 20px;
 }
 
 #lessons .col-12 > p {
-	font-size: 0.85rem;
+	/* font-size: 0.85rem; */
 	margin: 0 auto;
 	max-width: 96%;
 	text-indent: 1em;
@@ -31,12 +57,17 @@
 	text-align: center;
 }
 
-#lois_de_jeu_link {
-	color: #828282;
+#game-rules {
+	color: #fff;
+	font-size: 1rem;
+}
+
+#game-rules:hover {
+	text-decoration: none;
 }
 
 .fa-file-pdf {
-	color: #f00;
+	color: #fff;
 	display: inline;
 }
 
@@ -65,6 +96,8 @@
 	width: 75px;
 }
 
+/* ********************************* */
+
 @media (max-width: 575px) {
 	.text-xs-center {
 		text-align: center;
@@ -72,21 +105,25 @@
 }
 
 @media (min-width: 576px) {
+	.main__wrapper {
+		padding: 0 10px;
+	}
+
 	#lessons .col-12 p.lead {
 		font-size: 1.15rem;
 	}
 
-	#lois_de_jeu_link {
+	#game-rules {
 		font-size: 1.1rem;
 	}
 
-	#capsules .col-12 > h2 {
+	#infosheet-header .col > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
 	}
 
 	#lessons .col-12 > p {
-		font-size: 0.95rem;
+		/* font-size: 0.95rem; */
 		text-indent: 2em;
 	}
 
@@ -101,20 +138,24 @@
 }
 
 @media (min-width: 768px) {
+	.lead {
+		font-size: 1.25rem;
+	}
+
+	.main__wrapper {
+		padding: 0 15px;
+	}
+
 	#lessons .col-12 p.lead {
 		font-size: 1.25rem;
 	}
 
-	#capsules .col-12 > h2 {
+	#infosheet-header .col > h2 {
 		font-size: 1.5rem;
 	}
 
-	#lois_de_jeu_link {
+	#game-rules {
 		font-size: 1.15rem;
-	}
-
-	#lessons .col-12 > p {
-		font-size: 1rem;
 	}
 
 	.badge {
@@ -128,6 +169,10 @@
 }
 
 @media (min-width: 992px) {
+	.main__wrapper {
+		padding: 0 20px;
+	}
+
 	.badge {
 		font-size: 100%;
 	}

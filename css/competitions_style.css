@@ -4,6 +4,30 @@
 	font-size: 1rem;
 }
 
+#money {
+	margin: 0;
+}
+
+.main {
+	background-image: url('/images/canada-flag.jpg');
+	/* background-image: radial-gradient(circle, red 0%, white 100%); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main__wrapper {
+	align-items: center;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5px;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 90%;
+}
+
 #competitions {
 	background-color: #fff;
 	height: auto;
@@ -35,11 +59,13 @@
 #championnat {
 	background-color: rgb(243, 243, 243);
 	height: auto;
+	width: 100%;
 }
 
 #championnat-header {
 	background-color: rgb(243, 243, 243);
 	height: auto;
+	width: 100%;
 }
 
 #championnat-header .col {
@@ -122,6 +148,10 @@ caption {
 		font-size: 1.15rem;
 	}
 
+	.main__wrapper {
+		padding: 0 10px;
+	}
+
 	#competitions .col > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
@@ -174,6 +204,10 @@ caption {
 		font-size: 1.25rem;
 	}
 
+	.main__wrapper {
+		padding: 0 15px;
+	}
+
 	#competitions .col > h2 {
 		font-size: 1.5rem;
 	}
@@ -217,6 +251,10 @@ caption {
 }
 
 @media (min-width: 992px) {
+	.main__wrapper {
+		padding: 0 20px;
+	}
+
 	.table td,
 	.table th {
 		padding: 0.75rem;

@@ -1,15 +1,16 @@
 /* CSS style for index.html page */
 
+p {
+	margin-top: 0;
+	margin-bottom: 0rem;
+}
+
 .lead {
 	font-size: 1rem;
 }
 
-.money {
-	margin-top: 10px;
-}
-
-.medias {
-	margin-top: 10px;
+#money {
+	margin: 0;
 }
 
 #presentation {
@@ -29,7 +30,7 @@
 }
 
 #presentation .col > p {
-	font-size: 0.85rem;
+	/* font-size: 0.85rem; */
 	margin: 0 auto;
 	max-width: 96%;
 	text-indent: 2em;
@@ -48,10 +49,73 @@
 	display: inline;
 }
 
+.main {
+	background-image: url('/images/canada-flag.jpg');
+	/* background-image: radial-gradient(circle, red 0%, white 100%); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main__wrapper {
+	align-items: center;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5px;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 90%;
+}
+
+#news {
+	background-image: url('/images/canada-flag_1.jpg');
+	/* background-image: radial-gradient(circle, red 0%, white 100%); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: calc(100% + 10px);
+}
+
+.news__content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.news__title,
+.news__subtitle {
+	color: #f1f1f1;
+	margin: 0 auto;
+}
+
+.news__title {
+	align-self: center;
+	font-family: 'IM Fell English SC', serif;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.news__subtitle {
+	font-family: 'IM Fell Double Pica SC', serif;
+}
+
+.news__image {
+	border-radius: 5px;
+	max-width: 230px;
+}
+
+#info-header,
 #agenda-header,
-#actualites-header {
-	background-color: rgb(243, 243, 243);
+#actualites-header,
+#galerie-header {
 	height: auto;
+	width: 100%;
+}
+
+.info-header__message--red {
+	color: red;
 }
 
 #agenda-header .col,
@@ -66,10 +130,26 @@
 	padding-bottom: 1.25rem;
 }
 
-#agenda,
-#actualites {
-	background-color: rgb(243, 243, 243);
+#galerie {
 	height: auto;
+	width: 100%;
+}
+
+.carousel {
+	margin: 0 auto;
+}
+
+.card-img-top {
+	width: 100%;
+}
+
+#agenda {
+	align-items: center;
+	background-color: rgb(243, 243, 243);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
 }
 
 #tournoi-img {
@@ -94,7 +174,6 @@
 }
 
 .countries {
-	font-size: 0.9rem;
 	margin-bottom: 0;
 }
 
@@ -113,9 +192,18 @@
 	padding-bottom: 1.25rem;
 }
 
-.galerie-title {
-	max-width: 96%;
+.galerie__title {
 	text-align: center;
+}
+
+.card .galerie__title {
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.9);
+	bottom: 0;
+	color: #f1f1f1;
+	padding: 20px;
+	position: absolute;
+	width: 100%;
 }
 
 #delegation-img {
@@ -124,33 +212,21 @@
 	width: 500px;
 }
 
-.galerie-text {
-	font-size: 0.85rem;
-	margin: 0 auto;
-	max-width: 96%;
-	text-indent: 2em;
-}
-
-#left-card {
-	opacity: 0;
-}
-
-#right-card {
-	opacity: 0;
-}
-
-#bottom-card {
-	opacity: 0;
-}
-
-.galerie-title-carousel {
-	text-align: center;
-}
-
 .carousel-control-next,
 .carousel-control-prev {
-	width: 10%;
+	height: 100%;
 	opacity: 1;
+	width: 10%;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+	background: #000;
+	opacity: 0.3;
+}
+
+.carousel-indicators {
+	bottom: 15%;
 }
 
 .carousel-indicators li {
@@ -169,75 +245,104 @@
 	background-color: #f00;
 }
 
-.actualites div .card {
-	background-color: transparent;
-	border: none;
-	border-radius: 0;
+.actualites {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 0 15px;
 }
 
-.actualites div .card p:first-child {
-	text-align: center;
+.actualites__img {
+	height: 120px;
+	width: 165px;
 }
 
-.nominations .card-body > img {
-	margin-top: -50px;
+.actualites h5 {
+	color: #f00;
 }
 
-.nominations .img-thumbnail {
-	background-color: rgba(255, 0, 0, 0.7);
-	padding: 0.15rem;
+#partenaires {
+	background-color: #3b3b3b;
+	width: calc(100% + 10px);
 }
 
-.nominations .card {
-	background-color: #fff;
-	border: 2px solid rgba(255, 0, 0, 0.7);
-	border-radius: 5px;
+.partenaires {
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+	height: 160px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	max-width: 700px;
+	width: 90%;
 }
 
-.nominations-fimaa .card-body > img {
-	margin-top: -60px;
+.partenaires::before,
+.partenaires::after {
+	background: linear-gradient(
+		to right,
+		rgba(59, 59, 59, 1) 0%,
+		rgba(59, 59, 59, 0) 100%
+	);
+	content: '';
+	height: 160px;
+	position: absolute;
+	width: 50px;
+	z-index: 2;
 }
 
-.nominations-fimaa .img-thumbnail {
-	background-color: rgba(0, 0, 255, 0.7);
-	padding: 0.15rem;
+.partenaires::after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
 }
 
-.nominations-fimaa .card {
-	background-color: #fff;
-	border: 2px solid rgba(0, 0, 255, 0.7);
-	border-radius: 5px;
+.partenaires::before {
+	left: 0;
+	top: 0;
 }
 
-.logo_FIMAA {
-	max-width: 10rem;
-	max-height: 10rem;
-	margin: 0 auto;
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-250px * 5));
+	}
 }
+
+.partenaires__slider {
+	animation: scroll 60s linear infinite;
+	display: flex;
+	width: calc(250px * 12);
+}
+
+.partenaires__slide {
+	height: 160px;
+	padding: 0 15px;
+}
+
+.partenaires__title--color {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.partenaires__images {
+	max-height: 160px;
+}
+
+/* *************************************** */
 
 /* Media */
 @media (max-width: 575px) {
 	.text-xs-center {
 		text-align: center;
 	}
-
-	.nominations {
-		max-width: 375px;
-		margin: 0 auto;
-	}
 }
 
 @media (max-width: 767px) {
-	.nominations-fimaa {
-		max-width: 400px;
-		margin: 0 auto;
-	}
-}
-
-@media (max-width: 991px) {
-	.nominations-fimaa {
-		max-width: 425px;
-		margin: 0 auto;
+	.media {
+		flex-direction: column;
+		text-align: center;
 	}
 }
 
@@ -246,13 +351,17 @@
 		font-size: 1.15rem;
 	}
 
+	.main__wrapper {
+		padding: 0 10px;
+	}
+
+	#news {
+		width: calc(100% + 20px);
+	}
+
 	#presentation .col > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
-	}
-
-	#presentation .col > p {
-		font-size: 0.95rem;
 	}
 
 	#presentation .col > p:last-child {
@@ -279,12 +388,8 @@
 		padding-left: 2rem;
 	}
 
-	.galerie-text {
-		font-size: 0.95rem;
-	}
-
 	.carousel-indicators {
-		bottom: 40%;
+		bottom: 17%;
 	}
 
 	.carousel-indicators li {
@@ -299,11 +404,32 @@
 	.carousel-control-prev {
 		bottom: 25%;
 	}
+
+	#partenaires {
+		width: calc(100% + 20px);
+	}
 }
 
 @media (min-width: 768px) {
 	.lead {
 		font-size: 1.25rem;
+	}
+
+	.main__wrapper {
+		padding: 0 15px;
+	}
+
+	#news {
+		width: calc(100% + 30px);
+	}
+
+	#presentation .col > h2 {
+		font-size: 1.25rem;
+		padding-left: 2rem;
+	}
+
+	.news__image {
+		max-width: 300px;
 	}
 
 	.countries {
@@ -312,10 +438,6 @@
 
 	#presentation .col > h2 {
 		font-size: 1.5rem;
-	}
-
-	#presentation .col > p {
-		font-size: 1rem;
 	}
 
 	#presentation .col > p:last-child {
@@ -346,16 +468,32 @@
 		font-size: 1.5rem;
 	}
 
-	.galerie-text {
+	.actualites-media__text {
 		font-size: 1rem;
 	}
 
 	.carousel-indicators {
-		bottom: 50%;
+		bottom: 14%;
+	}
+
+	#partenaires {
+		width: calc(100% + 30px);
 	}
 }
 
 @media (min-width: 992px) {
+	.main__wrapper {
+		padding: 0 20px;
+	}
+
+	#news {
+		width: calc(100% + 40px);
+	}
+
+	#agenda {
+		flex-direction: row;
+	}
+
 	.cup-card {
 		width: 350px;
 	}
@@ -370,13 +508,10 @@
 		transition: ease 0.5s;
 	}
 
-	.carousel-indicators {
-		bottom: 50%;
+	#partenaires {
+		width: calc(100% + 40px);
 	}
 }
 
 @media (min-width: 1200px) {
-	.carousel-indicators {
-		bottom: 40%;
-	}
 }

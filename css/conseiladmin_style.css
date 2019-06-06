@@ -1,26 +1,55 @@
-/* CSS style for conseiladmin.html page */
+/* CSS style for counciladmin.html page */
 
 .lead {
 	font-size: 1rem;
 }
 
-#conseil {
+#money {
+	margin: 0;
+}
+
+.main {
+	background-image: url('/images/canada-flag.jpg');
+	/* background-image: radial-gradient(circle, red 0%, white 100%); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main__wrapper {
+	align-items: center;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5px;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 90%;
+}
+
+#council-header {
+	background-color: #fff;
+	height: auto;
+	width: 100%;
+}
+
+#council {
 	background-color: #fff;
 	height: auto;
 }
 
-#conseil .col-12 {
+#council .col-12 {
 	margin: 0 auto;
 }
 
-#conseil .col-12 > h2 {
+#council-header .col > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
 	padding-bottom: 20px;
-	text-align: center;
 }
 
-#conseil .col-12 > p {
+#council .col-12 > p {
 	font-size: 0.85rem;
 	margin: 0 auto;
 	max-width: 96%;
@@ -60,13 +89,19 @@
 }
 
 #comissions_link {
-	color: #828282;
+	color: #fff;
+}
+
+#comissions_link:hover {
+	text-decoration: none;
 }
 
 .fa-file-pdf {
-	color: #f00;
+	color: #fff;
 	display: inline;
 }
+
+/* ******************************** */
 
 @media (max-width: 575px) {
 	.text-xs-center {
@@ -79,16 +114,16 @@
 		font-size: 1.25rem;
 	}
 
-	#conseil .col-12 > h2 {
-		font-size: 1.25rem;
+	.main__wrapper {
+		padding: 0 10px;
 	}
 
-	#federation .col-12 > h2 {
+	#council-header .col > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
 	}
 
-	#conseil .col-12 > p {
+	#council .col-12 > p {
 		font-size: 0.95rem;
 	}
 
@@ -112,11 +147,15 @@
 }
 
 @media (min-width: 768px) {
-	#conseil .col-12 > h2 {
+	.main__wrapper {
+		padding: 0 15px;
+	}
+
+	#council-header .col > h2 {
 		font-size: 1.5rem;
 	}
 
-	#conseil .col-12 > p {
+	#council .col-12 > p {
 		font-size: 1rem;
 	}
 
@@ -132,5 +171,11 @@
 
 	#comissions_link {
 		font-size: 1.15rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.main__wrapper {
+		padding: 0 20px;
 	}
 }

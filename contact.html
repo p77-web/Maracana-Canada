@@ -44,7 +44,7 @@
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
 		<!-- Header with carousel -->
-		<header id="home-section">
+		<header id="header-section">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
 					<div class="d-inline">
@@ -69,12 +69,25 @@
 						id="message-official-site"
 						key="official"
 					>
-						Site officiel de la Fédération Canadienne de Maracana
+						Site officiel
+					</div>
+
+					<div class="col-xs-12 d-flex mb-2">
+						<p class="lead pr-3 align-self-center" id="money">Faites un don</p>
+						<a
+							href="https://www.gofundme.com/support-maracana-canada-to-ci-2018"
+							target="_blank"
+							class="align-self-center"
+						>
+							<i
+								class="fas fa-dollar-sign fa-2x text-success"
+							></i>
+						</a>
 					</div>
 
 					<!-- Navigation -->
 					<nav
-						class="navbar navbar-expand-sm navbar-dark myNavbarStyle"
+						class="navbar navbar-expand-md navbar-dark navigation"
 						id="main-nav"
 					>
 						<div class="container navbar-container">
@@ -90,252 +103,336 @@
 								id="navbarCollapse"
 							>
 								<ul class="navbar-nav mx-auto menu-container">
-									<li class="nav-item mr-2 myNavbarLink">
+									<li class="nav-item mr-2">
 										<a
 											href="index.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="home"
-										>
-											<span class="sr-only">(curent)</span
-											>Accueil</a
+											>
+											<span class="sr-only"
+												>(curent)</span
+											></a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="apropos.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="about"
-											>À propos</a
+											></a
 										>
 									</li>
-									<li class="nav-item mr-2">
+									<li class="nav-item mr-2 dropdown">
 										<a
-											href="capsules.html"
-											class="nav-link myNavbarLinkText translateText"
+											href="#"
+											class="nav-link translateText nav-link--active"
+											id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
 											key="rules"
-											>Lois du jeu</a
-										>
+											>
+										</a>
+										<div class="dropdown-content" aria-labelledby="navbarDropdown">
+											<a href="Lois_du_jeu.pdf" class="translateText" target="_blank" key="laws"></a>
+											<a href="capsules.html" class="translateText" key="infosheet"></a>
+										</div>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="conseiladmin.html"
-											class="nav-link myNavbarLinkText translateText"
-											key="admistration"
-											>Admistration</a
+											class="nav-link translateText"
+											key="administration"
+										></a
 										>
 									</li>
-									<li class="nav-item mr-2">
+									<li class="nav-item mr-2 dropdown">
 										<a
-											href="competitions.html"
-											class="nav-link myNavbarLinkText translateText"
+											href="#"
+											class="nav-link translateText nav-link--active"
+											id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
 											key="competitions"
-											>Compétitions</a
-										>
+										></a>	
+										<ul class="navbar-nav mx-auto menu-container">
+											<div class="dropdown-content" aria-labelledby="navbarDropdown">
+												<li class="nav-item">
+													<a href="#" class="translateText" key="national"></a>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="championship"></a>
+													<ul class="navbar-nav mx-auto menu-container">
+														<div class="dropdown-content dropdown-content__submenu-championship--position" aria-labelledby="navbarDropdown">
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship17"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship18"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship19"></a>
+															</li>
+														</div>
+													</ul>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="cup"></a>
+													<ul class="navbar-nav mx-auto menu-container">
+														<div class="dropdown-content dropdown-content__submenu-cup--position" aria-labelledby="navbarDropdown">
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup17"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup18"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup19"></a>
+															</li>
+														</div>
+													</ul>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="competitions.html" class="translateText" id="navbarDropdown" key="tournament"></a>
+												</li>
+												<div class="dropdown-divider"></div>
+												<li class="nav-item">
+													<a href="#" class="translateText" key="international"></a>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="competitions.html" class="translateText" id="navbarDropdown" key="">CAN</a>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="competitions.html" class="translateText" id="navbarDropdown" key="world"></a>
+												</li>
+											</div>	
+										</ul>	
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="clubs.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="clubs"
-											>Clubs</a
+											></a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="contact.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="contact"
-											>Contact</a
+											></a
 										>
+									</li>
+									<li class="nav-item mr-2">
+										<a href="http://www.facebook.com/maracanacanada" target="_blank" class="nav-link translateText"
+										>
+											<span
+												><i
+													class="fab fa-facebook-f"
+												></i
+											></span>
+										</a>
 									</li>
 								</ul>
 							</div>
 						</div>
+						<div class="text-center" id="language">
+							<a
+								class="translate translateText"
+								id="languageSwitcher"
+								key="buttonLanguage"
+								onClick="changeLanguage()"
+							></a>
+						</div>									
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<!-- Contact header section -->
-		<section id="contact-header">
-			<div class="container">
-				<div class="row justify-content-center">
+		<div class="main">
+			<div class="main__wrapper">
+
+				<!-- Page navigation section -->
+				<section id="page-nav">
+					<div class="col-12 text-center">
+						<ul class="page-nav__list">
+							<li class="page-nav__items">
+								<a
+									href="#form"
+									class="page-nav__item translateText"
+									key="form"
+									></a
+								>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Contact header section -->
+				<section id="contact-header" class="mt-4">
 					<div class="col py-3">
-						<h2 class="mb-3">
+						<h2 class="mb-3 text-xs-center">
 							ÉCRIVEZ-NOUS VIA
 						</h2>
 					</div>
-				</div>
-			</div>
-		</section>
+				</section>
 
-		<!-- Contact section -->
-		<section id="contact">
-			<div class="container">
-				<div class="row pb-3 justify-content-center">
-					<div class="col-xs-12 contact">
-						<p class="lead font-weight-bold my-3">
-							Fédération Canadienne de Maracana
-						</p>
-						<div class="col-xs-12 clearfix py-2 mt-4 mb-5">
-							<div class="float-left pl-2">
-								<p>
-									<i
-										class="fas fa-map-marker-alt fa-2x pt-2"
-									></i>
+				<!-- Contact section -->
+				<section id="contact">
+					<div class="container">
+						<div class="row pb-3 justify-content-center">
+							<div class="col-xs-12 contact">
+								<p class="lead font-weight-bold my-3">
+									Fédération Canadienne de Maracana
 								</p>
-							</div>
-							<div class="float-right text-right">
-								<p class="contact-info">
-									604, Avenue Westluke
-								</p>
-								<p class="contact-info">
-									Côte Saint-Luc (Québec) H4X 1P7
-								</p>
-							</div>
-						</div>
-						<div class="col-xs-12 clearfix py-2 mb-5">
-							<div class="float-left pl-2">
-								<p>
-									<a
-										href="mailto:info@maracanacanada.com?Subject=Votre%20sujet"
-										target="_blank"
-									>
-										<span>
+								<div class="col-xs-12 clearfix py-2 mt-4 mb-5">
+									<div class="float-left pl-2">
+										<p>
 											<i
-												class="fas fa-envelope fa-2x"
+												class="fas fa-map-marker-alt fa-2x pt-2"
 											></i>
-										</span>
-									</a>
-								</p>
+										</p>
+									</div>
+									<div class="float-right text-right">
+										<p class="contact-info">
+											604, Avenue Westluke
+										</p>
+										<p class="contact-info">
+											Côte Saint-Luc (Québec) H4X 1P7
+										</p>
+									</div>
+								</div>
+								<div class="col-xs-12 clearfix py-2 mb-5">
+									<div class="float-left pl-2">
+										<p>
+											<a
+												href="mailto:info@maracanacanada.com?Subject=Votre%20sujet"
+												target="_blank"
+											>
+												<span>
+													<i
+														class="fas fa-envelope fa-2x"
+													></i>
+												</span>
+											</a>
+										</p>
+									</div>
+									<div class="float-right">
+										<a
+											href="mailto:info@maracanacanada.com?Subject=Votre%20sujet"
+											target="_blank"
+										>
+											<p class="contact-info">
+												info@maracanacanada.com
+											</p></a
+										>
+									</div>
+								</div>
+								<div class="col-xs-12 clearfix py-2 mb-5">
+									<div class="float-left pl-2">
+										<p>
+											<a
+												href="http://www.facebook.com/maracanacanada"
+												target="_blank"
+											>
+												<span>
+													<i
+														class="fab fa-facebook-f fa-2x"
+														id="fb-media"
+													></i>
+												</span>
+											</a>
+										</p>
+									</div>
+									<div class="float-right">
+										<p class="contact-info">
+											<a
+												href="http://www.facebook.com/maracanacanada"
+												target="_blank"
+											>
+												maracanacanada
+											</a>
+										</p>
+									</div>
+								</div>
 							</div>
-							<div class="float-right">
-								<a
-									href="mailto:info@maracanacanada.com?Subject=Votre%20sujet"
-									target="_blank"
-								>
-									<p class="contact-info">
-										info@maracanacanada.com
-									</p></a
-								>
+
+							<div class="col-12 mt-5 mb-4" id="form">
+								<form action="mail.php" method="post">
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fas fa-user"></i>
+											</span>
+										</div>
+										<input
+											type="text"
+											class="form-control"
+											id="nom"
+											name="nom"
+											placeholder="Votre nom"
+										/>
+									</div>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fas fa-at"></i>
+											</span>
+										</div>
+										<input
+											type="email"
+											class="form-control"
+											id="courriel"
+											name="courriel"
+											placeholder="Votre courriel"
+										/>
+									</div>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="fas fa-pencil-alt"></i>
+											</span>
+										</div>
+										<textarea
+											class="form-control vresize"
+											id="mess"
+											name="mess"
+											rows="5"
+											placeholder="Votre message"
+										></textarea>
+									</div>
+									<input
+										type="submit"
+										value="Envoyer"
+										class="btn btn-outline-danger btn-block"
+									/>
+								</form>
 							</div>
 						</div>
-						<div class="col-xs-12 clearfix py-2 mb-5">
-							<div class="float-left pl-2">
-								<p>
-									<a
-										href="http://www.facebook.com/maracanacanada"
-										target="_blank"
-									>
-										<span>
-											<i
-												class="fab fa-facebook-f fa-2x"
-											></i>
-										</span>
-									</a>
+					</div>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="container pt-4">
+						<div class="row">
+							<div class="col text-center">
+								<p class="lead translateText" key="footer">
+									Fédération Canadienne de Maracana
 								</p>
 							</div>
-							<div class="float-right">
-								<p class="contact-info">
-									<a
-										href="http://www.facebook.com/maracanacanada"
-										target="_blank"
-									>
-										maracanacanada
-									</a>
+						</div>
+						<div class="row">
+							<div class="col text-center">
+								<p id="copyright">
+									&copy; Copyright <span id="year"></span>
+									<span id="owner"> | Paul Farcas</span>
 								</p>
 							</div>
 						</div>
 					</div>
-
-					<div class="col-lg-9 mt-5">
-						<form action="mail.php" method="post">
-							<div class="input-group mb-3">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fas fa-user"></i>
-									</span>
-								</div>
-								<input
-									type="text"
-									class="form-control"
-									id="nom"
-									name="nom"
-									placeholder="Votre nom"
-								/>
-							</div>
-							<div class="input-group mb-3">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fas fa-at"></i>
-									</span>
-								</div>
-								<input
-									type="email"
-									class="form-control"
-									id="courriel"
-									name="courriel"
-									placeholder="Votre courriel"
-								/>
-							</div>
-							<div class="input-group mb-3">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<i class="fas fa-pencil-alt"></i>
-									</span>
-								</div>
-								<textarea
-									class="form-control vresize"
-									id="mess"
-									name="mess"
-									rows="5"
-									placeholder="Votre message"
-								></textarea>
-							</div>
-							<input
-								type="submit"
-								value="Envoyer"
-								class="btn btn-outline-danger btn-block"
-							/>
-						</form>
-					</div>
-				</div>
+				</footer>
 			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="container mt-4 pt-4">
-				<div class="row">
-					<div class="col text-center">
-						<p class="lead translateText" key="footer">
-							Fédération Canadienne de Maracana
-						</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col text-center">
-						<p id="copyright">
-							&copy; Copyright <span id="year"></span>
-							<span id="owner"> | Paul Farcas</span>
-						</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<!-- Language switcher -->
-		<div class="text-center" id="language">
-			<a
-				class="translate translateText"
-				id="languageSwitcher"
-				key="buttonLanguage"
-				onClick="changeLanguage()"
-			></a>
 		</div>
 
 		<!-- Scroll to top button -->
-		<div id="scroll-football">
+		<div id="scroll-arrow">
 			<a href="" class="scroll-top" data-scroll="up">
 				<i class="fas fa-caret-up fa-2x"></i>
 			</a>
@@ -365,17 +462,17 @@
 
 			$(window).scroll(function() {
 				if ($(this).scrollTop() > 100) {
-					$('#scroll-football').fadeIn();
+					$('#scroll-arrow').fadeIn();
 				} else {
-					$('#scroll-football').fadeOut();
+					$('#scroll-arrow').fadeOut();
 				}
 			});
 
 			// init scrollspy
-			$('body').scrollspy({ target: '#scroll-football' });
+			$('body').scrollspy({ target: '#scroll-arrow' });
 
 			// add smooth scrolling
-			$('#scroll-football').on('click', function(e) {
+			$('#scroll-arrow').on('click', function(e) {
 				// check for a hash value
 				if (this.hash !== '') {
 					// prevent default behavior
@@ -396,6 +493,33 @@
 						}
 					);
 				}
+			});
+
+			$(".page-nav__item").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 900, function(){
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+
+			$('.navigation .dropdown').hover(function () {
+				$(this).find('.dropdown-content').first().stop(true, true).slideDown(300);
+			}, function () {
+				$(this).find('.dropdown-content').first().stop(true, true).slideUp(300)
 			});
 		</script>
 	</body>

@@ -44,7 +44,7 @@
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
 		<!-- Header with carousel -->
-		<header id="home-section">
+		<header id="header-section">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
 					<div class="d-inline">
@@ -64,17 +64,24 @@
 						/>
 					</div>
 
-					<div
-						class="my-3 translateText"
-						id="message-official-site"
-						key="official"
-					>
-						Site officiel de la Fédération Canadienne de Maracana
+					<div class="my-3 translateText" id="message-official-site" key="official"></div>
+
+					<div class="col-xs-12 d-flex mb-2">
+						<p class="lead pr-3 align-self-center translateText" id="money" key="donation"></p>
+						<a
+							href="https://www.gofundme.com/support-maracana-canada-to-ci-2018"
+							target="_blank"
+							class="align-self-center"
+						>
+							<i
+								class="fas fa-dollar-sign fa-2x text-success"
+							></i>
+						</a>
 					</div>
 
 					<!-- Navigation -->
 					<nav
-						class="navbar navbar-expand-sm navbar-dark myNavbarStyle"
+						class="navbar navbar-expand-md navbar-dark navigation"
 						id="main-nav"
 					>
 						<div class="container navbar-container">
@@ -90,189 +97,284 @@
 								id="navbarCollapse"
 							>
 								<ul class="navbar-nav mx-auto menu-container">
-									<li class="nav-item mr-2 myNavbarLink">
+									<li class="nav-item mr-2">
 										<a
 											href="index.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="home"
-										>
-											<span class="sr-only">(curent)</span
-											>Accueil</a
+											>
+											<span class="sr-only"
+												>(curent)</span
+											></a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="apropos.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="about"
-											>À propos</a
+											></a
 										>
 									</li>
-									<li class="nav-item mr-2">
+									<li class="nav-item mr-2 dropdown">
 										<a
-											href="capsules.html"
-											class="nav-link myNavbarLinkText translateText"
+											href="#"
+											class="nav-link translateText nav-link--active"
+											id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
 											key="rules"
-											>Lois du jeu</a
-										>
+											>
+										</a>
+										<div class="dropdown-content" aria-labelledby="navbarDropdown">
+											<a href="Lois_du_jeu.pdf" class="translateText" target="_blank" key="laws"></a>
+											<a href="capsules.html" class="translateText" key="infosheet"></a>
+										</div>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="conseiladmin.html"
-											class="nav-link myNavbarLinkText translateText"
-											key="admistration"
-											>Admistration</a
+											class="nav-link translateText"
+											key="administration"
+										></a
 										>
 									</li>
-									<li class="nav-item mr-2">
+									<li class="nav-item mr-2 dropdown">
 										<a
-											href="competitions.html"
-											class="nav-link myNavbarLinkText translateText"
+											href="#"
+											class="nav-link translateText nav-link--active"
+											id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
 											key="competitions"
-											>Compétitions</a
-										>
+										></a>	
+										<ul class="navbar-nav mx-auto menu-container">
+											<div class="dropdown-content" aria-labelledby="navbarDropdown">
+												<li class="nav-item">
+													<a href="#" class="translateText" key="national"></a>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="championship"></a>
+													<ul class="navbar-nav mx-auto menu-container">
+														<div class="dropdown-content dropdown-content__submenu-championship--position" aria-labelledby="navbarDropdown">
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship17"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship18"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship19"></a>
+															</li>
+														</div>
+													</ul>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="cup"></a>
+													<ul class="navbar-nav mx-auto menu-container">
+														<div class="dropdown-content dropdown-content__submenu-cup--position" aria-labelledby="navbarDropdown">
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup17"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup18"></a>
+															</li>
+															<li class="nav-item">
+																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup19"></a>
+															</li>
+														</div>
+													</ul>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="competitions.html" class="translateText" id="navbarDropdown" key="tournament"></a>
+												</li>
+												<div class="dropdown-divider"></div>
+												<li class="nav-item">
+													<a href="#" class="translateText" key="international"></a>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="competitions.html" class="translateText" id="navbarDropdown" key="">CAN</a>
+												</li>
+												<li class="nav-item dropdown-content__submenu">
+													<a href="competitions.html" class="translateText" id="navbarDropdown" key="world"></a>
+												</li>
+											</div>	
+										</ul>	
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="clubs.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="clubs"
-											>Clubs</a
+											></a
 										>
 									</li>
 									<li class="nav-item mr-2">
 										<a
 											href="contact.html"
-											class="nav-link myNavbarLinkText translateText"
+											class="nav-link translateText"
 											key="contact"
-											>Contact</a
+											></a
 										>
+									</li>
+									<li class="nav-item mr-2">
+										<a href="http://www.facebook.com/maracanacanada" target="_blank" class="nav-link translateText"
+										>
+											<span
+												><i
+													class="fab fa-facebook-f"
+												></i
+											></span>
+										</a>
 									</li>
 								</ul>
 							</div>
 						</div>
+						<div class="text-center" id="language">
+							<a
+								class="translate translateText"
+								id="languageSwitcher"
+								key="buttonLanguage"
+								onClick="changeLanguage()"
+							></a>
+						</div>									
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<!-- Infos section -->
-		<section id="historique">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 py-3">
-						<h2 class="mb-3">
+		<div class="main">
+			<div class="main__wrapper">
+
+				<!-- Page navigation section -->
+				<section id="page-nav">
+					<ul class="page-nav__list">
+						<li class="page-nav__items">
+							<a
+								href="#federation"
+								class="page-nav__item translateText"
+								key="federation"
+								></a
+							>
+						</li>
+						<li class="page-nav__items">
+							<a
+								href="#administration"
+								class="page-nav__item translateText"
+								key="council"
+								></a
+							>
+						</li>
+					</ul>
+				</section>
+
+				<!-- History header section -->
+				<section id="historique-header">
+					<div class="col py-3 mt-4">
+						<h2 class="mb-3 text-xs-center">
 							Historique
 						</h2>
 					</div>
-					<div class="col-xs-10 col-md-8 mb-4 py-3">
-						<div class="card">
-							<img
-								class="card-img-top img-fluid"
-								src="images/Stade_Maracana.png"
-								alt="Le stade mythique brésilien"
-							/>
-							<div class="card-header text-white bg-success">
-								<p class="lead">
-									Le stade mythique brésilien
-								</p>
-							</div>
-							<div class="card-body">
-								<p class="card-text text-justify galerie-text">
-									Le maracana est né sur le campus de
-									l'université de Cocody, à la faveur du
-									retour des étudiants boursiers Ivoiriens,
-									envoyés en formation en 1970 au Brésil par
-									le tout premier président de la Côte
-									d'Ivoire, Félix Houphouet Boigny. Ces
-									étudiants ont cru bon de donner le nom du
-									mythique stade Maracana de Rio de Janeiro à
-									cette discipline sportive, sans gardien de
-									but, qu'ils pratiquaient sur l'asphalte des
-									terrains de handball, qui s'apparentait au
-									soccer champagne pratiqué par ces génies
-									Brésiliens dans les nombreuses favelas de ce
-									pays.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-10 col-md-8 mb-4 py-3">
-						<div class="card">
-							<img
-								class="card-img-top img-fluid"
-								src="images/Terrain_Cocody.png"
-								alt="Le stade mythique brésilien"
-							/>
-							<div class="card-header text-white bg-success">
-								<p class="lead">
-									Un terrain de maracana sur le campus de
-									Cocody à Abidjan
-								</p>
-							</div>
-							<div class="card-body">
-								<p class="card-text text-justify galerie-text">
-									Une fois le cursus universitaire complété,
-									ces désormais fonctionnaires, cadres,
-									bref... reversés dans le milieu du travail
-									ont voulu garder la forme en perpétuant la
-									pratique du maracana hors des campus dans la
-									bonne ambiance autour des pots dits de la
-									troisième mi-temps.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-10 col-md-8 mb-4 py-3">
-						<div class="card">
-							<img
-								class="card-img-top img-fluid"
-								src="images/Lome.png"
-								alt="Le stade mythique brésilien"
-							/>
-							<div class="card-header text-white bg-success">
-								<p class="lead">
-									Création de l'instance international de
-									maracana en présence du ministre togolais
-									des sports à Lomé
-								</p>
-							</div>
-							<div class="card-body">
-								<p class="card-text text-justify galerie-text">
-									Suite au refus de la FIFA d'intégrer le
-									maracana parce que la discipline ne fait pas
-									la promotion des gardiens de but, les
-									pionniers se voient obligés de créer la
-									première fédération de maracana dénomée
-									Fédération ivoirienne de maracana et
-									disciplines associées ayant pour sigle
-									FIMADA. Il va s'en suivre une véritable
-									campagne de sensibilisation et de promotion
-									qui aboutira à la première coupe d'Afrique
-									des nations de maracana en 2012 à
-									Yamoussoukro. C'est donc galvanisés par ce
-									succès que les différents acteurs des pays
-									africains ont décidé, en présence des
-									délégations venues du Canada, des États-Unis
-									et de l'Europe, de la mise en place de
-									l'instance mondiale en août 2015 à Lomé au
-									Togo. Cette nouvelle structure prendra le
-									nom de Fédération internationale de maracana
-									association FIMAA ayant pour siège social à
-									Abidjan en Côte d'Ivoire et pour président,
-									l'Ivoirien Bleu Louan Charlemagne.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+				</section>
 
-		<!-- Infos section -->
-		<section id="federation">
-			<div class="container">
-				<div class="row">
+				<!-- History section -->
+				<section id="historique">			
+					<div class="card mb-4 pb-3">
+						<img
+							class="card-img-top img-fluid"
+							src="images/Stade_Maracana.png"
+							alt="Le stade mythique brésilien"
+						/>
+						<div class="card-header text-white bg-success">
+							<p class="lead">
+								Le stade mythique brésilien
+							</p>
+						</div>
+						<div class="card-body">
+							<p class="card-text text-justify galerie-text">
+								Le maracana est né sur le campus de
+								l'Université de Cocody, à la faveur du
+								retour des étudiants boursiers Ivoiriens,
+								envoyés en formation en 1970 au Brésil par
+								le tout premier président de la Côte
+								d'Ivoire, Félix Houphouet Boigny. Ces
+								étudiants ont cru bon de donner le nom du
+								mythique stade Maracana de Rio de Janeiro à
+								cette discipline sportive, sans gardien de
+								but, qu'ils pratiquaient sur l'asphalte des
+								terrains de handball, qui s'apparentait au
+								soccer champagne pratiqué par ces génies
+								Brésiliens dans les nombreuses favelas de ce
+								pays.
+							</p>
+						</div>
+					</div>
+				
+					<div class="card mb-4 pb-3">
+						<img
+							class="card-img-top img-fluid"
+							src="images/Terrain_Cocody.png"
+							alt="Le stade mythique brésilien"
+						/>
+						<div class="card-header text-white bg-success">
+							<p class="lead">
+								Un terrain de maracana sur le campus de
+								Cocody à Abidjan
+							</p>
+						</div>
+						<div class="card-body">
+							<p class="card-text text-justify galerie-text">
+								Une fois le cursus universitaire complété,
+								ces désormais fonctionnaires, cadres,
+								bref... reversés dans le milieu du travail
+								ont voulu garder la forme en perpétuant la
+								pratique du maracana hors des campus dans la
+								bonne ambiance autour des pots dits de la
+								troisième mi-temps.
+							</p>
+						</div>
+					</div>
+				
+					<div class="card mb-4 pb-3">
+						<img
+							class="card-img-top img-fluid"
+							src="images/Lome.png"
+							alt="Le stade mythique brésilien"
+						/>
+						<div class="card-header text-white bg-success">
+							<p class="lead">
+								Création de l'instance international de
+								maracana en présence du ministre togolais
+								des sports à Lomé
+							</p>
+						</div>
+						<div class="card-body">
+							<p class="card-text text-justify galerie-text">
+								Suite au refus de la FIFA d'intégrer le
+								maracana parce que la discipline ne fait pas
+								la promotion des gardiens de but, les
+								pionniers se voient obligés de créer la
+								première fédération de maracana dénomée
+								Fédération ivoirienne de maracana et
+								disciplines associées ayant pour sigle
+								FIMADA. Il va s'en suivre une véritable
+								campagne de sensibilisation et de promotion
+								qui aboutira à la première coupe d'Afrique
+								des nations de maracana en 2012 à
+								Yamoussoukro. C'est donc galvanisés par ce
+								succès que les différents acteurs des pays
+								africains ont décidé, en présence des
+								délégations venues du Canada, des États-Unis
+								et de l'Europe, de la mise en place de
+								l'instance mondiale en août 2015 à Lomé au
+								Togo. Cette nouvelle structure prendra le
+								nom de Fédération internationale de maracana
+								association FIMAA ayant pour siège social à
+								Abidjan en Côte d'Ivoire et pour président,
+								l'Ivoirien Bleu Louan Charlemagne.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Federation section -->
+				<section id="federation" class="mt-4">
 					<div class="col-12 py-3">
 						<h2 class="mb-3 text-xs-center">
 							La Fédération
@@ -346,141 +448,119 @@
 							jeunesse, du sport et de la culture.
 						</p>
 					</div>
-				</div>
-			</div>
-		</section>
+				</section>
 
-		<!-- Infos section -->
-		<section id="administration">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 py-3">
-						<h2 class="mb-3 text-xs-center">
-							Le Conseil d'Administration
-						</h2>
-						<p class="lead mb-3">
-							COMPOSITION
-						</p>
-						<ul>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">1</span>
-								Le Conseil d’Administration est composé de neuf
-								(9) membres incluant le président.
-							</li>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">2</span>
-								Les autres membres sont nommés par le président.
-							</li>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">3</span>
-								Le mandat du Conseil d’Administration est de
-								quatre (4) ans.
-							</li>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">4</span>
-								Il se réunit une (1) fois tous les trois (3)
-								mois ou à tout moment en cas d’urgence.
-							</li>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">5</span>
-								En cas d’indisponibilité ou de démission d’un
-								membre, le président le remplacera pour la durée
-								restante de son mandat.
-							</li>
-						</ul>
+				<!-- Administration section -->
+				<section id="administration" class="mt-4">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 py-3">
+								<h2 class="mb-3 text-xs-center">
+									Le Conseil d'Administration
+								</h2>
+								<p class="lead mb-3">
+									COMPOSITION
+								</p>
+								<ul>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">1</span>
+										Le Conseil d’Administration est composé de neuf
+										(9) membres incluant le président.
+									</li>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">2</span>
+										Les autres membres sont nommés par le président.
+									</li>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">3</span>
+										Le mandat du Conseil d’Administration est de
+										quatre (4) ans.
+									</li>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">4</span>
+										Il se réunit une (1) fois tous les trois (3)
+										mois ou à tout moment en cas d’urgence.
+									</li>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">5</span>
+										En cas d’indisponibilité ou de démission d’un
+										membre, le président le remplacera pour la durée
+										restante de son mandat.
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 py-3">
+								<p class="lead mb-3">
+									COMPÉTENCES
+								</p>
+								<ul>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">1</span>
+										Le Conseil d’Administration a un rôle de conseil
+										consultatif pour le Comité Exécutif.
+									</li>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">2</span>
+										Il élabore les grandes stratégies pour la
+										conduite de Maracana Canada.
+									</li>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">3</span>
+										Il supervise les actions du Comité Exécutif.
+									</li>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">4</span>
+										Il participe à l’élaboration du programme
+										d’activités du Comité Exécutif.
+									</li>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">5</span>
+										Il participe aux réunions du Comité Exécutif
+										élargi.
+									</li>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">6</span>
+										Il participe aux réunions d’urgence convoquées
+										par le président sans droit de vote pour les
+										non-membres du Comité Exécutif.
+									</li>
+									<li class="text-justify mb-1">
+										<span class="badge badge-light">7</span>
+										Le Conseil d’Administration décide de la date et
+										du lieu de l’Assemblée Générale.
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<div class="col-12 py-3">
-						<p class="lead mb-3">
-							COMPÉTENCES
-						</p>
-						<ul>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">1</span>
-								Le Conseil d’Administration a un rôle de conseil
-								consultatif pour le Comité Exécutif.
-							</li>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">2</span>
-								Il élabore les grandes stratégies pour la
-								conduite de Maracana Canada.
-							</li>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">3</span>
-								Il supervise les actions du Comité Exécutif.
-							</li>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">4</span>
-								Il participe à l’élaboration du programme
-								d’activités du Comité Exécutif.
-							</li>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">5</span>
-								Il participe aux réunions du Comité Exécutif
-								élargi.
-							</li>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">6</span>
-								Il participe aux réunions d’urgence convoquées
-								par le président sans droit de vote pour les
-								non-membres du Comité Exécutif.
-							</li>
-							<li class="text-justify mb-1">
-								<span class="badge badge-light">7</span>
-								Le Conseil d’Administration décide de la date et
-								du lieu de l’Assemblée Générale.
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
+				</section>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="container pt-4">
-				<div class="row">
-					<div class="col text-center">
-						<p class="lead translateText" key="footer">
-							Fédération Canadienne de Maracana
-						</p>
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="container pt-4">
+						<div class="row">
+							<div class="col text-center">
+								<p class="lead translateText" key="footer">
+									Fédération Canadienne de Maracana
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col text-center">
+								<p id="copyright">
+									&copy; Copyright <span id="year"></span>
+									<span id="owner"> | Paul Farcas</span>
+								</p>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col text-center">
-						<p id="copyright">
-							&copy; Copyright <span id="year"></span>
-							<span id="owner"> | Paul Farcas</span>
-						</p>
-					</div>
-				</div>
+				</footer>
 			</div>
-		</footer>
-
-		<!-- Language switcher -->
-		<div class="text-center" id="language">
-			<a
-				class="translate translateText"
-				id="languageSwitcher"
-				key="buttonLanguage"
-				onClick="changeLanguage()"
-			></a>
 		</div>
-
 		<!-- Scroll to top button -->
-		<div id="scroll-football">
+		<div id="scroll-arrow">
 			<a href="#" class="scroll-top" data-scroll="up">
 				<i class="fas fa-caret-up fa-2x"></i>
-			</a>
-		</div>
-		<div class="d-none d-sm-flex">
-			<a
-				id="fb-media"
-				href="http://www.facebook.com/maracanacanada"
-				target="_blank"
-			>
-				<span
-					><i class="fab fa-facebook-f fa-2x text-primary"></i
-				></span>
 			</a>
 		</div>
 
@@ -508,17 +588,17 @@
 
 			$(window).scroll(function() {
 				if ($(this).scrollTop() > 100) {
-					$('#scroll-football').fadeIn();
+					$('#scroll-arrow').fadeIn();
 				} else {
-					$('#scroll-football').fadeOut();
+					$('#scroll-arrow').fadeOut();
 				}
 			});
 
 			// init scrollspy
-			$('body').scrollspy({ target: '#scroll-football' });
+			$('body').scrollspy({ target: '#scroll-arrow' });
 
 			// add smooth scrolling
-			$('#scroll-football').on('click', function(e) {
+			$('#scroll-arrow').on('click', function(e) {
 				// check for a hash value
 				if (this.hash !== '') {
 					// prevent default behavior
@@ -540,6 +620,35 @@
 					);
 				}
 			});
+
+			$(".page-nav__item").on('click', function(event) {
+
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 900, function(){
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+
+			$('.navigation .dropdown').hover(function () {
+				$(this).find('.dropdown-content').first().stop(true, true).slideDown(300);
+			}, function () {
+				$(this).find('.dropdown-content').first().stop(true, true).slideUp(300)
+			});
+
 		</script>
 	</body>
 </html>
