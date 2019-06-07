@@ -4,7 +4,7 @@
 })();
 
 //  Language translation english and french
-const language = {
+var language = {
 	en: {
 		buttonLanguage: 'Fr',
 		home: 'Home',
