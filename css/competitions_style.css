@@ -28,7 +28,8 @@
 	width: 90%;
 }
 
-#competitions {
+#competitions,
+#teams {
 	background-color: #fff;
 	height: auto;
 	width: 100%;
