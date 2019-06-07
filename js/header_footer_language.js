@@ -1,7 +1,7 @@
-(function() {
-	if (typeof NodeList.prototype.forEach === 'function') return false;
-	NodeList.prototype.forEach = Array.prototype.forEach;
-})();
+// (function() {
+// 	if (typeof NodeList.prototype.forEach === 'function') return false;
+// 	NodeList.prototype.forEach = Array.prototype.forEach;
+// })();
 
 //  Language translation english and french
 const language = {
@@ -106,7 +106,31 @@ window.addEventListener(
 		// get the browser default language
 		let browserLanguage = getBrowserLanguage();
 
-		textToChange.forEach(function(text) {
+		// for (const text of textToChange) {
+		// 	// check if the language object has a property like the class' key
+		// 	if (
+		// 		language[browserLanguage].hasOwnProperty(
+		// 			text.getAttribute('key')
+		// 		)
+		// 	) {
+		// 		text.innerHTML =
+		// 			language[browserLanguage][text.getAttribute('key')];
+		// 	}
+		// }
+
+		// textToChange.forEach(function(text) {
+		// 	// check if the language object has a property like the class' key
+		// 	if (
+		// 		language[browserLanguage].hasOwnProperty(
+		// 			text.getAttribute('key')
+		// 		)
+		// 	) {
+		// 		text.innerHTML =
+		// 			language[browserLanguage][text.getAttribute('key')];
+		// 	}
+		// });
+
+		Array.prototype.forEach.call(textToChange, function(text) {
 			// check if the language object has a property like the class' key
 			if (
 				language[browserLanguage].hasOwnProperty(
@@ -128,10 +152,22 @@ function changeLanguage() {
 	let buttonLanguage = getButtonLanguage();
 	// console.log(buttonLanguage);
 
-	textToChange.forEach(function(text) {
-		// check if the language object has a property like the class' key
+	// for (const text of textToChange) {
+	// 	if (language[buttonLanguage].hasOwnProperty(text.getAttribute('key'))) {
+	// 		text.innerHTML = language[buttonLanguage][text.getAttribute('key')];
+	// 	}
+	// }
+
+	Array.prototype.forEach.call(textToChange, function(text) {
 		if (language[buttonLanguage].hasOwnProperty(text.getAttribute('key'))) {
 			text.innerHTML = language[buttonLanguage][text.getAttribute('key')];
 		}
 	});
+
+	// textToChange.forEach(function(text) {
+	// 	// check if the language object has a property like the class' key
+	// 	if (language[buttonLanguage].hasOwnProperty(text.getAttribute('key'))) {
+	// 		text.innerHTML = language[buttonLanguage][text.getAttribute('key')];
+	// 	}
+	// });
 }
