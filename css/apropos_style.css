@@ -30,15 +30,11 @@
 
 #historique-header,
 #historique,
+#federation,
 #administration {
 	background-color: #fff;
 	height: auto;
 	width: 100%;
-}
-
-#federation {
-	background-color: rgb(243, 243, 243);
-	height: auto;
 }
 
 #historique-header .col,
@@ -80,7 +76,7 @@
 
 ul {
 	list-style-type: none;
-	padding-inline-start: 0;
+	padding-inline-start: 20px;
 }
 
 .badge-light {

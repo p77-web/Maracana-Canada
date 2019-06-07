@@ -31,35 +31,30 @@
 #competitions {
 	background-color: #fff;
 	height: auto;
+	width: 100%;
 }
 
-#competitions .col {
+#competitions .col-12 {
 	margin: 0 auto;
 	max-width: 100%;
 }
 
-#competitions .col > h2 {
+#competitions .col-12 > h2 {
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
 	padding-bottom: 20px;
 }
 
-#competitions .col > p {
+#competitions .col-12 > p {
 	font-size: 0.85rem;
 	margin: 0 auto;
 	max-width: 96%;
 	text-indent: 2em;
 }
 
-#competitions .col > p.lead {
+#competitions .col-12 > p.lead {
 	color: #f00;
 	font-size: 1.1rem;
-}
-
-#championnat {
-	background-color: rgb(243, 243, 243);
-	height: auto;
-	width: 100%;
 }
 
 #championnat-header {
@@ -76,6 +71,12 @@
 	border-bottom: 2px solid #f75056;
 	font-size: 1.15rem;
 	padding-bottom: 1.25rem;
+}
+
+#championnat {
+	background-color: rgb(243, 243, 243);
+	height: auto;
+	width: 100%;
 }
 
 .championnat-card-text {
@@ -152,16 +153,16 @@ caption {
 		padding: 0 10px;
 	}
 
-	#competitions .col > h2 {
+	#competitions .col-12 > h2 {
 		font-size: 1.25rem;
 		padding-left: 2rem;
 	}
 
-	#competitions .col > p {
+	#competitions .col-12 > p {
 		font-size: 1rem;
 	}
 
-	#competitions .col > p.lead {
+	#competitions .col-12 > p.lead {
 		font-size: 1.15rem;
 	}
 
@@ -208,11 +209,11 @@ caption {
 		padding: 0 15px;
 	}
 
-	#competitions .col > h2 {
+	#competitions .col-12 > h2 {
 		font-size: 1.5rem;
 	}
 
-	#competitions .col > p.lead {
+	#competitions .col-12 > p.lead {
 		font-size: 1.25rem;
 	}
 

@@ -59,6 +59,10 @@
 	width: 100%;
 }
 
+#clubs .col-12 {
+	margin: 0 auto;
+}
+
 .clubs-card-text {
 	font-size: 0.9rem;
 	margin: 0 auto;
