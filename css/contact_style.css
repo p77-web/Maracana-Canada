@@ -34,6 +34,11 @@
 	width: 100%;
 }
 
+.col-12 {
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
 #contact-header {
 	background-color: #fff;
 	height: auto;
@@ -137,13 +142,11 @@ caption {
 		padding-left: 2rem;
 	}
 
-	/* to justify the text */
-	#competitions .col > p {
-		font-size: 1rem;
-	}
-
-	#competitions .col > p.lead {
-		font-size: 1.15rem;
+	.col-12 {
+		margin: 0 auto;
+		max-width: 90%;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 
 	/* to justify the text */
@@ -174,13 +177,8 @@ caption {
 		padding: 0 15px;
 	}
 
-	/* to justify the text */
-	#competitions .col > h2 {
-		font-size: 1.5rem;
-	}
-
-	#competitions .col > p.lead {
-		font-size: 1.25rem;
+	.col-12 {
+		max-width: 80%;
 	}
 
 	#contact-header .col > h2 {
@@ -203,6 +201,10 @@ caption {
 @media (min-width: 992px) {
 	.main__wrapper {
 		padding: 0 20px;
+	}
+
+	.col-12 {
+		max-width: 70%;
 	}
 }
 
