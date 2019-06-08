@@ -86,6 +86,7 @@ p {
 }
 
 .news__title,
+.news__date,
 .news__subtitle {
 	color: #f1f1f1;
 	margin: 0 auto;
@@ -96,6 +97,12 @@ p {
 	font-family: 'IM Fell English SC', serif;
 	font-weight: 900;
 	text-transform: uppercase;
+}
+
+.news__date {
+	align-self: center;
+	font-family: 'IM Fell Double Pica SC', serif;
+	font-weight: 900;
 }
 
 .news__subtitle {
@@ -258,7 +265,11 @@ p {
 
 .actualites h5 {
 	color: #f00;
-	text-align: left;
+	text-align: center;
+}
+
+.actualites-media__text {
+	text-indent: 1rem;
 }
 
 #partenaires {
