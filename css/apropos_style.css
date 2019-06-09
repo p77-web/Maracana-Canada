@@ -61,13 +61,13 @@
 	/* font-size: 0.85rem; */
 	margin: 0 auto;
 	max-width: 96%;
-	text-indent: 2em;
+	text-indent: 1rem;
 }
 
 #administration .col-12 > p {
 	margin: 0 auto;
 	max-width: 96%;
-	text-indent: 2em;
+	text-indent: 1rem;
 }
 
 .card-header {
@@ -76,7 +76,7 @@
 
 ul {
 	list-style-type: none;
-	padding-inline-start: 20px;
+	padding-inline-start: 0px;
 }
 
 .badge-light {
@@ -118,6 +118,10 @@ ul {
 	#federation .col-12 > h2,
 	#administration .col-12 > h2 {
 		font-size: 1.5rem;
+	}
+
+	ul {
+		padding-inline-start: 20px;
 	}
 
 	.lead {
