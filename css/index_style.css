@@ -255,10 +255,21 @@ p {
 }
 
 .actualites {
+	height: auto;
 	padding: 0 15px;
+	width: 100%;
+}
+
+.actualites__article {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+	justify-content: center;
 }
 
 .actualites__img {
+	flex-shrink: 0;
 	height: 120px;
 	width: 165px;
 }
@@ -268,7 +279,7 @@ p {
 	text-align: center;
 }
 
-.actualites-media__text {
+.actualites__text {
 	text-indent: 1rem;
 }
 
@@ -494,7 +505,11 @@ p {
 		font-size: 1.5rem;
 	}
 
-	.actualites-media__text {
+	.actualites__article {
+		flex-direction: row;
+	}
+
+	.actualites__text {
 		font-size: 1rem;
 	}
 

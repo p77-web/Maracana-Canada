@@ -118,19 +118,7 @@ window.addEventListener(
 		// 	}
 		// }
 
-		// textToChange.forEach(function(text) {
-		// 	// check if the language object has a property like the class' key
-		// 	if (
-		// 		language[browserLanguage].hasOwnProperty(
-		// 			text.getAttribute('key')
-		// 		)
-		// 	) {
-		// 		text.innerHTML =
-		// 			language[browserLanguage][text.getAttribute('key')];
-		// 	}
-		// });
-
-		Array.prototype.forEach.call(textToChange, function(text) {
+		textToChange.forEach(function(text) {
 			// check if the language object has a property like the class' key
 			if (
 				language[browserLanguage].hasOwnProperty(
@@ -141,6 +129,18 @@ window.addEventListener(
 					language[browserLanguage][text.getAttribute('key')];
 			}
 		});
+
+		// Array.prototype.forEach.call(textToChange, function(text) {
+		// 	// check if the language object has a property like the class' key
+		// 	if (
+		// 		language[browserLanguage].hasOwnProperty(
+		// 			text.getAttribute('key')
+		// 		)
+		// 	) {
+		// 		text.innerHTML =
+		// 			language[browserLanguage][text.getAttribute('key')];
+		// 	}
+		// });
 	},
 	false
 );
@@ -158,16 +158,16 @@ function changeLanguage() {
 	// 	}
 	// }
 
-	Array.prototype.forEach.call(textToChange, function(text) {
-		if (language[buttonLanguage].hasOwnProperty(text.getAttribute('key'))) {
-			text.innerHTML = language[buttonLanguage][text.getAttribute('key')];
-		}
-	});
-
-	// textToChange.forEach(function(text) {
-	// 	// check if the language object has a property like the class' key
+	// Array.prototype.forEach.call(textToChange, function(text) {
 	// 	if (language[buttonLanguage].hasOwnProperty(text.getAttribute('key'))) {
 	// 		text.innerHTML = language[buttonLanguage][text.getAttribute('key')];
 	// 	}
 	// });
+
+	textToChange.forEach(function(text) {
+		// check if the language object has a property like the class' key
+		if (language[buttonLanguage].hasOwnProperty(text.getAttribute('key'))) {
+			text.innerHTML = language[buttonLanguage][text.getAttribute('key')];
+		}
+	});
 }
