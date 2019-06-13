@@ -106,18 +106,6 @@ window.addEventListener(
 		// get the browser default language
 		let browserLanguage = getBrowserLanguage();
 
-		// for (const text of textToChange) {
-		// 	// check if the language object has a property like the class' key
-		// 	if (
-		// 		language[browserLanguage].hasOwnProperty(
-		// 			text.getAttribute('key')
-		// 		)
-		// 	) {
-		// 		text.innerHTML =
-		// 			language[browserLanguage][text.getAttribute('key')];
-		// 	}
-		// }
-
 		textToChange.forEach(function(text) {
 			// check if the language object has a property like the class' key
 			if (
@@ -129,18 +117,6 @@ window.addEventListener(
 					language[browserLanguage][text.getAttribute('key')];
 			}
 		});
-
-		// Array.prototype.forEach.call(textToChange, function(text) {
-		// 	// check if the language object has a property like the class' key
-		// 	if (
-		// 		language[browserLanguage].hasOwnProperty(
-		// 			text.getAttribute('key')
-		// 		)
-		// 	) {
-		// 		text.innerHTML =
-		// 			language[browserLanguage][text.getAttribute('key')];
-		// 	}
-		// });
 	},
 	false
 );
@@ -150,19 +126,6 @@ function changeLanguage() {
 	let textToChange = document.querySelectorAll('.translateText');
 
 	let buttonLanguage = getButtonLanguage();
-	// console.log(buttonLanguage);
-
-	// for (const text of textToChange) {
-	// 	if (language[buttonLanguage].hasOwnProperty(text.getAttribute('key'))) {
-	// 		text.innerHTML = language[buttonLanguage][text.getAttribute('key')];
-	// 	}
-	// }
-
-	// Array.prototype.forEach.call(textToChange, function(text) {
-	// 	if (language[buttonLanguage].hasOwnProperty(text.getAttribute('key'))) {
-	// 		text.innerHTML = language[buttonLanguage][text.getAttribute('key')];
-	// 	}
-	// });
 
 	textToChange.forEach(function(text) {
 		// check if the language object has a property like the class' key

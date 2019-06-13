@@ -125,11 +125,7 @@ body {
 	justify-content: space-around;
 	list-style-type: none;
 	margin-bottom: 0rem;
-	padding-inline-start: 0;
-}
-
-.page-nav__items {
-	/* padding: 0 20px; */
+	padding-inline-start: 0px;
 }
 
 .page-nav__item {
@@ -260,7 +256,6 @@ body {
 	}
 
 	.dropdown-content .navbar-nav {
-		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 
