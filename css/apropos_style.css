@@ -58,7 +58,6 @@
 
 #historique .col-12 > p,
 #federation .col-12 > p {
-	/* font-size: 0.85rem; */
 	margin: 0 auto;
 	max-width: 96%;
 	text-indent: 1rem;
@@ -76,8 +75,6 @@
 
 ul {
 	list-style-type: none;
-	-webkit-padding-start: 0px;
-	padding-inline-start: 0px;
 }
 
 .badge-light {
@@ -121,9 +118,8 @@ ul {
 		font-size: 1.5rem;
 	}
 
-	ul {
-		-webkit-padding-start: 20px;
-		padding-inline-start: 20px;
+	.administration-lists {
+		padding: 20px;
 	}
 
 	.lead {
