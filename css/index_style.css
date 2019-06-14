@@ -148,6 +148,10 @@ p {
 	margin: 0 auto;
 }
 
+.card__link {
+	overflow: hidden;
+}
+
 .card-img-top {
 	width: 100%;
 }
