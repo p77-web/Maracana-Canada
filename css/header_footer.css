@@ -45,7 +45,7 @@ ul {
 	width: 90%;
 }
 
-.navbar-container {
+.navbar__container {
 	padding: 0;
 	width: 100%;
 }
@@ -196,11 +196,11 @@ ul {
 
 /* Media */
 @media (max-width: 575px) {
-	.menu-container {
+	/* .menu__container {
 		background-color: red;
 		padding-left: 0;
 		padding-right: 0;
-	}
+	} */
 }
 
 @media (max-width: 767px) {

@@ -55,20 +55,7 @@
 	padding-bottom: 1.25rem;
 }
 
-.contact-card-text {
-	font-size: 0.9rem;
-	margin: 0 auto;
-	max-width: 100%;
-}
-
-.contact-text {
-	font-size: 0.9rem;
-	margin: 0 auto;
-	max-width: 90%;
-	text-indent: 2em;
-}
-
-.contact-info {
+.contact__info {
 	font-size: 0.9rem;
 }
 
@@ -89,29 +76,6 @@
 
 .btn-outline-danger:hover {
 	background-color: #f00;
-}
-
-.teams-card {
-	background-color: transparent;
-	border: none;
-}
-
-.teams-card .card-footer {
-	background-color: transparent;
-	border: none;
-}
-
-.table td,
-.table th {
-	padding: 0.25rem;
-}
-
-.table-text {
-	font-size: 0.9rem;
-}
-
-caption {
-	caption-side: top;
 }
 
 /* Media */
@@ -136,12 +100,6 @@ caption {
 		padding: 0 10px;
 	}
 
-	/* to justify the text */
-	#competitions .col > h2 {
-		font-size: 1.25rem;
-		padding-left: 2rem;
-	}
-
 	.col-12 {
 		margin: 0 auto;
 		max-width: 90%;
@@ -155,19 +113,7 @@ caption {
 		padding-left: 2rem;
 	}
 
-	.contact-card-text {
-		font-size: 0.95rem;
-	}
-
-	.contact-text {
-		font-size: 0.95rem;
-	}
-
-	.contact-info {
-		font-size: 0.95rem;
-	}
-
-	.table-text {
+	.contact__info {
 		font-size: 0.95rem;
 	}
 }
@@ -185,15 +131,7 @@ caption {
 		font-size: 1.5rem;
 	}
 
-	.contact-card-text {
-		font-size: 1rem;
-	}
-
-	.contact-text {
-		font-size: 1rem;
-	}
-
-	.contact-info {
+	.contact__info {
 		font-size: 1rem;
 	}
 }

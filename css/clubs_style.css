@@ -69,14 +69,14 @@
 	max-width: 100%;
 }
 
-.clubs-text {
+.clubs__text {
 	font-size: 0.9rem;
 	margin: 0 auto;
 	max-width: 90%;
 	text-indent: 2em;
 }
 
-.clubs-stats {
+.contact__stats {
 	font-size: 0.9rem;
 	text-indent: 1em;
 }
@@ -135,11 +135,11 @@ caption {
 		font-size: 0.95rem;
 	}
 
-	.clubs-text {
+	.clubs__text {
 		font-size: 0.95rem;
 	}
 
-	.clubs-stats {
+	.contact__stats {
 		font-size: 0.95rem;
 	}
 
@@ -169,11 +169,11 @@ caption {
 		font-size: 1rem;
 	}
 
-	.clubs-text {
+	.clubs__text {
 		font-size: 1rem;
 	}
 
-	.clubs-stats {
+	.contact__stats {
 		font-size: 1rem;
 	}
 

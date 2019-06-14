@@ -80,33 +80,28 @@
 	width: 100%;
 }
 
-.championnat-card-text {
+.card__text {
 	font-size: 0.9rem;
 	margin: 0 auto;
 	max-width: 100%;
 }
 
-.championnat-text {
+.championnat__text {
 	font-size: 0.9rem;
 	margin: 0 auto;
 	max-width: 90%;
 	text-indent: 2em;
 }
 
-.championnat-stats {
+.results__stats {
 	font-size: 0.9rem;
 }
 
-.championnat-teams {
+.card__title {
 	font-size: 0.9rem;
 }
 
-.teams-card {
-	background-color: transparent;
-	border: none;
-}
-
-.teams-card .card-footer {
+.card__teams {
 	background-color: transparent;
 	border: none;
 }
@@ -172,19 +167,19 @@ caption {
 		padding-left: 2rem;
 	}
 
-	.championnat-card-text {
+	.card__text {
 		font-size: 0.95rem;
 	}
 
-	.championnat-text {
+	.championnat__text {
 		font-size: 0.95rem;
 	}
 
-	.championnat-stats {
+	.results__stats {
 		font-size: 0.95rem;
 	}
 
-	.championnat-teams {
+	.card__title {
 		font-size: 0.95rem;
 	}
 
@@ -222,19 +217,19 @@ caption {
 		font-size: 1.5rem;
 	}
 
-	.championnat-card-text {
+	.card__text {
 		font-size: 1rem;
 	}
 
-	.championnat-text {
+	.championnat__text {
 		font-size: 1rem;
 	}
 
-	.championnat-stats {
+	.results__stats {
 		font-size: 1rem;
 	}
 
-	.championnat-teams {
+	.card__title {
 		font-size: 1rem;
 	}
 

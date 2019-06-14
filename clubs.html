@@ -43,7 +43,8 @@
 	</head>
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
-		<!-- Header with carousel -->
+
+		<!-- Header section -->
 		<header id="header-section">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
@@ -84,7 +85,7 @@
 						class="navbar navbar-expand-md navbar-dark navigation"
 						id="main-nav"
 					>
-						<div class="container navbar-container">
+						<div class="container navbar__container">
 							<button
 								class="navbar-toggler"
 								data-toggle="collapse"
@@ -96,7 +97,7 @@
 								class="collapse navbar-collapse"
 								id="navbarCollapse"
 							>
-								<ul class="navbar-nav mx-auto menu-container">
+								<ul class="navbar-nav mx-auto">
 									<li class="nav-item mr-2">
 										<a
 											href="index.html"
@@ -144,14 +145,14 @@
 											id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
 											key="competitions"
 										></a>	
-										<ul class="navbar-nav mx-auto menu-container">
+										<ul class="navbar-nav mx-auto">
 											<div class="dropdown-content" aria-labelledby="navbarDropdown">
 												<li class="nav-item">
 													<a href="#" class="translateText" key="national"></a>
 												</li>
 												<li class="nav-item dropdown-content__submenu">
 													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="championship"></a>
-													<ul class="navbar-nav mx-auto menu-container">
+													<ul class="navbar-nav mx-auto">
 														<div class="dropdown-content dropdown-content__submenu-championship--position" aria-labelledby="navbarDropdown">
 															<li class="nav-item">
 																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship17"></a>
@@ -167,7 +168,7 @@
 												</li>
 												<li class="nav-item dropdown-content__submenu">
 													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="cup"></a>
-													<ul class="navbar-nav mx-auto menu-container">
+													<ul class="navbar-nav mx-auto">
 														<div class="dropdown-content dropdown-content__submenu-cup--position" aria-labelledby="navbarDropdown">
 															<li class="nav-item">
 																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup17"></a>
@@ -271,7 +272,7 @@
 							alt="Clubs"
 						/>
 					</div>
-					<p class="text-justify my-2 clubs-text">
+					<p class="text-justify my-2 clubs__text">
 						Il est bien facile de trouver un club de maracana où
 						pratiquer ce sport. Il se pratique aujourd'hui dans
 						plusieurs grandes villes du Canada. Cela n'empêche pas
@@ -282,7 +283,7 @@
 						listons, tout de même, quelques contacts ci-dessous.
 					</p>
 
-					<div class="col-xs-12 contact" id="contacts">
+					<div class="col-12 contact" id="contacts">
 						<p class="lead mt-5 mb-3">
 							CONTACTS DE PERSONNES RESSOURCES DANS DES CLUBS
 						</p>
@@ -292,7 +293,7 @@
 						<p class="lead mt-2 mb-3 font-weight-bold">
 							Joliette
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(450) 944-1377 - Moussa Ouattara
 						</p>
 					</div>
@@ -300,7 +301,7 @@
 						<p class="lead mt-2 mb-3 font-weight-bold">
 							Laval
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(514) 885-8225 - Olivier Paquin
 						</p>
 					</div>
@@ -308,7 +309,7 @@
 						<p class="lead mt-2 mb-3 font-weight-bold">
 							Longueuil
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(438) 764-5422 - Daouada Konaté (Longueuil Maracana
 							Club)
 						</p>
@@ -317,21 +318,21 @@
 						<p class="lead mt-2 mb-3 font-weight-bold">
 							Montréal
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(438) 930-6801 - Assane Diawandou (Ivoire Foot
 							Montréal)
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(514) 237-8474 - Maxime Kouamé (FC Multi C)
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(514) 569-1464 - Hamed Bamba (Peace Team Maracana)
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(438) 930-9148 - Ousmane Sock (Équipe Mauritanie de
 							Montréal)
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(514) 431-3349 - Daouda Fofana (Association des
 							Ivoiriens de Lasalle)
 						</p>
@@ -340,7 +341,7 @@
 						<p class="lead mt-2 mb-3 font-weight-bold">
 							Ottawa, Gatineau, Hull
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(403) 918-4565 - Mohamed Touré
 						</p>
 					</div>
@@ -348,7 +349,7 @@
 						<p class="lead mt-2 mb-3 font-weight-bold">
 							Québec
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(418) 271-3011 - Benjamin Pohé (Club des Amis du
 							Maracana de Québec)
 						</p>
@@ -357,7 +358,7 @@
 						<p class="lead mt-2 mb-3 font-weight-bold">
 							St-Hyacinthe
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(450) 501-6262 - Delicat Tchemele (Maracana Club de
 							St-Hyacinthe)
 						</p>
@@ -366,7 +367,7 @@
 						<p class="lead mt-2 mb-3 font-weight-bold">
 							Ste-Marthe-Sur-Le-Lac, Deux-Montagnes, St-Eustache
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(514) 212-9976 - Guy Tchatat (Club des Amis du
 							Maracana de Ste-Marthe)
 						</p>
@@ -375,16 +376,16 @@
 						<p class="lead mt-2 mb-3 font-weight-bold">
 							Toronto
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(647) 608-5824 - Atta Hervé (2-Zero FC Toronto)
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(416) 885-8781 - Eddy Yomi (The Eagles)
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(647) 870-1445 - Constant Adonis (United)
 						</p>
-						<p class="clubs-stats">
+						<p class="contact__stats">
 							(289) 314-7131 - Kenny (Bondeko Durham)
 						</p>
 					</div>
@@ -395,9 +396,7 @@
 					<div class="container pt-4">
 						<div class="row">
 							<div class="col text-center">
-								<p class="lead translateText" key="footer">
-									Fédération Canadienne de Maracana
-								</p>
+								<p class="lead translateText" key="footer"></p>
 							</div>
 						</div>
 						<div class="row">

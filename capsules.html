@@ -43,7 +43,8 @@
 	</head>
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
-		<!-- Header with carousel -->
+
+		<!-- Header section -->
 		<header id="header-section">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
@@ -84,7 +85,7 @@
 						class="navbar navbar-expand-md navbar-dark navigation"
 						id="main-nav"
 					>
-						<div class="container navbar-container">
+						<div class="container navbar__container">
 							<button
 								class="navbar-toggler"
 								data-toggle="collapse"
@@ -96,7 +97,7 @@
 								class="collapse navbar-collapse"
 								id="navbarCollapse"
 							>
-								<ul class="navbar-nav mx-auto menu-container">
+								<ul class="navbar-nav mx-auto">
 									<li class="nav-item mr-2">
 										<a
 											href="index.html"
@@ -144,14 +145,14 @@
 											id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
 											key="competitions"
 										></a>	
-										<ul class="navbar-nav mx-auto menu-container">
+										<ul class="navbar-nav mx-auto">
 											<div class="dropdown-content" aria-labelledby="navbarDropdown">
 												<li class="nav-item">
 													<a href="#" class="translateText" key="national"></a>
 												</li>
 												<li class="nav-item dropdown-content__submenu">
 													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="championship"></a>
-													<ul class="navbar-nav mx-auto menu-container">
+													<ul class="navbar-nav mx-auto">
 														<div class="dropdown-content dropdown-content__submenu-championship--position" aria-labelledby="navbarDropdown">
 															<li class="nav-item">
 																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship17"></a>
@@ -167,7 +168,7 @@
 												</li>
 												<li class="nav-item dropdown-content__submenu">
 													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="cup"></a>
-													<ul class="navbar-nav mx-auto menu-container">
+													<ul class="navbar-nav mx-auto">
 														<div class="dropdown-content dropdown-content__submenu-cup--position" aria-labelledby="navbarDropdown">
 															<li class="nav-item">
 																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup17"></a>
@@ -265,16 +266,14 @@
 
 				<!-- Lessons section -->
 				<section id="lessons">
-					<div class="container">
+					<div class="container lessons">
 						<div class="row">
 							<div class="col-12 mb-5">
-								<p class="lead mb-3 lesson-title font-weight-bold">
-									<span class="badge badge-pill badge-danger"
-										>Leçon 1</span
-									>
+								<p class="lead mb-3 font-weight-bold">
+									<span class="badge badge-pill badge-danger--red">Leçon 1</span>
 									LE TERRAIN
 								</p>
-								<div class="col image-center mb-3">
+								<div class="col lessons__image--center mb-3">
 									<img
 										class="img-fluid"
 										src="images/terrain.png"
@@ -294,13 +293,11 @@
 								</p>
 							</div>
 							<div class="col-12 mb-5">
-								<p class="lead mb-3 lesson-title font-weight-bold">
-									<span class="badge badge-pill badge-danger"
-										>Leçon 2</span
-									>
+								<p class="lead mb-3 font-weight-bold">
+									<span class="badge badge-pill badge-danger--red">Leçon 2</span>
 									LE BALLON
 								</p>
-								<div class="col image-center mb-3">
+								<div class="col lessons__image--center mb-3">
 									<img
 										class="img-fluid"
 										id="ballon"
@@ -321,10 +318,8 @@
 								</p>
 							</div>
 							<div class="col-12 mb-5">
-								<p class="lead mb-3 lesson-title font-weight-bold">
-									<span class="badge badge-pill badge-danger"
-										>Leçon 3</span
-									>
+								<p class="lead mb-3 font-weight-bold">
+									<span class="badge badge-pill badge-danger--red">Leçon 3</span>
 									LE NOMBRE DE JOUEURS
 								</p>
 								<p class="text-justify mb-1">
@@ -347,10 +342,8 @@
 								</p>
 							</div>
 							<div class="col-12 mb-5">
-								<p class="lead mb-3 lesson-title font-weight-bold">
-									<span class="badge badge-pill badge-danger"
-										>Leçon 4</span
-									>
+								<p class="lead mb-3 font-weight-bold">
+									<span class="badge badge-pill badge-danger--red">Leçon 4</span>
 									LA PROCEDURE DE REMPLACEMENT
 								</p>
 								<p class="text-justify mb-1">
@@ -375,10 +368,8 @@
 								</p>
 							</div>
 							<div class="col-12 mb-5">
-								<p class="lead mb-3 lesson-title font-weight-bold">
-									<span class="badge badge-pill badge-danger"
-										>Leçon 5</span
-									>
+								<p class="lead mb-3 font-weight-bold">
+									<span class="badge badge-pill badge-danger--red">Leçon 5</span>
 									LES ARBITRES
 								</p>
 								<p class="text-justify mb-1">
@@ -412,13 +403,11 @@
 								</p>
 							</div>
 							<div class="col-12 mb-5">
-								<p class="lead mb-3 lesson-title font-weight-bold">
-									<span class="badge badge-pill badge-danger"
-										>Leçon 6</span
-									>
+								<p class="lead mb-3 font-weight-bold">
+									<span class="badge badge-pill badge-danger--red">Leçon 6</span>
 									LES CARTONS
 								</p>
-								<div class="col image-center mb-3">
+								<div class="col lessons__image--center mb-3">
 									<img
 										class="img-fluid game-cards"
 										src="images/arbitre_MK_jaune.png"
@@ -432,7 +421,7 @@
 									du même match, l'excluant ainsi pour ce match ainsi
 									que pour le suivant.
 								</p>
-								<div class="col image-center mb-3">
+								<div class="col lessons__image--center mb-3">
 									<img
 										class="img-fluid game-cards"
 										src="images/arbitre_MK_rouge.png"
@@ -445,7 +434,7 @@
 									sera la même suspension que suite à deux cartons
 									jaunes reçus au cours d'un même match.
 								</p>
-								<div class="col image-center mb-3">
+								<div class="col lessons__image--center mb-3">
 									<img
 										class="img-fluid game-cards"
 										src="images/arbitre_MK_bleu.png"
@@ -460,10 +449,8 @@
 								</p>
 							</div>
 							<div class="col-12 mb-5">
-								<p class="lead mb-3 lesson-title font-weight-bold">
-									<span class="badge badge-pill badge-danger"
-										>Leçon 7</span
-									>
+								<p class="lead mb-3 font-weight-bold">
+									<span class="badge badge-pill badge-danger--red">Leçon 7</span>
 									L'ENGAGEMENT
 								</p>
 								<p class="text-justify mb-1">
@@ -477,10 +464,8 @@
 								</p>
 							</div>
 							<div class="col-12 mb-5">
-								<p class="lead mb-3 lesson-title font-weight-bold">
-									<span class="badge badge-pill badge-danger"
-										>Leçon 8</span
-									>
+								<p class="lead mb-3 font-weight-bold">
+									<span class="badge badge-pill badge-danger--red">Leçon 8</span>
 									LE DÉGAGEMENT
 								</p>
 								<p class="text-justify mb-1">
@@ -491,10 +476,8 @@
 								</p>
 							</div>
 							<div class="col-12 mb-5">
-								<p class="lead mb-3 lesson-title font-weight-bold">
-									<span class="badge badge-pill badge-danger"
-										>Leçon 9</span
-									>
+								<p class="lead mb-3 font-weight-bold">
+									<span class="badge badge-pill badge-danger--red">Leçon 9</span>
 									LE BUT MARQUÉ
 								</p>
 								<p class="text-justify mb-1">
@@ -505,10 +488,8 @@
 								</p>
 							</div>
 							<div class="col-12 mb-5">
-								<p class="lead mb-3 lesson-title font-weight-bold">
-									<span class="badge badge-pill badge-danger"
-										>Leçon 10</span
-									>
+								<p class="lead mb-3 font-weight-bold">
+									<span class="badge badge-pill badge-danger--red">Leçon 10</span>
 									LES PROTOCOLES
 								</p>
 								<p class="text-justify mb-1">
@@ -533,7 +514,7 @@
 					<div class="container pt-4">
 						<div class="row">
 							<div class="col text-center">
-								<p class="lead translateText" key="footer">Fédération Canadienne de Maracana</p>
+								<p class="lead translateText" key="footer"></p>
 							</div>
 						</div>
 						<div class="row">

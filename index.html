@@ -47,7 +47,7 @@
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
 		
-		<!-- Header with carousel -->
+		<!-- Header section -->
 		<header id="header-section">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
@@ -88,7 +88,7 @@
 						class="navbar navbar-expand-md navbar-dark navigation"
 						id="main-nav"
 					>
-						<div class="container navbar-container">
+						<div class="container navbar__container">
 							<button
 								class="navbar-toggler"
 								data-toggle="collapse"
@@ -100,7 +100,7 @@
 								class="collapse navbar-collapse"
 								id="navbarCollapse"
 							>
-								<ul class="navbar-nav mx-auto menu-container">
+								<ul class="navbar-nav mx-auto">
 									<li class="nav-item mr-2">
 										<a
 											href="index.html"
@@ -148,14 +148,14 @@
 											id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
 											key="competitions"
 										></a>	
-										<ul class="navbar-nav mx-auto menu-container">
+										<ul class="navbar-nav mx-auto">
 											<div class="dropdown-content" aria-labelledby="navbarDropdown">
 												<li class="nav-item">
 													<a href="#" class="translateText" key="national"></a>
 												</li>
 												<li class="nav-item dropdown-content__submenu">
 													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="championship"></a>
-													<ul class="navbar-nav mx-auto menu-container">
+													<ul class="navbar-nav mx-auto">
 														<div class="dropdown-content dropdown-content__submenu-championship--position" aria-labelledby="navbarDropdown">
 															<li class="nav-item">
 																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship17"></a>
@@ -171,7 +171,7 @@
 												</li>
 												<li class="nav-item dropdown-content__submenu">
 													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="cup"></a>
-													<ul class="navbar-nav mx-auto menu-container">
+													<ul class="navbar-nav mx-auto">
 														<div class="dropdown-content dropdown-content__submenu-cup--position" aria-labelledby="navbarDropdown">
 															<li class="nav-item">
 																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup17"></a>
@@ -278,7 +278,7 @@
 
 				<!-- Info header section -->
 				<section id="info-header">
-					<div class="info-header__message info-header__message--red">
+					<div class="info-header__message--red">
 						<p class="px-1 py-2 text-center">
 							Le maracana est du soccer à 6 sans gardien de but
 						</p>
@@ -287,7 +287,7 @@
 
 				<!-- News section -->
 				<section id="news">
-					<div class="col pt-3 news__content">
+					<div class="col pt-3 news__container">
 						<div class="mx-auto d-flex flex-column align-self-center">
 							<h2 class="text-center news__title pr-2">
 								Coupe nationale 2019
@@ -338,7 +338,7 @@
 											alt="Vainqueurs 2019"
 										/>
 									</a>
-									<div class="card-body d-none d-sm-block galerie__title">
+									<div class="card-body d-none d-sm-block card__title">
 										<p class="lead">Champions Nationaux 2019<p>
 									</div>
 								</div>
@@ -352,7 +352,7 @@
 											alt="Meilleur buteur du Championnat 2019"
 										/>
 									</a>
-									<div class="card-body d-none d-sm-block galerie__title">
+									<div class="card-body d-none d-sm-block card__title">
 										<p class="lead">Meilleur buteur du Championnat 2019<p>
 									</div>
 								</div>
@@ -365,7 +365,7 @@
 											src="images/carousel/délégation.png"
 											alt="Délégation à Abidjan 2018"
 										/>
-										<div class="card-body d-none d-sm-block galerie__title">
+										<div class="card-body d-none d-sm-block card__title">
 											<p class="lead">Côte d'Ivoire 2018<p>
 										</div>
 									</a>
@@ -380,7 +380,7 @@
 											alt="Vainqueurs de la Coupe Nationale 2018"
 										/>
 									</a>
-									<div class="card-body d-none d-sm-block galerie__title">
+									<div class="card-body d-none d-sm-block card__title">
 										<p class="lead">Vainqueurs de la Coupe Nationale 2018<p>
 									</div>
 								</div>
@@ -394,7 +394,7 @@
 											alt="Vainqueurs 2018"
 										/>
 									</a>
-									<div class="card-body d-none d-sm-block galerie__title">
+									<div class="card-body d-none d-sm-block card__title">
 										<p class="lead">Champions Nationaux 2018<p>
 									</div>
 								</div>
@@ -408,7 +408,7 @@
 											alt="Équipe Canada Mali-2017"
 										/>
 									</a>
-									<div class="card-body d-none d-sm-block galerie__title">
+									<div class="card-body d-none d-sm-block card__title">
 										<p class="lead">Départ pour la MARA'CAN MALI 2017<p>
 									</div>
 								</div>
@@ -422,7 +422,7 @@
 											alt="Medaille du Fair-Play"
 										/>
 									</a>
-									<div class="card-body d-none d-sm-block galerie__title">
+									<div class="card-body d-none d-sm-block card__title">
 										<p class="lead">La medaille du Fair-Play au Canada<p>
 									</div>
 								</div>
@@ -436,7 +436,7 @@
 											alt="Visite d'un centre de formation"
 										/>
 									</a>
-									<div class="card-body d-none d-sm-block galerie__title">
+									<div class="card-body d-none d-sm-block card__title">
 										<p class="lead">Visite d'un centre de formation<p>
 									</div>
 								</div>
@@ -450,7 +450,7 @@
 											alt="Remise de dons au Burkina Faso"
 										/>
 									</a>
-									<div class="card-body d-none d-sm-block galerie__title">
+									<div class="card-body d-none d-sm-block card__title">
 										<p class="lead">Remise de dons au Burkina Faso<p>
 									</div>
 								</div>
@@ -464,7 +464,7 @@
 											alt="Première pratique de Team Canada"
 										/>
 									</a>
-									<div class="card-body d-none d-sm-block galerie__title">
+									<div class="card-body d-none d-sm-block card__title">
 										<p class="lead">Première pratique de Team Canada<p>
 									</div>
 								</div>
@@ -478,7 +478,7 @@
 											alt="Entrevue du président Cissé"
 										/>
 									</a>
-									<div class="card-body d-none d-sm-block galerie__title">
+									<div class="card-body d-none d-sm-block card__title">
 										<p class="lead">Entrevue du président Cissé sur RFI<p>
 									</div>
 								</div>
@@ -513,30 +513,30 @@
 
 				<!-- Agenda section -->
 				<section id="agenda">
-					<div class="agenda__cup card m-3 cup-card">
-							<div
-								class="card-header bg-custom text-white text-center"
-							>
-								<p class="lead">
-									Coupe nationale 2019 à Ottawa
-								</p>
-							</div>
-							<div class="card-body text-center">
-								<p class="card-text">
-									20 juillet 2019
-								</p>
-							</div>
-							<div
-								class="card-footer bg-custom text-white text-center"
-							>
-								<div class="row align-items-center clearfix">
-									<div class="col-12">
-										<p class="countries">Les inscriptions ont débuté</p>
-									</div>
+					<div class="card m-3 card__container">
+						<div
+							class="card-header bg-custom text-white text-center"
+						>
+							<p class="lead">
+								Coupe nationale 2019 à Ottawa
+							</p>
+						</div>
+						<div class="card-body text-center">
+							<p class="card-text">
+								20 juillet 2019
+							</p>
+						</div>
+						<div
+							class="card-footer bg-custom text-white text-center"
+						>
+							<div class="row align-items-center clearfix">
+								<div class="col-12">
+									<p class="card__countries">Les inscriptions ont débuté</p>
 								</div>
 							</div>
 						</div>
-					<div class="agenda__cup card m-3 cup-card">
+					</div>
+					<div class="card m-3 card__container">
 						<div
 							class="card-header bg-custom text-white text-center"
 						>
@@ -557,11 +557,11 @@
 									<p class="lead">Pays invités</p>
 								</div>
 								<div class="col-12">
-									<p class="countries">Le Canada</p>
-									<p class="countries">Les États-Unis</p>
-									<p class="countries">La France</p>
-									<p class="countries">La Chine</p>
-									<p class="countries">La Suéde</p>
+									<p class="card__countries">Le Canada</p>
+									<p class="card__countries">Les États-Unis</p>
+									<p class="card__countries">La France</p>
+									<p class="card__countries">La Chine</p>
+									<p class="card__countries">La Suéde</p>
 								</div>
 							</div>
 						</div>
@@ -730,7 +730,7 @@
 					<div class="container pt-4">
 						<div class="row">
 							<div class="col text-center">
-								<p class="lead translateText" key="footer">Fédération Canadienne de Maracana</p>
+								<p class="lead translateText" key="footer"></p>
 							</div>
 						</div>
 						<div class="row pb-3">
@@ -745,15 +745,6 @@
 				</footer>
 			</div>
 		</div>
-		<!-- Language switcher -->
-		<!-- <div class="text-center" id="language">
-			<a
-				class="translate translateText"
-				id="languageSwitcher"
-				key="buttonLanguage"
-				onClick="changeLanguage()"
-			></a>
-		</div> -->
 
 		<!-- Scroll to top button -->
 		<div id="scroll-arrow">

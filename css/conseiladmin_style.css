@@ -82,7 +82,7 @@
 	width: 157px;
 }
 
-.membres {
+.card__membres {
 	background-color: rgba(255, 0, 0, 0.7);
 	height: 150px;
 	padding: 0.15rem;
@@ -137,7 +137,7 @@
 		width: 177px;
 	}
 
-	.membres {
+	.card__membres {
 		height: 175px;
 		width: 172px;
 	}
@@ -165,7 +165,7 @@
 		width: 197px;
 	}
 
-	.membres {
+	.card__membres {
 		height: 200px;
 		width: 197px;
 	}

@@ -74,11 +74,11 @@
 	width: 100%;
 }
 
-.picture-text__subtitle {
+.picture__subtitle {
 	text-indent: 2em;
 }
 
-.picture-text {
+.picture__text {
 	font-size: 0.9rem;
 	margin: 0 auto;
 	padding: 0 1rem;
@@ -112,7 +112,7 @@
 		padding-left: 2rem;
 	}
 
-	.picture-text {
+	.picture__text {
 		font-size: 0.95rem;
 	}
 }
@@ -130,7 +130,7 @@
 		font-size: 1.5rem;
 	}
 
-	.picture-text {
+	.picture__text {
 		font-size: 1rem;
 	}
 }

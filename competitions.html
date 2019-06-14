@@ -39,7 +39,8 @@
 	</head>
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
-		<!-- Header with carousel -->
+
+		<!-- Header section -->
 		<header id="header-section">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
@@ -80,7 +81,7 @@
 						class="navbar navbar-expand-md navbar-dark navigation"
 						id="main-nav"
 					>
-						<div class="container navbar-container">
+						<div class="container navbar__container">
 							<button
 								class="navbar-toggler"
 								data-toggle="collapse"
@@ -92,7 +93,7 @@
 								class="collapse navbar-collapse"
 								id="navbarCollapse"
 							>
-								<ul class="navbar-nav mx-auto menu-container">
+								<ul class="navbar-nav mx-auto">
 									<li class="nav-item mr-2">
 										<a
 											href="index.html"
@@ -140,14 +141,14 @@
 											id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
 											key="competitions"
 										></a>	
-										<ul class="navbar-nav mx-auto menu-container">
+										<ul class="navbar-nav mx-auto">
 											<div class="dropdown-content" aria-labelledby="navbarDropdown">
 												<li class="nav-item">
 													<a href="#" class="translateText" key="national"></a>
 												</li>
 												<li class="nav-item dropdown-content__submenu">
 													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="championship"></a>
-													<ul class="navbar-nav mx-auto menu-container">
+													<ul class="navbar-nav mx-auto">
 														<div class="dropdown-content dropdown-content__submenu-championship--position" aria-labelledby="navbarDropdown">
 															<li class="nav-item">
 																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="championship17"></a>
@@ -163,7 +164,7 @@
 												</li>
 												<li class="nav-item dropdown-content__submenu">
 													<a href="#" class="translateText" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" id="navbarDropdown" key="cup"></a>
-													<ul class="navbar-nav mx-auto menu-container">
+													<ul class="navbar-nav mx-auto">
 														<div class="dropdown-content dropdown-content__submenu-cup--position" aria-labelledby="navbarDropdown">
 															<li class="nav-item">
 																<a href="competitions.html" class="translateText dropdown-content__submenu-item" key="cup17"></a>
@@ -297,14 +298,14 @@
 								alt="Ste-Marthe"
 							/>
 							<div class="card-body mx-auto">
-								<p class="card-text text-center championnat-card-text">
+								<p class="card-text text-center card__text">
 									Le Club des Amis du Maracana de Ste-Marthe (CAMASM)
 								</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-12">
-						<p class="text-justify my-2 championnat-text">
+						<p class="text-justify my-2 championnat__text">
 							Comme lors de la première édition, neuf équipes ont chaudement lutté pour succéder au CAMASM, pour les unes, et pour conserver leur titre pour la dernière citée. Les huit équipes doivent prendre leur mal en patience puisque le CAMASM conserve son trophée devant le tout nouveau club de maracana, White Eagles. En 36 confrontations, en aller simple, les attaques ont remué le filet 87 fois, 4 buts de plus que la saison dernière.
 						</p>
 					</div>	
@@ -452,19 +453,19 @@
 					</div>
 					<div class="col-12 results">
 						<p class="lead mt-3 mb-3">Meilleure attaque (19 buts)</p>
-						<p class="championnat-stats">Club des Amis du Maracana de Ste-Marthe (CAMASM)</p>
+						<p class="results__stats">Club des Amis du Maracana de Ste-Marthe (CAMASM)</p>
 					</div>
 					<div class="col-12 results">
 						<p class="lead mt-3 mb-3">Meilleure défense (1 but)</p>
-						<p class="championnat-stats">White Eagles et Ivoire Foot Montréal</p>
+						<p class="results__stats">White Eagles et Ivoire Foot Montréal</p>
 					</div>	
 					<div class="col-12 results">
 						<p class="lead mt-3 mb-3">Équipe fair-play</p>
-						<p class="championnat-stats">Équipe de Mauritanie de Montréal</p>
+						<p class="results__stats">Équipe de Mauritanie de Montréal</p>
 					</div>	
 					<div class="col-12 mb-3 results">
 						<p class="lead mt-3 mb-3">Meilleurs buteur (11 buts)</p>
-						<p class="championnat-stats">Serge Litié - CAMASM</p>
+						<p class="results__stats">Serge Litié - CAMASM</p>
 					</div>
 					<div class="table-responsive table-text w-100 mx-auto px-2">
 						<table class="table table-hover table-condensed">
@@ -747,14 +748,14 @@
 							<div
 								class="col-12 col-sm-6 col-lg-3 mb-2"
 							>
-								<div class="card text-center teams-card">						
+								<div class="card text-center card__teams">						
 									<div class="card-body">
 										<img
 											src="images/competitions/Mauritanie.png"
 											alt="Équipe de Mauritanie de Montréal"
 											class="img-thumbnail align-items-center mb-3"
 										/>
-										<p class="championnat-teams">
+										<p class="card__title">
 											Équipe de Mauritanie de Montréal
 										</p>
 									</div>
@@ -764,14 +765,14 @@
 							<div
 								class="col-12 col-sm-6 col-lg-3 mb-2"
 							>
-								<div class="card text-center teams-card">						
+								<div class="card text-center card__teams">						
 									<div class="card-body">
 										<img
 											src="images/competitions/FC 2-Zero.png"
 											alt="Toronto FC 2-Zero"
 											class="img-thumbnail align-items-center mb-3"
 										/>
-										<p class="championnat-teams">
+										<p class="card__title">
 											Toronto FC 2-Zero
 										</p>
 									</div>
@@ -781,14 +782,14 @@
 							<div
 								class="col-12 col-sm-6 col-lg-3 mb-2"
 							>
-								<div class="card text-center teams-card">						
+								<div class="card text-center card__teams">						
 									<div class="card-body">
 										<img
 											src="images/competitions/LMC.png"
 											alt="Longueuil Maracana Club"
 											class="img-thumbnail align-items-center mb-3"
 										/>
-										<p class="championnat-teams">
+										<p class="card__title">
 											Longueuil Maracana Club
 										</p>
 									</div>
@@ -797,14 +798,14 @@
 							<div
 								class="col-12 col-sm-6 col-lg-3 mb-2"
 							>
-								<div class="card text-center teams-card">						
+								<div class="card text-center card__teams">						
 									<div class="card-body">
 										<img
 											src="images/competitions/CAMAQ.png"
 											alt="Club des Amis du Maracana de Québec"
 											class="img-thumbnail align-items-center mb-3"
 										/>
-										<p class="championnat-teams">
+										<p class="card__title">
 											Club des Amis du Maracana de Québec
 										</p>
 									</div>
@@ -813,14 +814,14 @@
 							<div
 								class="col-12 col-sm-6 col-lg-3 mb-2"
 							>
-								<div class="card text-center teams-card">						
+								<div class="card text-center card__teams">						
 									<div class="card-body">
 										<img
 											src="images/competitions/Ivoirefootmtl.png"
 											alt="Ivoire Foot Montréal"
 											class="img-thumbnail align-items-center mb-3"
 										/>
-										<p class="championnat-teams">
+										<p class="card__title">
 											Ivoire Foot Montréal
 										</p>
 									</div>
@@ -829,14 +830,14 @@
 							<div
 								class="col-12 col-sm-6 col-lg-3 mb-2"
 							>
-								<div class="card text-center teams-card">						
+								<div class="card text-center card__teams">						
 									<div class="card-body">
 										<img
 											src="images/competitions/St-Hyacinthe.png"
 											alt="Maracana Club de St-Hyacinthe"
 											class="img-thumbnail align-items-center mb-3"
 										/>
-										<p class="championnat-teams">
+										<p class="card__title">
 											Maracana Club de St-Hyacinthe
 										</p>
 									</div>
@@ -845,14 +846,14 @@
 							<div
 								class="col-12 col-sm-6 col-lg-3 mb-2"
 							>
-								<div class="card text-center teams-card">						
+								<div class="card text-center card__teams">						
 									<div class="card-body">
 										<img
 											src="images/competitions/Eagles.png"
 											alt="The Eagles"
 											class="img-thumbnail align-items-center mb-3"
 										/>
-										<p class="championnat-teams">
+										<p class="card__title">
 											The Eagles
 										</p>
 									</div>
@@ -861,14 +862,14 @@
 							<div
 								class="col-12 col-sm-6 col-lg-3 mb-2"
 							>
-								<div class="card text-center teams-card">						
+								<div class="card text-center card__teams">						
 									<div class="card-body">
 										<img
 											src="images/competitions/FC Multi C.png"
 											alt="FC Multi C"
 											class="img-thumbnail align-items-center mb-3"
 										/>
-										<p class="championnat-teams">
+										<p class="card__title">
 											FC Multi C
 										</p>
 									</div>						
@@ -877,14 +878,14 @@
 							<div
 								class="col-12 col-sm-6 mb-2"
 							>
-								<div class="card text-center teams-card">						
+								<div class="card text-center card__teams">						
 									<div class="card-body">
 										<img
 											src="images/competitions/Peace.png"
 											alt="Peace Team"
 											class="img-thumbnail align-items-center mb-3"
 										/>
-										<p class="championnat-teams">
+										<p class="card__title">
 											Peace Team
 										</p>
 									</div>
@@ -893,15 +894,15 @@
 							<div
 								class="col-12 col-sm-6 mb-2"
 							>
-								<div class="card text-center teams-card">						
+								<div class="card text-center card__teams">						
 									<div class="card-body">
 										<img
 											src="images/competitions/WhiteEagles.png"
 											alt="White Eagles"
 											class="img-thumbnail align-items-center mb-3"
 										/>
-										<p class="championnat-teams">
-											White Eagles
+										<p class="card__title">
+											The White Eagles
 										</p>
 									</div>																					
 								</div>											
@@ -915,7 +916,7 @@
 					<div class="container pt-4">
 						<div class="row">
 							<div class="col text-center">
-								<p class="lead translateText" key="footer">Fédération Canadienne de Maracana</p>
+								<p class="lead translateText" key="footer"></p>
 							</div>
 						</div>
 						<div class="row">
