@@ -1,0 +1,173 @@
+/* SCSS style for capsules.html page */
+
+@import '_variables.scss';
+
+.lead {
+	font-size: $default-size;
+}
+
+#infosheet-header,
+#infosheet,
+#lessons {
+	background-color: map-get($colors, secondary);
+	height: auto;
+	width: 100%;
+}
+
+#infosheet .col {
+	margin: 0 auto;
+}
+
+#infosheet-header {
+	.col > h2 {
+		border-bottom: 2px solid map-get($colors, bottom-border);
+		font-size: 1.15rem;
+		padding-bottom: $h2-padding-bottom;
+	}
+}
+
+#lessons {
+	.col-12 > p {
+		margin: 0 auto;
+		max-width: 96%;
+		text-indent: $default-size;
+	}
+
+	.col-12 > p.lead {
+		font-size: $default-size;
+	}
+}
+
+.lessons__image--center {
+	text-align: center;
+}
+
+#game-rules {
+	color: map-get($colors, secondary);
+	font-size: $default-size;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.fa-file-pdf {
+	color: map-get($colors, secondary);
+	display: inline;
+}
+
+.badge-danger--red {
+	color: map-get($colors, secondary);
+	background-color: map-get($colors, main);
+}
+
+.badge {
+	display: inline;
+	font-size: 85%;
+	padding: 0 0.6em;
+}
+
+#ballon {
+	height: 100px;
+	width: 100px;
+}
+
+.game-cards {
+	height: 75px;
+	width: 75px;
+}
+
+/* ********************************* */
+
+/* Media */
+@media (max-width: 575px) {
+	.text-xs-center {
+		text-align: center;
+	}
+}
+
+@media (min-width: 576px) {
+	.main__wrapper {
+		padding: 0 10px;
+	}
+
+	#lessons {
+		.col-12 > p {
+			text-indent: $indent * 2;
+		}
+
+		.col-12 p.lead {
+			font-size: $default-size + 0.15rem;
+		}
+	}
+
+	#game-rules {
+		font-size: $default-size + 0.1rem;
+	}
+
+	#infosheet-header {
+		.col > h2 {
+			font-size: $default-size + 0.25rem;
+			padding-left: $h2-padding-left;
+		}
+	}
+
+	.badge {
+		font-size: 90%;
+	}
+
+	#ballon {
+		height: 105px;
+		width: 105px;
+	}
+}
+
+@media (min-width: 768px) {
+	.lead {
+		font-size: $default-size + 0.25rem;
+	}
+
+	.main__wrapper {
+		padding: 0 15px;
+	}
+
+	#lessons {
+		.col-12 p.lead {
+			font-size: $default-size + 0.25rem;
+		}
+	}
+
+	#infosheet-header {
+		.col > h2 {
+			font-size: $default-size + 0.5rem;
+		}
+	}
+
+	#game-rules {
+		font-size: $default-size + 0.15rem;
+	}
+
+	.badge {
+		font-size: 95%;
+	}
+
+	#ballon {
+		height: 115px;
+		width: 115px;
+	}
+}
+
+@media (min-width: 992px) {
+	.main__wrapper {
+		padding: 0 $default-size + 0.25rem;
+	}
+
+	.badge {
+		font-size: 100%;
+	}
+
+	#ballon {
+		height: 125px;
+		width: 125px;
+	}
+}

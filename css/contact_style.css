@@ -1,150 +1,111 @@
-/* CSS style for contact.html page */
-
+/* SCSS style for contact.html page */
 .lead {
-	font-size: 1rem;
-}
-
-#money {
-	margin: 0;
-}
-
-.main {
-	background-image: url('/images/canada-flag.jpg');
-	/* background-image: radial-gradient(circle, red 0%, white 100%); */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.main__wrapper {
-	align-items: center;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0 5px;
-	margin: 0 auto;
-	max-width: 960px;
-	width: 90%;
-}
-
-#contact {
-	background-color: #fff;
-	height: auto;
-	width: 100%;
-}
-
-.col-12 {
-	padding-right: 4px;
-	padding-left: 4px;
+  font-size: 1rem;
 }
 
 #contact-header {
-	background-color: #fff;
-	height: auto;
-	width: 100%;
+  background-color: #fff;
+  height: auto;
+  width: 100%;
 }
-
 #contact-header .col {
-	margin: 0 auto;
+  margin: 0 auto;
+}
+#contact-header .col > h2 {
+  border-bottom: 2px solid #f75056;
+  font-size: 1.15rem;
+  padding-bottom: 1.25rem;
 }
 
-#contact-header .col > h2 {
-	border-bottom: 2px solid #f75056;
-	font-size: 1.15rem;
-	padding-bottom: 1.25rem;
+#contact {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+#contact .col-12 {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+#contact a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .contact__info {
-	font-size: 0.9rem;
-}
-
-#contact a {
-	color: inherit;
-	text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .fa-map-marker-alt,
 .fa-envelope,
 #fb-media {
-	color: #f00;
+  color: #f00;
 }
 
 .btn-outline-danger {
-	color: #f00;
+  color: #f00;
 }
-
 .btn-outline-danger:hover {
-	background-color: #f00;
+  background-color: #f00;
 }
 
+/* ******************************** */
 /* Media */
 @media (max-width: 575px) {
-	.text-xs-center {
-		text-align: center;
-	}
+  .text-xs-center {
+    text-align: center;
+  }
 }
-
-@media (max-width: 767px) {
-}
-
-@media (max-width: 991px) {
-}
-
 @media (min-width: 576px) {
-	.lead {
-		font-size: 1.25rem;
-	}
+  .lead {
+    font-size: 1.25rem;
+  }
 
-	.main__wrapper {
-		padding: 0 10px;
-	}
+  .main__wrapper {
+    padding: 0 10px;
+  }
 
-	.col-12 {
-		margin: 0 auto;
-		max-width: 90%;
-		padding-right: 15px;
-		padding-left: 15px;
-	}
+  /* to justify the text */
+  #contact-header .col > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
 
-	/* to justify the text */
-	#contact-header .col > h2 {
-		font-size: 1.25rem;
-		padding-left: 2rem;
-	}
+  #contact .col-12 {
+    margin: 0 auto;
+    max-width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
-	.contact__info {
-		font-size: 0.95rem;
-	}
+  .contact__info {
+    font-size: 0.95rem;
+  }
 }
-
 @media (min-width: 768px) {
-	.main__wrapper {
-		padding: 0 15px;
-	}
+  .main__wrapper {
+    padding: 0 15px;
+  }
 
-	.col-12 {
-		max-width: 80%;
-	}
+  #contact-header .col > h2 {
+    font-size: 1.5rem;
+  }
 
-	#contact-header .col > h2 {
-		font-size: 1.5rem;
-	}
+  #contact .col-12 {
+    max-width: 80%;
+  }
 
-	.contact__info {
-		font-size: 1rem;
-	}
+  .contact__info {
+    font-size: 1rem;
+  }
 }
-
 @media (min-width: 992px) {
-	.main__wrapper {
-		padding: 0 20px;
-	}
+  .main__wrapper {
+    padding: 0 1.25rem;
+  }
 
-	.col-12 {
-		max-width: 70%;
-	}
+  #contact .col-12 {
+    max-width: 70%;
+  }
 }
 
-@media (min-width: 1200px) {
-}
+/*# sourceMappingURL=contact_style.css.map */

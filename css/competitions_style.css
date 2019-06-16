@@ -1,266 +1,222 @@
-/* CSS style for competitions.html page */
-
+/* SCSS style for competitions.html page */
 .lead {
-	font-size: 1rem;
-}
-
-#money {
-	margin: 0;
-}
-
-.main {
-	background-image: url('/images/canada-flag.jpg');
-	/* background-image: radial-gradient(circle, red 0%, white 100%); */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.main__wrapper {
-	align-items: center;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0 5px;
-	margin: 0 auto;
-	max-width: 960px;
-	width: 90%;
+  font-size: 1rem;
 }
 
 #competitions,
 #teams {
-	background-color: #fff;
-	height: auto;
-	width: 100%;
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+.headers, #championnat-header .col > h2, #competitions .col-12 > h2 {
+  border-bottom: 2px solid #f75056;
+  font-size: 1.15rem;
+  padding-bottom: 1.25rem;
 }
 
 #competitions .col-12 {
-	margin: 0 auto;
-	max-width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 }
-
-#competitions .col-12 > h2 {
-	border-bottom: 2px solid #f75056;
-	font-size: 1.15rem;
-	padding-bottom: 20px;
-}
-
 #competitions .col-12 > p {
-	font-size: 0.85rem;
-	margin: 0 auto;
-	max-width: 96%;
-	text-indent: 2em;
+  font-size: 0.85rem;
+  margin: 0 auto;
+  max-width: 96%;
+  text-indent: 2rem;
 }
-
 #competitions .col-12 > p.lead {
-	color: #f00;
-	font-size: 1.1rem;
+  color: #f00;
+  font-size: 1.1rem;
+  text-indent: 2.5rem;
 }
 
 #championnat-header {
-	background-color: rgb(243, 243, 243);
-	height: auto;
-	width: 100%;
+  background-color: #f3f3f3;
+  height: auto;
+  width: 100%;
 }
-
 #championnat-header .col {
-	margin: 0 auto;
+  margin: 0 auto;
 }
-
-#championnat-header .col > h2 {
-	border-bottom: 2px solid #f75056;
-	font-size: 1.15rem;
-	padding-bottom: 1.25rem;
-}
-
 #championnat {
-	background-color: rgb(243, 243, 243);
-	height: auto;
-	width: 100%;
+  background-color: #f3f3f3;
+  height: auto;
+  width: 100%;
 }
 
 .card__text {
-	font-size: 0.9rem;
-	margin: 0 auto;
-	max-width: 100%;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .championnat__text {
-	font-size: 0.9rem;
-	margin: 0 auto;
-	max-width: 90%;
-	text-indent: 2em;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  max-width: 90%;
+  text-indent: 2rem;
 }
 
 .results__stats {
-	font-size: 0.9rem;
-	text-indent: 0.5rem;
+  font-size: 0.9rem;
+  text-indent: 0.5rem;
 }
 
 .card__title {
-	font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .card__teams {
-	background-color: transparent;
-	border: none;
+  background-color: transparent;
+  border: none;
 }
 
 .results {
-	padding-left: 1.5rem !important;
+  padding-left: 1.5rem !important;
 }
 
 .table td,
 .table th {
-	padding: 0.25rem;
+  padding: 0.25rem;
 }
 
 .table-text {
-	font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 caption {
-	caption-side: top;
+  caption-side: top;
 }
 
 .pl-3 {
-	padding-left: 0 !important;
+  padding-left: 0 !important;
 }
 
+/* ******************************** */
 /* Media */
 @media (max-width: 575px) {
-	.text-xs-center {
-		text-align: center;
-	}
+  .text-xs-center {
+    text-align: center;
+  }
 }
-
-@media (max-width: 767px) {
-}
-
-@media (max-width: 991px) {
-}
-
 @media (min-width: 576px) {
-	.lead {
-		font-size: 1.15rem;
-	}
+  .lead {
+    font-size: 1.15rem;
+  }
 
-	.main__wrapper {
-		padding: 0 10px;
-	}
+  .main__wrapper {
+    padding: 0 10px;
+  }
 
-	#competitions .col-12 > h2 {
-		font-size: 1.25rem;
-		padding-left: 2rem;
-	}
+  #competitions .col-12 > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
+  #competitions .col-12 > p {
+    font-size: 1rem;
+  }
+  #competitions .col-12 > p.lead {
+    font-size: 1.15rem;
+  }
 
-	#competitions .col-12 > p {
-		font-size: 1rem;
-	}
+  #championnat-header .col > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
 
-	#competitions .col-12 > p.lead {
-		font-size: 1.15rem;
-	}
+  .card__text {
+    font-size: 0.95rem;
+  }
 
-	#championnat-header .col > h2 {
-		font-size: 1.25rem;
-		padding-left: 2rem;
-	}
+  .championnat__text {
+    font-size: 0.95rem;
+  }
 
-	.card__text {
-		font-size: 0.95rem;
-	}
+  .results__stats {
+    font-size: 0.95rem;
+  }
 
-	.championnat__text {
-		font-size: 0.95rem;
-	}
+  .card__title {
+    font-size: 0.95rem;
+  }
 
-	.results__stats {
-		font-size: 0.95rem;
-	}
+  .results {
+    padding-left: 2rem !important;
+  }
 
-	.card__title {
-		font-size: 0.95rem;
-	}
+  .table-text {
+    font-size: 0.95rem;
+  }
 
-	.results {
-		padding-left: 2rem !important;
-	}
-
-	.table-text {
-		font-size: 0.95rem;
-	}
-
-	.pl-3 {
-		padding-left: 1rem !important;
-	}
+  .pl-3 {
+    padding-left: 1rem !important;
+  }
 }
-
 @media (min-width: 768px) {
-	.lead {
-		font-size: 1.25rem;
-	}
+  .lead {
+    font-size: 1.25rem;
+  }
 
-	.main__wrapper {
-		padding: 0 15px;
-	}
+  .main__wrapper {
+    padding: 0 15px;
+  }
 
-	#competitions .col-12 > h2 {
-		font-size: 1.5rem;
-	}
+  #competitions .col-12 > h2 {
+    font-size: 1.5rem;
+  }
+  #competitions .col-12 > p.lead {
+    font-size: 1.25rem;
+  }
 
-	#competitions .col-12 > p.lead {
-		font-size: 1.25rem;
-	}
+  #championnat-header .col > h2 {
+    font-size: 1.5rem;
+  }
 
-	#championnat-header .col > h2 {
-		font-size: 1.5rem;
-	}
+  .card__text {
+    font-size: 1rem;
+  }
 
-	.card__text {
-		font-size: 1rem;
-	}
+  .championnat__text {
+    font-size: 1rem;
+  }
 
-	.championnat__text {
-		font-size: 1rem;
-	}
+  .results__stats {
+    font-size: 1rem;
+  }
 
-	.results__stats {
-		font-size: 1rem;
-	}
+  .card__title {
+    font-size: 1rem;
+  }
 
-	.card__title {
-		font-size: 1rem;
-	}
+  .results {
+    padding-left: 3rem !important;
+  }
 
-	.results {
-		padding-left: 3rem !important;
-	}
+  .table td,
+.table th {
+    padding: 0.5rem;
+  }
 
-	.table td,
-	.table th {
-		padding: 0.5rem;
-	}
-
-	.table-text {
-		font-size: 1rem;
-	}
+  .table-text {
+    font-size: 1rem;
+  }
 }
-
 @media (min-width: 992px) {
-	.main__wrapper {
-		padding: 0 20px;
-	}
+  .main__wrapper {
+    padding: 0 1.25rem;
+  }
 
-	.table td,
-	.table th {
-		padding: 0.75rem;
-	}
+  .table td,
+.table th {
+    padding: 0.75rem;
+  }
 }
-
 @media (min-width: 1200px) {
-	.results {
-		padding-left: 4rem !important;
-	}
+  .results {
+    padding-left: 4rem !important;
+  }
 }
+
+/*# sourceMappingURL=competitions_style.css.map */

@@ -13,33 +13,6 @@ p {
 	font-size: map-get($font-sizes, lead);
 }
 
-#money {
-	margin: 0;
-}
-
-.main {
-	background: {
-		image: url('/images/canada-flag.jpg');
-		position: center;
-		repeat: no-repeat;
-		size: cover;
-	}
-}
-
-.main__wrapper {
-	align-items: center;
-	background-color: map-get($colors, secondary);
-	display: flex;
-	flex: {
-		direction: column;
-	}
-	justify-content: center;
-	padding: 0 5px;
-	margin: 0 auto;
-	max-width: 960px;
-	width: 90%;
-}
-
 #presentation {
 	background-color: map-get($colors, secondary);
 	height: auto;
@@ -225,7 +198,7 @@ p {
 	background: rgba(0, 0, 0, 0.9);
 	bottom: 0;
 	color: map-get($colors, news);
-	padding: $size-default + 0.25rem;
+	padding: $default-size + 0.25rem;
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -360,7 +333,7 @@ p {
 }
 
 .partenaires__slide {
-	height: $size-default * 10;
+	height: $default-size * 10;
 	padding: 0 15px;
 }
 
@@ -369,7 +342,7 @@ p {
 }
 
 .partenaires__images {
-	max-height: $size-default * 10;
+	max-height: $default-size * 10;
 }
 
 /* *************************************** */
@@ -492,7 +465,7 @@ p {
 	}
 
 	.card__countries {
-		font-size: $size-default;
+		font-size: $default-size;
 	}
 
 	#agenda-header,
@@ -525,7 +498,7 @@ p {
 	}
 
 	.actualites__text {
-		font-size: $size-default;
+		font-size: $default-size;
 	}
 
 	.carousel-indicators {
@@ -539,7 +512,7 @@ p {
 
 @media (min-width: 992px) {
 	.main__wrapper {
-		padding: 0 $size-default + 0.25rem;
+		padding: 0 $default-size + 0.25rem;
 	}
 
 	#news {

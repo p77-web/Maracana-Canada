@@ -24,19 +24,23 @@ ul {
 
 #logo-img {
   float: left;
-  max-height: 80px;
+  max-height: 79px;
   margin: 0;
 }
 
 #menu-logo-img {
   float: right;
-  max-height: 80px;
+  max-height: 79px;
   margin: 0;
 }
 
 #message-official-site {
   text-align: center;
   width: 100%;
+}
+
+#money {
+  margin: 0;
 }
 
 .navigation {
@@ -140,6 +144,25 @@ ul {
 .page-nav__item:hover {
   color: #ffe2e2;
   text-decoration: none;
+}
+
+.main {
+  background-image: url("/images/canada-flag.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__wrapper {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5px;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 90%;
 }
 
 #footer {

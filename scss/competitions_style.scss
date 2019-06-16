@@ -1,0 +1,259 @@
+/* SCSS style for competitions.html page */
+
+@import '_variables.scss';
+
+.lead {
+	font-size: $default-size;
+}
+
+#competitions,
+#teams {
+	background-color: map-get($colors, secondary);
+	height: auto;
+	width: 100%;
+}
+
+.headers {
+	border-bottom: $header-bottom-border-color;
+	font-size: $default-size + 0.15rem;
+	padding-bottom: $h2-padding-bottom;
+}
+
+#competitions {
+	.col-12 {
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+	.col-12 > h2 {
+		@extend .headers;
+	}
+
+	.col-12 > p {
+		font-size: $default-size - 0.15rem;
+		margin: 0 auto;
+		max-width: 96%;
+		text-indent: $indent * 2;
+	}
+
+	.col-12 > p.lead {
+		color: map-get($colors, main);
+		font-size: $default-size + 0.1rem;
+		text-indent: $indent + 1.5rem;
+	}
+}
+
+#championnat-header {
+	background-color: map-get($colors, championnat);
+	height: auto;
+	width: 100%;
+
+	.col {
+		margin: 0 auto;
+	}
+
+	.col > h2 {
+		@extend .headers;
+	}
+}
+
+#championnat {
+	background-color: map-get($colors, championnat);
+	height: auto;
+	width: 100%;
+}
+
+.card__text {
+	font-size: $default-size - 0.1rem;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.championnat__text {
+	font-size: $default-size - 0.1rem;
+	margin: 0 auto;
+	max-width: 90%;
+	text-indent: $indent * 2;
+}
+
+.results__stats {
+	font-size: $default-size - 0.1rem;
+	text-indent: $indent / 2;
+}
+
+.card__title {
+	font-size: $default-size - 0.1rem;
+}
+
+.card__teams {
+	background-color: transparent;
+	border: none;
+}
+
+.results {
+	padding-left: $default-size + 0.5rem !important;
+}
+
+.table td,
+.table th {
+	padding: $default-size / 4;
+}
+
+.table-text {
+	font-size: $default-size - 0.1rem;
+}
+
+caption {
+	caption-side: top;
+}
+
+.pl-3 {
+	padding-left: 0 !important;
+}
+
+/* ******************************** */
+
+/* Media */
+@media (max-width: 575px) {
+	.text-xs-center {
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (min-width: 576px) {
+	.lead {
+		font-size: $default-size + 0.15rem;
+	}
+
+	.main__wrapper {
+		padding: 0 10px;
+	}
+
+	#competitions {
+		.col-12 > h2 {
+			font-size: $default-size + 0.25rem;
+			padding-left: $h2-padding-left;
+		}
+
+		.col-12 > p {
+			font-size: $default-size;
+		}
+
+		.col-12 > p.lead {
+			font-size: $default-size + 0.15rem;
+		}
+	}
+
+	#championnat-header {
+		.col > h2 {
+			font-size: $default-size + 0.25rem;
+			padding-left: $h2-padding-left;
+		}
+	}
+
+	.card__text {
+		font-size: $default-size - 0.05rem;
+	}
+
+	.championnat__text {
+		font-size: $default-size - 0.05rem;
+	}
+
+	.results__stats {
+		font-size: $default-size - 0.05rem;
+	}
+
+	.card__title {
+		font-size: $default-size - 0.05rem;
+	}
+
+	.results {
+		padding-left: $h2-padding-left !important;
+	}
+
+	.table-text {
+		font-size: $default-size - 0.05rem;
+	}
+
+	.pl-3 {
+		padding-left: $h2-padding-left / 2 !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.lead {
+		font-size: $default-size + 0.25rem;
+	}
+
+	.main__wrapper {
+		padding: 0 15px;
+	}
+
+	#competitions {
+		.col-12 > h2 {
+			font-size: $default-size + 0.5rem;
+		}
+
+		.col-12 > p.lead {
+			font-size: $default-size + 0.25rem;
+		}
+	}
+
+	#championnat-header {
+		.col > h2 {
+			font-size: $default-size + 0.5rem;
+		}
+	}
+
+	.card__text {
+		font-size: $default-size;
+	}
+
+	.championnat__text {
+		font-size: $default-size;
+	}
+
+	.results__stats {
+		font-size: $default-size;
+	}
+
+	.card__title {
+		font-size: $default-size;
+	}
+
+	.results {
+		padding-left: $h2-padding-left + 1rem !important;
+	}
+
+	.table td,
+	.table th {
+		padding: $default-size / 2;
+	}
+
+	.table-text {
+		font-size: $default-size;
+	}
+}
+
+@media (min-width: 992px) {
+	.main__wrapper {
+		padding: 0 $default-size + 0.25rem;
+	}
+
+	.table td,
+	.table th {
+		padding: $default-size - 0.25rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.results {
+		padding-left: $h2-padding-left * 2 !important;
+	}
+}

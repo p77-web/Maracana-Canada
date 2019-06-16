@@ -1,13 +1,13 @@
-$size-default: 1rem;
-$indent: $size-default;
-$h2-padding-bottom: $size-default * 1.25;
-$h2-padding-left: $size-default * 2;
-$logo-size: 80px;
+$default-size: 1rem;
+$indent: $default-size;
+$h2-padding-bottom: $default-size * 1.25;
+$h2-padding-left: $default-size * 2;
+$logo-size: 79px;
 
 $font-sizes: (
-	lead: $size-default,
-	header2: $size-default,
-	p-last-child: $size-default
+	lead: $default-size,
+	header2: $default-size,
+	p-last-child: $default-size
 );
 
 $colors: (
@@ -15,7 +15,10 @@ $colors: (
 	main: #f00,
 	secondary: #fff,
 	news: #f1f1f1,
-	bottom-border: #f75056
+	bottom-border: #f75056,
+	admin: rgba(255, 0, 0, 0.7),
+	championnat: rgb(243, 243, 243),
+	breadcrumb: rgba(255, 255, 255, 0.8)
 );
 
 $header-bottom-border-color: 2px solid map-get($colors, bottom-border);

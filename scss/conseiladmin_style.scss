@@ -1,0 +1,169 @@
+/* SCSS style for counciladmin.html page */
+
+@import '_variables.scss';
+
+.lead {
+	font-size: $default-size;
+}
+
+#council-header {
+	background-color: map-get($colors, secondary);
+	height: auto;
+	width: 100%;
+
+	.col > h2 {
+		border-bottom: 2px solid map-get($colors, bottom-border);
+		font-size: $default-size + 0.15rem;
+		padding-bottom: $h2-padding-bottom;
+	}
+}
+
+#council {
+	background-color: map-get($colors, secondary);
+	height: auto;
+	width: 100%;
+
+	.col-12 {
+		margin: 0 auto;
+	}
+
+	.col-12 > p {
+		font-size: 0.85rem;
+		margin: 0 auto;
+		max-width: 96%;
+		text-indent: $indent * 2;
+	}
+}
+
+.lead {
+	margin-bottom: 0.2rem;
+}
+
+.card {
+	border: none;
+}
+
+.card-header {
+	text-align: center;
+}
+
+.card-body > p {
+	margin: 0 auto;
+	max-width: 80%;
+	text-align: center;
+}
+
+#president {
+	background-color: map-get($colors, admin);
+	height: 200px;
+	padding: 0.15rem;
+	width: 157px;
+}
+
+.card__membres {
+	background-color: map-get($colors, admin);
+	height: 150px;
+	padding: 0.15rem;
+	width: 147px;
+}
+
+#comissions_link {
+	color: map-get($colors, secondary);
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.fa-file-pdf {
+	color: map-get($colors, secondary);
+	display: inline;
+}
+
+/* ******************************** */
+
+/* Media */
+@media (max-width: 575px) {
+	.text-xs-center {
+		text-align: center;
+	}
+}
+
+@media (min-width: 576px) {
+	.lead {
+		font-size: $default-size + 0.25rem;
+	}
+
+	.main__wrapper {
+		padding: 0 10px;
+	}
+
+	#council-header {
+		.col > h2 {
+			font-size: $default-size + 0.25rem;
+			padding-left: $h2-padding-left;
+		}
+	}
+
+	#council {
+		.col-12 > p {
+			font-size: $default-size - 0.05rem;
+		}
+	}
+
+	.card-body > p:last-child {
+		font-size: $default-size + 0.15rem;
+	}
+
+	#president {
+		height: 225px;
+		width: 177px;
+	}
+
+	.card__membres {
+		height: 175px;
+		width: 172px;
+	}
+
+	#comissions_link {
+		font-size: $default-size + 0.1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.main__wrapper {
+		padding: 0 15px;
+	}
+
+	#council-header {
+		.col > h2 {
+			font-size: $default-size + 0.5rem;
+		}
+	}
+
+	#council {
+		.col-12 > p {
+			font-size: $default-size;
+		}
+	}
+
+	#president {
+		height: 250px;
+		width: 197px;
+	}
+
+	.card__membres {
+		height: 200px;
+		width: 197px;
+	}
+
+	#comissions_link {
+		font-size: $default-size + 0.15rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.main__wrapper {
+		padding: 0 $default-size + 0.25rem;
+	}
+}

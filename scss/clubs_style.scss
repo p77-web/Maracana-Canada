@@ -1,0 +1,179 @@
+/* SCSS style for clubs.html page */
+
+@import '_variables.scss';
+
+.lead {
+	font-size: $default-size;
+}
+
+#clubs_link {
+	color: map-get($colors, secondary);
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+#clubs-header {
+	background-color: map-get($colors, secondary);
+	height: auto;
+	width: 100%;
+
+	.col {
+		margin: 0 auto;
+	}
+
+	.col > h2 {
+		border-bottom: $header-bottom-border-color;
+		font-size: $default-size + 0.15rem;
+		margin: 0 auto;
+		padding-bottom: $h2-padding-bottom;
+	}
+}
+
+#clubs {
+	background-color: map-get($colors, secondary);
+	height: auto;
+	width: 100%;
+
+	.col-12 {
+		margin: 0 auto;
+	}
+}
+
+.clubs-card-text {
+	font-size: $default-size - 0.1rem;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.clubs__text {
+	font-size: $default-size - 0.1rem;
+	margin: 0 auto;
+	max-width: 90%;
+	text-indent: $indent * 2;
+}
+
+.contact__stats {
+	font-size: $default-size - 0.1rem;
+	text-indent: $indent;
+}
+
+.contact {
+	padding-left: $default-size + 0.5rem !important;
+	text-align: left;
+}
+
+.teams-card {
+	background-color: transparent;
+	border: none;
+
+	.card-footer {
+		background-color: transparent;
+		border: none;
+	}
+}
+
+caption {
+	caption-side: top;
+}
+
+/* ******************************** */
+
+/* Media */
+@media (max-width: 575px) {
+	.text-xs-center {
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (min-width: 576px) {
+	.lead {
+		font-size: $default-size + 0.15rem;
+	}
+
+	.main__wrapper {
+		padding: 0 10px;
+	}
+
+	#comissions_link {
+		font-size: $default-size + 0.1rem;
+	}
+
+	#clubs-header {
+		.col > h2 {
+			font-size: $default-size + 0.25rem;
+			padding-left: $h2-padding-left;
+		}
+	}
+
+	.clubs-card-text {
+		font-size: $default-size - 0.05rem;
+	}
+
+	.clubs__text {
+		font-size: $default-size - 0.05rem;
+	}
+
+	.contact__stats {
+		font-size: $default-size - 0.05rem;
+	}
+
+	.contact {
+		padding-left: $h2-padding-left !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.lead {
+		font-size: $default-size + 0.25rem;
+	}
+
+	.main__wrapper {
+		padding: 0 15px;
+	}
+
+	#comissions_link {
+		font-size: $default-size + 0.15rem;
+	}
+
+	#clubs-header {
+		.col > h2 {
+			font-size: $default-size + 0.5rem;
+		}
+	}
+
+	.clubs-card-text {
+		font-size: $default-size;
+	}
+
+	.clubs__text {
+		font-size: $default-size;
+	}
+
+	.contact__stats {
+		font-size: $default-size;
+	}
+
+	.contact {
+		padding-left: $default-size + 1.5rem !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.main__wrapper {
+		padding: 0 $default-size + 0.25rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.contact {
+		margin-left: $default-size * 3 !important;
+	}
+}

@@ -1,182 +1,152 @@
-/* CSS style for counciladmin.html page */
-
+/* SCSS style for counciladmin.html page */
 .lead {
-	font-size: 1rem;
-}
-
-#money {
-	margin: 0;
-}
-
-.main {
-	background-image: url('/images/canada-flag.jpg');
-	/* background-image: radial-gradient(circle, red 0%, white 100%); */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.main__wrapper {
-	align-items: center;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0 5px;
-	margin: 0 auto;
-	max-width: 960px;
-	width: 90%;
+  font-size: 1rem;
 }
 
 #council-header {
-	background-color: #fff;
-	height: auto;
-	width: 100%;
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+#council-header .col > h2 {
+  border-bottom: 2px solid #f75056;
+  font-size: 1.15rem;
+  padding-bottom: 1.25rem;
 }
 
 #council {
-	background-color: #fff;
-	height: auto;
-	width: 100%;
+  background-color: #fff;
+  height: auto;
+  width: 100%;
 }
-
 #council .col-12 {
-	margin: 0 auto;
+  margin: 0 auto;
 }
-
-#council-header .col > h2 {
-	border-bottom: 2px solid #f75056;
-	font-size: 1.15rem;
-	padding-bottom: 20px;
-}
-
 #council .col-12 > p {
-	font-size: 0.85rem;
-	margin: 0 auto;
-	max-width: 96%;
-	text-indent: 2em;
+  font-size: 0.85rem;
+  margin: 0 auto;
+  max-width: 96%;
+  text-indent: 2rem;
 }
 
 .lead {
-	margin-bottom: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 .card {
-	border: none;
+  border: none;
 }
 
 .card-header {
-	text-align: center;
+  text-align: center;
 }
 
 .card-body > p {
-	margin: 0 auto;
-	max-width: 80%;
-	text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
 }
 
 #president {
-	background-color: rgba(255, 0, 0, 0.7);
-	height: 200px;
-	padding: 0.15rem;
-	width: 157px;
+  background-color: rgba(255, 0, 0, 0.7);
+  height: 200px;
+  padding: 0.15rem;
+  width: 157px;
 }
 
 .card__membres {
-	background-color: rgba(255, 0, 0, 0.7);
-	height: 150px;
-	padding: 0.15rem;
-	width: 147px;
+  background-color: rgba(255, 0, 0, 0.7);
+  height: 150px;
+  padding: 0.15rem;
+  width: 147px;
 }
 
 #comissions_link {
-	color: #fff;
+  color: #fff;
 }
-
 #comissions_link:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .fa-file-pdf {
-	color: #fff;
-	display: inline;
+  color: #fff;
+  display: inline;
 }
 
 /* ******************************** */
-
+/* Media */
 @media (max-width: 575px) {
-	.text-xs-center {
-		text-align: center;
-	}
+  .text-xs-center {
+    text-align: center;
+  }
 }
-
 @media (min-width: 576px) {
-	.lead {
-		font-size: 1.25rem;
-	}
+  .lead {
+    font-size: 1.25rem;
+  }
 
-	.main__wrapper {
-		padding: 0 10px;
-	}
+  .main__wrapper {
+    padding: 0 10px;
+  }
 
-	#council-header .col > h2 {
-		font-size: 1.25rem;
-		padding-left: 2rem;
-	}
+  #council-header .col > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
 
-	#council .col-12 > p {
-		font-size: 0.95rem;
-	}
+  #council .col-12 > p {
+    font-size: 0.95rem;
+  }
 
-	.card-body > p:last-child {
-		font-size: 1.15rem;
-	}
+  .card-body > p:last-child {
+    font-size: 1.15rem;
+  }
 
-	#president {
-		height: 225px;
-		width: 177px;
-	}
+  #president {
+    height: 225px;
+    width: 177px;
+  }
 
-	.card__membres {
-		height: 175px;
-		width: 172px;
-	}
+  .card__membres {
+    height: 175px;
+    width: 172px;
+  }
 
-	#comissions_link {
-		font-size: 1.1rem;
-	}
+  #comissions_link {
+    font-size: 1.1rem;
+  }
 }
-
 @media (min-width: 768px) {
-	.main__wrapper {
-		padding: 0 15px;
-	}
+  .main__wrapper {
+    padding: 0 15px;
+  }
 
-	#council-header .col > h2 {
-		font-size: 1.5rem;
-	}
+  #council-header .col > h2 {
+    font-size: 1.5rem;
+  }
 
-	#council .col-12 > p {
-		font-size: 1rem;
-	}
+  #council .col-12 > p {
+    font-size: 1rem;
+  }
 
-	#president {
-		height: 250px;
-		width: 197px;
-	}
+  #president {
+    height: 250px;
+    width: 197px;
+  }
 
-	.card__membres {
-		height: 200px;
-		width: 197px;
-	}
+  .card__membres {
+    height: 200px;
+    width: 197px;
+  }
 
-	#comissions_link {
-		font-size: 1.15rem;
-	}
+  #comissions_link {
+    font-size: 1.15rem;
+  }
 }
-
 @media (min-width: 992px) {
-	.main__wrapper {
-		padding: 0 20px;
-	}
+  .main__wrapper {
+    padding: 0 1.25rem;
+  }
 }
+
+/*# sourceMappingURL=conseiladmin_style.css.map */
