@@ -2,26 +2,18 @@
 
 @import '_variables.scss';
 
-.lead {
-	font-size: $default-size;
-}
-
 #council-header {
 	background-color: map-get($colors, secondary);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 
 	.col > h2 {
-		border-bottom: 2px solid map-get($colors, bottom-border);
-		font-size: $default-size + 0.15rem;
-		padding-bottom: $h2-padding-bottom;
+		@include section-headers;
 	}
 }
 
 #council {
 	background-color: map-get($colors, secondary);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 
 	.col-12 {
 		margin: 0 auto;

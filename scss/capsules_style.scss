@@ -2,16 +2,11 @@
 
 @import '_variables.scss';
 
-.lead {
-	font-size: $default-size;
-}
-
 #infosheet-header,
 #infosheet,
 #lessons {
 	background-color: map-get($colors, secondary);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 }
 
 #infosheet .col {
@@ -20,9 +15,7 @@
 
 #infosheet-header {
 	.col > h2 {
-		border-bottom: 2px solid map-get($colors, bottom-border);
-		font-size: 1.15rem;
-		padding-bottom: $h2-padding-bottom;
+		@include section-headers;
 	}
 }
 

@@ -4,10 +4,6 @@ p {
   margin-bottom: 0;
 }
 
-.lead {
-  font-size: 1rem;
-}
-
 #presentation {
   background-color: #fff;
   height: auto;
@@ -205,8 +201,8 @@ p {
 
 .actualites {
   height: auto;
-  padding: 0 15px;
   width: 100%;
+  padding: 0 15px;
 }
 .actualites h5 {
   color: #f00;

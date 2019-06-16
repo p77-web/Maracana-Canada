@@ -2,17 +2,12 @@
 
 @import '_variables.scss';
 
-.lead {
-	font-size: $default-size;
-}
-
 #historique-header,
 #historique,
 #federation,
 #administration {
 	background-color: map-get($colors, secondary);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 }
 
 #historique-header .col,
@@ -22,9 +17,7 @@
 }
 
 .headers {
-	border-bottom: $header-bottom-border-color;
-	font-size: $default-size + 0.15rem;
-	padding-bottom: $h2-padding-bottom;
+	@include section-headers;
 }
 
 #historique-header {
@@ -88,7 +81,7 @@ ul {
 	#historique-header .col > h2,
 	#federation .col-12 > h2,
 	#administration .col-12 > h2 {
-		font-size: $default-size + 0.25;
+		font-size: $default-size + 0.25rem;
 		padding-left: $h2-padding-left;
 	}
 
@@ -109,7 +102,7 @@ ul {
 	}
 
 	.administration-lists {
-		padding: $default-size + 0.25;
+		padding: $default-size + 0.25rem;
 	}
 
 	.lead {

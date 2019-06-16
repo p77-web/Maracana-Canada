@@ -21,5 +21,16 @@ $colors: (
 	breadcrumb: rgba(255, 255, 255, 0.8)
 );
 
-$header-bottom-border-color: 2px solid map-get($colors, bottom-border);
+$header-bottom-border: 2px solid map-get($colors, bottom-border);
 $nav-border: 1px solid map-get($colors, secondary);
+
+@mixin wrapper-dimensions {
+	height: auto;
+	width: 100%;
+}
+
+@mixin section-headers {
+	border-bottom: $header-bottom-border;
+	font-size: map-get($font-sizes, header2) + 0.15rem;
+	padding-bottom: $h2-padding-bottom;
+}

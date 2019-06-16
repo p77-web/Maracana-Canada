@@ -1,8 +1,4 @@
 /* SCSS style for champions19.html page */
-.lead {
-  font-size: 1rem;
-}
-
 .breadcrumb {
   background-color: transparent;
   margin-bottom: 0;
@@ -36,7 +32,6 @@
 #title-header .col > h2 {
   border-bottom: 2px solid #f75056;
   font-size: 1.15rem;
-  margin: 0 auto;
   padding-bottom: 1.25rem;
 }
 

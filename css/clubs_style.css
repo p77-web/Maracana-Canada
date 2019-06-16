@@ -1,8 +1,4 @@
 /* SCSS style for clubs.html page */
-.lead {
-  font-size: 1rem;
-}
-
 #clubs_link {
   color: #fff;
 }
@@ -21,7 +17,6 @@
 #clubs-header .col > h2 {
   border-bottom: 2px solid #f75056;
   font-size: 1.15rem;
-  margin: 0 auto;
   padding-bottom: 1.25rem;
 }
 

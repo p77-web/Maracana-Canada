@@ -2,21 +2,14 @@
 
 @import '_variables.scss';
 
-.lead {
-	font-size: $default-size;
-}
-
 #competitions,
 #teams {
 	background-color: map-get($colors, secondary);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 }
 
 .headers {
-	border-bottom: $header-bottom-border-color;
-	font-size: $default-size + 0.15rem;
-	padding-bottom: $h2-padding-bottom;
+	@include section-headers;
 }
 
 #competitions {
@@ -45,8 +38,7 @@
 
 #championnat-header {
 	background-color: map-get($colors, championnat);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 
 	.col {
 		margin: 0 auto;
@@ -59,8 +51,7 @@
 
 #championnat {
 	background-color: map-get($colors, championnat);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 }
 
 .card__text {

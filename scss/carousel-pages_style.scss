@@ -2,10 +2,6 @@
 
 @import '_variables.scss';
 
-.lead {
-	font-size: $default-size;
-}
-
 .breadcrumb {
 	background-color: transparent;
 	margin-bottom: 0;
@@ -31,25 +27,20 @@
 
 #title-header {
 	background-color: map-get($colors, secondary);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 
 	.col {
 		margin: 0 auto;
 	}
 
 	.col > h2 {
-		border-bottom: $header-bottom-border-color;
-		font-size: $default-size + 0.15rem;
-		margin: 0 auto;
-		padding-bottom: $h2-padding-bottom;
+		@include section-headers;
 	}
 }
 
 #picture {
 	background-color: map-get($colors, secondary);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 }
 
 .picture__subtitle {

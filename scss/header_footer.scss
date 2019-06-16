@@ -20,6 +20,10 @@ body {
 	overflow-x: hidden;
 }
 
+.lead {
+	font-size: map-get($font-sizes, lead);
+}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -187,7 +191,7 @@ ul {
 }
 
 #copyright {
-	font-size: 0.6rem;
+	font-size: $default-size - 0.4rem;
 	color: rgba(255, 255, 255, 0.3);
 }
 
@@ -210,8 +214,8 @@ ul {
 
 #language {
 	background-color: transparent;
-	height: 1.5rem;
-	line-height: 1.3rem;
+	height: $default-size + 0.5rem;
+	line-height: $default-size + 0.3rem;
 	position: absolute;
 	right: $default-size;
 	top: $default-size;
@@ -222,7 +226,7 @@ ul {
 	cursor: pointer;
 	font-size: $default-size;
 	text-decoration: none;
-	width: 1.6rem;
+	width: $default-size + 0.6rem;
 }
 
 .btn-danger {
@@ -258,8 +262,8 @@ ul {
 	#language {
 		background-color: map-get($colors, main);
 		border-radius: 5px;
-		max-height: 1.4rem;
-		width: 1.4rem;
+		max-height: $default-size + 0.4rem;
+		width: $default-size + 0.4rem;
 	}
 
 	#languageSwitcher {
@@ -380,7 +384,7 @@ ul {
 	}
 
 	#language {
-		top: 0.5rem;
+		top: $default-size / 2;
 	}
 
 	#footer {

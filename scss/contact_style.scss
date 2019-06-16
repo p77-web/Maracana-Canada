@@ -2,30 +2,22 @@
 
 @import '_variables.scss';
 
-.lead {
-	font-size: $default-size;
-}
-
 #contact-header {
 	background-color: map-get($colors, secondary);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 
 	.col {
 		margin: 0 auto;
 	}
 
 	.col > h2 {
-		border-bottom: 2px solid #f75056;
-		font-size: $default-size + 0.15rem;
-		padding-bottom: $h2-padding-bottom;
+		@include section-headers;
 	}
 }
 
 #contact {
 	background-color: map-get($colors, secondary);
-	height: auto;
-	width: 100%;
+	@include wrapper-dimensions;
 
 	.col-12 {
 		padding-right: $default-size / 4;
