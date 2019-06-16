@@ -1,543 +1,476 @@
-/* CSS style for index.html page */
-
+/* SCSS style for index.html page */
 p {
-	margin-top: 0;
-	margin-bottom: 0rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .lead {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 #money {
-	margin: 0;
+  margin: 0;
 }
 
 .main {
-	background-image: url('/images/canada-flag.jpg');
-	/* background-image: radial-gradient(circle, red 0%, white 100%); */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background-image: url("/images/canada-flag.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main__wrapper {
-	align-items: center;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0 5px;
-	margin: 0 auto;
-	max-width: 960px;
-	width: 90%;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5px;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 90%;
 }
 
 #presentation {
-	background-color: #fff;
-	height: auto;
-	width: 100%;
+  background-color: #fff;
+  height: auto;
+  width: 100%;
 }
-
 #presentation .col {
-	margin: 0 auto;
-	max-width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 }
-
-#presentation .col > h2 {
-	border-bottom: 2px solid #f75056;
-	font-size: 1.15rem;
-	padding-bottom: 20px;
-}
-
 #presentation .col > p {
-	/* font-size: 0.85rem; */
-	margin: 0 auto;
-	max-width: 96%;
-	text-indent: 2em;
+  margin: 0 auto;
+  max-width: 96%;
+  text-indent: 2rem;
 }
-
 #presentation .col > p:last-child {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 #lois_de_jeu_link {
-	color: #828282;
+  color: #828282;
 }
 
 .fa-file-pdf {
-	color: #f00;
-	display: inline;
+  color: #f00;
+  display: inline;
 }
 
 #news {
-	background-image: url('/images/canada-flag_1.jpg');
-	/* background-image: radial-gradient(circle, red 0%, white 100%); */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: calc(100% + 10px);
+  background-image: url("/images/canada-flag_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(100% + 10px);
 }
 
 .news__container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .news__title,
 .news__date,
 .news__subtitle {
-	color: #f1f1f1;
-	margin: 0 auto;
+  color: #f1f1f1;
+  margin: 0 auto;
 }
 
 .news__title {
-	align-self: center;
-	font-family: 'IM Fell English SC', serif;
-	font-weight: 900;
-	text-transform: uppercase;
+  align-self: center;
+  font-family: "IM Fell English SC", serif;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .news__date {
-	align-self: center;
-	font-family: 'IM Fell Double Pica SC', serif;
-	font-weight: 900;
+  align-self: center;
+  font-family: "IM Fell Double Pica SC", serif;
+  font-weight: 900;
 }
 
 .news__subtitle {
-	font-family: 'IM Fell Double Pica SC', serif;
+  font-family: "IM Fell Double Pica SC", serif;
 }
 
 .news__image {
-	border-radius: 5px;
-	max-width: 230px;
+  border-radius: 5px;
+  max-width: 230px;
 }
 
 #info-header,
 #agenda-header,
 #actualites-header,
 #galerie-header {
-	height: auto;
-	width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .info-header__message--red {
-	color: red;
+  color: #f00;
+}
+
+.headers, #galerie-header .col > h2, #agenda-header .col > h2,
+#actualites-header .col > h2, #presentation .col > h2 {
+  border-bottom: 2px solid #f75056;
+  font-size: 1.15rem;
+  padding-bottom: 1.25rem;
 }
 
 #agenda-header .col,
 #actualites-header .col {
-	margin: 0 auto;
+  margin: 0 auto;
 }
-
-#agenda-header .col > h2,
-#actualites-header .col > h2 {
-	border-bottom: 2px solid #f75056;
-	font-size: 1.15rem;
-	padding-bottom: 1.25rem;
-}
-
 #galerie,
 #actualites {
-	height: auto;
-	width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .carousel {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .card__link {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .card-img-top {
-	width: 100%;
+  width: 100%;
 }
 
 #agenda {
-	align-items: center;
-	background-color: rgb(243, 243, 243);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
+  align-items: center;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 #tournoi-img {
-	height: auto;
-	width: 250px;
-
-	transition: ease 0.5s;
+  height: auto;
+  width: 250px;
+  transition: ease 0.5s;
 }
-
-#tournoi-img:hover,
-#tournoi-img:focus {
-	transform: scale(1.05);
-	transition: ease 0.5s;
+#tournoi-img:hover, #tournoi-img:focus {
+  transform: scale(1.05);
+  transition: ease 0.5s;
 }
 
 .card__container {
-	width: 250px;
+  width: 250px;
 }
 
 .bg-custom {
-	background-color: #f00;
+  background-color: #f00;
 }
 
 .card__countries {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #galerie-header {
-	background-color: #fff;
-	height: auto;
+  background-color: #fff;
+  height: auto;
 }
-
 #galerie-header .col {
-	margin: 0 auto;
+  margin: 0 auto;
 }
-
-#galerie-header .col > h2 {
-	border-bottom: 2px solid #f75056;
-	font-size: 1.15rem;
-	padding-bottom: 1.25rem;
-}
-
 .card__title {
-	background: rgba(0, 0, 0, 0.9);
-	bottom: 0;
-	color: #f1f1f1;
-	padding: 20px;
-	position: absolute;
-	text-align: center;
-	width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  color: #f1f1f1;
+  padding: 1.25rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 #delegation-img {
-	height: auto;
-	opacity: 0;
-	width: 500px;
+  height: auto;
+  opacity: 0;
+  width: 500px;
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-	height: 100%;
-	opacity: 1;
-	width: 10%;
+  height: 100%;
+  opacity: 1;
+  width: 10%;
 }
-
 .carousel-control-next:hover,
 .carousel-control-prev:hover {
-	background: #000;
-	opacity: 0.3;
+  background: #000;
+  opacity: 0.3;
 }
 
 .carousel-indicators {
-	bottom: 15%;
+  bottom: 15%;
 }
-
 .carousel-indicators li {
-	display: inline-block;
-	width: 15px;
-	height: 5px;
-	cursor: pointer;
-	border-radius: 25%;
-	background-color: #fff;
+  display: inline-block;
+  width: 15px;
+  height: 5px;
+  cursor: pointer;
+  border-radius: 25%;
+  background-color: #fff;
 }
-
 .carousel-indicators .active {
-	width: 15px;
-	height: 5px;
-	margin: 10px;
-	background-color: #f00;
+  width: 15px;
+  height: 5px;
+  margin: 10px;
+  background-color: #f00;
 }
 
 .actualites {
-	height: auto;
-	padding: 0 15px;
-	width: 100%;
+  height: auto;
+  padding: 0 15px;
+  width: 100%;
+}
+.actualites h5 {
+  color: #f00;
+  text-align: center;
 }
 
 .actualites__article {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	/* flex-wrap: wrap; */
-	justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .actualites__img {
-	flex-shrink: 0;
-	height: 120px;
-	width: 165px;
-}
-
-.actualites h5 {
-	color: #f00;
-	text-align: center;
+  flex-shrink: 0;
+  height: 120px;
+  width: 165px;
 }
 
 .actualites__text {
-	text-indent: 1rem;
+  text-indent: 1rem;
 }
 
 #partenaires {
-	background-color: #3b3b3b;
-	width: calc(100% + 10px);
+  background-color: #3b3b3b;
+  width: calc(100% + 10px);
 }
 
 .partenaires {
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-	height: 160px;
-	margin: auto;
-	overflow: hidden;
-	position: relative;
-	max-width: 700px;
-	width: 90%;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 160px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 700px;
+  width: 90%;
 }
-
-.partenaires::before,
-.partenaires::after {
-	background: linear-gradient(
-		to right,
-		rgba(59, 59, 59, 1) 0%,
-		rgba(59, 59, 59, 0) 100%
-	);
-	content: '';
-	height: 160px;
-	position: absolute;
-	width: 50px;
-	z-index: 2;
+.partenaires::before, .partenaires::after {
+  background: linear-gradient(to right, #3b3b3b 0%, rgba(59, 59, 59, 0) 100%);
+  content: "";
+  height: 160px;
+  position: absolute;
+  width: 50px;
+  z-index: 2;
 }
 
 .partenaires::after {
-	right: 0;
-	top: 0;
-
-	transform: rotateZ(180deg);
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
 .partenaires::before {
-	left: 0;
-	top: 0;
+  left: 0;
+  top: 0;
 }
 
 @keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-1250px);
-	}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1250px);
+  }
 }
-
 .partenaires__slider {
-	animation: scroll 60s linear infinite;
-	display: flex;
-	width: 3000px;
+  animation: scroll 60s linear infinite;
+  display: flex;
+  width: 3000px;
 }
 
 .partenaires__slide {
-	height: 160px;
-	padding: 0 15px;
+  height: 10rem;
+  padding: 0 15px;
 }
 
 .partenaires__title--color {
-	color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .partenaires__images {
-	max-height: 160px;
+  max-height: 10rem;
 }
 
 /* *************************************** */
-
 /* Media */
 @media (max-width: 575px) {
-	.text-xs-center {
-		text-align: center;
-	}
+  .text-xs-center {
+    text-align: center;
+  }
 }
-
 @media (max-width: 767px) {
-	.media {
-		flex-direction: column;
-		text-align: center;
-	}
+  .media {
+    flex-direction: column;
+    text-align: center;
+  }
 }
-
 @media (min-width: 576px) {
-	.lead {
-		font-size: 1.15rem;
-	}
+  .headers-over576px, #galerie-header .col > h2,
+#agenda-header .col > h2,
+#actualites-header .col > h2, #presentation .col > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
 
-	.main__wrapper {
-		padding: 0 10px;
-	}
+  .lead {
+    font-size: 1.15rem;
+  }
 
-	#news {
-		width: calc(100% + 20px);
-	}
+  .main__wrapper {
+    padding: 0 10px;
+  }
 
-	#presentation .col > h2 {
-		font-size: 1.25rem;
-		padding-left: 2rem;
-	}
+  #news {
+    width: calc(100% + 20px);
+  }
 
-	#presentation .col > p:last-child {
-		font-size: 1.1rem;
-	}
+  #presentation .col > p:last-child {
+    font-size: 1.1rem;
+  }
 
-	#agenda-header .col > h2,
-	#actualites-header .col > h2 {
-		font-size: 1.25rem;
-		padding-left: 2rem;
-	}
+  #tournoi-img:hover {
+    transform: scale(1.05);
+    transition: ease 0.5s;
+  }
 
-	#tournoi-img:hover {
-		transform: scale(1.05);
-		transition: ease 0.5s;
-	}
+  .card__container {
+    width: 250px;
+  }
 
-	.card__container {
-		width: 250px;
-	}
+  .carousel-indicators {
+    bottom: 17%;
+  }
+  .carousel-indicators li {
+    width: 1.25rem;
+  }
+  .carousel-indicators .active {
+    width: 1.25rem;
+  }
 
-	#galerie-header .col > h2 {
-		font-size: 1.25rem;
-		padding-left: 2rem;
-	}
+  .carousel-control-next,
+.carousel-control-prev {
+    bottom: 25%;
+  }
 
-	.carousel-indicators {
-		bottom: 17%;
-	}
-
-	.carousel-indicators li {
-		width: 20px;
-	}
-
-	.carousel-indicators .active {
-		width: 20px;
-	}
-
-	.carousel-control-next,
-	.carousel-control-prev {
-		bottom: 25%;
-	}
-
-	#partenaires {
-		width: calc(100% + 20px);
-	}
+  #partenaires {
+    width: calc(100% + 20px);
+  }
 }
-
 @media (min-width: 768px) {
-	.lead {
-		font-size: 1.25rem;
-	}
+  .headers-over768px, #agenda-header .col > h2,
+#actualites-header .col > h2,
+#galerie-header .col > h2, #presentation .col > h2 {
+    font-size: 1.5rem;
+  }
 
-	.main__wrapper {
-		padding: 0 15px;
-	}
+  .lead {
+    font-size: 1.25rem;
+  }
 
-	#news {
-		width: calc(100% + 30px);
-	}
+  .main__wrapper {
+    padding: 0 15px;
+  }
 
-	#presentation .col > h2 {
-		font-size: 1.25rem;
-		padding-left: 2rem;
-	}
+  #news {
+    width: calc(100% + 30px);
+  }
 
-	.news__image {
-		max-width: 300px;
-	}
+  #presentation .col > h2 {
+    padding-left: 2rem;
+  }
+  #presentation .col > p:last-child {
+    font-size: 1.15rem;
+  }
 
-	.card__countries {
-		font-size: 1rem;
-	}
+  .news__image {
+    max-width: 300px;
+  }
 
-	#presentation .col > h2 {
-		font-size: 1.5rem;
-	}
+  .card__countries {
+    font-size: 1rem;
+  }
 
-	#presentation .col > p:last-child {
-		font-size: 1.15rem;
-	}
+  .card__container {
+    width: 300px;
+  }
 
-	#agenda-header .col > h2,
-	#actualites-header .col > h2 {
-		font-size: 1.5rem;
-	}
+  #tournoi-img {
+    width: 300px;
+    transition: ease 0.5s;
+  }
+  #tournoi-img:hover {
+    transform: scale(1.05);
+    transition: ease 0.5s;
+  }
 
-	.card__container {
-		width: 300px;
-	}
+  .actualites__article {
+    flex-direction: row;
+  }
 
-	#tournoi-img {
-		width: 300px;
+  .actualites__text {
+    font-size: 1rem;
+  }
 
-		transition: ease 0.5s;
-	}
+  .carousel-indicators {
+    bottom: 14%;
+  }
 
-	#tournoi-img:hover {
-		transform: scale(1.05);
-		transition: ease 0.5s;
-	}
-
-	#galerie-header .col > h2 {
-		font-size: 1.5rem;
-	}
-
-	.actualites__article {
-		flex-direction: row;
-	}
-
-	.actualites__text {
-		font-size: 1rem;
-	}
-
-	.carousel-indicators {
-		bottom: 14%;
-	}
-
-	#partenaires {
-		width: calc(100% + 30px);
-	}
+  #partenaires {
+    width: calc(100% + 30px);
+  }
 }
-
 @media (min-width: 992px) {
-	.main__wrapper {
-		padding: 0 20px;
-	}
+  .main__wrapper {
+    padding: 0 1.25rem;
+  }
 
-	#news {
-		width: calc(100% + 40px);
-	}
+  #news {
+    width: calc(100% + 40px);
+  }
 
-	#agenda {
-		flex-direction: row;
-	}
+  #agenda {
+    flex-direction: row;
+  }
 
-	.card__container {
-		width: 350px;
-	}
+  .card__container {
+    width: 350px;
+  }
 
-	#tournoi-img {
-		width: 350px;
-		transition: ease 0.5s;
-	}
+  #tournoi-img {
+    width: 350px;
+    transition: ease 0.5s;
+  }
+  #tournoi-img:hover {
+    transform: scale(1.05);
+    transition: ease 0.5s;
+  }
 
-	#tournoi-img:hover {
-		transform: scale(1.05);
-		transition: ease 0.5s;
-	}
-
-	#partenaires {
-		width: calc(100% + 40px);
-	}
+  #partenaires {
+    width: calc(100% + 40px);
+  }
 }
 
-@media (min-width: 1200px) {
-}
+/*# sourceMappingURL=index_style.css.map */

@@ -1,0 +1,22 @@
+$size-default: 1rem;
+$indent: $size-default;
+$h2-padding-bottom: $size-default * 1.25;
+$h2-padding-left: $size-default * 2;
+$logo-size: 80px;
+
+$font-sizes: (
+	lead: $size-default,
+	header2: $size-default,
+	p-last-child: $size-default
+);
+
+$colors: (
+	initial-font: #5a5a5a,
+	main: #f00,
+	secondary: #fff,
+	news: #f1f1f1,
+	bottom-border: #f75056
+);
+
+$header-bottom-border-color: 2px solid map-get($colors, bottom-border);
+$nav-border: 1px solid map-get($colors, secondary);
