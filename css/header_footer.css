@@ -371,5 +371,10 @@ ul {
     top: 41px;
   }
 }
+@media (min-width: 1500px) {
+  .dropdown-content {
+    top: 42px;
+  }
+}
 
 /*# sourceMappingURL=header_footer.css.map */
