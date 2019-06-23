@@ -22,6 +22,10 @@ ul {
   padding: 0;
 }
 
+.section-header--hidden {
+  display: none;
+}
+
 #header-section {
   background-color: #fff;
 }
