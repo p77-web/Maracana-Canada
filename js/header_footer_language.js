@@ -110,11 +110,11 @@ window.addEventListener(
 			// check if the language object has a property like the class' key
 			if (
 				language[browserLanguage].hasOwnProperty(
-					text.getAttribute('key')
+					text.getAttribute('data-key')
 				)
 			) {
 				text.innerHTML =
-					language[browserLanguage][text.getAttribute('key')];
+					language[browserLanguage][text.getAttribute('data-key')];
 			}
 		});
 	},
@@ -129,8 +129,13 @@ function changeLanguage() {
 
 	textToChange.forEach(function(text) {
 		// check if the language object has a property like the class' key
-		if (language[buttonLanguage].hasOwnProperty(text.getAttribute('key'))) {
-			text.innerHTML = language[buttonLanguage][text.getAttribute('key')];
+		if (
+			language[buttonLanguage].hasOwnProperty(
+				text.getAttribute('data-key')
+			)
+		) {
+			text.innerHTML =
+				language[buttonLanguage][text.getAttribute('data-key')];
 		}
 	});
 }
