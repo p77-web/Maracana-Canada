@@ -17,11 +17,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Kanit%7cRufina%7cArtifika%7cMarcellus+SC" rel="stylesheet">
 
 		<link rel="shortcut icon" type="image/png" href="images/icon16x16.png">
-
+	
 		<link rel="stylesheet" href="css/header_footer.css">
-		<link rel="stylesheet" href="css/carousel-pages_style.css">
+		<link rel="stylesheet" href="css/competitions_style.css">
 
-		<title>Mali - Maracana Canada</title>
+		<title>World Cups - Maracana Canada</title>
 	</head>
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
@@ -47,7 +47,7 @@
 						/>
 					</div>
 
-					<div class="my-3 translateText"	id="message-official-site" data-key="official"></div>
+					<div class="my-3 translateText" id="message-official-site" data-key="official"></div>
 
 					<div class="col-12 d-flex justify-content-center mb-2">
 						<p class="lead pr-3 align-self-center translateText" id="money" data-key="donation"></p>
@@ -170,7 +170,7 @@
 												<a href="competitions.html" class="translateText dropdown-content__submenu-link" data-key="">CAN</a>
 											</li>
 											<li class="nav-item dropdown-content__submenu">
-												<a href="competitions.html" class="translateText dropdown-content__submenu-link" data-key="world"></a>
+												<a href="worldcups.html" class="translateText dropdown-content__submenu-link" data-key="world"></a>
 											</li>
 										</ul>	
 									</li>
@@ -217,51 +217,97 @@
 		</header>
 
 		<div class="main">
-			<div class="main__wrapper">	
+			<div class="main__wrapper">
 
-                <!-- Page navigation section -->
+				<!-- Page navigation section -->
 				<section id="page-nav">
 					<h4 class="section-header--hidden">Page nav</h4>
-                    <div class="col-12 text-center">
-                        <ul class="page-nav__list">
-                            <li class="page-nav__items">
-                                <nav aria-label="breadcrumb" class="align-items-left">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Mali 2017</li>
-                                    </ol>
-                                </nav>
-                            </li>
-                        </ul>
-                    </div>
-                </section>	
+					<ul class="page-nav__list mx-auto">
+						<li class="page-nav__items">
+							<a
+								href="#competitions"
+								class="page-nav__item translateText"
+								data-key="results"
+								></a
+							>
+						</li>
+					</ul>
+				</section>
 
-				<!-- Title header section -->
-				<section id="title-header" class="mt-4">
+				<!-- competitions section -->
+				<section id="competitions" class="mt-4">
+					<div class="col-12 py-3">
+						<h2 class="mb-3 text-xs-center">
+                            Palmarès
+                        </h2>
+                        <p class="text-justify mb-1">
+                            La Fédération canadienne de Maracana étant affiliée à la Fédération Internationale de MAracana Association(FIMAA) dès sa création en 2016, ses équipes nationales ont été, depuis 2017, invitées aux différentes Coupes d'Afrique des Nations de maracana successives dénommées Mara'CAN et ce, à chaque année.
+                        </p>
+						<!-- <p class="lead">Nouveaux clubs</p>
+						<p class="text-justify mb-1">
+							Tout club désireux de participer à nos compétitions, peut s'inscrire à tout moment de l'année auprès de la Fédération.
+						</p> -->
+					</div>
+				</section>
+
+				<!-- championnat header section -->
+				<section id="championnat-header">
 					<div class="col py-3">
-						<h2 class="mb-2 text-xs-center">
-                            Départ pour la MARA'CAN MALI 2017
+						<h2 class="mb-3 text-xs-center">
+                            Mali 2017
 						</h2>
-					</div>			
+					</div>
 				</section>
 
-				<!-- Picture section -->
-				<section id="picture">
-					<h4 class="section-header--hidden">Picture</h4>
-                    <div class="card mb-4">
-                        <img
-                            class="card-img-top img-fluid img-thumbnail"
-                            src="images/carousel/canada.png"
-                            alt="Équipe Canada Mali-2017"
-                        />
+                <!-- championnat section -->
+				<section id="championnat">
+                    <h4 class="section-header--hidden">World Cup</h4>
+                    <div class="col-12 col-md-10 col-lg-8 mb-5 mx-auto">
+						<div class="card mb-2">
+							<img
+								class="card-img-top img-thumbnail"
+								src="images/Mali.png"
+								alt="Mali 2017"
+							/>
+							<div class="card-body mx-auto">
+								<p class="card-text text-center card__text">
+                                    Les séniors (35 ans et plus) accèdent aux demi-finales en plus d'être l'équipe fairplay
+								</p>
+							</div>
+						</div>
                     </div>
-                    <p class="text-justify my-4 picture__text">
-                        Le dimanche 15 octobre 2017, la délégation canadienne reçoit le soutien et l'au-revoir des responsables du sponsor Kokodi Transit à l'aéroport international Pierre-Elliott Trudeau de Montréal. Team Canada fera un parcours honorable en terminant demi-finaliste.
-                    </p>
-				</section>
+                </section>
+                
+                <!-- championnat header section -->
+				<section id="championnat-header">
+                    <div class="col py-3">
+                        <h2 class="mb-3 text-xs-center">
+                            Côte d'Ivoire 2018
+                        </h2>
+                    </div>
+                </section>
+
+                <!-- championnat section -->
+				<section id="championnat">
+                    <h4 class="section-header--hidden">World Cup</h4>
+                    <div class="col-12 col-md-10 col-lg-8 mb-5 mx-auto">
+                        <div class="card mb-2">
+                            <img
+                                class="card-img-top img-thumbnail"
+                                src="images/CI_Super_Sénior.png"
+                                alt="Côte d'Ivoire 2018"
+                            />
+                            <div class="card-body mx-auto">
+                                <p class="card-text text-center card__text">
+                                        Les séniors et les super séniors (45 ans et plus) accèdent aux quart de finales
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
 				<!-- Footer -->
-				<footer id="footer">
+				<footer id="footer" class="mt-3">
 					<div class="container pt-4">
 						<div class="row">
 							<div class="col text-center">
@@ -287,7 +333,7 @@
 				<i class="fas fa-caret-up fa-2x"></i>
 			</a>
 		</div>
-
+		
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
@@ -310,7 +356,7 @@
 			// Get the current year for the copyright
 			$('#year').text(new Date().getFullYear());
 
-			$(window).scroll(function() {
+			$(window).scroll(function () {
 				if ($(this).scrollTop() > 100) {
 					$('#scroll-arrow').fadeIn();
 				} else {
@@ -343,6 +389,27 @@
 						}
 					);
 				}
+			});
+
+			$(".page-nav__item").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 900, function(){
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
 			});
 
 			$('.navigation .dropdown').hover(function () {
