@@ -141,7 +141,8 @@ p {
 
 #agenda {
 	align-items: center;
-	background-color: #f3f3f3;
+	// background-color: #f3f3f3;
+	background-color: map-get($colors, secondary);
 	display: flex;
 	flex: {
 		direction: column;

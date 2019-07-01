@@ -1,0 +1,459 @@
+/* SCSS style for index.html page */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#presentation {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+#presentation .col {
+  margin: 0 auto;
+  max-width: 100%;
+}
+#presentation .col > p {
+  margin: 0 auto;
+  max-width: 96%;
+  text-indent: 2rem;
+}
+#presentation .col > p:last-child {
+  font-size: 1rem;
+}
+
+#lois_de_jeu_link {
+  color: #828282;
+}
+
+.fa-file-pdf {
+  color: #f00;
+  display: inline;
+}
+
+#news {
+  background-image: url("/images/canada-flag_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(100% + 10px);
+}
+
+.news__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.news__title,
+.news__date,
+.news__subtitle {
+  color: #f1f1f1;
+  margin: 0 auto;
+  text-shadow: 0px -3px 3px #000;
+}
+
+.news__title {
+  align-self: center;
+  font-family: "IM Fell English SC", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0px -3px 3px #000;
+}
+
+.news__date {
+  align-self: center;
+  font-family: "IM Fell Double Pica SC", serif;
+  font-weight: 900;
+  text-shadow: 0px -3px 3px #000;
+}
+
+.news__subtitle {
+  font-family: "IM Fell Double Pica SC", serif;
+}
+
+.news__image {
+  border-radius: 5px;
+  max-width: 230px;
+}
+
+#info-header,
+#agenda-header,
+#actualites-header,
+#galerie-header {
+  height: auto;
+  width: 100%;
+}
+
+.info-header__message--red {
+  color: #f00;
+}
+
+.headers, #galerie-header .col > h2, #agenda-header .col > h2,
+#actualites-header .col > h2, #presentation .col > h2 {
+  border-bottom: 2px solid #f75056;
+  font-size: 1.15rem;
+  padding-bottom: 1.25rem;
+}
+
+#agenda-header .col,
+#actualites-header .col {
+  margin: 0 auto;
+}
+#galerie,
+#actualites {
+  height: auto;
+  width: 100%;
+}
+
+.carousel {
+  margin: 0 auto;
+}
+
+.card__link {
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+#agenda {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#tournoi-img {
+  height: auto;
+  width: 250px;
+  transition: ease 0.5s;
+}
+#tournoi-img:hover, #tournoi-img:focus {
+  transform: scale(1.05);
+  transition: ease 0.5s;
+}
+
+.card__container {
+  width: 250px;
+}
+
+.bg-custom {
+  background-color: #f00;
+}
+
+.card__countries {
+  margin-bottom: 0;
+}
+
+#galerie-header {
+  background-color: #fff;
+  height: auto;
+}
+#galerie-header .col {
+  margin: 0 auto;
+}
+.card__title {
+  background: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  color: #f1f1f1;
+  padding: 1.25rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+#delegation-img {
+  height: auto;
+  opacity: 0;
+  width: 500px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  height: 100%;
+  opacity: 1;
+  width: 10%;
+}
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  background: #000;
+  opacity: 0.3;
+}
+
+.carousel-indicators {
+  bottom: 15%;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 5px;
+  cursor: pointer;
+  border-radius: 25%;
+  background-color: #fff;
+}
+.carousel-indicators .active {
+  width: 15px;
+  height: 5px;
+  margin: 10px;
+  background-color: #f00;
+}
+
+.actualites {
+  height: auto;
+  width: 100%;
+  padding: 0 15px;
+}
+.actualites h5 {
+  color: #f00;
+  text-align: center;
+}
+
+.actualites__article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.actualites__img {
+  flex-shrink: 0;
+  height: 120px;
+  width: 165px;
+}
+
+.actualites__text {
+  text-indent: 1rem;
+}
+
+#partenaires {
+  background-color: #3b3b3b;
+  width: calc(100% + 10px);
+}
+
+.partenaires {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 160px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 700px;
+  width: 90%;
+}
+.partenaires::before, .partenaires::after {
+  background: linear-gradient(to right, #3b3b3b 0%, rgba(59, 59, 59, 0) 100%);
+  content: "";
+  height: 160px;
+  position: absolute;
+  width: 50px;
+  z-index: 2;
+}
+
+.partenaires::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.partenaires::before {
+  left: 0;
+  top: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1250px);
+  }
+}
+.partenaires__slider {
+  animation: scroll 60s linear infinite;
+  display: flex;
+  width: 3000px;
+}
+
+.partenaires__slide {
+  height: 10rem;
+  padding: 0 15px;
+}
+
+.partenaires__title--color {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.partenaires__images {
+  max-height: 10rem;
+}
+
+/* *************************************** */
+/* Media */
+@media (max-width: 575px) {
+  .text-xs-center {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .media {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (min-width: 576px) {
+  .headers-over576px, #galerie-header .col > h2,
+#agenda-header .col > h2,
+#actualites-header .col > h2, #presentation .col > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
+
+  .lead {
+    font-size: 1.15rem;
+  }
+
+  .main__wrapper {
+    padding: 0 10px;
+  }
+
+  #news {
+    width: calc(100% + 20px);
+  }
+
+  #presentation .col > p:last-child {
+    font-size: 1.1rem;
+  }
+
+  #tournoi-img:hover {
+    transform: scale(1.05);
+    transition: ease 0.5s;
+  }
+
+  .card__container {
+    width: 250px;
+  }
+
+  .carousel-indicators {
+    bottom: 17%;
+  }
+  .carousel-indicators li {
+    width: 1.25rem;
+  }
+  .carousel-indicators .active {
+    width: 1.25rem;
+  }
+
+  .carousel-control-next,
+.carousel-control-prev {
+    bottom: 25%;
+  }
+
+  #partenaires {
+    width: calc(100% + 20px);
+  }
+}
+@media (min-width: 830px) {
+  .news__title,
+.news__date {
+    transform: rotateX(-30deg) rotateY(35deg);
+    text-shadow: -5px -5px 7px #000;
+  }
+}
+@media (min-width: 768px) {
+  .headers-over768px, #agenda-header .col > h2,
+#actualites-header .col > h2,
+#galerie-header .col > h2, #presentation .col > h2 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+  }
+
+  .main__wrapper {
+    padding: 0 15px;
+  }
+
+  #news {
+    width: calc(100% + 30px);
+  }
+
+  #presentation .col > h2 {
+    padding-left: 2rem;
+  }
+  #presentation .col > p:last-child {
+    font-size: 1.15rem;
+  }
+
+  .news__image {
+    max-width: 300px;
+  }
+
+  .card__countries {
+    font-size: 1rem;
+  }
+
+  .card__container {
+    width: 300px;
+  }
+
+  #tournoi-img {
+    width: 300px;
+    transition: ease 0.5s;
+  }
+  #tournoi-img:hover {
+    transform: scale(1.05);
+    transition: ease 0.5s;
+  }
+
+  .actualites__article {
+    flex-direction: row;
+  }
+
+  .actualites__text {
+    font-size: 1rem;
+  }
+
+  .carousel-indicators {
+    bottom: 14%;
+  }
+
+  #partenaires {
+    width: calc(100% + 30px);
+  }
+}
+@media (min-width: 992px) {
+  .main__wrapper {
+    padding: 0 1.25rem;
+  }
+
+  #news {
+    width: calc(100% + 40px);
+  }
+
+  #agenda {
+    flex-direction: row;
+  }
+
+  .card__container {
+    width: 350px;
+  }
+
+  #tournoi-img {
+    width: 350px;
+    transition: ease 0.5s;
+  }
+  #tournoi-img:hover {
+    transform: scale(1.05);
+    transition: ease 0.5s;
+  }
+
+  #partenaires {
+    width: calc(100% + 40px);
+  }
+}
+
+/*# sourceMappingURL=index_style.css.map */

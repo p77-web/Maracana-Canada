@@ -29,7 +29,7 @@
 }
 
 #championnat-header {
-  background-color: #f3f3f3;
+  background-color: #fff;
   height: auto;
   width: 100%;
 }
@@ -37,7 +37,8 @@
   margin: 0 auto;
 }
 #championnat {
-  background-color: #f3f3f3;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, #fff, #f3f3f3);
   height: auto;
   width: 100%;
 }
