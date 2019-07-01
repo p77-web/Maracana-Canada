@@ -43,14 +43,14 @@
   text-align: center;
 }
 
-#president {
+.council__president {
   background-color: rgba(255, 0, 0, 0.7);
   height: 200px;
   padding: 0.15rem;
   width: 157px;
 }
 
-.card__membres {
+.council__membres {
   background-color: rgba(255, 0, 0, 0.7);
   height: 150px;
   padding: 0.15rem;
@@ -98,12 +98,12 @@
     font-size: 1.15rem;
   }
 
-  #president {
+  .council__president {
     height: 225px;
     width: 177px;
   }
 
-  .card__membres {
+  .council__membres {
     height: 175px;
     width: 172px;
   }
@@ -125,12 +125,12 @@
     font-size: 1rem;
   }
 
-  #president {
+  .council__president {
     height: 250px;
     width: 197px;
   }
 
-  .card__membres {
+  .council__membres {
     height: 200px;
     width: 197px;
   }
