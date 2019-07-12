@@ -18,7 +18,8 @@ $colors: (
 	bottom-border: #f75056,
 	admin: rgba(255, 0, 0, 0.7),
 	championnat: rgb(243, 243, 243),
-	breadcrumb: rgba(255, 255, 255, 0.8)
+	breadcrumb: rgba(255, 255, 255, 0.8),
+	black: #000
 );
 
 $header-bottom-border: 2px solid map-get($colors, bottom-border);

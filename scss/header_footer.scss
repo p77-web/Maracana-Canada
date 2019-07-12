@@ -8,10 +8,7 @@ html {
 }
 
 body {
-	background-color: map-get(
-		$colors,
-		secondary
-	); /* For browsers that do not support gradients */
+	background-color: map-get($colors, secondary); /* For browsers that do not support gradients */
 	color: map-get($colors, initial-font);
 	font: {
 		family: 'Kanit', sans-serif;
@@ -209,7 +206,7 @@ ul {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-#owner {
+#created_by {
 	color: rgba(255, 255, 255, 0.1);
 }
 
@@ -220,6 +217,7 @@ ul {
 	position: fixed;
 	right: 0.75rem;
 	width: 1.375rem;
+	z-index: 5;
 }
 
 .scroll-top {
@@ -337,8 +335,7 @@ ul {
 		}
 	}
 
-	.dropdown-content__submenu:hover
-		.dropdown-content__submenu-championship--position {
+	.dropdown-content__submenu:hover .dropdown-content__submenu-championship--position {
 		position: absolute;
 		display: block;
 		top: 14%;

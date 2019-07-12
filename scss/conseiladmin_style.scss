@@ -47,16 +47,32 @@
 
 .council__president {
 	background-color: map-get($colors, admin);
+	box-shadow: 0 1.5rem 3rem rgba(map-get($colors, black), 0.4);
 	height: 200px;
 	padding: 0.15rem;
 	width: 157px;
+
+	transition: all 0.2s;
+
+	&:hover {
+		box-shadow: 0rem 2.5rem 4rem rgba(map-get($colors, black), 0.5);
+		transform: scale(1.02);
+	}
 }
 
-.council__membres {
+.council__members {
 	background-color: map-get($colors, admin);
+	box-shadow: 0rem 1.5rem 3rem rgba(map-get($colors, black), 0.4);
 	height: 150px;
 	padding: 0.15rem;
 	width: 147px;
+
+	transition: all 0.2s;
+
+	&:hover {
+		box-shadow: 0rem 2.5rem 4rem rgba(map-get($colors, black), 0.5);
+		transform: scale(1.02);
+	}
 }
 
 #comissions_link {
@@ -112,7 +128,7 @@
 		width: 177px;
 	}
 
-	.council__membres {
+	.council__members {
 		height: 175px;
 		width: 172px;
 	}
@@ -144,7 +160,7 @@
 		width: 197px;
 	}
 
-	.council__membres {
+	.council__members {
 		height: 200px;
 		width: 197px;
 	}
