@@ -120,6 +120,11 @@ ul {
   background-color: #fff;
   color: #f00;
 }
+.dropdown-divider {
+  border-top: 1px solid #f00;
+  margin: 0 auto;
+  width: 90%;
+}
 
 #page-nav {
   background-color: #f00;

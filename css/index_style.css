@@ -44,6 +44,9 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.news__container-box {
+  width: 400px;
+}
 
 .news__title,
 .news__date,
@@ -56,6 +59,7 @@ p {
 .news__title {
   align-self: center;
   font-family: "IM Fell English SC", serif;
+  font-size: 1.1rem;
   font-weight: 900;
   text-transform: uppercase;
   text-shadow: 0px -3px 3px #000;
@@ -79,8 +83,7 @@ p {
 
 #info-header,
 #agenda-header,
-#actualites-header,
-#galerie-header {
+#actualities-header {
   height: auto;
   width: 100%;
 }
@@ -89,19 +92,19 @@ p {
   color: #f00;
 }
 
-.headers, #galerie-header .col > h2, #agenda-header .col > h2,
-#actualites-header .col > h2, #presentation .col > h2 {
+.headers, #agenda-header .col > h2,
+#actualities-header .col > h2, #presentation .col > h2 {
   border-bottom: 2px solid #f75056;
   font-size: 1.15rem;
   padding-bottom: 1.25rem;
 }
 
 #agenda-header .col,
-#actualites-header .col {
+#actualities-header .col {
   margin: 0 auto;
 }
-#galerie,
-#actualites {
+#galery,
+#actualities {
   height: auto;
   width: 100%;
 }
@@ -149,13 +152,6 @@ p {
   margin-bottom: 0;
 }
 
-#galerie-header {
-  background-color: #fff;
-  height: auto;
-}
-#galerie-header .col {
-  margin: 0 auto;
-}
 .card__title {
   background: rgba(0, 0, 0, 0.9);
   bottom: 0;
@@ -202,39 +198,41 @@ p {
   background-color: #f00;
 }
 
-.actualites {
+.actualities {
   height: auto;
   width: 100%;
   padding: 0 15px;
 }
-.actualites h5 {
+.actualities h5 {
   color: #f00;
   text-align: center;
 }
 
-.actualites__article {
+.actualities__article {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.actualites__img {
+.actualities__img {
+  background-color: #f00;
   flex-shrink: 0;
   height: 120px;
+  padding: 0.15rem;
   width: 165px;
 }
 
-.actualites__text {
+.actualities__text {
   text-indent: 1rem;
 }
 
-#partenaires {
+#partners {
   background-color: #3b3b3b;
   width: calc(100% + 10px);
 }
 
-.partenaires {
+.partners {
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 160px;
   margin: auto;
@@ -243,7 +241,7 @@ p {
   max-width: 700px;
   width: 90%;
 }
-.partenaires::before, .partenaires::after {
+.partners::before, .partners::after {
   background: linear-gradient(to right, #3b3b3b 0%, rgba(59, 59, 59, 0) 100%);
   content: "";
   height: 160px;
@@ -252,13 +250,13 @@ p {
   z-index: 2;
 }
 
-.partenaires::after {
+.partners::after {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
 }
 
-.partenaires::before {
+.partners::before {
   left: 0;
   top: 0;
 }
@@ -271,22 +269,22 @@ p {
     transform: translateX(-1250px);
   }
 }
-.partenaires__slider {
+.partners__slider {
   animation: scroll 60s linear infinite;
   display: flex;
   width: 3000px;
 }
 
-.partenaires__slide {
+.partners__slide {
   height: 10rem;
   padding: 0 15px;
 }
 
-.partenaires__title--color {
+.partners__title--color {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.partenaires__images {
+.partners__images {
   max-height: 10rem;
 }
 
@@ -304,9 +302,8 @@ p {
   }
 }
 @media (min-width: 576px) {
-  .headers-over576px, #galerie-header .col > h2,
-#agenda-header .col > h2,
-#actualites-header .col > h2, #presentation .col > h2 {
+  .headers-over576px, #agenda-header .col > h2,
+#actualities-header .col > h2, #presentation .col > h2 {
     font-size: 1.25rem;
     padding-left: 2rem;
   }
@@ -321,6 +318,10 @@ p {
 
   #news {
     width: calc(100% + 20px);
+  }
+
+  .news__title {
+    font-size: 1.5rem;
   }
 
   #presentation .col > p:last-child {
@@ -351,7 +352,7 @@ p {
     bottom: 25%;
   }
 
-  #partenaires {
+  #partners {
     width: calc(100% + 20px);
   }
 }
@@ -364,8 +365,7 @@ p {
 }
 @media (min-width: 768px) {
   .headers-over768px, #agenda-header .col > h2,
-#actualites-header .col > h2,
-#galerie-header .col > h2, #presentation .col > h2 {
+#actualities-header .col > h2, #presentation .col > h2 {
     font-size: 1.5rem;
   }
 
@@ -379,6 +379,10 @@ p {
 
   #news {
     width: calc(100% + 30px);
+  }
+
+  .news__title {
+    font-size: 2rem;
   }
 
   #presentation .col > h2 {
@@ -409,11 +413,11 @@ p {
     transition: ease 0.5s;
   }
 
-  .actualites__article {
+  .actualities__article {
     flex-direction: row;
   }
 
-  .actualites__text {
+  .actualities__text {
     font-size: 1rem;
   }
 
@@ -421,7 +425,7 @@ p {
     bottom: 14%;
   }
 
-  #partenaires {
+  #partners {
     width: calc(100% + 30px);
   }
 }
@@ -451,7 +455,7 @@ p {
     transition: ease 0.5s;
   }
 
-  #partenaires {
+  #partners {
     width: calc(100% + 40px);
   }
 }

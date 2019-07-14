@@ -12,7 +12,7 @@ body {
 	color: map-get($colors, initial-font);
 	font: {
 		family: 'Kanit', sans-serif;
-		size: calc(13px + (18 - 13) * ((100vw - 320px) / (1600 - 320)));
+		size: calc(13px + (18 - 13) * ((100vw - 320px) / (#{$max-viewport-width} - #{$min-viewport-width})));
 	}
 	overflow-x: hidden;
 }
@@ -140,6 +140,12 @@ ul {
 	&:hover > .nav-link--active {
 		background-color: map-get($colors, secondary);
 		color: map-get($colors, main);
+	}
+
+	&-divider {
+		border-top: 1px solid map-get($colors, main);
+		margin: 0 auto;
+		width: 90%;
 	}
 }
 
