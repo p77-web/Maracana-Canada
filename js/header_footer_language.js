@@ -45,16 +45,46 @@ var language = {
 		n_cup_date: 'July 20th',
 		n_cup_sub: 'All on the assault of Peace Team',
 		ch_w_2019: '2019 Championship winners',
+		ch_w_2019_text:
+			'In their 2nd participation the White Eagles dethroned the two-time defending champion CAMASM (Ste-Marthe), they also won the fair play team of the tournament.',
 		scorer_2019: '2019 Championship best scorer',
+		scorer_2019_nav: 'Top scorer 2019',
+		scorer_2019_text:
+			'Things always come in threes, they say. Well, he did it. Serge Litié of the MCSH (St-Hyacinthe) wins the 2019 top scorer trophy for the third year in a row.',
 		i_c_2018: 'Ivory Coast 2018',
+		i_c_2018_text_1: 'Our two selections reach the quarter-finals',
+		i_c_2018_text_2:
+			"The Mara'CAN Abidjan 2018 was held from 26 to 30 September. The delegation consisted of the senior team and the super seniors team both leaded by coach Émile Tamakloé.",
+		i_c_2018_text_3: 'Simply BRAVO!',
 		n_cup_2018: '2018 National cup winners',
+		n_cup_2018_text:
+			'Peace team Maracana was able to take revenge on CAMASM and win the National Cup in Ottawa the July 14th 2018, score 2-1. It is with rage to conquer and revenge in the mind that they have left no respite to their adversaries.',
 		ch_w_2018: '2018 Championship winners',
+		ch_w_18_title: 'National Champions 2017 & 2018 - Cup 2017',
+		ch_w_18_text:
+			'After hovering on the Canadian Maracana in 2017, achieving the double National Championship and National Cup, the Club of Friends of Maracana Ste-Marthe (CAMASM) wins the 2018 championship. They must now have the pressure of the national cup.',
 		mali_2017: 'Departure for 2017 Mali Mara’CAN',
+		mali_2017_text:
+			"On Sunday, October 15, 2017, the Canadian delegation receives support and farewell from the sponsors of Kokodi Transit at Montreal's Pierre Elliott Trudeau International Airport. Team Canada will make an honorable run by finishing semi-finalist.",
 		f_p: 'Fairplay to Canada in Mali 2017 tournament',
+		f_p_text:
+			'Due to a general exemplary attitude, without any warnings during their six games, Canada was awarded the highest distinction of Maracana which is the medal of Friendliness, Fraternity, Friendship (FFF); A very important principle for FIMAA.',
 		visit: 'A training center visit in Mali',
+		visit_nav: 'Visit 2017',
+		visit_text:
+			"Taking advantage of a break between two rounds of MARA'CAN 2017, Team Canada visited the young students of the Jean-Marc Guirou Academy in Bamako. Like their predecessors Yaya and Kolo Toure, Gervinho, these youngsters showed great control of the ball.",
 		donations: 'Donations to a training center in Burkina Faso',
+		donations_nav: 'Donations 2017',
+		donations_text:
+			"In 2017, our delegation took advantage of its presence at the annual assembly of the International Federation of Maracana Association (FIMAA) in Ouagadougou located in Burkina Faso to offer sporting equipments to children's and teenager's in needs at the RTB.",
 		practice: 'Team Canada first practice',
+		practice_nav: 'Practice 2016',
+		practice_text:
+			'On Sunday, October 2nd 2016, athletes get in touch with their coaches and their leaders. A presentation of Maracana Canada and objectives to be achieved followed by a very good demonstration of the talents of the new Canadian maracananian.',
 		interview: "President Cissé's interview on RFI",
+		interview_nav: 'Interview 2016',
+		interview_text:
+			'On the occasion of the 2016 CAN of Maracana which took place from September 17 to 18, 2016 in Ouagadougou, the President of the Federation of Maracana Canada granted an interview at the invitation of Annie Gasnier of RFI in his International Radio Foot broadcast.',
 		n_cup_mtl: 'Montreal 2019 National Cup',
 		n_cup_mtl_date: 'July 20th, 2019',
 		n_cup_mtl_info: 'Registrations have begun',
@@ -119,16 +149,46 @@ var language = {
 		n_cup_date: '20 juillet',
 		n_cup_sub: "Tous à l'assaut de Peace Team",
 		ch_w_2019: 'Champions Nationaux 2019',
+		ch_w_2019_text:
+			"Les White Eagles, dès leur deuxième participation, détrônent le double champion en titre CAMASM (Ste-Marthe). C'est par ailleurs l'équipe CFA de ce tournoi.",
 		scorer_2019: 'Meilleur buteur du Championnat 2019',
+		scorer_2019_nav: 'Meilleur buteur 2019',
+		scorer_2019_text:
+			"Jamais deux sans trois, dit-on. Eh bien, il l'a fait. Serge Litié du MCSH (St-Hyacinthe) décroche pour la 3è année consécutive, son trophée de meilleur buteur 2019.",
 		i_c_2018: "Côte d'Ivoire 2018",
+		i_c_2018_text_1: 'Nos deux sélections atteignent les quarts de finale',
+		i_c_2018_text_2:
+			"La Mara'CAN Abidjan 2018 s'est tenue du 26 au 30 septembre. La délégation était composée de l'équipe des seniors et de celle des super seniors toutes conduites par le DTN Émile Tamakloé.",
+		i_c_2018_text_3: 'Tout simplement BRAVO!',
 		n_cup_2018: 'Vainqueurs de la Coupe Nationale 2018',
+		n_cup_2018_text:
+			"Peace Team Maracana a réussi à prendre sa revanche sur le CAMASM en remportant la victoire sur un score de 2 buts à 1 à la coupe nationale du 14 juillet 2018 à Ottawa. C'est avec la rage de vaincre et la revanche dans l'esprit qu'ils n'ont laissé aucun répit à leurs adversaires.",
 		ch_w_2018: 'Champions Nationaux 2018',
+		ch_w_18_title: 'Champions Nationaux 2017 & 2018 - Coupe 2017',
+		ch_w_18_text:
+			'Après avoir plané sur le Maracana canadien en 2017, en réalisant le doublé Championnat national et Coupe nationale, Le Club des Amis du Maracana de Ste-Marthe (CAMASM) remporte le championat 2018. Ils doivent maintenant avoir la pression de la coupe nationale.',
 		mali_2017: "Départ pour la MARA'CAN MALI 2017",
+		mali_2017_text:
+			"Le dimanche 15 octobre 2017, la délégation canadienne reçoit le soutien et l'au-revoir des responsables du sponsor Kokodi Transit à l'aéroport international Pierre-Elliott Trudeau de Montréal. Team Canada fera un parcours honorable en terminant demi-finaliste.",
 		f_p: 'La medaille du Fair-Play au Canada',
+		f_p_text:
+			"Grâce à un comportement exemplaire général, sans aucun avertissement lors de leurs six matchs, le Canada s'est mérité la plus haute distinction du Maracana qui est la medaille de la Convivialité - Fraternité - Amitié (CFA), principe très cher à la FIMAA.",
 		visit: "Visite d'un centre de formation en Mali",
+		visit_nav: 'Visite 2017',
+		visit_text:
+			"Profitant de la pause d'entre deux tours de la MARA'CAN 2017, Team Canada a rendu visite aux jeunes élèves de l'Academie Jean-Marc Guirou de Bamako. A l'image de leurs prédecesseurs Yaya et Kolo Touré, Gervinho, ces jeunes ont démontré une grande maîtrise du ballon rond.",
 		donations: 'Remise de dons au Burkina Faso',
+		donations_nav: 'Dons 2017',
+		donations_text:
+			"Notre délégation a profité de sa présence à l'assemblée annuelle de la Fédération Internationale de Maracana Association(FIMAA) à Ouagadougou, au Burkina Faso, en 2017, pour offrir des équipements sportifs à des enfants et à des jeunes défavorisés à la RTB.",
 		practice: 'Première pratique de Team Canada',
+		practice_nav: 'Pratique 2016',
+		practice_text:
+			"Le dimanche 2 octobre 2016, les athlètes prennent contact avec leurs encadreurs et leurs dirigeants. Une présentation de Maracana Canada et des objectifs à atteindre suivis d'une très bonne démonstrations des talents des nouveaux maracanaiers canadiens.",
 		interview: 'Entrevue du président Cissé sur RFI',
+		interview_nav: 'Entrevue 2016',
+		interview_text:
+			"A l'occasion de la CAN 2016 de Maracana qui s'est déroulée du 17 au 18 septembre 2016 à Ouagadougou, le Président de la Féderation de Maracana Canada a accordé une entrevue à l'invitation de Annie Gasnier de RFI dans son émission Radio Foot Internationale.",
 		n_cup_mtl: 'Coupe nationale 2019 à Montréal',
 		n_cup_mtl_date: '20 juillet 2019',
 		n_cup_mtl_info: 'Les inscriptions ont débuté',
