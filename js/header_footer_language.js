@@ -223,13 +223,27 @@ function getBrowserLanguage() {
 		browserLanguage[0] = 'en';
 	}
 
-	return browserLanguage[0];
+	let language = '';
+
+	// verify if the localStorage has any value stored
+	if (localStorage['maracana-canada_language']) {
+		language = localStorage.getItem('maracana-canada_language');
+	} else {
+		localStorage.setItem('maracana-canada_language', browserLanguage[0]);
+		language = localStorage.getItem('maracana-canada_language');
+	}
+
+	return language;
 }
 
 function getButtonLanguage() {
 	let buttonLanguage = document.querySelector('.translate');
 
-	return buttonLanguage.textContent.trim().toLowerCase();
+	// store user's chosen language
+	localStorage.setItem('maracana-canada_language', buttonLanguage.textContent.trim().toLowerCase());
+	let language = localStorage.getItem('maracana-canada_language');
+
+	return language;
 }
 
 // print the text by browser language
@@ -269,6 +283,7 @@ function changeLanguage() {
 	let pdfNavLink = document.querySelectorAll('.game-rules-nav-link');
 
 	let buttonLanguage = getButtonLanguage();
+	console.log(buttonLanguage);
 
 	pdfNavLink.forEach(function(link) {
 		if (buttonLanguage === 'fr') {
