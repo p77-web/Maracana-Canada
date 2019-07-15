@@ -176,10 +176,21 @@ function getButtonLanguage() {
 window.addEventListener(
 	'DOMContentLoaded',
 	function() {
+		// get the classes that contain the text to change
 		let textToChange = document.querySelectorAll('.translateText');
+		// get the classes that contain the pdf link to change
+		let pdfNavLink = document.querySelectorAll('.game-rules-nav-link');
 
 		// get the browser default language
 		let browserLanguage = getBrowserLanguage();
+
+		pdfNavLink.forEach(function(link) {
+			if (browserLanguage === 'fr') {
+				link.setAttribute('href', 'Lois_du_jeu.pdf');
+			} else {
+				link.setAttribute('href', 'Game_rules.pdf');
+			}
+		});
 
 		textToChange.forEach(function(text) {
 			// check if the language object has a property like the class' key
@@ -194,8 +205,18 @@ window.addEventListener(
 function changeLanguage() {
 	// get the classes that contain the text to change
 	let textToChange = document.querySelectorAll('.translateText');
+	// get the classes that contain the pdf link to change
+	let pdfNavLink = document.querySelectorAll('.game-rules-nav-link');
 
 	let buttonLanguage = getButtonLanguage();
+
+	pdfNavLink.forEach(function(link) {
+		if (buttonLanguage === 'fr') {
+			link.setAttribute('href', 'Lois_du_jeu.pdf');
+		} else {
+			link.setAttribute('href', 'Game_rules.pdf');
+		}
+	});
 
 	textToChange.forEach(function(text) {
 		// check if the language object has a property like the class' key
