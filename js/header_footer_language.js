@@ -54,7 +54,7 @@ var language = {
 		i_c_2018: 'Ivory Coast 2018',
 		i_c_2018_text_1: 'Our two selections reach the quarter-finals',
 		i_c_2018_text_2:
-			"The Mara'CAN Abidjan 2018 was held from 26 to 30 September. The delegation consisted of the senior team and the super seniors team both leaded by coach Émile Tamakloé.",
+			"The Mara'CAN Abidjan 2018 was held from 26 to 30 September. The delegation consisted of the senior team and the super seniors team both leaded by NTD Émile Tamakloé.",
 		i_c_2018_text_3: 'Simply BRAVO!',
 		n_cup_2018: '2018 National cup winners',
 		n_cup_2018_text:

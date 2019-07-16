@@ -20,6 +20,7 @@
 	
 		<link rel="stylesheet" href="css/header_footer.css">
 		<link rel="stylesheet" href="css/apropos_style.css">
+		<link rel="stylesheet" href="css/modal.css">
 
 		<title>À propos - Maracana Canada</title>
 	</head>
@@ -149,9 +150,22 @@
 			</div>
 		</header>
 
+		<div class="modal fade in" id="myModal" role="dialog" aria-hidden="false" style="display: none;padding-right: 0;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">english version will follow</h4>
+					</div>
+					<div class="modal-body">
+						<p>the translators are on holiday</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="main">
 			<div class="main__wrapper">
-
 				<!-- Page navigation section -->
 				<section id="page-nav">
 					<h4 class="section-header--hidden">Page nav</h4>
@@ -465,6 +479,18 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="js/header_footer_language.js"></script>
+		<script>
+			$(document).ready(function(){
+				// Show the Modal on load
+				$("#myModal").modal("show");
+				setTimeout( function(){
+					$('.modal-backdrop').css('z-index',-1);
+					$('.modal-open').css('overflow', 'auto');
+					$('.modal-open').css('padding-right', '0px');
+					$('#myModal').css('display','none');
+				}, 5000);
+			});
+		</script>
 		<script>
 			// Get the current year for the copyright
 			$('#year').text(new Date().getFullYear());
