@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="css/apropos_style.css">
 		<link rel="stylesheet" href="css/modal.css">
 
-		<title>À propos - Maracana Canada</title>
+		<title class="translateText" data-key="about_title"></title>
 	</head>
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
@@ -155,10 +155,7 @@
 				<!-- Modal content-->
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">english version will follow</h4>
-					</div>
-					<div class="modal-body">
-						<p>the translators are on holiday</p>
+						<h4 class="modal-title">english version will soon follow</h4>
 					</div>
 				</div>
 			</div>
@@ -479,18 +476,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="js/header_footer_language.js"></script>
-		<script>
-			$(document).ready(function(){
-				// Show the Modal on load
-				$("#myModal").modal("show");
-				setTimeout( function(){
-					$('.modal-backdrop').css('z-index',-1);
-					$('.modal-open').css('overflow', 'auto');
-					$('.modal-open').css('padding-right', '0px');
-					$('#myModal').css('display','none');
-				}, 5000);
-			});
-		</script>
+		<script src="js/modal.js"></script>
 		<script>
 			// Get the current year for the copyright
 			$('#year').text(new Date().getFullYear());

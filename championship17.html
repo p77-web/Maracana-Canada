@@ -20,8 +20,9 @@
 	
 		<link rel="stylesheet" href="css/header_footer.css">
 		<link rel="stylesheet" href="css/competitions_style.css">
+		<link rel="stylesheet" href="css/modal.css">
 
-		<title>Championship 2017 - Maracana Canada</title>
+		<title class="translateText" data-key="ch_17_title"></title>
 	</head>
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
@@ -144,6 +145,17 @@
 				</div>
 			</div>
 		</header>
+
+		<div class="modal fade in" id="myModal" role="dialog" aria-hidden="false" style="display: none;padding-right: 0;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">english version will soon follow</h4>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="main">
 			<div class="main__wrapper">
@@ -761,6 +773,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="js/header_footer_language.js"></script>
+		<script src="js/modal.js"></script>
 		<script>
 			// Get the current year for the copyright
 			$('#year').text(new Date().getFullYear());

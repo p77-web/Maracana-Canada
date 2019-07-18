@@ -16,7 +16,7 @@ p {
 #presentation .col > p {
   margin: 0 auto;
   max-width: 96%;
-  text-indent: 2rem;
+  text-indent: 1rem;
 }
 #presentation .col > p:last-child {
   font-size: 1rem;
@@ -324,6 +324,9 @@ p {
     font-size: 1.5rem;
   }
 
+  #presentation .col > p {
+    text-indent: 1.5rem;
+  }
   #presentation .col > p:last-child {
     font-size: 1.1rem;
   }

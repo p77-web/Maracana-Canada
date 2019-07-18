@@ -20,8 +20,9 @@
 	
 		<link rel="stylesheet" href="css/header_footer.css">
 		<link rel="stylesheet" href="css/competitions_style.css">
+		<link rel="stylesheet" href="css/modal.css">
 
-		<title>Cup 2019 - Maracana Canada</title>
+		<title class="translateText" data-key="cup_19_title"></title>
 	</head>
 
 	<body data-spy="spy" data-target="#main-nav" id="home">
@@ -145,6 +146,17 @@
 			</div>
 		</header>
 
+		<div class="modal fade in" id="myModal" role="dialog" aria-hidden="false" style="display: none;padding-right: 0;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">english version will soon follow</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="main">
 			<div class="main__wrapper">
 
@@ -181,12 +193,10 @@
 				<section id="championnat-header">
 					<div class="col py-3">
 						<h2 class="mb-3 text-xs-center">
-                            La coupe nationale 2019 - 20 juillet à Ottawa
+                            La coupe nationale 2019 - 20 juillet à Montréal
 						</h2>
 					</div>
 				</section>
-
-				
 
 				<!-- championnat section -->
 				<section id="championnat">
@@ -624,6 +634,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="js/header_footer_language.js"></script>
+		<script src="js/modal.js"></script>
 		<script>
 			// Get the current year for the copyright
 			$('#year').text(new Date().getFullYear());

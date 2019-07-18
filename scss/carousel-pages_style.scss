@@ -51,7 +51,7 @@
 	font-size: $default-size - 0.1rem;
 	margin: 0 auto;
 	padding: 0 $default-size;
-	text-indent: $indent * 2;
+	text-indent: $indent;
 }
 
 /* ******************************** */
@@ -87,6 +87,7 @@
 
 	.picture__text {
 		font-size: $default-size - 0.05rem;
+		text-indent: $indent * 1.5;
 	}
 }
 

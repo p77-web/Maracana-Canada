@@ -42,7 +42,7 @@
 	font-size: $default-size - 0.1rem;
 	margin: 0 auto;
 	max-width: 90%;
-	text-indent: $indent * 2;
+	text-indent: $indent;
 }
 
 .contact__stats {
@@ -110,6 +110,7 @@ caption {
 
 	.clubs__text {
 		font-size: $default-size - 0.05rem;
+		text-indent: $indent * 1.5;
 	}
 
 	.contact__stats {

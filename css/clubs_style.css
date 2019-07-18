@@ -39,7 +39,7 @@
   font-size: 0.9rem;
   margin: 0 auto;
   max-width: 90%;
-  text-indent: 2rem;
+  text-indent: 1rem;
 }
 
 .contact__stats {
@@ -96,6 +96,7 @@ caption {
 
   .clubs__text {
     font-size: 0.95rem;
+    text-indent: 1.5rem;
   }
 
   .contact__stats {

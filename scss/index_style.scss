@@ -25,7 +25,7 @@ p {
 	.col > p {
 		margin: 0 auto;
 		max-width: 96%;
-		text-indent: $indent * 2;
+		text-indent: $indent;
 	}
 
 	.col > p:last-child {
@@ -373,6 +373,10 @@ p {
 	#presentation {
 		.col > h2 {
 			@extend .headers-over576px;
+		}
+
+		.col > p {
+			text-indent: $indent * 1.5;
 		}
 
 		.col > p:last-child {

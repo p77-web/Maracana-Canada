@@ -49,7 +49,7 @@
   font-size: 0.9rem;
   margin: 0 auto;
   padding: 0 1rem;
-  text-indent: 2rem;
+  text-indent: 1rem;
 }
 
 /* ******************************** */
@@ -75,6 +75,7 @@
 
   .picture__text {
     font-size: 0.95rem;
+    text-indent: 1.5rem;
   }
 }
 @media (min-width: 768px) {

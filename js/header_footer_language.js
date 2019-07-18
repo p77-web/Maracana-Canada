@@ -6,7 +6,29 @@
 //  Language translation english and french
 var language = {
 	en: {
-		buttonLanguage: 'Fr',
+		// Page title
+		home_title: 'Home | Maracana Canada',
+		about_title: 'About | Maracana Canada',
+		rules_title: 'Game rules | Maracana Canada',
+		administration_title: 'Administration | Maracana Canada',
+		competitions_title: 'Competitions | Maracana Canada',
+		clubs_title: 'Clubs | Maracana Canada',
+		contact_title: 'Contact | Maracana Canada',
+		ch_17_title: 'Championship 2017 | Maracana Canada',
+		ch_18_title: 'Championship 2018 | Maracana Canada',
+		ch_19_title: 'Championship 2019 | Maracana Canada',
+		cup_17_title: 'Cup 2017 | Maracana Canada',
+		cup_18_title: 'Cup 2018 | Maracana Canada',
+		cup_19_title: 'Cup 2019 | Maracana Canada',
+		scorer_title: 'Scorer 2019 | Maracana Canada',
+		ci_title: 'Ivory Coast 2018 | Maracana Canada',
+		visit_title: 'Visit 2017 | Maracana Canada',
+		dons_title: 'Dons | Maracana Canada',
+		practice_title: 'Practice | Maracana Canada',
+		interview_title: 'Interview | Maracana Canada',
+		wc_title: 'World Cups | Maracana Canada',
+
+		// Menu
 		home: 'Home',
 		about: 'About Us',
 		rules: 'Rules',
@@ -30,9 +52,9 @@ var language = {
 		world: 'World Cups',
 		clubs: 'Clubs',
 		contact: 'Contact',
-		official: 'Official website',
-		donation: 'Donate',
-		footer: 'Canadian Federation of Maracana',
+		buttonLanguage: 'Fr',
+
+		// Submenu
 		agenda: 'Agenda',
 		news: 'News',
 		knowledge: 'Knowledge',
@@ -40,10 +62,63 @@ var language = {
 		council: 'Council',
 		contact: 'Contacts',
 		form: 'Form',
+
+		// Header & Footer
+		official: 'Official website',
+		donation: 'Donate',
+		pt_title: 'OUR PARTNERS',
+		footer: 'Canadian Federation of Maracana',
+
+		// Home page
 		info: 'Maracana is soccer played with 6 players without a goalkeeper',
 		n_cup: 'National Cup 2019',
 		n_cup_date: 'July 20th',
 		n_cup_sub: 'All on the assault of Peace Team',
+		n_cup_mtl: 'Montreal 2019 National Cup',
+		n_cup_mtl_date: 'July 20th, 2019',
+		n_cup_mtl_info: 'Registrations have begun',
+		acn: 'African Cup of Nations in Conakry',
+		acn_date: '23 to 30 September 2019',
+		acn_c: 'Guest countries',
+		acn_c_ca: 'Canada',
+		acn_c_us: 'United States',
+		acn_c_fr: 'France',
+		acn_c_ch: 'China',
+		acn_c_sw: 'Sweden',
+		a_title: 'Actualities',
+		a_subtitle_1: "Preparations for Mara'CAN 2019",
+		a_text_1: 'Mission, experts of the FIMAA, prospection of competition sites and accommodation in Conakry.',
+		a_subtitle_2: 'Visit of the FIMAA VP in charge of competitions',
+		a_text_2:
+			'Coming to represent the president of the FIMAA at the Canadian championship April 27, 2019, Mr. Maiguizo visited the pioneering team of Maracana in Canada, Ivory Foot Montreal.',
+		pr_title: 'What you need to know',
+		pr_text_1:
+			'Maracana is a soccer played six players without a goalkeeper, on a handball field. With specific rules, each game is played over two periods of 10 minutes. It is very technical and is based on a Conviviality - Fraternity - Friendship spirit. There are two official categories of competitions: seniors (35 and over) and veterans (over 45). However, we integrate the juniors (30 to 35 years) during the break-in period of our discipline under certain conditions.',
+		pr_text_2:
+			'Maracana Canada, the official name of the Canadian Maracana Federation, regulates, organizes and promotes this sport throughout the country. It was created in July 2016 and aims to find hidden talents across Canada to bring trophies back to the world. This will be done through information and awareness tours followed by major competitions. We invite you to show your interest in this sport by registering for our next demonstration sessions. Maracana Canada is looking forward to meeting you.',
+
+		// Administration page
+		commitee: 'Commitee',
+		adm_council: 'Board of Directors',
+		president: 'President',
+		vice_president_1: '1st Vice President in charge of organization and financing',
+		vice_president_2: '2nd Vice President in charge of Legal Affairs',
+		vice_president_3: '3em Vice President in charge of Competitions',
+		vice_president_4: '4th Vice President in charge of Development in Western Canada',
+		director_1: 'General Secretary',
+		director_2: 'Financial Manager',
+		director_2a: 'Treasurer General',
+		director_3: 'Director of Communications',
+		director_3a: 'Spokesman',
+		director_4: 'National Technical Director',
+
+		// Clubs page
+		how_to: 'How to find a club?',
+		club_message:
+			"It is easy to find a maracana club. It is now played in several major cities across Canada. This does not prevent you from forming your own club. As a maracana game is played with six even five player by team, a few friends calls can lead to the formation of a team in your location. We'll list a few contacts below.",
+		club_contacts: 'CONTACTS OF RESOURCES IN CLUBS',
+
+		// Carousel & carousel pages
 		ch_w_2019: '2019 Championship winners',
 		ch_w_2019_text:
 			'In their 2nd participation the White Eagles dethroned the two-time defending champion CAMASM (Ste-Marthe), they also won the fair play team of the tournament.',
@@ -84,33 +159,32 @@ var language = {
 		interview: "President Cissé's interview on RFI",
 		interview_nav: 'Interview 2016',
 		interview_text:
-			'On the occasion of the 2016 CAN of Maracana which took place from September 17 to 18, 2016 in Ouagadougou, the President of the Federation of Maracana Canada granted an interview at the invitation of Annie Gasnier of RFI in his International Radio Foot broadcast.',
-		n_cup_mtl: 'Montreal 2019 National Cup',
-		n_cup_mtl_date: 'July 20th, 2019',
-		n_cup_mtl_info: 'Registrations have begun',
-		acn: 'African Cup of Nations in Conakry',
-		acn_date: '23 to 30 September 2019',
-		acn_c: 'Guest countries',
-		acn_c_ca: 'Canada',
-		acn_c_us: 'United States',
-		acn_c_fr: 'France',
-		acn_c_ch: 'China',
-		acn_c_sw: 'Sweden',
-		a_title: 'Actualities',
-		a_subtitle_1: "Preparations for Mara'CAN 2019",
-		a_text_1: 'Mission, experts of the FIMAA, prospection of competition sites and accommodation in Conakry.',
-		a_subtitle_2: 'Visit of the FIMAA VP in charge of competitions',
-		a_text_2:
-			'Coming to represent the president of the FIMAA at the Canadian championship April 27, 2019, Mr. Maiguizo visited the pioneering team of Maracana in Canada, Ivory Foot Montreal.',
-		pr_title: 'What you need to know',
-		pr_text_1:
-			'Maracana is a soccer played six players without a goalkeeper, on a handball field. With specific rules, each game is played over two periods of 10 minutes. It is very technical and is based on a Conviviality - Fraternity - Friendship spirit. There are two official categories of competitions: seniors (35 and over) and veterans (over 45). However, we integrate the juniors (30 to 35 years) during the break-in period of our discipline under certain conditions.',
-		pr_text_2:
-			'Maracana Canada, the official name of the Canadian Maracana Federation, regulates, organizes and promotes this sport throughout the country. It was created in July 2016 and aims to find hidden talents across Canada to bring trophies back to the world. This will be done through information and awareness tours followed by major competitions. We invite you to show your interest in this sport by registering for our next demonstration sessions. Maracana Canada is looking forward to meeting you.',
-		pt_title: 'OUR PARTNERS'
+			'On the occasion of the 2016 CAN of Maracana which took place from September 17 to 18, 2016 in Ouagadougou, the President of the Federation of Maracana Canada granted an interview at the invitation of Annie Gasnier of RFI in his International Radio Foot broadcast.'
 	},
 	fr: {
-		buttonLanguage: 'En',
+		// Page title
+		home_title: 'Accueil | Maracana Canada',
+		about_title: 'À propos | Maracana Canada',
+		rules_title: 'Lois du jeu | Maracana Canada',
+		administration_title: 'Administration | Maracana Canada',
+		competitions_title: 'Compétitions | Maracana Canada',
+		clubs_title: 'Clubs | Maracana Canada',
+		contact_title: 'Contact | Maracana Canada',
+		ch_17_title: 'Championnat 2017 | Maracana Canada',
+		ch_18_title: 'Championnat 2018 | Maracana Canada',
+		ch_19_title: 'Championnat 2019 | Maracana Canada',
+		cup_17_title: 'Coupe 2017 | Maracana Canada',
+		cup_18_title: 'Coupe 2018 | Maracana Canada',
+		cup_19_title: 'Coupe 2019 | Maracana Canada',
+		scorer_title: 'Buteur 2019 | Maracana Canada',
+		ci_title: "Côte d'Ivoire 2018 | Maracana Canada",
+		visit_title: 'Visite 2017 | Maracana Canada',
+		dons_title: 'Donations | Maracana Canada',
+		practice_title: 'Pratique | Maracana Canada',
+		interview_title: 'Entrevue | Maracana Canada',
+		wc_title: 'Coupes du Monde | Maracana Canada',
+
+		// Menu
 		home: 'Accueil',
 		about: 'À propos',
 		rules: 'Règles',
@@ -134,9 +208,9 @@ var language = {
 		world: 'Mondiales',
 		clubs: 'Clubs',
 		contact: 'Contact',
-		official: 'Site officiel',
-		donation: 'Faites un don',
-		footer: 'Fédération Canadienne de Maracana',
+		buttonLanguage: 'En',
+
+		// Submenu
 		agenda: 'Agenda',
 		news: 'Actualités',
 		knowledge: 'Infos',
@@ -144,10 +218,63 @@ var language = {
 		council: 'Conseil',
 		contact: 'Contacts',
 		form: 'Formulaire',
+
+		// Header & Footer
+		official: 'Site officiel',
+		donation: 'Faites un don',
+		pt_title: 'NOS PARTENAIRES',
+		footer: 'Fédération Canadienne de Maracana',
+
+		// Home Page
 		info: 'Le maracana est du soccer à 6 sans gardien de but',
 		n_cup: 'Coupe nationale 2019',
 		n_cup_date: '20 juillet',
 		n_cup_sub: "Tous à l'assaut de Peace Team",
+		n_cup_mtl: 'Coupe nationale 2019 à Montréal',
+		n_cup_mtl_date: '20 juillet 2019',
+		n_cup_mtl_info: 'Les inscriptions ont débuté',
+		acn: "Coupe d'Afrique des nations à Conakry",
+		acn_date: '23 au 30 septembre 2019',
+		acn_c: 'Pays invités',
+		acn_c_ca: 'Le Canada',
+		acn_c_us: 'Les États-Unis',
+		acn_c_fr: 'La France',
+		acn_c_ch: 'La Chine',
+		acn_c_sw: 'La Suéde',
+		a_title: 'Actualités',
+		a_subtitle_1: "Préparatifs de la Mara'CAN 2019",
+		a_text_1: "Mission, des experts de la FIMAA, de prospection des sites de compétitions et d'hébergement à Conakry.",
+		a_subtitle_2: 'Visite du VP de la FIMAA en charge des compétitions',
+		a_text_2:
+			"Venu représenter le président de la FIMAA lors du championnat canadien du 27 avril 2019, Monsieur Maiguizo a rendu visite à l'équipe pionnière du Maracana au Canada, Ivoire Foot Montréal.",
+		pr_title: "Ce qu'il faut savoir",
+		pr_text_1:
+			'Le maracana est du soccer joué à six joueurs sans gardien de but, sur un terrain de handball. Il a ses règles spécifiques et chaque match se joue sur deux périodes de 10 minutes. Il est très technique et se base sur un esprit CFA (Convivialité – Fraternité - Amitié). Il existe deux catégories officielles de compétitions : les séniors (35 et plus) et les vétérans (plus de 45 ans). Toutefois, nous intégrons les juniors (30 à 35 ans) pendant la période de rodage de notre discipline sous certaines	conditions.',
+		pr_text_2:
+			'Maracana Canada, nom officiel de la Fédération Canadienne de Maracana régit, organise et fait la promotion de ce sport à travers tout le pays. Elle a été créée en juillet 2016 et a pour objectif de dénicher les talents cachés partout au Canada afin	de ramener des trophées sur le plan international.	Cela se fera par des tournées d’information et de sensibilisation suivie de compétitions majeures. Nous vous invitons à manifester votre intérêt pour ce sport en vous inscrivant à nos prochaines séances	de démonstration. Maracana Canada a hâte de vous rencontrer.',
+
+		// Administration page
+		commitee: 'Les commissions',
+		adm_council: "Conseil d'Administration",
+		president: 'Président',
+		vice_president_1: "1ère Vice-présidente chargée de l'organisation et du financement",
+		vice_president_2: '2em Vice-président chargé des affaires juridiques',
+		vice_president_3: '3em Vice-président chargé des compétitions',
+		vice_president_4: "4em Vice-président chargé du développement dans l'ouest canadien",
+		director_1: 'Secrétaire Général',
+		director_2: 'Directrice financière',
+		director_2a: 'Trésorière Générale',
+		director_3: 'Directeur des communications',
+		director_3a: 'Porte-parole',
+		director_4: 'Directeur technique national',
+
+		// Clubs page
+		how_to: 'Comment trouver un club?',
+		club_message:
+			"Il est bien facile de trouver un club de maracana où pratiquer ce sport. Il se pratique aujourd'hui dans plusieurs grandes villes du Canada. Cela n'empêche pas de former votre propre club. Le maracana étant une	discipline qui se joue à six contre six ou même à cinq, seulement quelques contacts peuvent mener à la formation d'une équipe dans votre lieu d'habitation. Nous vous listons, tout de même, quelques contacts ci-dessous.",
+		club_contacts: 'CONTACTS DE PERSONNES RESSOURCES DANS DES CLUBS',
+
+		// Carousel & carousel pages
 		ch_w_2019: 'Champions Nationaux 2019',
 		ch_w_2019_text:
 			"Les White Eagles, dès leur deuxième participation, détrônent le double champion en titre CAMASM (Ste-Marthe). C'est par ailleurs l'équipe CFA de ce tournoi.",
@@ -188,30 +315,7 @@ var language = {
 		interview: 'Entrevue du président Cissé sur RFI',
 		interview_nav: 'Entrevue 2016',
 		interview_text:
-			"A l'occasion de la CAN 2016 de Maracana qui s'est déroulée du 17 au 18 septembre 2016 à Ouagadougou, le Président de la Féderation de Maracana Canada a accordé une entrevue à l'invitation de Annie Gasnier de RFI dans son émission Radio Foot Internationale.",
-		n_cup_mtl: 'Coupe nationale 2019 à Montréal',
-		n_cup_mtl_date: '20 juillet 2019',
-		n_cup_mtl_info: 'Les inscriptions ont débuté',
-		acn: "Coupe d'Afrique des nations à Conakry",
-		acn_date: '23 au 30 septembre 2019',
-		acn_c: 'Pays invités',
-		acn_c_ca: 'Le Canada',
-		acn_c_us: 'Les États-Unis',
-		acn_c_fr: 'La France',
-		acn_c_ch: 'La Chine',
-		acn_c_sw: 'La Suéde',
-		a_title: 'Actualités',
-		a_subtitle_1: "Préparatifs de la Mara'CAN 2019",
-		a_text_1: "Mission, des experts de la FIMAA, de prospection des sites de compétitions et d'hébergement à Conakry.",
-		a_subtitle_2: 'Visite du VP de la FIMAA en charge des compétitions',
-		a_text_2:
-			"Venu représenter le président de la FIMAA lors du championnat canadien du 27 avril 2019, Monsieur Maiguizo a rendu visite à l'équipe pionnière du Maracana au Canada, Ivoire Foot Montréal.",
-		pr_title: "Ce qu'il faut savoir",
-		pr_text_1:
-			'Le maracana est du soccer joué à six joueurs sans gardien de but, sur un terrain de handball. Il a ses règles spécifiques et chaque match se joue sur deux périodes de 10 minutes. Il est très technique et se base sur un esprit CFA (Convivialité – Fraternité - Amitié). Il existe deux catégories officielles de compétitions : les séniors (35 et plus) et les vétérans (plus de 45 ans). Toutefois, nous intégrons les juniors (30 à 35 ans) pendant la période de rodage de notre discipline sous certaines	conditions.',
-		pr_text_2:
-			'Maracana Canada, nom officiel de la Fédération Canadienne de Maracana régit, organise et fait la promotion de ce sport à travers tout le pays. Elle a été créée en juillet 2016 et a pour objectif de dénicher les talents cachés partout au Canada afin	de ramener des trophées sur le plan international.	Cela se fera par des tournées d’information et de sensibilisation suivie de compétitions majeures. Nous vous invitons à manifester votre intérêt pour ce sport en vous inscrivant à nos prochaines séances	de démonstration. Maracana Canada a hâte de vous rencontrer.',
-		pt_title: 'NOS PARTENAIRES'
+			"A l'occasion de la CAN 2016 de Maracana qui s'est déroulée du 17 au 18 septembre 2016 à Ouagadougou, le Président de la Féderation de Maracana Canada a accordé une entrevue à l'invitation de Annie Gasnier de RFI dans son émission Radio Foot Internationale."
 	}
 };
 
