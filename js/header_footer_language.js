@@ -26,7 +26,7 @@ var language = {
 		dons_title: 'Dons | Maracana Canada',
 		practice_title: 'Practice | Maracana Canada',
 		interview_title: 'Interview | Maracana Canada',
-		wc_title: 'World Cups | Maracana Canada',
+		wc_title: 'International | Maracana Canada',
 
 		// Menu
 		home: 'Home',
@@ -118,6 +118,9 @@ var language = {
 			"It is easy to find a maracana club. It is now played in several major cities across Canada. This does not prevent you from forming your own club. As a maracana game is played with six even five player by team, a few friends calls can lead to the formation of a team in your location. We'll list a few contacts below.",
 		club_contacts: 'CONTACTS OF RESOURCES IN CLUBS',
 
+		// Contact page
+		write_us: 'WRITE US VIA',
+
 		// Carousel & carousel pages
 		ch_w_2019: '2019 Championship winners',
 		ch_w_2019_text:
@@ -182,7 +185,7 @@ var language = {
 		dons_title: 'Donations | Maracana Canada',
 		practice_title: 'Pratique | Maracana Canada',
 		interview_title: 'Entrevue | Maracana Canada',
-		wc_title: 'Coupes du Monde | Maracana Canada',
+		wc_title: 'Internationales | Maracana Canada',
 
 		// Menu
 		home: 'Accueil',
@@ -274,6 +277,9 @@ var language = {
 			"Il est bien facile de trouver un club de maracana où pratiquer ce sport. Il se pratique aujourd'hui dans plusieurs grandes villes du Canada. Cela n'empêche pas de former votre propre club. Le maracana étant une	discipline qui se joue à six contre six ou même à cinq, seulement quelques contacts peuvent mener à la formation d'une équipe dans votre lieu d'habitation. Nous vous listons, tout de même, quelques contacts ci-dessous.",
 		club_contacts: 'CONTACTS DE PERSONNES RESSOURCES DANS DES CLUBS',
 
+		// Contact page
+		write_us: 'ÉCRIVEZ-NOUS VIA',
+
 		// Carousel & carousel pages
 		ch_w_2019: 'Champions Nationaux 2019',
 		ch_w_2019_text:
@@ -359,6 +365,11 @@ window.addEventListener(
 		// get the classes that contain the pdf link to change
 		let pdfNavLink = document.querySelectorAll('.game-rules-nav-link');
 
+		// get the form placeholders
+		let name = document.getElementById('nom');
+		let courriel = document.getElementById('courriel');
+		let mess = document.getElementById('mess');
+
 		// get the browser default language
 		let browserLanguage = getBrowserLanguage();
 
@@ -376,6 +387,16 @@ window.addEventListener(
 				text.innerHTML = language[browserLanguage][text.getAttribute('data-key')];
 			}
 		});
+
+		if (browserLanguage === 'fr') {
+			name.placeholder = 'Votre nom';
+			courriel.placeholder = 'Votre courriel';
+			mess.placeholder = 'Votre message';
+		} else {
+			name.placeholder = 'Your name';
+			courriel.placeholder = 'Your email';
+			mess.placeholder = 'Your message';
+		}
 	},
 	false
 );
@@ -386,8 +407,12 @@ function changeLanguage() {
 	// get the classes that contain the pdf link to change
 	let pdfNavLink = document.querySelectorAll('.game-rules-nav-link');
 
+	// get the form placeholders
+	let name = document.getElementById('nom');
+	let courriel = document.getElementById('courriel');
+	let mess = document.getElementById('mess');
+
 	let buttonLanguage = getButtonLanguage();
-	console.log(buttonLanguage);
 
 	pdfNavLink.forEach(function(link) {
 		if (buttonLanguage === 'fr') {
@@ -403,4 +428,14 @@ function changeLanguage() {
 			text.innerHTML = language[buttonLanguage][text.getAttribute('data-key')];
 		}
 	});
+
+	if (buttonLanguage === 'fr') {
+		name.placeholder = 'Votre nom';
+		courriel.placeholder = 'Votre courriel';
+		mess.placeholder = 'Votre message';
+	} else {
+		name.placeholder = 'Your name';
+		courriel.placeholder = 'Your email';
+		mess.placeholder = 'Your message';
+	}
 }
