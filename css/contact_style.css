@@ -41,12 +41,6 @@
   border-color: #f00;
   box-shadow: 0 0.8em 1rem rgba(0, 0, 0, 0.1);
 }
-.form__input:focus:invalid {
-  background-color: rgba(255, 0, 0, 0.02);
-}
-.form__input:focus:valid {
-  background-color: rgba(0, 255, 0, 0.03);
-}
 
 .btn, .btn:active, .btn:visited {
   background-color: #fff;

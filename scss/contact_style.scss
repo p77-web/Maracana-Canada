@@ -46,13 +46,6 @@
 		border-color: map-get($colors, main);
 		box-shadow: 0 0.8em 1rem rgba(map-get($colors, black), 0.1);
 	}
-
-	&__input:focus:invalid {
-		background-color: rgba(map-get($colors, main), 0.02);
-	}
-	&__input:focus:valid {
-		background-color: rgba(#0f0, 0.03);
-	}
 }
 
 .btn {
