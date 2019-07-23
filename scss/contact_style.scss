@@ -40,11 +40,43 @@
 	color: map-get($colors, main);
 }
 
-.btn-outline-danger {
-	color: map-get($colors, main);
+.form {
+	&__input:focus,
+	&__input:hover {
+		border-color: map-get($colors, main);
+		box-shadow: 0 0.8em 1rem rgba(map-get($colors, black), 0.1);
+	}
 
+	&__input:focus:invalid {
+		background-color: rgba(map-get($colors, main), 0.02);
+	}
+	&__input:focus:valid {
+		background-color: rgba(#0f0, 0.03);
+	}
+}
+
+.btn {
+	&,
+	&:active,
+	&:visited {
+		background-color: map-get($colors, secondary);
+		border: 1px solid map-get($colors, main);
+		border-radius: 0.25rem;
+		color: map-get($colors, main);
+		display: block;
+		float: right;
+		margin-bottom: 1rem;
+		width: 10rem;
+
+		transition: all 0.2s;
+	}
+
+	&:focus,
 	&:hover {
 		background-color: map-get($colors, main);
+		box-shadow: 0.1rem 1em 1rem rgba(map-get($colors, black), 0.3);
+		color: map-get($colors, secondary);
+		transform: translateY(-2px) scale(1.05);
 	}
 }
 

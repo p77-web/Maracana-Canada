@@ -369,6 +369,7 @@ window.addEventListener(
 		let name = document.getElementById('nom');
 		let courriel = document.getElementById('courriel');
 		let mess = document.getElementById('mess');
+		let sendButton = document.getElementById('form__button');
 
 		// get the browser default language
 		let browserLanguage = getBrowserLanguage();
@@ -392,10 +393,12 @@ window.addEventListener(
 			name.placeholder = 'Votre nom';
 			courriel.placeholder = 'Votre courriel';
 			mess.placeholder = 'Votre message';
+			sendButton.value = 'Envoyer';
 		} else {
 			name.placeholder = 'Your name';
 			courriel.placeholder = 'Your email';
 			mess.placeholder = 'Your message';
+			sendButton.value = 'Send';
 		}
 	},
 	false
@@ -411,6 +414,7 @@ function changeLanguage() {
 	let name = document.getElementById('nom');
 	let courriel = document.getElementById('courriel');
 	let mess = document.getElementById('mess');
+	let sendButton = document.getElementById('form__button');
 
 	let buttonLanguage = getButtonLanguage();
 
@@ -429,13 +433,17 @@ function changeLanguage() {
 		}
 	});
 
+	console.log(sendButton);
+
 	if (buttonLanguage === 'fr') {
 		name.placeholder = 'Votre nom';
 		courriel.placeholder = 'Votre courriel';
 		mess.placeholder = 'Votre message';
+		sendButton.value = 'Envoyer';
 	} else {
 		name.placeholder = 'Your name';
 		courriel.placeholder = 'Your email';
 		mess.placeholder = 'Your message';
+		sendButton.value = 'Send';
 	}
 }
