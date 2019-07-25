@@ -389,16 +389,18 @@ window.addEventListener(
 			}
 		});
 
-		if (browserLanguage === 'fr') {
-			name.placeholder = 'Votre nom';
-			courriel.placeholder = 'Votre courriel';
-			mess.placeholder = 'Votre message';
-			sendButton.value = 'Envoyer';
-		} else {
-			name.placeholder = 'Your name';
-			courriel.placeholder = 'Your email';
-			mess.placeholder = 'Your message';
-			sendButton.value = 'Send';
+		if (name || courriel || mess) {
+			if (browserLanguage === 'fr') {
+				name.placeholder = 'Votre nom';
+				courriel.placeholder = 'Votre courriel';
+				mess.placeholder = 'Votre message';
+				sendButton.value = 'Envoyer';
+			} else {
+				name.placeholder = 'Your name';
+				courriel.placeholder = 'Your email';
+				mess.placeholder = 'Your message';
+				sendButton.value = 'Send';
+			}
 		}
 	},
 	false
@@ -432,18 +434,17 @@ function changeLanguage() {
 			text.innerHTML = language[buttonLanguage][text.getAttribute('data-key')];
 		}
 	});
-
-	console.log(sendButton);
-
-	if (buttonLanguage === 'fr') {
-		name.placeholder = 'Votre nom';
-		courriel.placeholder = 'Votre courriel';
-		mess.placeholder = 'Votre message';
-		sendButton.value = 'Envoyer';
-	} else {
-		name.placeholder = 'Your name';
-		courriel.placeholder = 'Your email';
-		mess.placeholder = 'Your message';
-		sendButton.value = 'Send';
+	if (name || courriel || mess) {
+		if (buttonLanguage === 'fr') {
+			name.placeholder = 'Votre nom';
+			courriel.placeholder = 'Votre courriel';
+			mess.placeholder = 'Votre message';
+			sendButton.value = 'Envoyer';
+		} else {
+			name.placeholder = 'Your name';
+			courriel.placeholder = 'Your email';
+			mess.placeholder = 'Your message';
+			sendButton.value = 'Send';
+		}
 	}
 }
