@@ -73,7 +73,8 @@ var language = {
 		info: 'Maracana is soccer played with 6 players without a goalkeeper',
 		n_cup: 'National Cup 2019',
 		n_cup_date: 'July 20th',
-		n_cup_sub: 'All on the assault of Peace Team',
+		// n_cup_sub: 'All on the assault of Peace Team',
+		n_cup_sub: 'National Cup 2019 Winners',
 		n_cup_mtl: 'Montreal 2019 National Cup',
 		n_cup_mtl_date: 'July 20th, 2019',
 		n_cup_mtl_info: 'Registrations have begun',
@@ -122,7 +123,9 @@ var language = {
 		write_us: 'WRITE US VIA',
 
 		// Carousel & carousel pages
-		ch_w_2019: '2019 Championship winners',
+		n_cup_2019: '2019 National Cup Winners',
+		n_cup_2019_text: "Ivory Foot Montreal, defender of Peace Team in the semifinals, breaks the White Eagles's dream of double, winner of CAMASM. Final score 1 to 0.",
+		ch_w_2019: '2019 Championship Winners',
 		ch_w_2019_text:
 			'In their 2nd participation the White Eagles dethroned the two-time defending champion CAMASM (Ste-Marthe), they also won the fair play team of the tournament.',
 		scorer_2019: '2019 Championship best scorer',
@@ -134,10 +137,10 @@ var language = {
 		i_c_2018_text_2:
 			"The Mara'CAN Abidjan 2018 was held from 26 to 30 September. The delegation consisted of the senior team and the super seniors team both leaded by NTD Émile Tamakloé.",
 		i_c_2018_text_3: 'Simply BRAVO!',
-		n_cup_2018: '2018 National cup winners',
+		n_cup_2018: '2018 National Cup Winners',
 		n_cup_2018_text:
 			'Peace team Maracana was able to take revenge on CAMASM and win the National Cup in Ottawa the July 14th 2018, score 2-1. It is with rage to conquer and revenge in the mind that they have left no respite to their adversaries.',
-		ch_w_2018: '2018 Championship winners',
+		ch_w_2018: '2018 Championship Winners',
 		ch_w_18_title: 'National Champions 2017 & 2018 - Cup 2017',
 		ch_w_18_text:
 			'After hovering on the Canadian Maracana in 2017, achieving the double National Championship and National Cup, the Club of Friends of Maracana Ste-Marthe (CAMASM) wins the 2018 championship. They must now have the pressure of the national cup.',
@@ -232,7 +235,8 @@ var language = {
 		info: 'Le maracana est du soccer à 6 sans gardien de but',
 		n_cup: 'Coupe nationale 2019',
 		n_cup_date: '20 juillet',
-		n_cup_sub: "Tous à l'assaut de Peace Team",
+		// n_cup_sub: "Tous à l'assaut de Peace Team",
+		n_cup_sub: 'Vainqueurs de la Coupe Nationale 2019',
 		n_cup_mtl: 'Coupe nationale 2019 à Montréal',
 		n_cup_mtl_date: '20 juillet 2019',
 		n_cup_mtl_info: 'Les inscriptions ont débuté',
@@ -281,6 +285,8 @@ var language = {
 		write_us: 'ÉCRIVEZ-NOUS VIA',
 
 		// Carousel & carousel pages
+		n_cup_2019: 'Vainqueurs de la Coupe Nationale 2019',
+		n_cup_2019_text: 'Ivoire Foot Montréal, tombeur de Peace Team en demi-finale, brise le rêve de doublé de White Eagles, vainqueur de CAMASM. Score final 1 à 0.',
 		ch_w_2019: 'Champions Nationaux 2019',
 		ch_w_2019_text:
 			"Les White Eagles, dès leur deuxième participation, détrônent le double champion en titre CAMASM (Ste-Marthe). C'est par ailleurs l'équipe CFA de ce tournoi.",
