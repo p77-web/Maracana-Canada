@@ -15,14 +15,19 @@ $font-sizes: (
 
 $colors: (
 	initial-font: #5a5a5a,
+	sky-blue: #66cce6,
+	sky-blue-light: #bce9f5,
 	main: #f00,
 	secondary: #fff,
 	news: #f1f1f1,
+	gold-light: rgb(255, 218, 90),
+	green-light: #34a33d,
 	bottom-border: #f75056,
 	admin: rgba(255, 0, 0, 0.7),
 	championnat: rgb(243, 243, 243),
 	breadcrumb: rgba(255, 255, 255, 0.8),
-	black: #000
+	black: #000,
+	no-color: transparent
 );
 
 $header-bottom-border: 2px solid map-get($colors, bottom-border);

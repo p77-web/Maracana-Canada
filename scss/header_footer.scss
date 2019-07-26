@@ -440,3 +440,13 @@ ul {
 		top: 43px;
 	}
 }
+
+::-moz-selection {
+	background-color: map-get($colors, main);
+	color: map-get($colors, secondary);
+}
+
+::selection {
+	background-color: map-get($colors, main);
+	color: map-get($colors, secondary);
+}

@@ -1,0 +1,141 @@
+@import '_variables.scss';
+
+.card-guinea {
+	position: relative;
+	height: 500px;
+
+	&__side {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-radius: 3px;
+		overflow: hidden;
+		box-shadow: 0 1.5rem 2rem rgba(map-get($colors, black), 0.25);
+
+		&--face {
+			background-image: linear-gradient(
+				175deg,
+				map-get($colors, no-color),
+				map-get($colors, no-color) 55%,
+				map-get($colors, sky-blue-light),
+				map-get($colors, sky-blue-light) 80%,
+				map-get($colors, no-color) 95%,
+				map-get($colors, no-color) 100%
+			);
+		}
+	}
+
+	&__picture {
+		background: {
+			size: 100%;
+			repeat: no-repeat;
+		}
+		height: 500px;
+		background-blend-mode: screen;
+		// -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 50%);
+		// clip-path: polygon(0 0, 100% 0, 100% 45%, 0 50%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+		clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+		// -webkit-clip-path: circle(350px at 60% -15%);
+		// clip-path: circle(350px at 60% -15%);
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		position: relative;
+		top: 10px;
+
+		@media (min-width: 576px) {
+			-webkit-clip-path: polygon(0 0, 100% 0, 100% 55%, 0 55%);
+			clip-path: polygon(0 0, 100% 0, 100% 55%, 0 55%);
+		}
+
+		&--1 {
+			background-image: linear-gradient(to top, map-get($colors, no-color), map-get($colors, no-color) 50%, map-get($colors, sky-blue) 80%, map-get($colors, no-color) 100%),
+				url(../images/guinea-map1.png);
+		}
+	}
+
+	&__heading {
+		background-image: linear-gradient(
+			to right,
+			rgba(map-get($colors, admin), 0.95),
+			rgba(map-get($colors, admin), 0.95) 33%,
+			rgba(map-get($colors, gold-light), 0.95) 50%,
+			rgb(map-get($colors, gold-light), 0.95),
+			rgba(map-get($colors, green-light), 0.95) 66%,
+			rgba(map-get($colors, green-light), 0.95) 100%
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		display: inline-block;
+		font-size: $default-size;
+		font-weight: 300;
+		text-align: center;
+		color: transparent;
+		position: absolute;
+		top: 8.5rem;
+		left: 0.5rem;
+		width: 59%;
+		transform: rotate(-3deg) skewX(15deg);
+
+		@media (min-width: 576px) {
+			letter-spacing: 0.1rem;
+			top: 11.5rem;
+		}
+	}
+
+	&__heading-span {
+		padding: 0.5rem 0.5rem;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+	}
+
+	&__date {
+		background-image: linear-gradient(to left, rgba(map-get($colors, admin), 0.55) 25%, rgba(map-get($colors, admin), 0.95) 75%, rgba(map-get($colors, admin), 0.55) 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		display: inline-block;
+		font-size: $default-size * 0.8;
+		font-weight: 300;
+		text-align: center;
+		color: transparent;
+		position: absolute;
+		top: 12.5rem;
+		left: 0rem;
+		width: 100%;
+		transform: rotate(-3deg) skewX(15deg);
+
+		@media (min-width: 576px) {
+			font-size: $default-size * 0.9;
+			left: -3rem;
+			letter-spacing: 0.1rem;
+			top: 14.5rem;
+		}
+
+		@media (min-width: 992px) {
+			left: -2.5rem;
+		}
+	}
+
+	&__date-span {
+		padding: 0.5rem 0.5rem;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+	}
+
+	&__countries {
+		position: absolute;
+		left: 0;
+		top: 55%;
+		width: 100%;
+		color: map-get($colors, admin);
+	}
+	&__countries p {
+		padding: 0.3rem 0;
+		width: 75%;
+		margin: 0 auto;
+		&:not(:last-child) {
+			border-bottom: 1px solid map-get($colors, news);
+		}
+	}
+}

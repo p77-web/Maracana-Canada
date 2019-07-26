@@ -382,5 +382,14 @@ ul {
     top: 43px;
   }
 }
+-moz-::selection {
+  background-color: #f00;
+  color: #fff;
+}
+
+::selection {
+  background-color: #f00;
+  color: #fff;
+}
 
 /*# sourceMappingURL=header_footer.css.map */

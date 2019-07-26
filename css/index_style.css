@@ -337,7 +337,7 @@ p {
   }
 
   .card__container {
-    width: 250px;
+    width: 350px;
   }
 
   .carousel-indicators {
@@ -403,10 +403,6 @@ p {
     font-size: 1rem;
   }
 
-  .card__container {
-    width: 300px;
-  }
-
   #tournoi-img {
     width: 300px;
     transition: ease 0.5s;
@@ -443,10 +439,6 @@ p {
 
   #agenda {
     flex-direction: row;
-  }
-
-  .card__container {
-    width: 350px;
   }
 
   #tournoi-img {
