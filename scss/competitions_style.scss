@@ -36,7 +36,8 @@
 	}
 }
 
-#championnat-header {
+#championnat-header,
+.championnat-header {
 	background-color: map-get($colors, secondary);
 	@include wrapper-dimensions;
 
@@ -49,7 +50,8 @@
 	}
 }
 
-#championnat {
+#championnat,
+.championnat {
 	background-color: map-get($colors, secondary);
 	background-image: linear-gradient(to bottom, map-get($colors, secondary), map-get($colors, championnat));
 	@include wrapper-dimensions;
@@ -143,7 +145,8 @@ caption {
 		}
 	}
 
-	#championnat-header {
+	#championnat-header,
+	.championnat-header {
 		.col > h2 {
 			font-size: $default-size + 0.25rem;
 			padding-left: $h2-padding-left;
@@ -199,7 +202,8 @@ caption {
 		}
 	}
 
-	#championnat-header {
+	#championnat-header,
+	.championnat-header {
 		.col > h2 {
 			font-size: $default-size + 0.5rem;
 		}

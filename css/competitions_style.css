@@ -6,7 +6,8 @@
   width: 100%;
 }
 
-.headers, #championnat-header .col > h2, #competitions .col-12 > h2 {
+.headers, #championnat-header .col > h2,
+.championnat-header .col > h2, #competitions .col-12 > h2 {
   border-bottom: 2px solid #f75056;
   font-size: 1.15rem;
   padding-bottom: 1.25rem;
@@ -28,15 +29,18 @@
   text-indent: 2.5rem;
 }
 
-#championnat-header {
+#championnat-header,
+.championnat-header {
   background-color: #fff;
   height: auto;
   width: 100%;
 }
-#championnat-header .col {
+#championnat-header .col,
+.championnat-header .col {
   margin: 0 auto;
 }
-#championnat {
+#championnat,
+.championnat {
   background-color: #fff;
   background-image: linear-gradient(to bottom, #fff, #f3f3f3);
   height: auto;
@@ -119,7 +123,8 @@ caption {
     font-size: 1.15rem;
   }
 
-  #championnat-header .col > h2 {
+  #championnat-header .col > h2,
+.championnat-header .col > h2 {
     font-size: 1.25rem;
     padding-left: 2rem;
   }
@@ -169,7 +174,8 @@ caption {
     font-size: 1.25rem;
   }
 
-  #championnat-header .col > h2 {
+  #championnat-header .col > h2,
+.championnat-header .col > h2 {
     font-size: 1.5rem;
   }
 
