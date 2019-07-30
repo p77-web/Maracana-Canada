@@ -75,6 +75,7 @@
 				url(../images/guinea-map1.png);
 		}
 
+		// this code is only supported by IE10 and up
 		@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
 			background-image: linear-gradient(to top, map-get($colors, no-color), map-get($colors, no-color) 100%), url(../images/guinea-map1.png);
 		}
