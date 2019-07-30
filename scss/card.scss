@@ -42,16 +42,20 @@
 		}
 		height: 500px;
 		background-blend-mode: screen;
-		// -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 50%);
-		// clip-path: polygon(0 0, 100% 0, 100% 45%, 0 50%);
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-		clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-		// -webkit-clip-path: circle(350px at 60% -15%);
-		// clip-path: circle(350px at 60% -15%);
+
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
 		position: relative;
 		top: 10px;
+
+		@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+			// -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 50%);
+			// clip-path: polygon(0 0, 100% 0, 100% 45%, 0 50%);
+			-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+			clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+			// -webkit-clip-path: circle(350px at 60% -15%);
+			// clip-path: circle(350px at 60% -15%);
+		}
 
 		@media (min-width: 576px) {
 			-webkit-clip-path: polygon(0 0, 100% 0, 100% 55%, 0 55%);
@@ -70,30 +74,38 @@
 			background-image: linear-gradient(to top, map-get($colors, no-color), map-get($colors, no-color) 50%, map-get($colors, sky-blue) 80%, map-get($colors, no-color) 100%),
 				url(../images/guinea-map1.png);
 		}
+
+		@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+			background-image: linear-gradient(to top, map-get($colors, no-color), map-get($colors, no-color) 100%), url(../images/guinea-map1.png);
+		}
 	}
 
 	&__heading {
-		background-image: linear-gradient(
-			to right,
-			rgba(map-get($colors, admin), 0.95),
-			rgba(map-get($colors, admin), 0.95) 33%,
-			rgba(map-get($colors, gold-light), 0.95) 50%,
-			rgb(map-get($colors, gold-light), 0.95),
-			rgba(map-get($colors, green-light), 0.95) 66%,
-			rgba(map-get($colors, green-light), 0.95) 100%
-		);
-		-webkit-background-clip: text;
-		background-clip: text;
+		color: map-get($colors, main);
 		display: inline-block;
 		font-size: $default-size;
 		font-weight: 300;
 		text-align: center;
-		color: transparent;
 		position: absolute;
 		top: 8.5rem;
 		left: 0.5rem;
 		width: 59%;
 		transform: rotate(-3deg) skewX(15deg);
+
+		@supports (background-clip: text) or (-webkit-background-clip: text) {
+			background-image: linear-gradient(
+				to right,
+				rgba(map-get($colors, admin), 0.95),
+				rgba(map-get($colors, admin), 0.95) 33%,
+				rgba(map-get($colors, gold-light), 0.95) 50%,
+				rgb(map-get($colors, gold-light), 0.95),
+				rgba(map-get($colors, green-light), 0.95) 66%,
+				rgba(map-get($colors, green-light), 0.95) 100%
+			);
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+		}
 
 		@media (min-width: 576px) {
 			letter-spacing: 0.1rem;
@@ -108,19 +120,23 @@
 	}
 
 	&__date {
-		background-image: linear-gradient(to left, rgba(map-get($colors, admin), 0.55) 25%, rgba(map-get($colors, admin), 0.95) 75%, rgba(map-get($colors, admin), 0.55) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
+		color: map-get($colors, main);
 		display: inline-block;
 		font-size: $default-size * 0.8;
 		font-weight: 300;
 		text-align: center;
-		color: transparent;
 		position: absolute;
 		top: 12.5rem;
 		left: 0rem;
 		width: 100%;
 		transform: rotate(-3deg) skewX(15deg);
+
+		@supports (background-clip: text) or (-webkit-background-clip: text) {
+			background-image: linear-gradient(to left, rgba(map-get($colors, admin), 0.55) 25%, rgba(map-get($colors, admin), 0.95) 75%, rgba(map-get($colors, admin), 0.55) 100%);
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+		}
 
 		@media (min-width: 576px) {
 			font-size: $default-size * 0.9;

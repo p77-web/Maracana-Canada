@@ -209,11 +209,11 @@ ul {
 
 #copyright {
 	font-size: $default-size - 0.4rem;
-	color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.5);
 }
 
 #created_by {
-	color: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .scroll-top {
@@ -439,11 +439,6 @@ ul {
 	.dropdown-content {
 		top: 43px;
 	}
-}
-
-::-moz-selection {
-	background-color: map-get($colors, main);
-	color: map-get($colors, secondary);
 }
 
 ::selection {

@@ -86,7 +86,7 @@ var language = {
 		acn_c_fr: 'France',
 		acn_c_ch: 'China',
 		acn_c_sw: 'Sweden',
-		a_title: 'Actualities',
+		a_title: 'News',
 		a_subtitle_1: "Preparations for Mara'CAN 2019",
 		a_text_1: 'Mission, experts of the FIMAA, prospection of competition sites and accommodation in Conakry.',
 		a_subtitle_2: 'Visit of the FIMAA VP in charge of competitions',

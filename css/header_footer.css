@@ -181,11 +181,11 @@ ul {
 
 #copyright {
   font-size: 0.6rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #created_by {
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .scroll-top {
@@ -382,11 +382,6 @@ ul {
     top: 43px;
   }
 }
--moz-::selection {
-  background-color: #f00;
-  color: #fff;
-}
-
 ::selection {
   background-color: #f00;
   color: #fff;

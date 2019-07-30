@@ -20,12 +20,16 @@
   background-repeat: no-repeat;
   height: 500px;
   background-blend-mode: screen;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   position: relative;
   top: 10px;
+}
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  .card-guinea__picture {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }
 }
 @media (min-width: 576px) {
   .card-guinea__picture {
@@ -37,20 +41,30 @@
   -webkit-background-image: linear-gradient(to top, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01) 50%, #66cce6 80%, rgba(255, 255, 255, 0.01) 100%), url(../images/guinea-map1.png);
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01) 50%, #66cce6 80%, rgba(255, 255, 255, 0.01) 100%), url(../images/guinea-map1.png);
 }
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .card-guinea__picture {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01) 100%), url(../images/guinea-map1.png);
+  }
+}
 .card-guinea__heading {
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.95), rgba(255, 0, 0, 0.95) 33%, rgba(255, 218, 90, 0.95) 50%, rgba(255, 218, 90, 0.95), rgba(52, 163, 61, 0.95) 66%, rgba(52, 163, 61, 0.95) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: #f00;
   display: inline-block;
   font-size: 1rem;
   font-weight: 300;
   text-align: center;
-  color: transparent;
   position: absolute;
   top: 8.5rem;
   left: 0.5rem;
   width: 59%;
   transform: rotate(-3deg) skewX(15deg);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .card-guinea__heading {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.95), rgba(255, 0, 0, 0.95) 33%, rgba(255, 218, 90, 0.95) 50%, rgba(255, 218, 90, 0.95), rgba(52, 163, 61, 0.95) 66%, rgba(52, 163, 61, 0.95) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 @media (min-width: 576px) {
   .card-guinea__heading {
@@ -64,19 +78,24 @@
   box-decoration-break: clone;
 }
 .card-guinea__date {
-  background-image: linear-gradient(to left, rgba(255, 0, 0, 0.55) 25%, rgba(255, 0, 0, 0.95) 75%, rgba(255, 0, 0, 0.55) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: #f00;
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 300;
   text-align: center;
-  color: transparent;
   position: absolute;
   top: 12.5rem;
   left: 0rem;
   width: 100%;
   transform: rotate(-3deg) skewX(15deg);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .card-guinea__date {
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.55) 25%, rgba(255, 0, 0, 0.95) 75%, rgba(255, 0, 0, 0.55) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 @media (min-width: 576px) {
   .card-guinea__date {
