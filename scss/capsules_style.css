@@ -1,0 +1,140 @@
+/* SCSS style for capsules.html page */
+#infosheet-header,
+#infosheet,
+#lessons {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+#infosheet .col {
+  margin: 0 auto;
+}
+
+#infosheet-header .col > h2 {
+  border-bottom: 2px solid #f75056;
+  font-size: 1.15rem;
+  padding-bottom: 1.25rem;
+}
+
+#lessons .col-12 > p {
+  margin: 0 auto;
+  max-width: 96%;
+  text-indent: 1rem;
+}
+
+#lessons .col-12 > p.lead {
+  font-size: 1rem;
+}
+
+.lessons__image--center {
+  text-align: center;
+}
+
+#game-rules {
+  color: #fff;
+  font-size: 1rem;
+}
+
+#game-rules:hover {
+  text-decoration: none;
+}
+
+.fa-file-pdf {
+  color: #fff;
+  display: inline;
+}
+
+.badge-danger--red {
+  color: #fff;
+  background-color: #f00;
+}
+
+.badge {
+  display: inline;
+  font-size: 85%;
+  padding: 0 0.6em;
+}
+
+#ballon {
+  height: 100px;
+  width: 100px;
+}
+
+.lessons__card {
+  height: 75px;
+  width: 75px;
+}
+
+/* ********************************* */
+/* Media */
+@media (max-width: 575px) {
+  .text-xs-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .main__wrapper {
+    padding: 0 10px;
+  }
+  #lessons .col-12 > p {
+    text-indent: 1.5rem;
+  }
+  #lessons .col-12 p.lead {
+    font-size: 1.15rem;
+  }
+  #game-rules {
+    font-size: 1.1rem;
+  }
+  #infosheet-header .col > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
+  .badge {
+    font-size: 90%;
+  }
+  #ballon {
+    height: 105px;
+    width: 105px;
+  }
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 1.25rem;
+  }
+  .main__wrapper {
+    padding: 0 15px;
+  }
+  #lessons .col-12 p.lead {
+    font-size: 1.25rem;
+  }
+  #infosheet-header .col > h2 {
+    font-size: 1.5rem;
+  }
+  #game-rules {
+    font-size: 1.15rem;
+  }
+  .badge {
+    font-size: 95%;
+  }
+  #ballon {
+    height: 115px;
+    width: 115px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main__wrapper {
+    padding: 0 1.25rem;
+  }
+  .badge {
+    font-size: 100%;
+  }
+  #ballon {
+    height: 125px;
+    width: 125px;
+  }
+}
+/*# sourceMappingURL=capsules_style.css.map */

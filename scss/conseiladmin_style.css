@@ -1,0 +1,164 @@
+/* SCSS style for counciladmin.html page */
+#council-header {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+#council-header .col > h2 {
+  border-bottom: 2px solid #f75056;
+  font-size: 1.15rem;
+  padding-bottom: 1.25rem;
+}
+
+#council {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+#council .col-12 {
+  margin: 0 auto;
+}
+
+#council .col-12 > p {
+  font-size: 0.85rem;
+  margin: 0 auto;
+  max-width: 96%;
+  text-indent: 2rem;
+}
+
+.lead {
+  margin-bottom: 0.2rem;
+}
+
+.card {
+  border: none;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-body > p {
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+.council__president {
+  background-color: rgba(255, 0, 0, 0.7);
+  -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+  height: 200px;
+  padding: 0.15rem;
+  width: 157px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.council__president:hover {
+  -webkit-box-shadow: 0rem 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.council__members {
+  background-color: rgba(255, 0, 0, 0.7);
+  -webkit-box-shadow: 0rem 1.5rem 3rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 1.5rem 3rem rgba(0, 0, 0, 0.4);
+  height: 150px;
+  padding: 0.15rem;
+  width: 147px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.council__members:hover {
+  -webkit-box-shadow: 0rem 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+#comissions_link {
+  color: #fff;
+}
+
+#comissions_link:hover {
+  text-decoration: none;
+}
+
+.fa-file-pdf {
+  color: #fff;
+  display: inline;
+}
+
+/* ******************************** */
+/* Media */
+@media (max-width: 575px) {
+  .text-xs-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .lead {
+    font-size: 1.25rem;
+  }
+  .main__wrapper {
+    padding: 0 10px;
+  }
+  #council-header .col > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
+  #council .col-12 > p {
+    font-size: 0.95rem;
+  }
+  .card-body > p:last-child {
+    font-size: 1.15rem;
+  }
+  .council__president {
+    height: 225px;
+    width: 177px;
+  }
+  .council__members {
+    height: 175px;
+    width: 172px;
+  }
+  #comissions_link {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main__wrapper {
+    padding: 0 15px;
+  }
+  #council-header .col > h2 {
+    font-size: 1.5rem;
+  }
+  #council .col-12 > p {
+    font-size: 1rem;
+  }
+  .council__president {
+    height: 250px;
+    width: 197px;
+  }
+  .council__members {
+    height: 200px;
+    width: 197px;
+  }
+  #comissions_link {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .main__wrapper {
+    padding: 0 1.25rem;
+  }
+}
+/*# sourceMappingURL=conseiladmin_style.css.map */

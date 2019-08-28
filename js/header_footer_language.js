@@ -71,10 +71,10 @@ var language = {
 
 		// Home page
 		info: 'Maracana is soccer played with 6 players without a goalkeeper',
-		n_cup: 'National Cup 2019',
-		n_cup_date: 'July 20th',
+		maraCAN: "Mara'CAN 2019",
+		maraCAN_sub: 'Conakry, Guinea',
 		// n_cup_sub: 'All on the assault of Peace Team',
-		n_cup_sub: 'Winners',
+		img_sub: 'Our official outfits',
 		// n_cup_mtl: 'Montreal 2019 National Cup',
 		// n_cup_mtl_date: 'July 20th, 2019',
 		// n_cup_mtl_info: 'Registrations have begun',
@@ -233,10 +233,10 @@ var language = {
 
 		// Home Page
 		info: 'Le maracana est du soccer à 6 sans gardien de but',
-		n_cup: 'Coupe nationale 2019',
-		n_cup_date: '20 juillet',
+		maraCAN: "Mara'CAN 2019",
+		maraCAN_sub: 'Conakry, Guineé',
 		// n_cup_sub: "Tous à l'assaut de Peace Team",
-		n_cup_sub: 'Vainqueurs',
+		img_sub: 'Nos tenues officielles',
 		// n_cup_mtl: 'Coupe nationale 2019 à Montréal',
 		// n_cup_mtl_date: '20 juillet 2019',
 		// n_cup_mtl_info: 'Les inscriptions ont débuté',

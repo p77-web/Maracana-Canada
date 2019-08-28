@@ -65,7 +65,7 @@ p {
 }
 
 .news__title,
-.news__date,
+.news__sub,
 .news__subtitle {
 	color: map-get($colors, news);
 	margin: 0 auto;
@@ -79,11 +79,11 @@ p {
 		size: 1.1rem;
 		weight: 900;
 	}
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	text-shadow: 0px -3px 3px #000;
 }
 
-.news__date {
+.news__sub {
 	align-self: center;
 	font: {
 		family: 'IM Fell Double Pica SC', serif;
@@ -426,7 +426,7 @@ p {
 
 @media (min-width: 830px) {
 	.news__title,
-	.news__date {
+	.news__sub {
 		transform: rotateX(-30deg) rotateY(35deg);
 		text-shadow: -5px -5px 7px #000;
 	}

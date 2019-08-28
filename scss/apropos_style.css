@@ -1,0 +1,94 @@
+/* SCSS style for apropos.html page */
+#historique-header,
+#historique,
+#federation,
+#administration {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+#historique-header .col,
+#federation .col-12,
+#administration .col-12 {
+  margin: 0 auto;
+}
+
+.headers, #historique-header .col > h2, #federation .col-12 > h2,
+#administration .col-12 > h2 {
+  border-bottom: 2px solid #f75056;
+  font-size: 1.15rem;
+  padding-bottom: 1.25rem;
+}
+
+.paragraph, #historique .col-12 > p,
+#federation .col-12 > p,
+#administration .col-12 > p {
+  margin: 0 auto;
+  max-width: 96%;
+  text-indent: 1rem;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card__text--indent {
+  text-indent: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.badge-light {
+  color: #212529;
+  background-color: #d6d7d8;
+}
+
+/* *************************************** */
+/* Media */
+@media (max-width: 575px) {
+  .text-xs-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .main__wrapper {
+    padding: 0 10px;
+  }
+  #historique-header .col > h2,
+  #federation .col-12 > h2,
+  #administration .col-12 > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
+  .lead {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main__wrapper {
+    padding: 0 15px;
+  }
+  #historique-header .col > h2,
+  #federation .col-12 > h2,
+  #administration .col-12 > h2 {
+    font-size: 1.5rem;
+  }
+  .administration__lists {
+    padding: 1.25rem;
+  }
+  .lead {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .main__wrapper {
+    padding: 0 1.25rem;
+  }
+}
+/*# sourceMappingURL=apropos_style.css.map */

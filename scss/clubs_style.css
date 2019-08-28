@@ -1,0 +1,148 @@
+/* SCSS style for clubs.html page */
+#clubs_link {
+  color: #fff;
+}
+
+#clubs_link:hover {
+  text-decoration: none;
+}
+
+#clubs-header {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+#clubs-header .col {
+  margin: 0 auto;
+}
+
+#clubs-header .col > h2 {
+  border-bottom: 2px solid #f75056;
+  font-size: 1.15rem;
+  padding-bottom: 1.25rem;
+}
+
+#clubs {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+#clubs .col-12 {
+  margin: 0 auto;
+}
+
+.clubs-card-text {
+  font-size: 0.9rem;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.clubs__text {
+  font-size: 0.9rem;
+  margin: 0 auto;
+  max-width: 90%;
+  text-indent: 1rem;
+}
+
+.contact__stats {
+  font-size: 0.9rem;
+  text-indent: 1rem;
+}
+
+.contact {
+  padding-left: 1.5rem !important;
+  text-align: left;
+}
+
+.teams-card {
+  background-color: transparent;
+  border: none;
+}
+
+.teams-card .card-footer {
+  background-color: transparent;
+  border: none;
+}
+
+caption {
+  caption-side: top;
+}
+
+/* ******************************** */
+/* Media */
+@media (max-width: 575px) {
+  .text-xs-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .lead {
+    font-size: 1.15rem;
+  }
+  .main__wrapper {
+    padding: 0 10px;
+  }
+  #comissions_link {
+    font-size: 1.1rem;
+  }
+  #clubs-header .col > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
+  .clubs-card-text {
+    font-size: 0.95rem;
+  }
+  .clubs__text {
+    font-size: 0.95rem;
+    text-indent: 1.5rem;
+  }
+  .contact__stats {
+    font-size: 0.95rem;
+  }
+  .contact {
+    padding-left: 2rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 1.25rem;
+  }
+  .main__wrapper {
+    padding: 0 15px;
+  }
+  #comissions_link {
+    font-size: 1.15rem;
+  }
+  #clubs-header .col > h2 {
+    font-size: 1.5rem;
+  }
+  .clubs-card-text {
+    font-size: 1rem;
+  }
+  .clubs__text {
+    font-size: 1rem;
+  }
+  .contact__stats {
+    font-size: 1rem;
+  }
+  .contact {
+    padding-left: 2.5rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .main__wrapper {
+    padding: 0 1.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    margin-left: 3rem !important;
+  }
+}
+/*# sourceMappingURL=clubs_style.css.map */

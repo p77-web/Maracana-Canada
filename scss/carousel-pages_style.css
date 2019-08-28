@@ -1,0 +1,103 @@
+/* SCSS style for champions19.html page */
+.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.breadcrumb-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumb-item.active::before {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+#title-header {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+#title-header .col {
+  margin: 0 auto;
+}
+
+#title-header .col > h2 {
+  border-bottom: 2px solid #f75056;
+  font-size: 1.15rem;
+  padding-bottom: 1.25rem;
+}
+
+#picture {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+.picture__subtitle {
+  text-indent: 2rem;
+}
+
+.picture__text {
+  font-size: 0.9rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-indent: 1rem;
+}
+
+/* ******************************** */
+/* Media */
+@media (max-width: 575px) {
+  .text-xs-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .lead {
+    font-size: 1.15rem;
+  }
+  .main__wrapper {
+    padding: 0 10px;
+  }
+  #title-header .col > h2 {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+  }
+  .picture__text {
+    font-size: 0.95rem;
+    text-indent: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 1.25rem;
+  }
+  .main__wrapper {
+    padding: 0 15px;
+  }
+  #title-header .col > h2 {
+    font-size: 1.5rem;
+  }
+  .picture__text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .main__wrapper {
+    padding: 0 1.25rem;
+  }
+}
+/*# sourceMappingURL=carousel-pages_style.css.map */
