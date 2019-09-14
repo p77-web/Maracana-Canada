@@ -32,6 +32,7 @@
 		<link rel="stylesheet" href="css/header_footer.css" />
 		<link rel="stylesheet" href="css/index_style.css" />
 		<link rel="stylesheet" href="css/card.css" />
+		<link rel="stylesheet" href="css/image-modal.css" />
 
 		<title class="translateText" data-key="home_title">&nbsp;</title>
 	</head>
@@ -229,8 +230,15 @@
 							<p class="lead text-center news__sub pb-2 translateText" data-key="maraCAN_sub"></p>
 						</div>
 						<div class="mx-auto d-flex flex-column">
-							<img class="img-fluid align-self-center mb-2 news__image" src="images/team-photo-2.png" alt="Our official outfits for Mara'CAN 2019" />
+							<img id="news-image" class="img-fluid align-self-center mb-2 news__image" src="images/team-photo-2.png" alt="Our official outfits for Mara'CAN 2019" />
 							<p class="lead mb-3 text-center news__subtitle translateText" data-key="img_sub"></p>
+						</div>
+						<!-- The Modal -->
+						<div id="image-modal" class="modal">
+							<span class="close">&times;</span>
+						
+							<!-- Modal Content (The Image) -->
+							<img class="modal-content" id="image-big">
 						</div>
 					</div>
 				</section>
@@ -680,6 +688,30 @@
 				pause: 'hover',
 				wrap: true
 			});
+
+			// Get the modal
+			var modal = document.getElementById("image-modal");
+
+			// Get the image and insert it inside the modal
+			var img = document.getElementById("news-image");
+			var modalImg = document.getElementById("image-big");
+			img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks on modal, close the modal
+			// modal.onclick = function() {
+			// 	modal.style.display = "none";
+			// }
 		</script>
 	</body>
 </html>

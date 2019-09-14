@@ -94,6 +94,10 @@ p {
   max-width: 230px;
 }
 
+.news__image:hover {
+  cursor: pointer;
+}
+
 #info-header,
 #agenda-header,
 #actualities-header {
