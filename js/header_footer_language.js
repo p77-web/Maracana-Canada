@@ -8,7 +8,6 @@ var language = {
 	en: {
 		// Page title
 		home_title: 'Home | Maracana Canada',
-		home_description: 'Maracana is soccer played with 6 players without a goalkeeper. Maracana Canada, the official name of the Canadian Maracana Federation, regulates, organizes and promotes this sport throughout the country.',
 		about_title: 'About | Maracana Canada',
 		rules_title: 'Game rules | Maracana Canada',
 		administration_title: 'Administration | Maracana Canada',
@@ -68,7 +67,7 @@ var language = {
 		official: 'Official website',
 		donation: 'Donate',
 		pt_title: 'OUR PARTNERS',
-		footer: 'Canadian Federation of Maracana',
+		footer: 'Canadian Maracana Federation',
 
 		// Home page
 		info: 'Maracana is soccer played with 6 players without a goalkeeper',
@@ -83,7 +82,7 @@ var language = {
 		acn_c_fr: 'France',
 		acn_c_ch: 'China',
 		acn_c_sw: 'Sweden',
-		a_title: 'News',
+		a_title: 'Maracana Canada News',
 		a_subtitle_1: "Preparations for Mara'CAN 2019",
 		a_text_1: 'Mission, experts of the FIMAA, prospection of competition sites and accommodation in Conakry.',
 		a_subtitle_2: 'Visit of the FIMAA VP in charge of competitions',
@@ -162,12 +161,11 @@ var language = {
 		interview: "President Cissé's interview on RFI",
 		interview_nav: 'Interview 2016',
 		interview_text:
-			'On the occasion of the 2016 CAN of Maracana which took place from September 17 to 18, 2016 in Ouagadougou, the President of the Federation of Maracana Canada granted an interview at the invitation of Annie Gasnier of RFI in his International Radio Foot broadcast.'
+			'On the occasion of the 2016 CAN of Maracana which took place from September 17 to 18, 2016 in Ouagadougou, the President of the Federation of Maracana Canada granted an interview at the invitation of Annie Gasnier of RFI in his International Radio Foot broadcast. '
 	},
 	fr: {
 		// Page title
 		home_title: 'Accueil | Maracana Canada',
-		home_description: 'Le maracana est du soccer à 6 sans gardien de but. Maracana Canada, nom officiel de la Fédération Canadienne de Maracana régit, organise et fait la promotion de ce sport à travers tout le pays.',
 		about_title: 'À propos | Maracana Canada',
 		rules_title: 'Lois du jeu | Maracana Canada',
 		administration_title: 'Administration | Maracana Canada',
@@ -242,7 +240,7 @@ var language = {
 		acn_c_fr: 'La France',
 		acn_c_ch: 'La Chine',
 		acn_c_sw: 'La Suéde',
-		a_title: 'Actualités',
+		a_title: 'Actualités Maracana Canada',
 		a_subtitle_1: "Préparatifs de la Mara'CAN 2019",
 		a_text_1: "Mission, des experts de la FIMAA, de prospection des sites de compétitions et d'hébergement à Conakry.",
 		a_subtitle_2: 'Visite du VP de la FIMAA en charge des compétitions',
