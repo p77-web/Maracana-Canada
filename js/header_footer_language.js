@@ -8,6 +8,7 @@ var language = {
 	en: {
 		// Page title
 		home_title: 'Home | Maracana Canada',
+		home_description: 'Maracana is soccer played with 6 players without a goalkeeper. Maracana Canada, the official name of the Canadian Maracana Federation, regulates, organizes and promotes this sport throughout the country.',
 		about_title: 'About | Maracana Canada',
 		rules_title: 'Game rules | Maracana Canada',
 		administration_title: 'Administration | Maracana Canada',
@@ -166,6 +167,7 @@ var language = {
 	fr: {
 		// Page title
 		home_title: 'Accueil | Maracana Canada',
+		home_description: 'Le maracana est du soccer à 6 sans gardien de but. Maracana Canada, nom officiel de la Fédération Canadienne de Maracana régit, organise et fait la promotion de ce sport à travers tout le pays.',
 		about_title: 'À propos | Maracana Canada',
 		rules_title: 'Lois du jeu | Maracana Canada',
 		administration_title: 'Administration | Maracana Canada',
