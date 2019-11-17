@@ -188,6 +188,11 @@ ul {
   color: rgba(255, 255, 255, 0.3);
 }
 
+#created_by a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .scroll-top {
   bottom: 6.875rem;
   display: inline-block;
