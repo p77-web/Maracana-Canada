@@ -124,12 +124,6 @@
 											<li class="nav-item">
 												<a href="worldcups.html" class="translateText" data-key="international"></a>
 											</li>
-											<!-- <li class="nav-item dropdown-content__submenu">
-												<a href="competitions.html" class="translateText dropdown-content__submenu-link" data-key="">CAN</a>
-											</li>
-											<li class="nav-item dropdown-content__submenu">
-												<a href="worldcups.html" class="translateText dropdown-content__submenu-link" data-key="world"></a>
-											</li> -->
 										</ul>	
 									</li>
 									<li class="nav-item mr-2">
@@ -229,66 +223,14 @@
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-			crossorigin="anonymous"
-		></script>
-		<script src="js/header_footer_language.js"></script>
-		<script>
-			// Get the current year for the copyright
-			$('#year').text(new Date().getFullYear());
-
-			$(window).scroll(function() {
-				if ($(this).scrollTop() > 100) {
-					$('#scroll-arrow').fadeIn();
-				} else {
-					$('#scroll-arrow').fadeOut();
-				}
-			});
-
-			// init scrollspy
-			$('body').scrollspy({ target: '#scroll-arrow' });
-
-			// add smooth scrolling
-			$('#scroll-arrow').on('click', function(e) {
-				// check for a hash value
-				if (this.hash !== '') {
-					// prevent default behavior
-					e.preventDefault();
-
-					// store hash
-					const hash = this.hash;
-
-					// animate smooth scroll
-					$('html, body').animate(
-						{
-							scrollTop: 0
-						},
-						900,
-						function() {
-							// add hash to url
-							window.location.hash = hash;
-						}
-					);
-				}
-			});
-
-			$('.navigation .dropdown').hover(function () {
-				$(this).find('.dropdown-content').first().stop(true, true).slideDown(300);
-			}, function () {
-				$(this).find('.dropdown-content').first().stop(true, true).slideUp(300)
-			});
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"	crossorigin="anonymous">
 		</script>
+		<script	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"	crossorigin="anonymous">
+		</script>
+		<script src="js/header_footer_language.js"></script>
+		<script src="js/navigation.js"></script>
 	</body>
 </html>
