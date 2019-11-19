@@ -1,8 +1,12 @@
 @import '_variables.scss';
 
-.card-guinea {
+.card-world {
 	position: relative;
-	height: 500px;
+	height: 400px;
+
+	@media (min-width: 576px) {
+		height: 500px;
+	}
 
 	&__side {
 		position: absolute;
@@ -11,147 +15,133 @@
 		width: 100%;
 		border-radius: 3px;
 		overflow: hidden;
+		border: 3px solid #d1dcf0;
 		box-shadow: 0 1.5rem 2rem rgba(map-get($colors, black), 0.25);
 
-		&--face {
-			-webkit-background-image: linear-gradient(
-				175deg,
-				map-get($colors, no-color),
-				map-get($colors, no-color) 55%,
-				map-get($colors, sky-blue-light),
-				map-get($colors, sky-blue-light) 80%,
-				map-get($colors, no-color) 95%,
-				map-get($colors, no-color) 100%
-			);
-			background-image: linear-gradient(
-				175deg,
-				map-get($colors, no-color),
-				map-get($colors, no-color) 55%,
-				map-get($colors, sky-blue-light),
-				map-get($colors, sky-blue-light) 80%,
-				map-get($colors, no-color) 95%,
-				map-get($colors, no-color) 100%
-			);
+		&--face:before {
+			content: '';
+			position: absolute;
+			left: -10%;
+			top: 50%;
+			height: 250px;
+			width: 120%;
+			background-image: url('../images/card_bg_before.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: 5;
+		}
+
+		&--face:after {
+			content: '';
+			position: absolute;
+			left: -10%;
+			top: 50%;
+			height: 250px;
+			width: 120%;
+			background-image: url('../images/card_bg_after.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: 5;
 		}
 	}
 
 	&__picture {
 		background: {
-			size: 100%;
+			size: 110%;
 			repeat: no-repeat;
 		}
-		height: 500px;
+		height: 400px;
 		background-blend-mode: screen;
-
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
 		position: relative;
-		top: 10px;
-
-		@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-			// -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 50%);
-			// clip-path: polygon(0 0, 100% 0, 100% 45%, 0 50%);
-			-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-			clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-			// -webkit-clip-path: circle(350px at 60% -15%);
-			// clip-path: circle(350px at 60% -15%);
-		}
+		top: 45px;
+		z-index: 1;
 
 		@media (min-width: 576px) {
-			-webkit-clip-path: polygon(0 0, 100% 0, 100% 55%, 0 55%);
-			clip-path: polygon(0 0, 100% 0, 100% 55%, 0 55%);
+			height: 500px;
+			top: 40px;
 		}
 
 		&--1 {
-			-webkit-background-image: linear-gradient(
-					to top,
-					map-get($colors, no-color),
-					map-get($colors, no-color) 50%,
-					map-get($colors, sky-blue) 80%,
-					map-get($colors, no-color) 100%
-				),
-				url(../images/guinea-map1.png);
-			background-image: linear-gradient(to top, map-get($colors, no-color), map-get($colors, no-color) 50%, map-get($colors, sky-blue) 80%, map-get($colors, no-color) 100%),
-				url(../images/guinea-map1.png);
+			background-image: url('../images/world-map Maracana Canada.jpg');
 		}
 
 		// this code is only supported by IE10 and up
-		@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-			background-image: linear-gradient(to top, map-get($colors, no-color), map-get($colors, no-color) 100%), url(../images/guinea-map1.png);
+		// @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+		// 	background-image: linear-gradient(to top, map-get($colors, no-color), map-get($colors, no-color) 100%), url(../images/guinea-map1.png);
+		// }
+	}
+
+	&__heading {
+		color: rgba(21, 0, 105, 0.6);
+		font-size: $default-size * 2;
+		font-weight: 500;
+		text-align: center;
+		letter-spacing: 0.3rem;
+		line-height: 2rem;
+		position: absolute;
+		top: 0;
+		height: 2.5rem;
+		width: 100%;
+		z-index: 15;
+
+		@media (min-width: 576px) {
+			font-size: $default-size * 2;
+			letter-spacing: 0.5rem;
+			font-weight: 600;
 		}
 	}
 
 	&__heading {
-		color: map-get($colors, main);
-		display: inline-block;
-		font-size: $default-size;
-		font-weight: 300;
+		font-size: $default-size * 1.5;
+		font-weight: 500;
 		text-align: center;
+		letter-spacing: 0.2rem;
+		line-height: 2rem;
 		position: absolute;
-		top: 8.5rem;
-		left: 0.5rem;
-		width: 59%;
-		transform: rotate(-3deg) skewX(15deg);
-
-		@supports (background-clip: text) or (-webkit-background-clip: text) {
-			background-image: linear-gradient(
-				to right,
-				rgba(map-get($colors, admin), 0.95),
-				rgba(map-get($colors, admin), 0.95) 33%,
-				rgba(map-get($colors, gold-light), 0.95) 50%,
-				rgba(map-get($colors, gold-light), 0.95),
-				rgba(map-get($colors, green-light), 0.95) 66%,
-				rgba(map-get($colors, green-light), 0.95) 100%
-			);
-			-webkit-background-clip: text;
-			background-clip: text;
-			color: transparent;
-		}
+		top: 0;
+		height: 2.5rem;
+		width: 100%;
+		z-index: 15;
+		background-image: linear-gradient(to bottom, rgba(#d1dcf0, 1), rgba(#d1dcf0, 0));
 
 		@media (min-width: 576px) {
-			letter-spacing: 0.1rem;
-			top: 11.5rem;
+			font-size: $default-size * 2;
+		}
+
+		@media (min-width: 768px) {
+			font-weight: 600;
 		}
 	}
 
 	&__heading-span {
-		padding: 0.5rem 0.5rem;
-		-webkit-box-decoration-break: clone;
-		box-decoration-break: clone;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		color: rgba(21, 0, 105, 0.533);
 	}
 
 	&__date {
-		color: map-get($colors, main);
-		display: inline-block;
-		font-size: $default-size * 0.8;
-		font-weight: 300;
-		text-align: center;
+		font-size: $default-size;
+		font-weight: 500;
+		margin-bottom: 0;
 		position: absolute;
-		top: 12.5rem;
-		left: 0rem;
-		width: 100%;
-		transform: rotate(-3deg) skewX(15deg);
-
-		@supports (background-clip: text) or (-webkit-background-clip: text) {
-			background-image: linear-gradient(to left, rgba(map-get($colors, admin), 0.55) 25%, rgba(map-get($colors, admin), 0.95) 75%, rgba(map-get($colors, admin), 0.55) 100%);
-			-webkit-background-clip: text;
-			background-clip: text;
-			color: transparent;
-		}
+		top: 1.5rem;
+		left: 7rem;
+		z-index: 5;
 
 		@media (min-width: 576px) {
-			font-size: $default-size * 0.9;
-			left: -3rem;
-			letter-spacing: 0.1rem;
-			top: 14.5rem;
-		}
-
-		@media (min-width: 992px) {
-			left: -2.5rem;
+			font-size: $default-size * 1.3;
+			top: 1.5rem;
+			left: 11rem;
 		}
 	}
 
 	&__date-span {
+		display: inline-block;
+
+		color: rgba(21, 0, 105, 0.702);
 		padding: 0.5rem 0.5rem;
 		-webkit-box-decoration-break: clone;
 		box-decoration-break: clone;
@@ -162,14 +152,34 @@
 		left: 0;
 		top: 55%;
 		width: 100%;
-		color: map-get($colors, admin);
+		color: rgba(21, 0, 105, 0.702);
+		z-index: 10;
 	}
+
 	&__countries p {
-		padding: 0.3rem 0;
+		text-align: center;
+		padding: 0.5rem 0;
 		width: 75%;
 		margin: 0 auto;
-		&:not(:last-child) {
-			border-bottom: 1px solid map-get($colors, news);
+	}
+
+	&__countries-list {
+		display: flex;
+		flex-wrap: wrap;
+
+		& p {
+			text-align: left;
+			padding: 0.5rem 0 0.3rem 1rem;
+			width: 50%;
+			margin: 0 auto;
+
+			@media (min-width: 576px) {
+				padding: 0.5rem 0 0.7rem 1.5rem;
+			}
+
+			@media (min-width: 992px) {
+				padding: 0.5rem 0 0.5rem 2rem;
+			}
 		}
 	}
 }
