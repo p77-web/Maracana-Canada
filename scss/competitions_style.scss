@@ -57,6 +57,10 @@
 	@include wrapper-dimensions;
 }
 
+.card-img-top {
+	max-height: 460px;
+}
+
 .card__text {
 	font-size: $default-size - 0.1rem;
 	margin: 0 auto;

@@ -47,6 +47,10 @@
   width: 100%;
 }
 
+.card-img-top {
+  max-height: 460px;
+}
+
 .card__text {
   font-size: 0.9rem;
   margin: 0 auto;
