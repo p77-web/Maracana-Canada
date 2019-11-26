@@ -164,7 +164,100 @@ var language = {
 		interview: "President Cissé's interview on RFI",
 		interview_nav: 'Interview 2016',
 		interview_text:
-			'On the occasion of the 2016 CAN of Maracana which took place from September 17 to 18, 2016 in Ouagadougou, the President of the Federation of Maracana Canada granted an interview at the invitation of Annie Gasnier of RFI in his International Radio Foot broadcast. '
+			'On the occasion of the 2016 CAN of Maracana which took place from September 17 to 18, 2016 in Ouagadougou, the President of the Federation of Maracana Canada granted an interview at the invitation of Annie Gasnier of RFI in his International Radio Foot broadcast. ',
+
+		// Competitions pages
+		intro_title: 'The competitions',
+		intro_text:
+			'Maracana Canada is in charge of organizing provincial, territorial and federal Maracana competitions. Since 2017, it organizes annually a national championship followed by a national cup. The championship is played in a single pool where all the clubs play each other. Depending on the affiliations, these competitions take place in one of the major cities of the different provinces of Canada. Currently in the break-in period, the clubs consist of players aged 30 and over with the use of two players over 24 years old.',
+		intro_subtitle: 'New clubs',
+		intro_subtext: 'Any club wishing to participate in our competitions, can register at any time of the year with the Federation.',
+		ranking: 'Matches results and ranking',
+		ranking_subtitle: 'Ranking',
+		fair_play: 'Fair play team',
+		results_tab: 'Matches results',
+		tab_scores: 'Goals',
+		lice: 'The teams in the running',
+		pool_a: 'Ranking - POOL A',
+		pool_a_results: 'Matches results - POOL A',
+		pool_b: 'Ranking - POOL B',
+		pool_b_results: 'Matches results - POOL B',
+		final: 'FINAL',
+		teams_subtitle: 'The teams',
+
+		// 2017 championship page
+		title_2017: 'The 2017 National Championship',
+		description_2017:
+			"It was in Antoine-de-Saint-Exupéry's gymnasium in Montreal that nine teams competed on May 13, 2017 in a single pool, one-way. In 36 games, the attacks hit the net 83 times.",
+		attack_2017: 'Best attack (20 goals)',
+		defense_2017: 'Best defense (3 goals)',
+		striker_2017: 'Top scorer (6 goals)',
+
+		// 2018 championship page
+		title_2018: 'The 2018 National Championship',
+		description_2018:
+			'Maracana Canada, for its second edition, organized the national championship in the Cégep du Vieux Montréal gymnasium on May 5th for the first Maracana night, starting at 6PM, with two new clubs, the White Eagles and Peace Team Maracana.',
+		description_1_2018:
+			'As in the first edition, nine teams have fought hard to succeed CAMASM, for some, and to retain its title for the last one. The eight teams must take their patience as the CAMASM keeps its trophy in front of the brand new maracana club, The White Eagles. In 36 games, one-way, the attacks moved the net 87 times, 4 goals more than last season.',
+		attack_2018: 'Best attack (19 goals)',
+		defense_2018: 'Best defense (1 goal)',
+		striker_2018: 'Top scorer (11 goals)',
+
+		// 2019 championship page
+		title_2019: 'The 2019 National Championship',
+		description_2019:
+			'The third edition of the national championship was held on April 27 in the gymnasium of the Cégep du Vieux Montréal for the second Maracana night, which began at 6PM in the presence of the new Ambassador of Ivory Coast to Canada, HE Mr. Filbert Fagnidi and Mr. Saadou Maiguizo, Vice President of the FIMAA responsible for competitions, representing the president of the said institution, Mr. Charlemagne Bleu.',
+		picture_2019: 'The White Eagles, after their second participation, dethroned the two-times champion CAMASM (Ste-Marthe)',
+		description_1_2019:
+			'Never two without three, it is customary to say. Unfortunately, the CAMASM could not achieve a 3rd consecutive consecration. Blame the White Eagles who learned their lessons only a year ago. From the 10 competing clubs, they have been the ones who have offered the many audience present what are the values ​​and spirit of Maracana. Hunanimity, their beautiful game and their spirit of fairplay were recognized by the participants. In addition to the title of champion 2019, they won the most important trophy of Maracana, that of the spirit CFA (Conviviality - Fraternity - Friendship).',
+		attack_2019: 'Best attack (21 goals)',
+		defense_2019: 'Best defense (4 goal)',
+		striker_2019: 'Top scorer (9 goals)',
+
+		// 2017 cup page
+		title_cup_2017: 'The 2017 national cup',
+		description_cup_2017:
+			'Le Club des Amis du Maracana de Ste-Marthe (CAMASM) was opposed, in the final, to the new team affiliated Peace Team Maracana of Montreal. Duel won on penalties by Ste-Marthe after a score of two goals everywhere in regular time, achieving the double of the season.',
+		picture_cup_2017: '2017 finalists - CAMASM and Peace Team Maracana of Montreal',
+		description_cup_1_2017:
+			'In the end, 10 teams from Quebec and Ontario competed in two pools of 5 on July 8, 2017 at the Toronto Pan Am Sports Center gymnasium. The first of each group was directly qualified for the semi-finals, while the second and third were to fight in the quarter-finals to join them. The heads of the pools were Ste-Marthe and Ivoire Foot Montreal.',
+		striker_cup_2017: 'Top scorer (5 goals)',
+		final_2017:
+			'Peace Team Montreal and CAMASM, winners on FC Multi C and Ivory Foot Montreal, respectively, played in a very resounding final, each losing one lead in turn to finish on a scorched score of 2 goals everywhere. The cold blood and the experience of the CAMASM helped them to win over the newcomer on penalties.',
+
+		// 2018 cup page
+		title_cup_2018: 'The 2018 national cup',
+		description_cup_2018:
+			'Peace Team Maracana of Montreal takes revenge on the Club des Amis du Maracana de Ste-Marthe (CAMASM) who could not keep his trophy thus breaking their dream of achieving the double for a second consecutive year.',
+		picture_cup_2018: 'The winning team 2018 - Peace Team Maracana of Montreal',
+		description_cup_1_2018:
+			'It was in the gymnasium of the Cité collégiale in Ottawa, the federal capital, that six teams from Quebec and Ontario fought back and forth in two pools of three on July 14, 2018. first two of each group were directly qualified for the semi-finals. The heads of the pools were Ste-Marthe and Ivoire Foot Montreal.',
+		striker_cup_2018: 'Top scorers (4 goals)',
+		final_2018:
+			'After being neutralized, twice on a score of one goal everywhere, Peace Team Montreal and CAMASM, dominators of Ivory Foot Montreal (5-4) and Ottawa (2-0) respectively, were again, found in the final for a second consecutive year. It smelled of revenge for the first mentioned and confirmation for the trophy holder. A hard-fought final that ends with the advantage of Peace Team on a score of 2 goals to 1.',
+
+		// 2019 cup page
+		title_cup_2019: 'The 2019 national cup',
+		description_cup_2019:
+			'Under a punishing sun, Ovila-Légaré Park, the challenge was on Saturday, July 20, 2019. The teams of the top 5 of the last championship were in contention. They were accompanied by the little puppy named Volcan FC.',
+		picture_cup_2019: 'The winning team 2019 - Ivory Foot Montreal',
+		description_cup_1_2019:
+			'The questions were many. Who from White Eagles or Peace Team would succeed in achieving the double of the season, for the first or to keep his trophy, for the last? Or, would the CAMASM (Ste-Marthe) be able to take back his trophy lost last year or Ivory Foot Montreal where it is rather the Maracana Club of St-Hyacinthe who managed to raise his first national trophy?',
+		attack_cup_2019: 'Best attack (7 goals)',
+		defense_cup_2019: 'Best defense (1 goal)',
+		striker_cup_2019: 'Top scorer (4 goals)',
+		final_2019: 'Ivory Foot Montreal, defender of Peace Team in the semifinal, breaks the dream of doubled White Eagles, winner of CAMASM. Final score 1 to 0.',
+
+		// international competitions page
+		title_ic: 'Prize list',
+		description_ic:
+			"The Canadian Maracana Federation being affiliated with the International Federation of MAracana Association (FIMAA) since its creation in 2016, its national teams have been invited every year since 2017 to the various Maracana Nations Cups of African Nations called Mara'CAN.",
+		ic_2019: 'Guinea 2019',
+		picture_ic_2019: "The Canadians finished at the bottom of the podium by losing the small final against Benin on the score of 2 goals to 1, but again with the Fair Play medal in their pocket",
+		ic_2018: "Ivory Coast 2018",
+		picture_ic_2018: "Seniors and super seniors (aged 45 and over) advance to the quarter-finals",
+		ic_2017: 'Mali 2017',
+		picture_ic_2017: "Seniors (35 years old and over) enter the semifinals in addition to being the fair play team"
 	},
 	fr: {
 		// Page title
@@ -325,7 +418,100 @@ var language = {
 		interview: 'Entrevue du président Cissé sur RFI',
 		interview_nav: 'Entrevue 2016',
 		interview_text:
-			"A l'occasion de la CAN 2016 de Maracana qui s'est déroulée du 17 au 18 septembre 2016 à Ouagadougou, le Président de la Féderation de Maracana Canada a accordé une entrevue à l'invitation de Annie Gasnier de RFI dans son émission Radio Foot Internationale."
+			"A l'occasion de la CAN 2016 de Maracana qui s'est déroulée du 17 au 18 septembre 2016 à Ouagadougou, le Président de la Féderation de Maracana Canada a accordé une entrevue à l'invitation de Annie Gasnier de RFI dans son émission Radio Foot Internationale.",
+
+		// Competitions pages
+		intro_title: 'Les Compétitions',
+		intro_text:
+			"Maracana Canada est en charge d’organiser les compétitions provinciales, territoriales et fédérales de Maracana. Depuis 2017, elle organise annuellement un championnat national suivi d'une coupe nationale. Le championnat se joue en une poule unique où tous les clubs se croisent. En fonction des affiliations, ces compétitions se déroulent dans une des grandes villes des différentes provinces du Canada. Actuellement en période de rodage, les clubs sont constitués de joueurs de 30 ans et plus avec l'utilisation de deux joueurs de plus de 24 ans.",
+		intro_subtitle: 'Nouveaux clubs',
+		intro_subtext: "Tout club désireux de participer à nos compétitions, peut s'inscrire à tout moment de l'année auprès de la Fédération.",
+		ranking: 'Résultats des rencontres et classement',
+		ranking_subtitle: 'Classement',
+		fair_play: 'Équipe fair-play',
+		results_tab: 'Résultats des rencontres',
+		tab_scores: 'Buts',
+		lice: 'Les équipes en lice',
+		pool_a: 'Classement - POULE A',
+		pool_a_results: 'Résultats des rencontres - POULE A',
+		pool_b: 'Classement - POULE B',
+		pool_b_results: 'Résultats des rencontres - POULE B',
+		final: 'FINALE',
+		teams_subtitle: 'Les équipes',
+
+		// 2017 championship page
+		title_2017: 'Le championnat national 2017',
+		description_2017:
+			"C'est dans le gymnase de l'école Antoine-de-Saint-Exupéry à Montréal que neuf équipes ont compéti le 13 mai 2017 en une poule unique, en aller simple. En 36 confrontations, les attaques ont touché le filet 83 fois.",
+		attack_2017: 'Meilleure attaque (20 buts)',
+		defense_2017: 'Meilleure défense (3 buts)',
+		striker_2017: 'Meilleur buteur (6 buts)',
+
+		// 2018 championship page
+		title_2018: 'Le championnat national 2018',
+		description_2018:
+			'Maracana Canada, pour sa deuxième édition, a organisé le championnat national dans le gymnase du Cégep du Vieux Montréal le 5 mai pour une première nuit du maracana dès 18H avec deux nouveaux clubs que sont les White Eagles et Peace Team Maracana.',
+		description_1_2018:
+			'Comme lors de la première édition, neuf équipes ont chaudement lutté pour succéder au CAMASM, pour les unes, et pour conserver son titre pour la dernière citée. Les huit équipes doivent prendre leur mal en patience puisque le CAMASM conserve son trophée devant le tout nouveau club de maracana, The White Eagles. En 36 confrontations, en aller simple, les attaques ont remué le filet 87 fois, 4 buts de plus que la saison dernière.',
+		attack_2018: 'Meilleure attaque (19 buts)',
+		defense_2018: 'Meilleure défense (1 but)',
+		striker_2018: 'Meilleur buteur (11 buts)',
+
+		// 2019 championship page
+		title_2019: 'Le championnat national 2019',
+		description_2019:
+			"La troisième édition du championnat national a été organisée le 27 avril dans le gymnase du Cégep du vieux Montréal pour la deuxième nuit du maracana qui a débuté à 18H en présence du nouvel Ambassadeur de Côte d'Ivoire au Canada, SEM Filbert Fagnidi et de Monsieur Saadou Maiguizo, vice-président de la FIMAA chargé des compétitions, représentant le président de la dite institution, Monsieur Charlemagne Bleu.",
+		picture_2019: 'Les White Eagles, dès leur deuxième participation, détrônent le double champion en titre CAMASM (Ste-Marthe)',
+		description_1_2019:
+			"Jamais deux sans trois, a-t-on coutume de dire. Hélas, le CAMASM n'a pu réaliser un 3è sacre consécutif. La faute aux White Eagles qui ont bien appris leurs léçons débutées seulement il y a un an. Des 10 clubs compétiteurs, ils ont été ceux qui ont offert au public nombreux présent ce que sont les valeurs et l'esprit du Maracana. A l'hunanimité, leur beau jeu et leur esprit du fairplay ont été reconnus par les participants. En plus du titre de champion 2019, ils ont décroché le trophée le plus important du Maracana, celui de l'esprit CFA (Convivialité - Fraternité - Amitié).",
+		attack_2019: 'Meilleure attaque (21 buts)',
+		defense_2019: 'Meilleure défense (4 buts)',
+		striker_2019: 'Meilleur buteur (9 buts)',
+
+		// 2017 cup page
+		title_cup_2017: 'La coupe nationale 2017',
+		description_cup_2017:
+			'Le Club des Amis du Maracana de Ste-Marthe (CAMASM) était opposé, en finale, à la nouvelle équipe affiliée Peace Team Maracana de Montréal. Duel remporté aux tirs au but par Ste-Marthe après un score de deux buts partout en temps réglémentaire, réalisant ainsi le doublé de la saison.',
+		picture_cup_2017: 'Les finalistes 2017 - CAMASM et Peace Team Maracana de Montréal',
+		description_cup_1_2017:
+			"C'est finalement 10 équipes, venues du Québec et de l'Ontario, qui se sont affrontées en deux poules de 5, le 8 juillet 2017 dans le gymnase du Centre Sportif Panaméricain de Toronto. La première de chaque poule était directement qualifiée pour les demi-finales tandis que les deuxièmes et troisièmes devaient se battre en quart de finales pour les y rejoindre. Les têtes de poules étaient Ste-Marthe et Ivoire Foot Montréal.",
+		striker_cup_2017: 'Meilleure buteur (5 buts)',
+		final_2017:
+			"Peace Team Montréal et CAMASM, tombeurs de FC Multi C et Ivoire Foot Montréal respectivement, ont disputé une finale très relévée chacun perdant une avance à tour de rôle pour terminer sur un score étrillé de 2 buts partout. Le sang froid et l'expérience du CAMASM a eu raison du tout nouveau venu pour l'emporter aux tirs au but.",
+
+		// 2018 cup page
+		title_cup_2018: 'La coupe nationale 2018',
+		description_cup_2018:
+			"Peace Team Maracana de Montréal prend sa revanche sur le Club des Amis du Maracana de Ste-Marthe (CAMASM) qui n'a pu conserver son trophée brisant ainsi leur rêve de réaliser le doublé pour une deuxième année consécutive.",
+		picture_cup_2018: "L'équipe gagnante 2018 - Peace Team Maracana de Montréal",
+		description_cup_1_2018:
+			"C'est dans le gymnase de la Cité collégiale d'Ottawa, capitale fédérale que six équipes, venues du Québec et de l'Ontario, se sont affrontées, en aller-retour, dans deux poules de trois, le 14 juillet 2018. Les deux premières de chaque poule étaint directement qualifiées pour les demi-finales. Les têtes de poules étaient Ste-Marthe et Ivoire Foot Montréal.",
+		striker_cup_2018: 'Meilleure buteurs (4 buts)',
+		final_2018:
+			"Après s'être neutralisés, par deux fois sur un score d'un but partout, Peace Team Montréal et CAMASM, dominateurs d'Ivoire Foot Montréal (5-4) et d'Ottawa (2-0) respectivement, se sont, à nouveau, retrouvés en finale pour une deuxième année consécutive. Cela sentait un parfum de revanche pour la première citée et de confirmation pour la détentrice du trophée. Une finale âprement discutée qui se termine à l'avantage de Peace Team sur un score de 2 buts à 1.",
+
+		// 2019 cup page
+		title_cup_2019: 'La coupe nationale 2019',
+		description_cup_2019:
+			'Sous un soleil plombant, au parc Ovila-Légaré, le chalenge était de taille le samedi 20 juillet 2019. Les équipes du top 5 du dernier championnat étaient en lice. Elles étaient accompagnées par le petit poucet du nom de Volcan FC.',
+		picture_cup_2019: "L'équipe gagnante 2019 - Ivoire Foot Montréal",
+		description_cup_1_2019:
+			"Les questions étaient nombreuses. Qui de White Eagles ou de Peace Team réussirait à réaliser le doublé de la saison, pour le premier ou à conserver son trophée, pour le dernier? Ou alors, le CAMASM (Ste-Marthe) réussirait-t-il à reprendre son trophée perdu l'année dernière ou Ivoire Foot Montréal ou c'est plutôt le Maracana Club de St-Hyacinthe qui réussirait à soulever son premier trophée national?",
+		attack_cup_2019: 'Meilleure attaque (7 buts)',
+		defense_cup_2019: 'Meilleure défense (1 but)',
+		striker_cup_2019: 'Meilleurs buteur (4 buts)',
+		final_2019: 'Ivoire Foot Montréal, tombeur de Peace Team en demi-finale, brise le rêve de doublé de White Eagles, vainqueur de CAMASM. Score final 1 à 0.',
+
+		// international competitions page
+		title_ic: 'Palmarès',
+		description_ic:
+			"La Fédération canadienne de Maracana étant affiliée à la Fédération Internationale de MAracana Association(FIMAA) dès sa création en 2016, ses équipes nationales ont été, depuis 2017, invitées aux différentes Coupes d'Afrique des Nations de maracana successives dénommées Mara'CAN et ce, à chaque année.",
+		ic_2019: 'Guinée 2019',
+		picture_ic_2019: "Les Canadiens terminent au bas du podium en perdant la petite finale face au Bénin sur le score de 2 buts à 1, mais encore une fois avec la médaille du Fair-Play en poche",
+		ic_2018: "Côte d'Ivoire 2018",
+		picture_ic_2018: "Les séniors et les super séniors (45 ans et plus) accèdent aux quart de finales",
+		ic_2017: 'Mali 2017',
+		picture_ic_2017: "Les séniors (35 ans et plus) accèdent aux demi-finales en plus d'être l'équipe fair-play"
 	}
 };
 
