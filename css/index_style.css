@@ -41,11 +41,7 @@ p {
 
 .news__container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.news__container-box {
-  width: 400px;
+  flex-direction: column;
 }
 
 .news__title,
@@ -73,6 +69,7 @@ p {
 
 .news__subtitle {
   font-family: "IM Fell Double Pica SC", serif;
+  width: 80%;
 }
 
 .news__image {
@@ -360,13 +357,6 @@ p {
     width: calc(100% + 20px);
   }
 }
-@media (min-width: 830px) {
-  .news__title,
-.news__sub {
-    transform: rotateX(-30deg) rotateY(35deg);
-    text-shadow: -5px -5px 7px #000;
-  }
-}
 @media (min-width: 768px) {
   .headers-over768px, #agenda-header .col > h2,
 #actualities-header .col > h2, #presentation .col > h2 {
@@ -387,6 +377,10 @@ p {
 
   .news__title {
     font-size: 2rem;
+  }
+
+  .news__subtitle {
+    width: 70%;
   }
 
   #presentation .col > h2 {
@@ -436,6 +430,17 @@ p {
 
   #news {
     width: calc(100% + 40px);
+  }
+
+  .news__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .news__title,
+.news__sub {
+    transform: rotateX(-30deg) rotateY(35deg);
+    text-shadow: -5px -5px 7px #000;
   }
 
   #agenda {

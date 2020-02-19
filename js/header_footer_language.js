@@ -71,9 +71,9 @@ var language = {
 
 		// Home page
 		info: 'Maracana is soccer played with 6 players without a goalkeeper',
-		maraCAN: "Mara'CAN 2019",
-		maraCAN_sub: 'Conakry, Guinea',
-		img_sub: 'A good run for Canadians',
+		maraCAN: 'National Championship 2020',
+		maraCAN_sub: 'Saint-Hyacinthe - April 18th',
+		img_sub: 'In the presence of Bleu Charlemagne, the President of FIMAA',
 		world_cup: 'World Cup',
 		world_cup_date: 'Montreal 2020',
 		world_cup_c: 'Qualified countries',
@@ -253,11 +253,12 @@ var language = {
 		description_ic:
 			"The Canadian Maracana Federation being affiliated with the International Federation of MAracana Association (FIMAA) since its creation in 2016, its national teams have been invited every year since 2017 to the various Maracana Nations Cups of African Nations called Mara'CAN.",
 		ic_2019: 'Guinea 2019',
-		picture_ic_2019: "The Canadians finished at the bottom of the podium by losing the small final against Benin on the score of 2 goals to 1, but again with the Fair Play medal in their pocket",
-		ic_2018: "Ivory Coast 2018",
-		picture_ic_2018: "Seniors and super seniors (aged 45 and over) advance to the quarter-finals",
+		picture_ic_2019:
+			'The Canadians finished at the bottom of the podium by losing the small final against Benin on the score of 2 goals to 1, but again with the Fair Play medal in their pocket',
+		ic_2018: 'Ivory Coast 2018',
+		picture_ic_2018: 'Seniors and super seniors (aged 45 and over) advance to the quarter-finals',
 		ic_2017: 'Mali 2017',
-		picture_ic_2017: "Seniors (35 years old and over) enter the semifinals in addition to being the fair play team"
+		picture_ic_2017: 'Seniors (35 years old and over) enter the semifinals in addition to being the fair play team'
 	},
 	fr: {
 		// Page title
@@ -325,9 +326,9 @@ var language = {
 
 		// Home Page
 		info: 'Le maracana est du soccer à 6 sans gardien de but',
-		maraCAN: "Mara'CAN 2019",
-		maraCAN_sub: 'Conakry, Guinée',
-		img_sub: 'Bon parcours des Canadiens',
+		maraCAN: 'Championnat National 2020',
+		maraCAN_sub: 'Saint-Hyacinthe - 18 avril',
+		img_sub: 'En présence du Président de la FIMAA, Bleu Charlemagne',
 		world_cup: 'Coupe du monde',
 		world_cup_date: 'Montréal 2020',
 		world_cup_c: 'Pays qualifiés',
@@ -507,9 +508,10 @@ var language = {
 		description_ic:
 			"La Fédération canadienne de Maracana étant affiliée à la Fédération Internationale de MAracana Association(FIMAA) dès sa création en 2016, ses équipes nationales ont été, depuis 2017, invitées aux différentes Coupes d'Afrique des Nations de maracana successives dénommées Mara'CAN et ce, à chaque année.",
 		ic_2019: 'Guinée 2019',
-		picture_ic_2019: "Les Canadiens terminent au bas du podium en perdant la petite finale face au Bénin sur le score de 2 buts à 1, mais encore une fois avec la médaille du Fair-Play en poche",
+		picture_ic_2019:
+			'Les Canadiens terminent au bas du podium en perdant la petite finale face au Bénin sur le score de 2 buts à 1, mais encore une fois avec la médaille du Fair-Play en poche',
 		ic_2018: "Côte d'Ivoire 2018",
-		picture_ic_2018: "Les séniors et les super séniors (45 ans et plus) accèdent aux quart de finales",
+		picture_ic_2018: 'Les séniors et les super séniors (45 ans et plus) accèdent aux quart de finales',
 		ic_2017: 'Mali 2017',
 		picture_ic_2017: "Les séniors (35 ans et plus) accèdent aux demi-finales en plus d'être l'équipe fair-play"
 	}
