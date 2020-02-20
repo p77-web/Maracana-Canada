@@ -214,6 +214,19 @@ var language = {
 		defense_2019: 'Best defense (4 goal)',
 		striker_2019: 'Top scorer (9 goals)',
 
+		// 2020 championship page
+		title_2020: 'The 2020 National Championship',
+		description_2020:
+			'The third edition of the national championship was held on April 27 in the gymnasium of the Cégep du Vieux Montréal for the second Maracana night, which began at 6PM in the presence of the new Ambassador of Ivory Coast to Canada, HE Mr. Filbert Fagnidi and Mr. Saadou Maiguizo, Vice President of the FIMAA responsible for competitions, representing the president of the said institution, Mr. Charlemagne Bleu.',
+		picture_2020: 'The White Eagles, after their second participation, dethroned the two-times champion CAMASM (Ste-Marthe)',
+		description_1_2020:
+			'Never two without three, it is customary to say. Unfortunately, the CAMASM could not achieve a 3rd consecutive consecration. Blame the White Eagles who learned their lessons only a year ago. From the 10 competing clubs, they have been the ones who have offered the many audience present what are the values ​​and spirit of Maracana. Hunanimity, their beautiful game and their spirit of fairplay were recognized by the participants. In addition to the title of champion 2019, they won the most important trophy of Maracana, that of the spirit CFA (Conviviality - Fraternity - Friendship).',
+		attack_2020: 'Best attack (21 goals)',
+		defense_2020: 'Best defense (4 goal)',
+		striker_2020: 'Top scorer (9 goals)',
+		info2020: 'For further information contact Assane Diawandou at 438 930-6801.',
+		date2020: 'April 18th at 4PM',
+
 		// 2017 cup page
 		title_cup_2017: 'The 2017 national cup',
 		description_cup_2017:
@@ -468,6 +481,19 @@ var language = {
 		attack_2019: 'Meilleure attaque (21 buts)',
 		defense_2019: 'Meilleure défense (4 buts)',
 		striker_2019: 'Meilleur buteur (9 buts)',
+
+		// 2020 championship page
+		title_2020: 'Le championnat national 2020',
+		description_2020:
+			"La troisième édition du championnat national a été organisée le 27 avril dans le gymnase du Cégep du vieux Montréal pour la deuxième nuit du maracana qui a débuté à 18H en présence du nouvel Ambassadeur de Côte d'Ivoire au Canada, SEM Filbert Fagnidi et de Monsieur Saadou Maiguizo, vice-président de la FIMAA chargé des compétitions, représentant le président de la dite institution, Monsieur Charlemagne Bleu.",
+		picture_2020: 'Les White Eagles, dès leur deuxième participation, détrônent le double champion en titre CAMASM (Ste-Marthe)',
+		description_1_2020:
+			"Jamais deux sans trois, a-t-on coutume de dire. Hélas, le CAMASM n'a pu réaliser un 3è sacre consécutif. La faute aux White Eagles qui ont bien appris leurs léçons débutées seulement il y a un an. Des 10 clubs compétiteurs, ils ont été ceux qui ont offert au public nombreux présent ce que sont les valeurs et l'esprit du Maracana. A l'hunanimité, leur beau jeu et leur esprit du fairplay ont été reconnus par les participants. En plus du titre de champion 2019, ils ont décroché le trophée le plus important du Maracana, celui de l'esprit CFA (Convivialité - Fraternité - Amitié).",
+		attack_2020: 'Meilleure attaque (21 buts)',
+		defense_2020: 'Meilleure défense (4 buts)',
+		striker_2020: 'Meilleur buteur (9 buts)',
+		info2020: 'Pour toutes informations contacter Assane Diawandou au 438 930-6801.',
+		date2020: '18 avril à 16h',
 
 		// 2017 cup page
 		title_cup_2017: 'La coupe nationale 2017',
