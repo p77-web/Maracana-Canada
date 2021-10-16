@@ -18,6 +18,6 @@ span.onclick = function() {
 };
 
 // When the user clicks on modal, close the modal
-// modal.onclick = function() {
-// 	modal.style.display = "none";
-// }
+modal.onclick = function() {
+	modal.style.display = "none";
+}
