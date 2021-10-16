@@ -30,6 +30,7 @@
   border: 3px solid rgba(255, 0, 0, 0.8);
   margin: auto;
   display: block;
+  height: 80%;
   max-width: 90%;
   animation-name: zoom;
   animation-duration: 0.6s;
@@ -61,20 +62,73 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (orientation: landscape) {
   .modal-content {
-    border: 6px solid rgba(255, 0, 0, 0.8);
+    top: -20%;
+    height: 100%;
+    width: 40%;
   }
 }
-@media (min-width: 992px) {
+
+@media (orientation: landscape) and (min-width: 768px) {
   .modal-content {
-    border: 8px solid rgba(255, 0, 0, 0.8);
+    top: -10%;
+    height: 100%;
+    width: 30%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 992px) {
+  .modal-content {
+    top: -5%;
+    height: 100%;
+    width: 50%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1200px) {
+  .modal-content {
+    top: -5%;
+    height: 100%;
+    width: 45%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1366px) {
+  .modal-content {
+    top: -5%;
+    height: 100%;
+    width: 40%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1500px) {
+  .modal-content {
+    top: -5%;
+    height: 100%;
+    width: 30%;
+  }
+}
+
+@media (orientation: portrait) and  (min-width: 768px) {
+  .modal-content {
+    height: 90%;
+    width: 80%;
     max-width: 85%;
   }
 }
-@media (min-width: 1200px) {
+
+@media (orientation: portrait) and  (min-width: 992px) {
   .modal-content {
-    max-width: 65%;
+    width: 80%;
+    max-width: 85%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 1200px) {
+  .modal-content {
+    width: 35%;
+    max-width: 40%;
   }
 }
 
