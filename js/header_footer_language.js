@@ -97,13 +97,13 @@ var language = {
       "Mission, experts of the FIMAA, prospection of competition sites and accommodation in Conakry.",
     a_subtitle_2: "Visit of the FIMAA VP in charge of competitions",
     a_text_2:
-      "Coming to represent the president of the FIMAA at the Canadian championship April 27th 2019, Mr. Maiguizo visited the pioneering team of Maracana in Canada, Ivory Foot Montreal.",
+      "Coming to represent the president of the FIMAA at the Canadian championship April 27th, 2019, Mr. Maiguizo visited the pioneering team of Maracana in Canada, Ivory Foot Montreal.",
     a_subtitle_3: "The Ambassador of Côte d'Ivoire to Canada <br /> joins the Canadian National Team",
     a_text_3:
         "It was on the occasion of his welcome by the maracaniers of Canada, on September 19th 2021, when he made his request to join the national team. This was obviously accepted by a shower of applause given his talent as a born scorer noted by his new teammates.",
     a_subtitle_4: "Visit of the National Team at Sainte-Marthe",
     a_text_4:
-      "A very nice reception of the National Team by the Club des Amis du Maracana de Sainte-Marthe this Saturday, October 9, 2021.",
+      "A very nice reception of the National Team by the Club des Amis du Maracana de Sainte-Marthe on October 9th, 2021.",
     pr_title: "What you need to know",
     pr_text_1:
       "Maracana is a soccer played six players without a goalkeeper, on a handball field. With specific rules, each game is played over two periods of 10 minutes. It is very technical and is based on a Conviviality - Fraternity - Friendship spirit. There are two official categories of competitions: seniors (35 and over) and veterans (over 45). However, we integrate the juniors (30 to 35 years) during the break-in period of our discipline under certain conditions.",
@@ -396,7 +396,7 @@ var language = {
       "C'est à l'occasion de son accueil par les maracaniers du Canada, le 19 septembre 2021, qu'il a fait sa demande pour intégrer l'équipe nationale. Ce qui a bien évidemment été accepté par une pluie d'applaudissements vu son talent de buteur né constaté par ses nouveaux coéquipiers.",
     a_subtitle_4: "Visite de l'Équipe Nationale à Sainte-Marthe",
     a_text_4:
-      "Très belle réception de l'équipe nationale par le Club des Amis du Maracana de Sainte-Marthe ce samedi 9 octobre 2021.",
+      "Très belle réception de l'équipe nationale par le Club des Amis du Maracana de Sainte-Marthe le 9 octobre 2021.",
     pr_title: "Ce qu'il faut savoir",
     pr_text_1:
       "Le maracana est du soccer joué à six joueurs sans gardien de but, sur un terrain de handball. Il a ses règles spécifiques et chaque match se joue sur deux périodes de 10 minutes. Il est très technique et se base sur un esprit CFA (Convivialité – Fraternité - Amitié). Il existe deux catégories officielles de compétitions : les séniors (35 et plus) et les vétérans (plus de 45 ans). Toutefois, nous intégrons les juniors (30 à 35 ans) pendant la période de rodage de notre discipline sous certaines	conditions.",
