@@ -76,10 +76,17 @@ var language = {
 		// img_sub: 'In the presence of Bleu Charlemagne, the President of FIMAA',
 		// maraCAN: "COVID-19",
 		// img_sub: "Suspension of all our national and international competitions until further notice",
-		maraCAN: "Tournament 2021",
-		maraCAN_sub: "Hamilton - November 20th",
-		img_sub:
-			"Tournament organized by the welcoming francophone communities",
+		// maraCAN: "Tournament 2021",
+		// maraCAN_sub: "Hamilton - November 20th",
+		// img_sub:
+		// 	"Tournament organized by the welcoming francophone communities",
+		maraCov:
+			"Resumption of competitions after a two-year break due to COVID-19",
+		maraCAN: "On a national level",
+		maraCAN_sub: "Montréal - June 25, 2022",
+		maraCAN_1: "At an international level",
+		maraCAN_sub_1: "Mara'can 2022 in Cameroon",
+		img_sub_1: "September 2022",
 		world_cup: "World Cup",
 		world_cup_date: "Montreal 2020",
 		world_cup_c: "Qualified countries",
@@ -371,10 +378,17 @@ var language = {
 		// maraCAN: "COVID-19",
 		// maraCAN_sub: 'Saint-Hyacinthe - 18 avril',
 		// img_sub: "Suspension de toutes nos compétitions nationales et internationales jusqu'à nouvel ordre",
-		maraCAN: "Tournoi 2021",
-		maraCAN_sub: "Hamilton - le 20 novembre",
-		img_sub:
-			"Tournoi organisé par les communautes francophones accueillantes de Hamilton",
+		// maraCAN: "Tournoi 2021",
+		// maraCAN_sub: "Hamilton - le 20 novembre",
+		// img_sub:
+		// 	"Tournoi organisé par les communautes francophones accueillantes de Hamilton",
+		maraCov:
+			"Reprise des compétitions après deux ans de pause due à la COVID-19",
+		maraCAN: "Au niveau national",
+		maraCAN_sub: "Montréal - le 25 juin 2022",
+		maraCAN_1: "Au niveau international",
+		maraCAN_sub_1: "Mara'can 2022 au Cameroun",
+		img_sub_1: "Septembre 2022",
 		world_cup: "Coupe du monde",
 		world_cup_date: "Montréal 2020",
 		world_cup_c: "Pays qualifiés",

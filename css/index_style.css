@@ -44,11 +44,20 @@ p {
 	flex-direction: column;
 }
 
+.news__break,
 .news__title,
 .news__sub,
 .news__subtitle {
 	color: #f1f1f1;
 	margin: 0 auto;
+	text-shadow: 0px -3px 3px #000;
+}
+
+.news__break {
+	align-self: center;
+	font-family: "IM Fell English SC", serif;
+	font-size: 0.9rem;
+	font-weight: 900;
 	text-shadow: 0px -3px 3px #000;
 }
 
@@ -324,6 +333,10 @@ p {
 		width: calc(100% + 20px);
 	}
 
+	.news__break {
+		font-size: 1.3rem;
+	}
+
 	.news__title {
 		font-size: 1.5rem;
 	}
@@ -381,6 +394,10 @@ p {
 
 	#news {
 		width: calc(100% + 30px);
+	}
+
+	.news__break {
+		font-size: 1.8rem;
 	}
 
 	.news__title {
@@ -445,6 +462,7 @@ p {
     flex-direction: row;
   } */
 
+	.news__break,
 	.news__title,
 	.news__sub {
 		/* transform: rotateX(-30deg) rotateY(35deg); */
