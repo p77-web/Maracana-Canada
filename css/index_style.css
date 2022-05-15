@@ -63,6 +63,7 @@ p {
 
 .news__title {
 	align-self: center;
+	color: rgb(150, 230, 150);
 	font-family: "IM Fell English SC", serif;
 	font-size: 1.1rem;
 	font-weight: 900;
