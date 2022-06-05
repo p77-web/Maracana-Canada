@@ -84,6 +84,7 @@ var language = {
 			"Resumption of competitions after a two-year break due to COVID-19",
 		maraCAN: "On a national level",
 		maraCAN_sub: "Montréal - June 25, 2022",
+		maraCAN_details: "All details here !",
 		maraCAN_1: "At an international level",
 		maraCAN_sub_1: "Mara'can 2022 in Cameroon",
 		img_sub_1: "September 2022",
@@ -386,6 +387,7 @@ var language = {
 			"Reprise des compétitions après deux ans de pause due à la COVID-19",
 		maraCAN: "Au niveau national",
 		maraCAN_sub: "Montréal - le 25 juin 2022",
+		maraCAN_details: "Tous les détails ici !",
 		maraCAN_1: "Au niveau international",
 		maraCAN_sub_1: "Mara'can 2022 au Cameroun",
 		img_sub_1: "Septembre 2022",
@@ -653,6 +655,7 @@ window.addEventListener(
 		let textToChange = document.querySelectorAll(".translateText");
 		// get the classes that contain the pdf link to change
 		let pdfNavLink = document.querySelectorAll(".game-rules-nav-link");
+		let pdfDetails = document.querySelectorAll(".news__details");
 
 		// get the form placeholders
 		let name = document.getElementById("nom");
@@ -668,6 +671,20 @@ window.addEventListener(
 				link.setAttribute("href", "Lois_du_jeu.pdf");
 			} else {
 				link.setAttribute("href", "Game_rules.pdf");
+			}
+		});
+
+		pdfDetails.forEach(function (link) {
+			if (browserLanguage === "fr") {
+				link.setAttribute(
+					"href",
+					"Maracana Canada - Trousse de participation 2022.pdf"
+				);
+			} else {
+				link.setAttribute(
+					"href",
+					"Maracana Canada - Trousse de participation 2022.pdf"
+				);
 			}
 		});
 

@@ -47,7 +47,8 @@ p {
 .news__break,
 .news__title,
 .news__sub,
-.news__subtitle {
+.news__subtitle,
+.news__details {
 	color: #f1f1f1;
 	margin: 0 auto;
 	text-shadow: 0px -3px 3px #000;
@@ -80,6 +81,17 @@ p {
 .news__subtitle {
 	font-family: "IM Fell Double Pica SC", serif;
 	width: 80%;
+}
+
+.news__details {
+	color: rgb(150, 230, 150);
+	font-size: 0.75rem;
+	text-shadow: none;
+}
+
+.news__details:hover {
+	color: rgb(150, 230, 150);
+	text-decoration: none;
 }
 
 .news__image {
@@ -407,6 +419,10 @@ p {
 
 	.news__subtitle {
 		width: 70%;
+	}
+
+	.news__details {
+		font-size: 0.9rem;
 	}
 
 	#presentation .col > h2 {
