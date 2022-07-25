@@ -21,7 +21,8 @@ var language = {
 		cup_17_title: "Cup 2017 | Maracana Canada",
 		cup_18_title: "Cup 2018 | Maracana Canada",
 		cup_19_title: "Cup 2019 | Maracana Canada",
-		scorer_title: "Scorer 2019 | Maracana Canada",
+		scorer_title_19: "Scorer 2019 | Maracana Canada",
+		scorer_title_22: "Scorer 2022 | Maracana Canada",
 		ci_title: "Ivory Coast 2018 | Maracana Canada",
 		visit_title: "Visit 2017 | Maracana Canada",
 		dons_title: "Dons | Maracana Canada",
@@ -80,11 +81,13 @@ var language = {
 		// maraCAN_sub: "Hamilton - November 20th",
 		// img_sub:
 		// 	"Tournament organized by the welcoming francophone communities",
-		maraCov:
-			"Resumption of competitions after a two-year break due to COVID-19",
-		maraCAN: "On a national level",
+		// maraCov:
+		// 	"Resumption of competitions after a two-year break due to COVID-19",
+		// maraCAN: "On a national level",
+		// maraCAN_sub: "Montréal - June 25, 2022",
+		maraCAN: "New Champions 2022",
 		maraCAN_sub: "Montréal - June 25, 2022",
-		maraCAN_details: "All details here !",
+		// maraCAN_details: "All details here !",
 		maraCAN_1: "At an international level",
 		maraCAN_sub_1: "Mara'can 2022 in Cameroon",
 		img_sub_1: "21-25 September 2022",
@@ -146,6 +149,10 @@ var language = {
 		write_us: "WRITE US VIA",
 
 		// Carousel & carousel pages
+		ch_w_2022: "2022 Championship Winners",
+		ch_w_2022_text: "Champions 2022",
+		scorer_2022: "2022 Championship best scorer",
+		scorer_2022_text: "Scorer 2022",
 		n_cup_2019: "2019 National Cup Winners",
 		n_cup_2019_text:
 			"Ivory Foot Montreal, defender of Peace Team in the semifinals, breaks the White Eagles's dream of double, winner of CAMASM. Final score 1 to 0.",
@@ -156,6 +163,9 @@ var language = {
 		scorer_2019_nav: "Top scorer 2019",
 		scorer_2019_text:
 			"Things always come in threes, they say. Well, he did it. Serge Litié of the MCSH (St-Hyacinthe) wins the 2019 top scorer trophy for the third year in a row.",
+		scorer_2022: "2022 Championship best scorer",
+		scorer_2022_nav: "Top scorer 2022",
+		scorer_2022_text: "Scorer 2022",
 		i_c_2018: "Ivory Coast 2018",
 		i_c_2018_text_1: "Our two selections reach the quarter-finals",
 		i_c_2018_text_2:
@@ -323,7 +333,8 @@ var language = {
 		cup_17_title: "Coupe 2017 | Maracana Canada",
 		cup_18_title: "Coupe 2018 | Maracana Canada",
 		cup_19_title: "Coupe 2019 | Maracana Canada",
-		scorer_title: "Buteur 2019 | Maracana Canada",
+		scorer_title_19: "Buteur 2019 | Maracana Canada",
+		scorer_title_22: "Buteur 2022 | Maracana Canada",
 		ci_title: "Côte d'Ivoire 2018 | Maracana Canada",
 		visit_title: "Visite 2017 | Maracana Canada",
 		dons_title: "Donations | Maracana Canada",
@@ -383,11 +394,13 @@ var language = {
 		// maraCAN_sub: "Hamilton - le 20 novembre",
 		// img_sub:
 		// 	"Tournoi organisé par les communautes francophones accueillantes de Hamilton",
-		maraCov:
-			"Reprise des compétitions après deux ans de pause due à la COVID-19",
-		maraCAN: "Au niveau national",
+		// maraCov:
+		// "Reprise des compétitions après deux ans de pause due à la COVID-19",
+		// maraCAN: "Au niveau national",
+		// maraCAN_sub: "Montréal - le 25 juin 2022",
+		maraCAN: "Nouveau champion 2022",
 		maraCAN_sub: "Montréal - le 25 juin 2022",
-		maraCAN_details: "Tous les détails ici !",
+		// maraCAN_details: "Tous les détails ici !",
 		maraCAN_1: "Au niveau international",
 		maraCAN_sub_1: "Mara'can 2022 au Cameroun",
 		img_sub_1: "21-25 Septembre 2022",
@@ -449,6 +462,10 @@ var language = {
 		write_us: "ÉCRIVEZ-NOUS VIA",
 
 		// Carousel & carousel pages
+		ch_w_2022: "Champions Nationaux 2022",
+		ch_w_2022_text: "Champions 2022",
+		scorer_2022: "Meilleur buteur 2022",
+		scorer_2022_text: "Buteur 2022",
 		n_cup_2019: "Vainqueurs de la Coupe Nationale 2019",
 		n_cup_2019_text:
 			"Ivoire Foot Montréal, tombeur de Peace Team en demi-finale, brise le rêve de doublé de White Eagles, vainqueur de CAMASM. Score final 1 à 0.",
@@ -459,6 +476,9 @@ var language = {
 		scorer_2019_nav: "Meilleur buteur 2019",
 		scorer_2019_text:
 			"Jamais deux sans trois, dit-on. Eh bien, il l'a fait. Serge Litié du MCSH (St-Hyacinthe) décroche pour la 3è année consécutive, son trophée de meilleur buteur 2019.",
+		scorer_2022: "Meilleur buteur du Championnat 2022",
+		scorer_2022_nav: "Meilleur buteur 2022",
+		scorer_2022_text: "Buteur 2022",
 		i_c_2018: "Côte d'Ivoire 2018",
 		i_c_2018_text_1: "Nos deux sélections atteignent les quarts de finale",
 		i_c_2018_text_2:

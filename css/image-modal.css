@@ -30,7 +30,7 @@
   border: 3px solid rgba(255, 0, 0, 0.8);
   margin: auto;
   display: block;
-  height: 80%;
+  height: 45%;
   max-width: 90%;
   animation-name: zoom;
   animation-duration: 0.6s;
@@ -66,7 +66,7 @@
   .modal-content {
     top: -20%;
     height: 100%;
-    width: 35%;
+    width: 80%;
   }
 }
 
@@ -74,15 +74,15 @@
   .modal-content {
     top: -10%;
     height: 100%;
-    width: 30%;
+    width: 80%;
   }
 }
 
 @media (orientation: landscape) and (min-width: 992px) {
   .modal-content {
     top: -5%;
-    height: 100%;
-    width: 50%;
+    height: 90%;
+    width: 80%;
   }
 }
 
@@ -90,7 +90,7 @@
   .modal-content {
     top: -5%;
     height: 100%;
-    width: 45%;
+    width: 75%;
   }
 }
 
@@ -98,7 +98,7 @@
   .modal-content {
     top: -5%;
     height: 100%;
-    width: 40%;
+    width: 75%;
   }
 }
 
@@ -106,13 +106,13 @@
   .modal-content {
     top: -5%;
     height: 100%;
-    width: 30%;
+    width: 70%;
   }
 }
 
 @media (orientation: portrait) and  (min-width: 768px) {
   .modal-content {
-    height: 90%;
+    height: 60%;
     width: 80%;
     max-width: 85%;
   }
