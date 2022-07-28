@@ -150,9 +150,8 @@ var language = {
 
 		// Carousel & carousel pages
 		ch_w_2022: "2022 Championship Winners",
-		ch_w_2022_text: "Champions 2022",
-		scorer_2022: "2022 Championship best scorer",
-		scorer_2022_text: "Scorer 2022",
+		ch_w_2022_text:
+			"Ivoire Foot Montreal, after the last national cup 2019 now has the only trophy that was missing from their list, the title of national champion 2022.",
 		n_cup_2019: "2019 National Cup Winners",
 		n_cup_2019_text:
 			"Ivory Foot Montreal, defender of Peace Team in the semifinals, breaks the White Eagles's dream of double, winner of CAMASM. Final score 1 to 0.",
@@ -165,7 +164,8 @@ var language = {
 			"Things always come in threes, they say. Well, he did it. Serge Litié of the MCSH (St-Hyacinthe) wins the 2019 top scorer trophy for the third year in a row.",
 		scorer_2022: "2022 Championship best scorer",
 		scorer_2022_nav: "Top scorer 2022",
-		scorer_2022_text: "Scorer 2022",
+		scorer_2022_text:
+			"Marc Didier Aman, the CAMAQ player, Canada's new goleador during the 2022 national championship.",
 		i_c_2018: "Ivory Coast 2018",
 		i_c_2018_text_1: "Our two selections reach the quarter-finals",
 		i_c_2018_text_2:
@@ -463,9 +463,8 @@ var language = {
 
 		// Carousel & carousel pages
 		ch_w_2022: "Champions Nationaux 2022",
-		ch_w_2022_text: "Champions 2022",
-		scorer_2022: "Meilleur buteur 2022",
-		scorer_2022_text: "Buteur 2022",
+		ch_w_2022_text:
+			"Ivoire Foot Montréal, après la dernière coupe nationale 2019 a maintenant l'unique trophée qui manquait à leur palmarès, le titre de champion national 2022.",
 		n_cup_2019: "Vainqueurs de la Coupe Nationale 2019",
 		n_cup_2019_text:
 			"Ivoire Foot Montréal, tombeur de Peace Team en demi-finale, brise le rêve de doublé de White Eagles, vainqueur de CAMASM. Score final 1 à 0.",
@@ -478,7 +477,8 @@ var language = {
 			"Jamais deux sans trois, dit-on. Eh bien, il l'a fait. Serge Litié du MCSH (St-Hyacinthe) décroche pour la 3è année consécutive, son trophée de meilleur buteur 2019.",
 		scorer_2022: "Meilleur buteur du Championnat 2022",
 		scorer_2022_nav: "Meilleur buteur 2022",
-		scorer_2022_text: "Buteur 2022",
+		scorer_2022_text:
+			"Marc Didier Aman, le joueur de CAMAQ, nouveau goleador du Canada lors du championnat national 2022.",
 		i_c_2018: "Côte d'Ivoire 2018",
 		i_c_2018_text_1: "Nos deux sélections atteignent les quarts de finale",
 		i_c_2018_text_2:
